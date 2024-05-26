@@ -123,9 +123,16 @@ const Activities = ({ site }) => {
           id="activities_point"
           type="circle"
           paint={{
-            "circle-stroke-color": "white",
+            "circle-stroke-color": [
+              "match",
+              ["get", "item_1"],
+              ...CaseActivitiesValues,
+              // Other Values
+              "rgba(255, 196, 54, 0.3)",
+            ],
             "circle-stroke-width": 1,
-            "circle-radius": 6,
+            "circle-radius": 6.5,
+            "circle-opacity": 0.7,
             "circle-color": [
               "match",
               ["get", "item_1"],

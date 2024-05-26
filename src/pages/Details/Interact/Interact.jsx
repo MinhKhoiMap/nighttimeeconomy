@@ -8,19 +8,11 @@ import Interview from "./Interview/Interview";
 const filterModeArr = ["interview", "landuse", "buildinguse", "activities"];
 
 const Interact = ({ siteIndex }) => {
-  const [filterMode, setFilterMode] = useState(filterModeArr[0]);
+  const [filterMode, setFilterMode] = useState(filterModeArr[1]);
 
   return (
     <>
       <div className="details__filter">
-        <div
-          className={`details__filter-tool ${
-            filterMode === filterModeArr[2] && "details__filter-tool--active"
-          }`}
-          onClick={() => setFilterMode(filterModeArr[2])}
-        >
-          <p>Building Use</p>
-        </div>
         <div
           className={`details__filter-tool ${
             filterMode === filterModeArr[1] && "details__filter-tool--active"
@@ -28,6 +20,14 @@ const Interact = ({ siteIndex }) => {
           onClick={() => setFilterMode(filterModeArr[1])}
         >
           <p>Land Use</p>
+        </div>
+        <div
+          className={`details__filter-tool ${
+            filterMode === filterModeArr[2] && "details__filter-tool--active"
+          }`}
+          onClick={() => setFilterMode(filterModeArr[2])}
+        >
+          <p>Building Use</p>
         </div>
         <div
           className={`details__filter-tool ${

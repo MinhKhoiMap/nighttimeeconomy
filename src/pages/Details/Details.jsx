@@ -13,7 +13,7 @@ import Interact from "./Interact/Interact";
 import Project from "./Project/Project";
 import Overview from "./Overview/Overview";
 
-const viewModeArr = ["Overview", "Projecct", "Interact"];
+const viewModeArr = ["Overview", "Project", "Interact"];
 
 const Details = () => {
   let { site } = useParams();
@@ -30,10 +30,12 @@ const Details = () => {
   const fitArea = () => {
     if (siteIndex) {
       if (viewMode !== viewModeArr[0])
-        fitAreaUtls(siteSelectionData.features[siteIndex]?.geometry, map);
+        fitAreaUtls(siteSelectionData.features[siteIndex]?.geometry, map, {
+          padding: { top: 60, bottom: 60, left: 60, right: 60 },
+        });
       else
         fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
-          padding: { top: 60, bottom: 60, left: 900, right: 10 },
+          padding: { top: 60, bottom: 60, left: 800, right: 50 },
         });
     }
   };
@@ -65,7 +67,7 @@ const Details = () => {
 
     let timer = setTimeout(() => {
       document.addEventListener("mousemove", handleShowNavbar);
-    }, 2000);
+    }, 500);
 
     return () => {
       clearTimeout(timer);
@@ -79,18 +81,21 @@ const Details = () => {
         className="details__navbar details__navbar--show opacity-100"
         ref={navbarRef}
       >
-        <div className="flex flex-col justify-center gap-1">
+        <div className="flex items-center justify-center gap-1">
           <h3
-            className="capitalize cursor-pointer"
+            className="capitalize cursor-pointer relative pr-5
+            after:w-[1.25px] after:h-[200%] after:bg-[#ddd] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-full after:rounded-xl"
             onClick={() => navigator("/")}
+            title="Home"
           >
             Night Time Economy
           </h3>
-          <p className="cursor-pointer capitalize" onClick={fitArea}>
+          <p
+            className="cursor-pointer capitalize ml-4 px-3 hover:text-white transition-colors duration-150"
+            onClick={fitArea}
+          >
             {areaName}
           </p>
-        </div>
-        <div>
           <button
             className={`text-white text-center ${
               viewMode === viewModeArr[0] && "current-mode"
@@ -100,7 +105,6 @@ const Details = () => {
             Overview
           </button>
           <button
-            disabled
             className={`text-white text-center ${
               viewMode === viewModeArr[1] && "current-mode"
             }`}
@@ -120,7 +124,13 @@ const Details = () => {
       </div>
 
       {viewMode === viewModeArr[2] && <Interact siteIndex={siteIndex} />}
-      {viewMode === viewModeArr[1] && <Project groupName={"group 1"} />}
+      {viewMode === viewModeArr[1] && (
+        <Project
+          groupIndex={siteIndex}
+          projectName={"group 1 - name project"}
+          setShowProjectMode={() => setViewMode(viewModeArr[2])}
+        />
+      )}
       {viewMode === viewModeArr[0] && (
         <Overview areaName={areaName} siteIndex={siteIndex} />
       )}

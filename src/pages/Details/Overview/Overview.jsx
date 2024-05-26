@@ -112,8 +112,8 @@ const Overview = ({ areaName, siteIndex }) => {
   return (
     <>
       <div
-        className="overview__container fixed top-1/2 -translate-y-1/2 left-[109px] text-white w-[720px] h-[500px] px-6 py-3 bg-white/30 
-      rounded-[10px] pb-3 overflow-auto"
+        className="overview__container fixed top-0 left-0 bottom-0 text-white w-[720px] px-6 pt-3 bg-[#242526] 
+                  pb-11 overflow-auto shadow-xl shadow-white/20"
       >
         <div className="w-full" onScroll={handleScrollImage}>
           <div className="flex flex-col mb-3">
@@ -129,6 +129,7 @@ const Overview = ({ areaName, siteIndex }) => {
             </div>
             <div className="mt-2 flex-1">
               <video
+              className="w-full"
                 src={videoUrl[siteIndex % 2]}
                 loop
                 muted

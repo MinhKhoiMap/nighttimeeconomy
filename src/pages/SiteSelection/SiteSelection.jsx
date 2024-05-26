@@ -44,6 +44,7 @@ const SiteSelection = ({ area }) => {
 
     map.fitBounds(bounds, {
       padding: { top: 20, bottom: 20, left: 20, right: 20 },
+      duration: 3000,
     });
   }, [map]);
 

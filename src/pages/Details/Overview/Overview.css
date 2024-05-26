@@ -1,3 +1,18 @@
+@keyframes slide {
+  0% {
+    opacity: 0.4;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.overview__container {
+  animation: slide .6s ease forwards;
+}
+
 .overview__container::-webkit-scrollbar,
 .overview__container *::-webkit-scrollbar {
   display: none;
