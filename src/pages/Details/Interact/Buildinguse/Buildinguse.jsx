@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
+import * as turf from "@turf/turf";
 
 // Data
 import { buildinguseData } from "../../../../assets/data/buildinguse";
+import { siteSelectionData } from "../../../../assets/data/site";
 
 // Components
 import InfoTable from "../../../../components/InfoTable/InfoTable";
@@ -35,10 +37,12 @@ const Buildinguse = ({ site }) => {
   const [infoTablePosition, setInfoTablePosition] = useState(null);
   const [showTable, setShowTable] = useState(false);
   const [infoTable, setInfoTable] = useState([]);
+  const [buildingIntersection, setBuildingIntersection] = useState([]);
 
   const [filterBuilding, setFilterBuilding] = useState(null);
 
   useEffect(() => {
+    // Like the function in landuse component
     function controlInfoTable(e) {
       setShowTable(true);
 
@@ -98,29 +102,50 @@ const Buildinguse = ({ site }) => {
     // };
   });
 
+  // Before drawing building, filtering all building outside the selected area boundary
+  useEffect(() => {
+    let intersectBuildingGeos = buildinguseData[site].features.filter(
+      (buildingGeo) => {
+        return turf.booleanIntersects(
+          turf.polygon(buildingGeo.geometry.coordinates),
+          turf.polygon(siteSelectionData.features[site].geometry.coordinates)
+        );
+      }
+    );
+
+    setBuildingIntersection({
+      type: "FeatureCollection",
+      name: "",
+      features: intersectBuildingGeos,
+    });
+  }, [site]);
+
   return (
     <>
-      <Source type="geojson" data={buildinguseData[site]}>
-        <Layer
-          id="buildinguse_selection"
-          type="fill"
-          paint={{
-            "fill-outline-color": "pink",
-            "fill-color": [
-              "match",
-              ["get", "Buildsused"],
-              ...CaseBuildinguseValues,
-              // Other Values
-              "rgba(255, 196, 54, 0.3)",
-            ],
-          }}
-          filter={
-            filterBuilding
-              ? ["==", ["get", "Buildsused"], filterBuilding]
-              : ["!=", ["get", "Buildsused"], null]
-          }
-        />
-      </Source>
+      {buildingIntersection && (
+        <Source type="geojson" data={buildingIntersection}>
+          {/* Paint and Filter logic are the same in landuse */}
+          <Layer
+            id="buildinguse_selection"
+            type="fill"
+            paint={{
+              "fill-outline-color": "pink",
+              "fill-color": [
+                "match",
+                ["get", "Buildsused"],
+                ...CaseBuildinguseValues,
+                // Other Values
+                "rgba(255, 196, 54, 0.3)",
+              ],
+            }}
+            filter={
+              filterBuilding
+                ? ["==", ["get", "Buildsused"], filterBuilding]
+                : ["!=", ["get", "Buildsused"], null]
+            }
+          />
+        </Source>
+      )}
 
       <div className="fixed" ref={mouseDivRef}>
         {showTable && (

@@ -13,6 +13,7 @@ const Interview = ({ site }) => {
 
   const [showImageGallery, setShowImageGallery] = useState(false);
 
+  // Loading image icon for location
   useEffect(() => {
     map.loadImage(locate, (err, image) => {
       if (err) throw err;

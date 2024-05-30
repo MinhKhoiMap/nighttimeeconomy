@@ -16,6 +16,7 @@ import Overview from "./Overview/Overview";
 const viewModeArr = ["Overview", "Project", "Interact"];
 
 const Details = () => {
+  // get site selected index from params in url
   let { site } = useParams();
   const navbarRef = useRef();
   const { map } = useMap();
@@ -23,37 +24,42 @@ const Details = () => {
   const navigator = useNavigate();
 
   const [siteIndex, setSiteIndex] = useState(null);
+  // Set default mode is "interact"
   const [viewMode, setViewMode] = useState(viewModeArr[2]);
   const [areaName, setAreaName] = useState("");
 
-  // Handle Fitbounds
+  // Handle Fitbounds to the selected area
   const fitArea = () => {
     if (siteIndex) {
       if (viewMode !== viewModeArr[0])
         fitAreaUtls(siteSelectionData.features[siteIndex]?.geometry, map, {
           padding: { top: 60, bottom: 60, left: 60, right: 60 },
+          duration: 400,
         });
       else
         fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
           padding: { top: 60, bottom: 60, left: 800, right: 50 },
+          duration: 400,
         });
     }
   };
 
-  // Change Chosen Site State
+  // Change Selected Site State
   useEffect(() => {
     setSiteIndex(site);
     setAreaName(`area ${new Number(site) + 1}`);
   });
 
-  // Handle Fit Bounds When Change Site State
+  // Handle Fit Bounds When Change Site State (siteIndex, viewMode state)
   useEffect(() => {
     fitArea();
   }, [siteIndex, viewMode]);
 
   // handle Top Navbar
   useEffect(() => {
+    // navbar hanlder
     function handleShowNavbar(e) {
+      // When client'mouse axis y value is less than 40 or hover on navbar, show navbar
       if (
         (navbarRef.current && e.clientY <= 40) ||
         $(e.target).parents(".details__navbar").length ||
@@ -65,11 +71,14 @@ const Details = () => {
       }
     }
 
+    // Wait 2s to hide the navabar and set navbar event handler function
     let timer = setTimeout(() => {
+      navbarRef.current.classList.remove("details__navbar--show");
       document.addEventListener("mousemove", handleShowNavbar);
-    }, 500);
+    }, 2000);
 
     return () => {
+      // release memory
       clearTimeout(timer);
       document.removeEventListener("mousemove", handleShowNavbar);
     };

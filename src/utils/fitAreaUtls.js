@@ -1,5 +1,4 @@
 import * as turf from "@turf/turf";
-import mapboxgl from "mapbox-gl";
 
 export function fitAreaUtls(
   geometry,

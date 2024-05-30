@@ -28,11 +28,12 @@ function App() {
   const slowSpinZoom = 3;
 
   const [userInteract, setUserInteract] = useState(false);
-  const [windowHeight, setWindowHeight] = useState(null);
 
+  // This function handle rotate the globe
   const spinGlobe = () => {
     const zoom = map.current.getMap().getZoom();
 
+    // When client interact with the globe, userInteract is changed to true and the globe does not rotate
     if (!userInteract && zoom < maxSpinZoom) {
       let distancePerSecond = 360 / secondsPerRevolution;
       if (zoom > slowSpinZoom) {
@@ -53,28 +54,10 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    window.onresize = () => {
-      setWindowHeight(window.innerHeight);
-    };
-
-    return () => {
-      window.onresize = null;
-    };
-  }, []);
-
+  // When userInteract state is changed, this function is called
   useEffect(() => {
     if (map.current) spinGlobe();
   }, [userInteract]);
-
-  // useEffect(() => {
-  //   map.current?.getMap().on("resize", () => {
-  //     map.current.setZoom(windowHeight * (2 / 742));
-  //     console.log("first");
-  //   });
-
-  //   return () => map.current?.getMap().off("resize");
-  // }, [windowHeight]);
 
   return (
     <div className="w-screen h-screen relative">
@@ -84,32 +67,32 @@ function App() {
         mapboxAccessToken={mapboxgl.accessToken}
         initialViewState={initialView}
         projection="globe"
+        // When the map finishes loading, rotate the globe
         onLoad={spinGlobe}
+        // on all events below, set userInteract to true
+        // start
         onMoveEnd={spinGlobe}
-        onMouseDown={() => {
-          setUserInteract(true);
-          spinGlobe();
-        }}
-        onMouseUp={() => {
+        onMouseDown={() => setUserInteract(true)}
+        onDragEnd={() => {
           setTimeout(() => {
-            spinGlobe();
             setUserInteract(false);
           }, 500);
         }}
-        onDragEnd={() => {
+        // end
+        // on mouse up event, client don't interact with the globe so userInteract is changed to false
+        onMouseUp={() => {
           setTimeout(() => {
-            spinGlobe();
             setUserInteract(false);
           }, 500);
         }}
         logoPosition="bottom-left"
         mapStyle="mapbox://styles/mapbox/dark-v11"
         attributionControl={false}
-        // trackResize={true}
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/nha_trang" element={<SiteSelection />}>
+            {/* This childer route decide children component which will be mounted in SiteSelection parent component*/}
             <Route path="/nha_trang/:site" element={<Details />} />
           </Route>
           <Route path="/about_project" element={<AboutProject />} />

@@ -8,7 +8,8 @@ import "./SiteSelection.css";
 import { siteSelectionData } from "../../assets/data/site";
 import Button from "../../components/Button/Button";
 
-const SiteSelection = ({ area }) => {
+const SiteSelection = () => {
+  // this is represents the selected area index
   const [siteChosenIndex, setSiteChosenIndex] = useState(null);
 
   const navigate = useNavigate();
@@ -34,8 +35,11 @@ const SiteSelection = ({ area }) => {
     // });
   }, [map]);
 
+  // Handling to display all areas in a viewport
   const handleLoadSite = useCallback(() => {
     var bounds = new mapboxgl.LngLatBounds();
+
+    // Loop through all areas and extend bounds box
     siteSelectionData.features.forEach((feature) => {
       feature.geometry.coordinates[0].forEach((coordinate) =>
         bounds.extend(coordinate)
@@ -48,8 +52,11 @@ const SiteSelection = ({ area }) => {
     });
   }, [map]);
 
+  // Set event listeners to each layer
   const siteLayerHandler = useCallback(
     (name, feature, id) => {
+      // Set click envet listener to layer with id fill_{name}
+      // Structure function: map.on({event name}, {layer id}, {callback function})
       map.on("click", `fill_${name}`, (e) => {
         setSiteChosenIndex(id);
         navigate(`./${id}`);
@@ -68,10 +75,6 @@ const SiteSelection = ({ area }) => {
       map.on("dragstart", `fill_${name}`, (e) => {
         map.getCanvas().style.cursor = "grab";
       });
-
-      map.on("dragend", `fill_${name}`, (e) => {
-        map.getCanvas().style.cursor = "cursor";
-      });
     },
     [map]
   );
@@ -80,6 +83,8 @@ const SiteSelection = ({ area }) => {
     <>
       {siteSelectionData.features.map((feature, index) => {
         let name = `site_${feature.name}`;
+
+        // When layer is finished drawing, the function above will be set to this layer
         useEffect(() => {
           siteLayerHandler(name, feature, index);
 
@@ -110,6 +115,7 @@ const SiteSelection = ({ area }) => {
         );
       })}
 
+      {/* Children Component will be mounted here, and childrent component has siteChosenIndex as a prop */}
       <Outlet context={[siteChosenIndex || 0]} />
     </>
   );

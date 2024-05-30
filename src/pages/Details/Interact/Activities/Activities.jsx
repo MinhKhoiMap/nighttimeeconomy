@@ -107,6 +107,7 @@ const Activities = ({ site }) => {
     // };
   });
 
+  // Highlighting the row in time table which is selected by clicking
   const handleFilterTime = useCallback((e) => {
     if ($(e.target).parent("tr").hasClass("active")) {
       $(e.target).parent("tr").toggleClass("active");

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Player } from "@lordicon/react";
-import $ from "jquery";
 import { Layer, Source, useMap } from "react-map-gl";
+import * as turf from "@turf/turf";
 
 import ImageSlider from "../../../components/ImageSlider/ImageSlider";
 import LottieIcon from "../../../components/LottieIcon/LottieIcon";
@@ -20,91 +19,70 @@ const imgUrl = [group1, img2, group1, group1, img2, group1, group1, group1];
 const videoUrl = [video3, video4];
 
 const Overview = ({ areaName, siteIndex }) => {
-  let position = 0,
-    lastScrollTop = 0;
   const imageGalleryRef = useRef();
 
   const { map } = useMap();
 
   const [isShowSlider, setIsShowSlider] = useState(false);
   const [roadState, setRoadState] = useState(null);
+  const [roadIndex, setRoadIndex] = useState(0);
+  const [arc, setArc] = useState(null);
+  const [point, setPoint] = useState(null);
 
-  function handleScrollImage(e) {
-    const startPoint = imageGalleryRef.current.offsetTop;
+  let requestID,
+    counter = 0;
+  const steps = 300;
 
-    // if (
-    //   e.target.scrollTop >= startPoint &&
-    //   e.target.scrollTop >= lastScrollTop
-    // ) {
-    //   console.log(position, e.target.scrollTop);
-    //   e.target.scroll(0, 440 * position);
-    //   position++;
-    // } else if (e.target.scrollTop < lastScrollTop) {
-    // }
-
-    lastScrollTop = e.target.scrollTop;
-  }
-
-  const dashArraySequence = [
-    [0, 4, 3],
-    [0.5, 4, 2.5],
-    [1, 4, 2],
-    [1.5, 4, 1.5],
-    [2, 4, 1],
-    [2.5, 4, 0.5],
-    [3, 4, 0],
-    [0, 0.5, 3, 3.5],
-    [0, 1, 3, 3],
-    [0, 1.5, 3, 2.5],
-    [0, 2, 3, 2],
-    [0, 2.5, 3, 1.5],
-    [0, 3, 3, 1],
-    [0, 3.5, 3, 0.5],
-  ];
-
-  let step = 0,
-    requestID;
-
-  function animateRoad(timestamp) {
-    const newStep = parseInt((timestamp / 70) % dashArraySequence.length);
-
-    if (newStep !== step) {
-      map
-        .getMap()
-        .setPaintProperty(
-          "road_dashed",
-          "line-dasharray",
-          dashArraySequence[step]
-        );
-      step = newStep;
-    }
-
-    requestID = requestAnimationFrame(animateRoad);
-  }
-
-  useEffect(() => {
-    let index = 0;
-
-    function changeRoad(id) {
-      if (id >= roads[siteIndex].features.length) {
-        index = 0;
-        setRoadState(roads[siteIndex].features[0]);
+  // Handling the point animation, when the point move to the end of the road, change to next road
+  function animateRoad() {
+    if (counter < steps) {
+      setPoint(turf.point(arc[counter]));
+      requestID = requestAnimationFrame(animateRoad);
+    } else {
+      counter = 0;
+      setPoint(null);
+      if (roads[siteIndex].features.length - 1 > roadIndex) {
+        changeRoad(roadIndex + 1);
+        setRoadIndex(roadIndex + 1);
       } else {
-        setRoadState(roads[siteIndex].features[id]);
+        changeRoad(0);
+        setRoadIndex(0);
       }
     }
 
-    changeRoad(index++);
+    counter++;
+  }
 
-    const timer = setInterval(() => {
-      changeRoad(index++);
-    }, 2500);
+  // Calculate the trip of the point along the current road path
+  function calcPointPart(index) {
+    const lineDistance = turf.lineDistance(
+      roads[siteIndex].features[index],
+      "kilometers"
+    );
+    let part = [];
+    for (let i = 0; i < lineDistance; i += lineDistance / steps) {
+      const segment = turf.along(
+        roads[siteIndex].features[index],
+        i,
+        "kilometers"
+      );
+      part.push(segment.geometry.coordinates);
+    }
 
-    return () => clearInterval(timer);
+    setArc(part);
+  }
+
+  function changeRoad(id) {
+    setRoadState(roads[siteIndex].features[id]);
+    calcPointPart(id);
+  }
+
+  useEffect(() => {
+    changeRoad(0);
   }, [siteIndex]);
 
   useEffect(() => {
-    roadState && animateRoad(0);
+    roadState && arc && animateRoad();
 
     return () => cancelAnimationFrame(requestID);
   }, [roadState]);
@@ -115,7 +93,7 @@ const Overview = ({ areaName, siteIndex }) => {
         className="overview__container fixed top-0 left-0 bottom-0 text-white w-[720px] px-6 pt-3 bg-[#242526] 
                   pb-11 overflow-auto shadow-xl shadow-white/20"
       >
-        <div className="w-full" onScroll={handleScrollImage}>
+        <div className="w-full">
           <div className="flex flex-col mb-3">
             <div className="flex-2">
               <h2 className="text-3xl font-bold capitalize mb-4">{areaName}</h2>
@@ -129,7 +107,7 @@ const Overview = ({ areaName, siteIndex }) => {
             </div>
             <div className="mt-2 flex-1">
               <video
-              className="w-full"
+                className="w-full"
                 src={videoUrl[siteIndex % 2]}
                 loop
                 muted
@@ -139,11 +117,7 @@ const Overview = ({ areaName, siteIndex }) => {
               />
             </div>
           </div>
-          <figure
-            ref={imageGalleryRef}
-            className="w-full flex flex-col gap-5"
-            onScroll={handleScrollImage}
-          >
+          <figure ref={imageGalleryRef} className="w-full flex flex-col gap-5">
             {imgUrl.map((img, index) => (
               <div key={index} className="relative">
                 <img src={img} className="w-full h-full object-contain" />
@@ -175,27 +149,34 @@ const Overview = ({ areaName, siteIndex }) => {
       )}
 
       {roadState && (
-        <Source data={roadState} type="geojson">
-          <Layer
-            type="line"
-            paint={{
-              "line-color": "yellow",
-              "line-width": 4,
-              "line-opacity": 0.4,
-            }}
-            layout={{ "line-join": "bevel" }}
-          />
-          <Layer
-            id="road_dashed"
-            type="line"
-            paint={{
-              "line-color": "yellow",
-              "line-width": 3,
-              "line-dasharray": [0, 4, 3],
-            }}
-            layout={{ "line-join": "bevel" }}
-          />
-        </Source>
+        <>
+          {/* Drawing background road path */}
+          <Source data={roadState} type="geojson">
+            <Layer
+              type="line"
+              paint={{
+                "line-color": "white",
+                "line-width": 6,
+                "line-opacity": 0.4,
+              }}
+              layout={{ "line-join": "bevel" }}
+            />
+          </Source>
+
+          {/* Drawing the point */}
+          {point && (
+            <Source data={point} type="geojson">
+              <Layer
+                type="circle"
+                paint={{
+                  "circle-opacity": 1,
+                  "circle-color": "white",
+                  "circle-pitch-scale": "map",
+                }}
+              />
+            </Source>
+          )}
+        </>
       )}
     </>
   );

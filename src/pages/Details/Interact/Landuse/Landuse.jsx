@@ -36,6 +36,7 @@ const Landuse = ({ site }) => {
   const [filterLand, setFilterLand] = useState(null);
 
   useEffect(() => {
+    // Handling show info tag when hover on layer (land polygon)
     function controlInfoTable(e) {
       setShowTable(true);
 
@@ -52,6 +53,7 @@ const Landuse = ({ site }) => {
         },
       ]);
 
+      // Calculate the info tag position following client's mouse
       const screenX = screen.width,
         screenY = screen.height;
 
@@ -83,6 +85,7 @@ const Landuse = ({ site }) => {
       });
     }
 
+    // Hide tag
     function reset() {
       setShowTable(false);
       setInfoTablePosition(null);
@@ -105,6 +108,7 @@ const Landuse = ({ site }) => {
           type="fill"
           paint={{
             "fill-outline-color": "pink",
+            // color the polygon based on Landuse value
             "fill-color": [
               "match",
               ["get", "Landuse"],
@@ -113,6 +117,7 @@ const Landuse = ({ site }) => {
               "rgba(255, 196, 54, 0.3)",
             ],
           }}
+          // filter the polygon based on Landuse value
           filter={
             filterLand
               ? ["==", ["get", "Landuse"], filterLand]

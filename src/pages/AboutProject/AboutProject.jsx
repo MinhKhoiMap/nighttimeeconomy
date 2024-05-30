@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./AboutProject.css"
+import "./AboutProject.css";
 
 const AboutProject = () => {
   const navigate = useNavigate();
@@ -8,6 +8,7 @@ const AboutProject = () => {
     <div className="about_prj fixed top-0 bottom-0 left-0 right-0 bg-white z-[99999] overflow-auto">
       <section className="sticky top-0 bg-white p-5 flex justify-between items-center">
         <h3 className="text-3xl font-[500] text-[#242526]">About Project</h3>
+        {/* Clicking on close button, redirect to before mode */}
         <span onClick={() => navigate(-1)} title="Close">
           <i className="fa-solid fa-xmark text-2xl cursor-pointer hover:text-[#ce2027] transition-colors duration-[0.15s]"></i>
         </span>
