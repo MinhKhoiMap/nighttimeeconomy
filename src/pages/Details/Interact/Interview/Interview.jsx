@@ -44,8 +44,12 @@ const Interview = ({ site }) => {
           type="symbol"
           layout={{
             "icon-image": "locate",
-            "icon-size": 1,
+            "icon-size": 0.06,
             // "icon-allow-overlap": true,
+            "icon-opacity": 0.5,
+          }}
+          paint={{
+            "icon-color": "black",
           }}
         />
       </Source>

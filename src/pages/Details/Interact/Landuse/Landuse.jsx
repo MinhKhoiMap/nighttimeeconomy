@@ -98,33 +98,35 @@ const Landuse = ({ site }) => {
     //   map.off("mousemove", "landuse_selection", controlInfoTable);
     //   map.off("mouseleave", "landuse_selection", reset);
     // };
-  });
+  }, []);
 
   return (
     <>
-      <Source type="geojson" data={landuseData[site]} generateId={true}>
-        <Layer
-          id="landuse_selection"
-          type="fill"
-          paint={{
-            "fill-outline-color": "pink",
-            // color the polygon based on Landuse value
-            "fill-color": [
-              "match",
-              ["get", "Landuse"],
-              ...CaseLanduseValues,
-              // Other Values
-              "rgba(255, 196, 54, 0.3)",
-            ],
-          }}
-          // filter the polygon based on Landuse value
-          filter={
-            filterLand
-              ? ["==", ["get", "Landuse"], filterLand]
-              : ["!=", ["get", "Landuse"], null]
-          }
-        />
-      </Source>
+      {site && (
+        <Source type="geojson" data={landuseData[site]} generateId={true}>
+          <Layer
+            id="landuse_selection"
+            type="fill"
+            paint={{
+              "fill-outline-color": "pink",
+              // color the polygon based on Landuse value
+              "fill-color": [
+                "match",
+                ["get", "Landuse"],
+                ...CaseLanduseValues,
+                // Other Values
+                "rgba(255, 196, 54, 0.3)",
+              ],
+            }}
+            // filter the polygon based on Landuse value
+            filter={
+              filterLand
+                ? ["==", ["get", "Landuse"], filterLand]
+                : ["!=", ["get", "Landuse"], null]
+            }
+          />
+        </Source>
+      )}
 
       <div className="fixed" ref={mouseDivRef}>
         {showTable && (

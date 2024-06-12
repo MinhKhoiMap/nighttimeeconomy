@@ -37,6 +37,7 @@ const Activities = ({ site }) => {
   const { map } = useMap();
 
   const [filterActivities, setFilterActivities] = useState(null);
+  const [filterTime, setFilterTime] = useState(null);
   const [infoTablePosition, setInfoTablePosition] = useState(null);
   const [showTable, setShowTable] = useState(false);
   const [infoTable, setInfoTable] = useState(null);
@@ -108,14 +109,16 @@ const Activities = ({ site }) => {
   });
 
   // Highlighting the row in time table which is selected by clicking
-  const handleFilterTime = useCallback((e) => {
-    if ($(e.target).parent("tr").hasClass("active")) {
-      $(e.target).parent("tr").toggleClass("active");
+  const handleFilterTime = (e, time) => {
+    if ($(e.target).hasClass("active")) {
+      $(e.target).toggleClass("active");
+      setFilterTime(null);
       return;
     }
-    $("tr.active").removeClass("active");
-    $(e.target).parent("tr").addClass("active");
-  }, []);
+    $("td.active").removeClass("active");
+    $(e.target).addClass("active");
+    setFilterTime(time);
+  };
 
   return (
     <>
@@ -133,7 +136,7 @@ const Activities = ({ site }) => {
             ],
             "circle-stroke-width": 1,
             "circle-radius": 6.5,
-            "circle-opacity": 0.7,
+            "circle-opacity": 0.8,
             "circle-color": [
               "match",
               ["get", "item_1"],
@@ -144,11 +147,48 @@ const Activities = ({ site }) => {
             "circle-pitch-scale": "map",
             "circle-radius-transition": { duration: 0.2 },
           }}
-          filter={
+          filter={[
+            "all",
             filterActivities
               ? ["==", ["get", "item_1"], filterActivities]
-              : ["!=", ["get", "item_1"], null]
-          }
+              : ["!=", ["get", "item_1"], null],
+            filterTime && filterTime.informal == "1"
+              ? ["in", ["get", "Time"], filterTime.time]
+              : ["!=", ["get", "Time"], null],
+            filterTime
+              ? ["==", ["get", "Informal"], filterTime.informal]
+              : ["!=", ["get", "Informal"], null],
+          ]}
+        />
+        <Layer
+          type="symbol"
+          layout={{
+            "text-field": [
+              "match",
+              ["get", "Informal"],
+              "1",
+              ["concat", "i", ["get", "Time"]],
+              ["get", "Time"],
+            ],
+            "text-size": 16,
+            "text-anchor": "bottom-right",
+            "text-allow-overlap": false,
+          }}
+          paint={{
+            "text-color": "#fff",
+          }}
+          filter={[
+            "all",
+            filterActivities
+              ? ["==", ["get", "item_1"], filterActivities]
+              : ["!=", ["get", "item_1"], null],
+            filterTime && filterTime.informal == "1"
+              ? ["in", ["get", "Time"], filterTime.time]
+              : ["!=", ["get", "Time"], null],
+            filterTime
+              ? ["==", ["get", "Informal"], filterTime.informal]
+              : ["!=", ["get", "Informal"], null],
+          ]}
         />
       </Source>
 
@@ -175,20 +215,62 @@ const Activities = ({ site }) => {
               </tr>
             </thead>
             <tbody>
-              <tr onClick={handleFilterTime}>
+              <tr>
                 <td>6 A.M - 6 P.M</td>
-                <td>1</td>
-                <td>i1</td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "1", informal: "0" })
+                  }
+                >
+                  1
+                </td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "1", informal: "1" })
+                  }
+                >
+                  i1
+                </td>
               </tr>
-              <tr onClick={handleFilterTime}>
-                <td>10 P.M - 6 A.M</td>
-                <td>2</td>
-                <td>i2</td>
-              </tr>
-              <tr onClick={handleFilterTime}>
+              <tr>
                 <td>6 P.M - 10 P.M</td>
-                <td>3</td>
-                <td>i3</td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "2", informal: "0" })
+                  }
+                >
+                  2
+                </td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "2", informal: "1" })
+                  }
+                >
+                  i2
+                </td>
+              </tr>
+              <tr>
+                <td>10 P.M - 6 A.M</td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "3", informal: "0" })
+                  }
+                >
+                  3
+                </td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "3", informal: "1" })
+                  }
+                >
+                  i3
+                </td>
               </tr>
             </tbody>
           </table>

@@ -7,10 +7,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -21,10 +23,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -35,10 +39,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -49,10 +55,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -63,10 +71,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -77,10 +87,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -91,10 +103,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -105,10 +119,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -119,10 +135,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -133,10 +151,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -147,10 +167,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -161,10 +183,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -175,10 +199,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -189,10 +215,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -203,10 +231,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -217,10 +247,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -231,10 +263,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -245,10 +279,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -259,10 +295,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -273,10 +311,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -287,10 +327,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -301,10 +343,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -315,10 +359,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -329,10 +375,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -343,10 +391,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -357,10 +407,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -371,10 +423,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -385,10 +439,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -399,10 +455,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -413,10 +471,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -427,10 +487,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -441,10 +503,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -455,10 +519,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -469,10 +535,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -483,10 +551,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -497,10 +567,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -511,10 +583,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 13,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -525,10 +599,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -539,10 +615,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -553,10 +631,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -567,10 +647,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -581,10 +663,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -595,10 +679,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -609,10 +695,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -623,10 +711,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -637,10 +727,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -651,10 +743,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -665,10 +759,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -679,10 +775,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -693,10 +791,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -707,10 +807,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -721,10 +823,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -735,10 +839,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -749,10 +855,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 1,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -763,10 +871,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -777,10 +887,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -791,10 +903,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -805,10 +919,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -819,10 +935,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -833,10 +951,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -847,10 +967,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -861,10 +983,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -875,10 +999,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -889,10 +1015,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -903,10 +1031,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -917,10 +1047,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -931,10 +1063,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -945,10 +1079,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -959,10 +1095,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -973,10 +1111,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -987,10 +1127,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1001,10 +1143,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1015,10 +1159,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1029,10 +1175,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1043,10 +1191,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1057,10 +1207,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1071,10 +1223,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1085,10 +1239,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 23,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1099,10 +1255,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1113,10 +1271,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1127,10 +1287,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1141,10 +1303,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1155,10 +1319,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1169,10 +1335,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1183,10 +1351,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1197,10 +1367,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1211,10 +1383,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1225,10 +1399,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1239,10 +1415,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1253,10 +1431,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1267,10 +1447,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1281,10 +1463,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1295,10 +1479,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1309,10 +1495,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1323,10 +1511,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1337,10 +1527,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1351,10 +1543,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1365,10 +1559,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1379,10 +1575,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1393,10 +1591,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1407,10 +1607,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1421,10 +1623,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1435,10 +1639,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1449,10 +1655,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1463,10 +1671,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1477,10 +1687,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1491,10 +1703,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1505,10 +1719,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1519,10 +1735,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1533,10 +1751,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1547,10 +1767,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1561,10 +1783,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1575,10 +1799,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1589,10 +1815,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1603,10 +1831,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1617,10 +1847,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1631,10 +1863,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1645,10 +1879,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1659,10 +1895,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1673,10 +1911,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1687,10 +1927,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1701,10 +1943,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1715,10 +1959,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1729,10 +1975,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1743,10 +1991,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1757,10 +2007,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1771,10 +2023,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1785,10 +2039,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1799,10 +2055,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1813,10 +2071,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1827,10 +2087,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1841,10 +2103,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1855,10 +2119,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1869,10 +2135,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1883,10 +2151,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1897,10 +2167,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1911,10 +2183,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1925,10 +2199,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1939,10 +2215,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1953,10 +2231,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1967,10 +2247,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 123,
           Informal: null,
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1981,10 +2263,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -1995,10 +2279,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2009,10 +2295,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2023,10 +2311,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2037,10 +2327,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2051,10 +2343,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2065,10 +2359,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2079,10 +2375,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2093,10 +2391,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2107,10 +2407,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2121,10 +2423,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2135,10 +2439,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2149,10 +2455,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2163,10 +2471,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2177,10 +2487,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2191,10 +2503,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2205,10 +2519,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2219,10 +2535,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2233,10 +2551,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2247,10 +2567,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2261,10 +2583,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2275,10 +2599,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2289,10 +2615,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2303,10 +2631,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2317,10 +2647,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2331,10 +2663,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2345,10 +2679,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2359,10 +2695,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2373,10 +2711,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2387,10 +2727,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2401,10 +2743,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2415,10 +2759,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2429,10 +2775,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2443,10 +2791,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2457,10 +2807,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2471,10 +2823,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2485,10 +2839,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2499,10 +2855,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2513,10 +2871,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2527,10 +2887,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2541,10 +2903,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2555,10 +2919,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2569,10 +2935,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2583,10 +2951,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2597,10 +2967,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2611,10 +2983,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2625,10 +2999,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2639,10 +3015,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2653,10 +3031,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2667,10 +3047,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2681,10 +3063,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2695,10 +3079,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2709,10 +3095,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2723,10 +3111,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2737,10 +3127,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2751,10 +3143,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2765,10 +3159,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2779,10 +3175,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2793,10 +3191,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2807,10 +3207,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2821,10 +3223,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2835,10 +3239,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2849,10 +3255,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2863,10 +3271,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2877,10 +3287,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2891,10 +3303,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2905,10 +3319,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2919,10 +3335,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2933,10 +3351,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2947,10 +3367,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2961,10 +3383,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2975,10 +3399,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -2989,10 +3415,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3003,10 +3431,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3017,10 +3447,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3031,10 +3463,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3045,10 +3479,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3059,10 +3495,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3073,10 +3511,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3087,10 +3527,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3101,10 +3543,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3115,10 +3559,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3129,10 +3575,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3143,10 +3591,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3157,10 +3607,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3171,10 +3623,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3185,10 +3639,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3199,10 +3655,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3213,10 +3671,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3227,10 +3687,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3241,10 +3703,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3255,10 +3719,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3269,10 +3735,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3283,10 +3751,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3297,10 +3767,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3311,10 +3783,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3325,10 +3799,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3339,10 +3815,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3353,10 +3831,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3367,10 +3847,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3381,10 +3863,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3395,10 +3879,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3409,10 +3895,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3423,10 +3911,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3437,10 +3927,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3451,10 +3943,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3465,10 +3959,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3479,10 +3975,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3493,10 +3991,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3507,10 +4007,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3521,10 +4023,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3535,10 +4039,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3549,10 +4055,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3563,10 +4071,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3577,10 +4087,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3591,10 +4103,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3605,10 +4119,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3619,10 +4135,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3633,10 +4151,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3647,10 +4167,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3661,10 +4183,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3675,10 +4199,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3689,10 +4215,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3703,10 +4231,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3717,10 +4247,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3731,10 +4263,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3745,10 +4279,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3759,10 +4295,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3773,10 +4311,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3787,10 +4327,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3801,10 +4343,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3815,10 +4359,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3829,10 +4375,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3843,10 +4391,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3857,10 +4407,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3871,10 +4423,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3885,10 +4439,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3899,10 +4455,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3913,10 +4471,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3927,10 +4487,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3941,10 +4503,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3955,10 +4519,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3969,10 +4535,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3983,10 +4551,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -3997,10 +4567,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4011,10 +4583,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4025,10 +4599,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4039,10 +4615,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4053,10 +4631,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4067,10 +4647,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4081,10 +4663,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4095,10 +4679,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4109,10 +4695,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4123,10 +4711,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4137,10 +4727,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4151,10 +4743,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4165,10 +4759,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4179,10 +4775,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4193,10 +4791,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4207,10 +4807,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: 1,
+          Time: "12",
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4221,10 +4823,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4235,10 +4839,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4249,10 +4855,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4263,10 +4871,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4277,10 +4887,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4291,10 +4903,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4305,10 +4919,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4319,10 +4935,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4333,10 +4951,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4347,10 +4967,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4361,10 +4983,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4375,10 +4999,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4389,10 +5015,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4403,10 +5031,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4417,10 +5047,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4431,10 +5063,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4445,10 +5079,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4459,10 +5095,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4473,10 +5111,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4487,10 +5127,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4501,10 +5143,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4515,10 +5159,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: 1,
+          Time: "1",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4529,10 +5175,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: 1,
+          Time: "1",
+          Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4543,10 +5191,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: 1,
+          Time: "1",
+          Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4557,10 +5207,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: 1,
+          Time: "1",
+          Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4571,10 +5223,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "1A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/1.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4591,10 +5245,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4605,10 +5261,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4619,10 +5277,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4633,10 +5293,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4647,10 +5309,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4661,10 +5325,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4675,10 +5341,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4689,10 +5357,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4703,10 +5373,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4717,10 +5389,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4731,10 +5405,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4745,10 +5421,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4759,10 +5437,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4773,10 +5453,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4787,10 +5469,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4801,10 +5485,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4815,10 +5501,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4829,10 +5517,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4843,10 +5533,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4857,10 +5549,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4871,10 +5565,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4885,10 +5581,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4899,10 +5597,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4913,10 +5613,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4927,10 +5629,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4941,10 +5645,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4955,10 +5661,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4969,10 +5677,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4983,10 +5693,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -4997,10 +5709,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5011,10 +5725,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5025,10 +5741,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5039,10 +5757,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5053,10 +5773,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5067,10 +5789,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5081,10 +5805,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5095,10 +5821,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5109,10 +5837,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5123,10 +5853,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5137,10 +5869,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5151,10 +5885,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5165,10 +5901,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5179,10 +5917,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5193,10 +5933,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5207,10 +5949,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5221,10 +5965,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5235,10 +5981,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5249,10 +5997,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5263,10 +6013,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5277,10 +6029,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5291,10 +6045,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5305,10 +6061,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5319,10 +6077,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5333,10 +6093,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5347,10 +6109,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5361,10 +6125,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5375,10 +6141,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5389,10 +6157,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5403,10 +6173,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5417,10 +6189,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5431,10 +6205,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5445,10 +6221,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5459,10 +6237,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5473,10 +6253,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5487,10 +6269,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5501,10 +6285,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5515,10 +6301,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 3,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5529,10 +6317,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5543,10 +6333,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 3,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5557,10 +6349,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 123,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5571,10 +6365,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5585,10 +6381,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5599,10 +6397,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5613,10 +6413,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5627,10 +6429,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5641,10 +6445,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5655,10 +6461,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5669,10 +6477,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5683,10 +6493,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5697,10 +6509,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5711,10 +6525,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5725,10 +6541,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5739,10 +6557,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 12,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5753,10 +6573,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5767,10 +6589,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5781,10 +6605,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5795,10 +6621,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5809,10 +6637,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5823,10 +6653,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5837,10 +6669,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5851,10 +6685,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5865,10 +6701,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5879,10 +6717,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5893,10 +6733,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5907,10 +6749,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5921,10 +6765,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5935,10 +6781,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5949,10 +6797,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5963,10 +6813,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 1,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5977,10 +6829,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 123,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -5991,10 +6845,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6005,10 +6861,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6019,10 +6877,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6033,10 +6893,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6047,10 +6909,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6061,10 +6925,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 13,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6075,10 +6941,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6089,10 +6957,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6103,10 +6973,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6117,10 +6989,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6131,10 +7005,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6145,10 +7021,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6159,10 +7037,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6173,10 +7053,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6187,10 +7069,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6201,10 +7085,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6215,10 +7101,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6229,10 +7117,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6243,10 +7133,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6257,10 +7149,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 12,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6271,10 +7165,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 2,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6285,10 +7181,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6299,10 +7197,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6313,10 +7213,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6327,10 +7229,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6341,10 +7245,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6355,10 +7261,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6369,10 +7277,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6383,10 +7293,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6397,10 +7309,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6411,10 +7325,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6425,10 +7341,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6439,10 +7357,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6453,10 +7373,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 23,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6467,10 +7389,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 3,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6481,10 +7405,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6495,10 +7421,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6509,10 +7437,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6523,10 +7453,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6537,10 +7469,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6551,10 +7485,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6565,10 +7501,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6579,10 +7517,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6593,10 +7533,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 123,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6607,10 +7549,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6621,10 +7565,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6635,10 +7581,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6649,10 +7597,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6663,10 +7613,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 2,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6677,10 +7629,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 1,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6691,10 +7645,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 1,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6705,10 +7661,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6719,10 +7677,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 1,
           Informal: null,
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6733,10 +7693,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6747,10 +7709,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6761,10 +7725,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6775,10 +7741,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6789,10 +7757,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6803,10 +7773,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6817,10 +7789,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6831,10 +7805,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6845,10 +7821,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6859,10 +7837,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6873,10 +7853,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6887,10 +7869,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6901,10 +7885,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6915,10 +7901,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6929,10 +7917,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6943,10 +7933,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6957,10 +7949,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6971,10 +7965,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6985,10 +7981,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -6999,10 +7997,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7013,10 +8013,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7027,10 +8029,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7041,10 +8045,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7055,10 +8061,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7069,10 +8077,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7083,10 +8093,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7097,10 +8109,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7111,10 +8125,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7125,10 +8141,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7139,10 +8157,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7153,10 +8173,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7167,10 +8189,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7181,10 +8205,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7195,10 +8221,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7209,10 +8237,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7223,10 +8253,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7237,10 +8269,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7251,10 +8285,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7265,10 +8301,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7279,10 +8317,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7293,10 +8333,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7307,10 +8349,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7321,10 +8365,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7335,10 +8381,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7349,10 +8397,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7363,10 +8413,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7377,10 +8429,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7391,10 +8445,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7405,10 +8461,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7419,10 +8477,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7433,10 +8493,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 23,
           Informal: null,
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7447,10 +8509,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7461,10 +8525,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7475,10 +8541,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7489,10 +8557,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7503,10 +8573,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7517,10 +8589,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7531,10 +8605,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7545,10 +8621,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7559,10 +8637,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7573,10 +8653,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7587,10 +8669,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7601,10 +8685,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7615,10 +8701,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7629,10 +8717,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7643,10 +8733,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7657,10 +8749,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7671,10 +8765,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7685,10 +8781,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7699,10 +8797,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7713,10 +8813,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7727,10 +8829,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7741,10 +8845,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7755,10 +8861,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7769,10 +8877,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7783,10 +8893,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7797,10 +8909,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7811,10 +8925,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7825,10 +8941,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7839,10 +8957,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7853,10 +8973,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7867,10 +8989,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7881,10 +9005,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7895,10 +9021,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7909,10 +9037,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7923,10 +9053,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7937,10 +9069,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7951,10 +9085,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7965,10 +9101,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7979,10 +9117,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -7993,10 +9133,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8007,10 +9149,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8021,10 +9165,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8035,10 +9181,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8049,10 +9197,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8063,10 +9213,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8077,10 +9229,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8091,10 +9245,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8105,10 +9261,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8119,10 +9277,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8133,10 +9293,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8147,10 +9309,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8161,10 +9325,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8175,10 +9341,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8189,10 +9357,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8203,10 +9373,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8217,10 +9389,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8231,10 +9405,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8245,10 +9421,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8259,10 +9437,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8273,10 +9453,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8287,10 +9469,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8301,10 +9485,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8315,10 +9501,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8329,10 +9517,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8343,10 +9533,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8357,10 +9549,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8371,10 +9565,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8385,10 +9581,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8399,10 +9597,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8413,10 +9613,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8427,10 +9629,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8441,10 +9645,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8455,10 +9661,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8469,10 +9677,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8483,10 +9693,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8497,10 +9709,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8511,10 +9725,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8525,10 +9741,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8539,10 +9757,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8553,10 +9773,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8567,10 +9789,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8581,10 +9805,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8595,10 +9821,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8609,10 +9837,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8623,10 +9853,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8637,10 +9869,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8651,10 +9885,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8665,10 +9901,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8679,10 +9917,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8693,10 +9933,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8707,10 +9949,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8721,10 +9965,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8735,10 +9981,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8749,10 +9997,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8763,10 +10013,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8777,10 +10029,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8791,10 +10045,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8805,10 +10061,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8819,10 +10077,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8833,10 +10093,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8847,10 +10109,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8861,10 +10125,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8875,10 +10141,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8889,10 +10157,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8903,10 +10173,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8917,10 +10189,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8931,10 +10205,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8945,10 +10221,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8959,10 +10237,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8973,10 +10253,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -8987,10 +10269,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9001,10 +10285,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9015,10 +10301,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9029,10 +10317,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9043,10 +10333,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9057,10 +10349,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9071,10 +10365,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9085,10 +10381,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9099,10 +10397,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9113,10 +10413,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9127,10 +10429,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9141,10 +10445,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9155,10 +10461,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9169,10 +10477,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9183,10 +10493,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9197,10 +10509,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9211,10 +10525,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9225,10 +10541,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9239,10 +10557,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9253,10 +10573,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9267,10 +10589,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9281,10 +10605,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9295,10 +10621,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9309,10 +10637,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9323,10 +10653,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9337,10 +10669,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9351,10 +10685,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9365,10 +10701,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9379,10 +10717,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9393,10 +10733,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9407,10 +10749,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9421,10 +10765,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9435,10 +10781,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9449,10 +10797,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9463,10 +10813,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9477,10 +10829,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 123,
           Informal: null,
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9491,10 +10845,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9505,10 +10861,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9519,10 +10877,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9533,10 +10893,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9547,10 +10909,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9561,21 +10925,28 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
-        geometry: { type: "MultiPoint", coordinates: [[109.1949299, 12.2391]] },
+        geometry: {
+          type: "MultiPoint",
+          coordinates: [[109.1949299, 12.2391]],
+        },
       },
       {
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9586,10 +10957,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9600,10 +10973,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9614,10 +10989,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9628,10 +11005,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9642,10 +11021,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9656,10 +11037,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9670,10 +11053,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9684,10 +11069,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9698,10 +11085,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9712,10 +11101,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9726,10 +11117,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9740,10 +11133,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9754,10 +11149,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9768,10 +11165,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9782,10 +11181,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9796,10 +11197,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9810,10 +11213,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9824,10 +11229,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 13,
           Informal: null,
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9838,10 +11245,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 2,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9852,10 +11261,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9866,10 +11277,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9880,10 +11293,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9894,10 +11309,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9908,10 +11325,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9922,10 +11341,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9936,10 +11357,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9950,10 +11373,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9964,10 +11389,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9978,10 +11405,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -9992,10 +11421,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10006,10 +11437,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10020,10 +11453,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10034,10 +11469,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 3,
           Informal: null,
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10048,10 +11485,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 3,
           Informal: null,
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10062,10 +11501,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10076,10 +11517,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10090,10 +11533,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
+          Time: 13,
           Informal: null,
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10104,10 +11549,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10118,10 +11565,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10132,10 +11581,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10146,10 +11597,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10160,10 +11613,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10174,10 +11629,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10188,10 +11645,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10202,10 +11661,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10216,10 +11677,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10230,10 +11693,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10244,10 +11709,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10258,10 +11725,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10272,10 +11741,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10286,10 +11757,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10300,10 +11773,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10314,10 +11789,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10328,10 +11805,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10342,10 +11821,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10356,10 +11837,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10370,10 +11853,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10384,10 +11869,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10398,10 +11885,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10412,10 +11901,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10426,10 +11917,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10440,10 +11933,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10454,10 +11949,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10468,10 +11965,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10482,10 +11981,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10496,10 +11997,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10510,10 +12013,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10524,10 +12029,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10538,10 +12045,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10552,10 +12061,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10566,10 +12077,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10580,10 +12093,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10594,10 +12109,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10608,10 +12125,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10622,10 +12141,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10636,10 +12157,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10650,10 +12173,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10664,10 +12189,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10678,10 +12205,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10692,10 +12221,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10706,10 +12237,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10720,10 +12253,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10734,10 +12269,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10748,10 +12285,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10762,10 +12301,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10776,10 +12317,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10790,10 +12333,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10804,10 +12349,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10818,10 +12365,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10832,10 +12381,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10846,10 +12397,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10860,10 +12413,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10874,10 +12429,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10888,10 +12445,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10902,10 +12461,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10916,10 +12477,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10930,10 +12493,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10944,10 +12509,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10958,10 +12525,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10972,10 +12541,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -10986,10 +12557,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11000,10 +12573,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11014,10 +12589,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11028,10 +12605,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11042,10 +12621,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11056,10 +12637,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11070,10 +12653,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11084,10 +12669,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11098,10 +12685,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11112,10 +12701,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11126,10 +12717,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11140,10 +12733,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11154,10 +12749,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11168,10 +12765,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11182,10 +12781,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11196,10 +12797,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11210,10 +12813,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11224,10 +12829,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11238,10 +12845,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11252,10 +12861,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11266,10 +12877,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11280,10 +12893,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11294,10 +12909,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11308,10 +12925,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11322,10 +12941,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11336,10 +12957,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11350,10 +12973,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11364,10 +12989,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11378,10 +13005,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11392,10 +13021,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11406,10 +13037,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11420,10 +13053,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11434,10 +13069,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11448,10 +13085,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11462,10 +13101,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11476,10 +13117,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
+          layer: "5A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/5.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11496,10 +13139,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11510,10 +13155,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11524,10 +13171,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11538,10 +13187,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11552,10 +13203,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11566,10 +13219,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11580,10 +13235,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11594,10 +13251,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11608,10 +13267,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11622,10 +13283,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11636,10 +13299,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11650,10 +13315,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11664,10 +13331,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11678,10 +13347,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11692,10 +13363,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11706,10 +13379,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11720,10 +13395,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11734,10 +13411,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11748,10 +13427,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11762,10 +13443,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11776,10 +13459,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11790,10 +13475,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11804,10 +13491,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11818,10 +13507,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11832,10 +13523,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11846,10 +13539,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11860,10 +13555,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Market",
           item_1: "Market",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11874,10 +13571,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11888,10 +13587,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11902,10 +13603,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11916,10 +13619,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11930,10 +13635,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11944,10 +13651,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11958,10 +13667,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11972,10 +13683,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -11986,10 +13699,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12000,10 +13715,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12014,10 +13731,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12028,10 +13747,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12042,10 +13763,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12056,10 +13779,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12070,10 +13795,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12084,10 +13811,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12098,10 +13827,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12112,10 +13843,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12126,10 +13859,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12140,10 +13875,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12154,10 +13891,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12168,10 +13907,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12182,10 +13923,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12196,10 +13939,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12210,10 +13955,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12224,10 +13971,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12238,10 +13987,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12252,10 +14003,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12266,10 +14019,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12280,10 +14035,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12294,10 +14051,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12308,10 +14067,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12322,10 +14083,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12336,10 +14099,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12350,10 +14115,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12364,10 +14131,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12378,10 +14147,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12392,10 +14163,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12406,10 +14179,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12420,10 +14195,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "1",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12434,10 +14211,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12448,10 +14227,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "C&F",
           item_1: "Clothes & Fashion",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12462,10 +14243,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12476,10 +14259,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12490,10 +14275,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12504,10 +14291,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12518,10 +14307,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12532,10 +14323,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12546,10 +14339,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 123,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12560,10 +14355,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12574,10 +14371,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12588,10 +14387,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12602,10 +14403,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 13,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "4A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/4.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12622,10 +14425,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12636,10 +14441,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12650,10 +14457,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12664,10 +14473,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12678,10 +14489,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12692,10 +14505,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12706,10 +14521,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12720,10 +14537,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12734,10 +14553,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
-          Informal: null,
+          Time: "1",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12748,10 +14569,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 2,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12762,10 +14585,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 12,
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12776,10 +14601,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12790,10 +14617,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: null,
-          Informal: null,
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12804,10 +14633,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12818,10 +14649,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12832,10 +14665,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
-          Informal: null,
+          Time: "23",
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12846,10 +14681,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12860,10 +14697,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12874,10 +14713,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12888,10 +14729,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12902,10 +14745,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12916,10 +14761,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12930,10 +14777,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12944,10 +14793,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12958,10 +14809,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12972,10 +14825,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -12986,10 +14841,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13000,10 +14857,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13014,10 +14873,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
-          Informal: null,
+          Time: "12",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13028,10 +14889,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
-          Informal: null,
+          Time: "23",
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13042,10 +14905,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13056,10 +14921,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13070,10 +14937,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13084,10 +14953,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
-          Informal: null,
+          Time: "23",
+          Informal: "1",
           Item: "Market",
           item_1: "Market",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13098,10 +14969,12 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
-          Informal: null,
+          Time: "123",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "3A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/3.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13117,11 +14990,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 1,
-          Time: 2,
-          Informal: 1,
+          id: "1",
+          Time: "2",
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13131,11 +15006,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 2,
-          Time: 2,
-          Informal: 1,
+          id: "2",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13145,11 +15022,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 3,
-          Time: 1,
-          Informal: 1,
+          id: "3",
+          Time: "1",
+          Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13159,11 +15038,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 4,
-          Time: 2,
-          Informal: 1,
+          id: "4",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13173,11 +15054,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 5,
-          Time: 2,
-          Informal: 1,
+          id: "5",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13187,11 +15070,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 6,
-          Time: 2,
-          Informal: 0,
+          id: "6",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13201,11 +15086,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 7,
-          Time: 2,
-          Informal: 1,
+          id: "7",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13215,11 +15102,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 8,
-          Time: null,
-          Informal: null,
+          id: "8",
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13229,11 +15118,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 9,
-          Time: null,
-          Informal: null,
+          id: "9",
+          Time: 123,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13243,11 +15134,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 10,
-          Time: 3,
-          Informal: 1,
+          id: "10",
+          Time: "3",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13257,11 +15150,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 11,
-          Time: 2,
-          Informal: 1,
+          id: "11",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13271,11 +15166,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 12,
-          Time: null,
-          Informal: null,
+          id: "12",
+          Time: 1,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13285,11 +15182,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 13,
-          Time: null,
-          Informal: null,
+          id: "13",
+          Time: 2,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13299,11 +15198,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 14,
-          Time: null,
-          Informal: null,
+          id: "14",
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13313,11 +15214,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 15,
-          Time: null,
-          Informal: null,
+          id: "15",
+          Time: 1,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13327,11 +15230,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 16,
-          Time: 3,
-          Informal: null,
+          id: "16",
+          Time: "3",
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13341,11 +15246,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 17,
-          Time: null,
-          Informal: null,
+          id: "17",
+          Time: 23,
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13355,11 +15262,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 18,
-          Time: null,
-          Informal: null,
+          id: "18",
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13369,11 +15278,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 19,
-          Time: null,
-          Informal: null,
+          id: "19",
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13383,11 +15294,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 20,
-          Time: null,
-          Informal: null,
+          id: "20",
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13397,11 +15310,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 21,
-          Time: null,
-          Informal: null,
+          id: "21",
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13411,11 +15326,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 21,
-          Time: null,
-          Informal: null,
+          id: "21",
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13425,11 +15342,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 22,
-          Time: 23,
-          Informal: 1,
+          id: "22",
+          Time: "23",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13439,11 +15358,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 23,
-          Time: 2,
-          Informal: 1,
+          id: "23",
+          Time: "2",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13453,11 +15374,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 24,
-          Time: null,
-          Informal: null,
+          id: "24",
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13467,11 +15390,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 25,
-          Time: null,
-          Informal: null,
+          id: "25",
+          Time: 12,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13481,11 +15406,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 26,
-          Time: null,
-          Informal: null,
+          id: "26",
+          Time: 12,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13495,11 +15422,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 27,
-          Time: null,
-          Informal: null,
+          id: "27",
+          Time: 12,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13509,11 +15438,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 27,
-          Time: null,
-          Informal: null,
+          id: "27",
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13523,11 +15454,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 28,
-          Time: null,
-          Informal: null,
+          id: "28",
+          Time: 23,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13537,11 +15470,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 29,
-          Time: null,
-          Informal: null,
+          id: "29",
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13551,11 +15486,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 30,
-          Time: 2,
-          Informal: null,
+          id: "30",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13565,11 +15502,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 31,
-          Time: null,
-          Informal: null,
+          id: "31",
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13579,11 +15518,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 32,
-          Time: null,
-          Informal: null,
+          id: "32",
+          Time: 123,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13593,11 +15534,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 32,
-          Time: null,
-          Informal: null,
+          id: "32",
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13607,11 +15550,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 33,
-          Time: null,
-          Informal: null,
+          id: "33",
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13621,11 +15566,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 34,
-          Time: null,
-          Informal: null,
+          id: "34",
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13635,11 +15582,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 35,
-          Time: null,
-          Informal: null,
+          id: "35",
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13649,11 +15598,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 36,
-          Time: 2,
-          Informal: null,
+          id: "36",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13663,11 +15614,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 37,
-          Time: null,
-          Informal: null,
+          id: "37",
+          Time: 13,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13677,11 +15630,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 38,
-          Time: null,
-          Informal: null,
+          id: "38",
+          Time: 3,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13691,11 +15646,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 39,
-          Time: 2,
-          Informal: 1,
+          id: "39",
+          Time: "2",
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13705,11 +15662,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 40,
-          Time: null,
-          Informal: 1,
+          id: "40",
+          Time: 23,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13719,11 +15678,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 41,
-          Time: null,
-          Informal: 1,
+          id: "41",
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13733,11 +15694,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 41,
-          Time: null,
-          Informal: null,
+          id: "41",
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13747,11 +15710,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 42,
-          Time: null,
-          Informal: null,
+          id: "42",
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13761,11 +15726,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 43,
-          Time: null,
-          Informal: null,
+          id: "43",
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13775,11 +15742,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 44,
-          Time: null,
-          Informal: null,
+          id: "44",
+          Time: 123,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13789,11 +15758,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 45,
-          Time: null,
-          Informal: null,
+          id: "45",
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13803,11 +15774,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 47,
-          Time: null,
-          Informal: null,
+          id: "47",
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13817,11 +15790,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 48,
-          Time: null,
-          Informal: null,
+          id: "48",
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13831,11 +15806,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 49,
-          Time: null,
-          Informal: null,
+          id: "49",
+          Time: 23,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13845,11 +15822,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 50,
-          Time: null,
-          Informal: null,
+          id: "50",
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13859,11 +15838,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 51,
-          Time: null,
-          Informal: null,
+          id: "51",
+          Time: 12,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13873,11 +15854,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 52,
-          Time: 3,
-          Informal: 1,
+          id: "52",
+          Time: "3",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13887,11 +15870,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 53,
-          Time: 2,
-          Informal: null,
+          id: "53",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13901,11 +15886,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 54,
-          Time: 2,
-          Informal: null,
+          id: "54",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13915,11 +15902,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 55,
-          Time: 2,
-          Informal: null,
+          id: "55",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13929,11 +15918,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 56,
-          Time: null,
-          Informal: null,
+          id: "56",
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13943,11 +15934,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 57,
-          Time: null,
-          Informal: null,
+          id: "57",
+          Time: 2,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13957,11 +15950,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 58,
-          Time: null,
-          Informal: null,
+          id: "58",
+          Time: 3,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13971,11 +15966,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 59,
-          Time: null,
+          id: "59",
+          Time: 13,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13985,11 +15982,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 60,
-          Time: null,
-          Informal: null,
+          id: "60",
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -13999,11 +15998,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 61,
-          Time: null,
-          Informal: null,
+          id: "61",
+          Time: 123,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14013,11 +16014,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 62,
-          Time: 2,
-          Informal: null,
+          id: "62",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14027,11 +16030,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 63,
-          Time: 2,
-          Informal: null,
+          id: "63",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14041,11 +16046,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 64,
-          Time: 2,
-          Informal: null,
+          id: "64",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14055,11 +16062,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 63,
-          Time: null,
-          Informal: null,
+          id: "63",
+          Time: 1,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14069,11 +16078,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 63,
-          Time: 2,
-          Informal: 1,
+          id: "63",
+          Time: "2",
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14083,11 +16094,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 64,
-          Time: 2,
-          Informal: null,
+          id: "64",
+          Time: "2",
+          Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14097,11 +16110,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 65,
-          Time: 2,
-          Informal: 1,
+          id: "65",
+          Time: "2",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14111,11 +16126,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 66,
-          Time: 2,
-          Informal: 1,
+          id: "66",
+          Time: "2",
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14125,11 +16142,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 67,
-          Time: null,
-          Informal: null,
+          id: "67",
+          Time: 2,
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14139,11 +16158,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 67,
-          Time: null,
-          Informal: null,
+          id: "67",
+          Time: 123,
+          Informal: "1",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14153,11 +16174,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 68,
-          Time: null,
-          Informal: null,
+          id: "68",
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14167,11 +16190,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 69,
-          Time: null,
-          Informal: null,
+          id: "69",
+          Time: 13,
+          Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14181,11 +16206,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 70,
-          Time: 2,
-          Informal: 1,
+          id: "70",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14195,11 +16222,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 70,
-          Time: 2,
-          Informal: 1,
+          id: "70",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14209,11 +16238,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 71,
-          Time: 2,
-          Informal: 1,
+          id: "71",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14223,11 +16254,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 71,
-          Time: 2,
-          Informal: 1,
+          id: "71",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14237,11 +16270,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 72,
-          Time: 2,
-          Informal: 1,
+          id: "72",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14251,11 +16286,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 72,
-          Time: 2,
-          Informal: 1,
+          id: "72",
+          Time: "2",
+          Informal: "0",
           Item: "F&B",
           item_1: "F&B",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14265,11 +16302,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 73,
-          Time: null,
-          Informal: null,
+          id: "73",
+          Time: 2,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14279,11 +16318,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 74,
-          Time: null,
-          Informal: null,
+          id: "74",
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14293,11 +16334,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 76,
-          Time: null,
-          Informal: null,
+          id: "76",
+          Time: 23,
+          Informal: "0",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",
@@ -14307,11 +16350,13 @@ export const activitiesData = [
       {
         type: "Feature",
         properties: {
-          id: 77,
-          Time: 2,
-          Informal: 1,
+          id: "77",
+          Time: "2",
+          Informal: "1",
           Item: "misc",
           item_1: "misc.",
+          layer: "2A",
+          path: "D:/OneDrive/Work & Jobs/Nhatrang/GEOJSON file/Activities Map/2.geojson",
         },
         geometry: {
           type: "MultiPoint",

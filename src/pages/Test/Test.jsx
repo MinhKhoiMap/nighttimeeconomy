@@ -12,7 +12,27 @@ const urlImageArr = [
 const Test = () => {
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0">
-      {/* <video src={video1} loop muted autoPlay={"autoplay"} preLoad="auto" /> */}
+      {/* <Layer
+            id="buildinguse_selection"
+            type="fill-extrusion"
+            paint={{
+              "fill-extrusion-color": [
+                "match",
+                ["get", "Buildsused"],
+                ...CaseBuildinguseValues,
+                // Other Values
+                "rgba(255, 196, 54, 0.3)",
+              ],
+              "fill-extrusion-height": 15,
+              "fill-extrusion-base": 0,
+              "fill-extrusion-opacity": 0.6,
+            }}
+            filter={
+              filterBuilding
+                ? ["==", ["get", "Buildsused"], filterBuilding]
+                : ["!=", ["get", "Buildsused"], null]
+            }
+          /> */}
     </div>
   );
 };

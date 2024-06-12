@@ -37,7 +37,7 @@ const Buildinguse = ({ site }) => {
   const [infoTablePosition, setInfoTablePosition] = useState(null);
   const [showTable, setShowTable] = useState(false);
   const [infoTable, setInfoTable] = useState([]);
-  const [buildingIntersection, setBuildingIntersection] = useState([]);
+  const [buildingIntersection, setBuildingIntersection] = useState(null);
 
   const [filterBuilding, setFilterBuilding] = useState(null);
 
@@ -104,20 +104,22 @@ const Buildinguse = ({ site }) => {
 
   // Before drawing building, filtering all building outside the selected area boundary
   useEffect(() => {
-    let intersectBuildingGeos = buildinguseData[site].features.filter(
-      (buildingGeo) => {
-        return turf.booleanIntersects(
-          turf.polygon(buildingGeo.geometry.coordinates),
-          turf.polygon(siteSelectionData.features[site].geometry.coordinates)
-        );
-      }
-    );
+    if (site) {
+      let intersectBuildingGeos = buildinguseData[site].features.filter(
+        (buildingGeo) => {
+          return turf.booleanIntersects(
+            turf.polygon(buildingGeo.geometry.coordinates),
+            turf.polygon(siteSelectionData.features[site].geometry.coordinates)
+          );
+        }
+      );
 
-    setBuildingIntersection({
-      type: "FeatureCollection",
-      name: "",
-      features: intersectBuildingGeos,
-    });
+      setBuildingIntersection({
+        type: "FeatureCollection",
+        name: "",
+        features: intersectBuildingGeos,
+      });
+    }
   }, [site]);
 
   return (

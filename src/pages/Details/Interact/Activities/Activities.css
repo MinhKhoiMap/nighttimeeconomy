@@ -42,15 +42,13 @@
   border-bottom-right-radius: 8px;
 }
 
-.time-table tr:hover td {
+.time-table .time_filter:hover {
   background: #000;
-}
-
-.time-table tbody tr {
   cursor: pointer;
-  position: relative;
 }
 
-.time-table tr.active td {
+.time-table .active {
   background: pink !important;
+  color: #000 !important;
+  font-weight: bold;
 }

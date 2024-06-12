@@ -15,6 +15,8 @@ import Details from "./pages/Details/Details";
 import Test from "./pages/Test/Test";
 import AboutProject from "./pages/AboutProject/AboutProject";
 
+import generateActivities from "./utils/generateTiming";
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaGVsbG9pYW1raG9pIiwiYSI6ImNscWtoODB0MzIyeTEybm1rc2l1YWg0bm8ifQ.wOn1q83oPkWNJBap0KFrWQ";
 
@@ -92,7 +94,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/nha_trang" element={<SiteSelection />}>
-            {/* This childer route decide children component which will be mounted in SiteSelection parent component*/}
+            {/* This childer route decide children component which will be mounted
+            in SiteSelection parent component */}
             <Route path="/nha_trang/:site" element={<Details />} />
           </Route>
           <Route path="/about_project" element={<AboutProject />} />
