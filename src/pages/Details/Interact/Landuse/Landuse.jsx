@@ -40,6 +40,14 @@ const Landuse = ({ site }) => {
     function controlInfoTable(e) {
       setShowTable(true);
 
+      console.log(e.features[0]);
+
+      let hoveredPolygonId = e.features[0].id;
+      map.setFeatureState(
+        { source: "landuse", id: hoveredPolygonId },
+        { hover: true }
+      );
+
       let polygon =
         e.features[0].geometry.type === "Polygon"
           ? turf.polygon(e.features[0].geometry.coordinates)
@@ -49,7 +57,7 @@ const Landuse = ({ site }) => {
         { title: "Landuse", content: e.features[0].properties.Landuse },
         {
           title: "Area",
-          content: turf.round(turf.area(polygon), 5) + " m2",
+          content: <div>{turf.round(turf.area(polygon), 5)} m&sup2;</div>,
         },
       ]);
 
@@ -103,7 +111,7 @@ const Landuse = ({ site }) => {
   return (
     <>
       {site && (
-        <Source type="geojson" data={landuseData[site]} generateId={true}>
+        <Source type="geojson" data={landuseData[site]} id="landuse">
           <Layer
             id="landuse_selection"
             type="fill"

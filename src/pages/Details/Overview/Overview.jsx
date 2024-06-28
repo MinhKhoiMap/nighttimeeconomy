@@ -7,16 +7,15 @@ import LottieIcon from "../../../components/LottieIcon/LottieIcon";
 
 // Assets
 import "./Overview.css";
-import group1 from "../../../assets/images/Team_5/group_photo/IMG_20230717_110239_291.jpg";
-import img2 from "../../../assets/images/Team_5/group_photo/IMG_20230722_172101_262.jpg";
 import zoom_icon from "../../../assets/images/zoom_icon.json";
 import roads from "../../../assets/data/roads";
+import { siteSelectionData } from "../../../assets/data/site";
 
-import video3 from "../../../assets/videos/GROUP3.mp4";
-import video4 from "../../../assets/videos/GROUP4.mp4";
+// Utils
+import { fitAreaUtls } from "../../../utils/fitAreaUtls";
 
-const imgUrl = [group1, img2, group1, group1, img2, group1, group1, group1];
-const videoUrl = [video3, video4];
+const imgUrl = [];
+const videoUrl = [];
 
 const Overview = ({ areaName, siteIndex }) => {
   const imageGalleryRef = useRef();
@@ -25,7 +24,6 @@ const Overview = ({ areaName, siteIndex }) => {
 
   const [isShowSlider, setIsShowSlider] = useState(false);
   const [roadState, setRoadState] = useState(null);
-  const [roadIndex, setRoadIndex] = useState(0);
   const [arc, setArc] = useState(null);
   const [point, setPoint] = useState(null);
 
@@ -35,21 +33,12 @@ const Overview = ({ areaName, siteIndex }) => {
 
   // Handling the point animation, when the point move to the end of the road, change to next road
   function animateRoad() {
-    if (counter < steps) {
-      setPoint(turf.point(arc[counter]));
-      requestID = requestAnimationFrame(animateRoad);
-    } else {
+    if (!(counter < steps)) {
       counter = 0;
-      setPoint(null);
-      if (roads[siteIndex].features.length - 1 > roadIndex) {
-        changeRoad(roadIndex + 1);
-        setRoadIndex(roadIndex + 1);
-      } else {
-        changeRoad(0);
-        setRoadIndex(0);
-      }
     }
 
+    setPoint(turf.point(arc[counter]));
+    requestID = requestAnimationFrame(animateRoad);
     counter++;
   }
 
@@ -77,8 +66,16 @@ const Overview = ({ areaName, siteIndex }) => {
     calcPointPart(id);
   }
 
+  const fitArea = () => {
+    fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
+      padding: { top: 60, bottom: 60, left: 800, right: 50 },
+      duration: 400,
+    });
+  };
+
   useEffect(() => {
     changeRoad(0);
+    fitArea();
   }, [siteIndex]);
 
   useEffect(() => {

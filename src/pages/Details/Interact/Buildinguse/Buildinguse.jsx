@@ -126,12 +126,10 @@ const Buildinguse = ({ site }) => {
     <>
       {buildingIntersection && (
         <Source type="geojson" data={buildingIntersection}>
-          {/* Paint and Filter logic are the same in landuse */}
           <Layer
             id="buildinguse_selection"
             type="fill"
             paint={{
-              "fill-outline-color": "pink",
               "fill-color": [
                 "match",
                 ["get", "Buildsused"],

@@ -152,8 +152,12 @@ const Activities = ({ site }) => {
             filterActivities
               ? ["==", ["get", "item_1"], filterActivities]
               : ["!=", ["get", "item_1"], null],
-            filterTime && filterTime.informal == "1"
-              ? ["in", ["get", "Time"], filterTime.time]
+            filterTime
+              ? [
+                  ">=",
+                  ["index-of", filterTime.time, ["to-string", ["get", "Time"]]],
+                  0,
+                ]
               : ["!=", ["get", "Time"], null],
             filterTime
               ? ["==", ["get", "Informal"], filterTime.informal]
@@ -182,8 +186,12 @@ const Activities = ({ site }) => {
             filterActivities
               ? ["==", ["get", "item_1"], filterActivities]
               : ["!=", ["get", "item_1"], null],
-            filterTime && filterTime.informal == "1"
-              ? ["in", ["get", "Time"], filterTime.time]
+            filterTime
+              ? [
+                  ">=",
+                  ["index-of", filterTime.time, ["to-string", ["get", "Time"]]],
+                  0,
+                ]
               : ["!=", ["get", "Time"], null],
             filterTime
               ? ["==", ["get", "Informal"], filterTime.informal]

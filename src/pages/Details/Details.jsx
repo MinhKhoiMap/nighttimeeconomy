@@ -28,7 +28,12 @@ const Details = () => {
   const [viewMode, setViewMode] = useState(viewModeArr[2]);
   const [areaName, setAreaName] = useState("");
 
-  // Handle Fitbounds to the selected area
+  // Change Selected Site State
+  useEffect(() => {
+    setSiteIndex(site);
+    setAreaName(`area ${new Number(site) + 1}`);
+  });
+
   const fitArea = () => {
     if (siteIndex) {
       if (viewMode !== viewModeArr[0])
@@ -38,22 +43,11 @@ const Details = () => {
         });
       else
         fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
-          padding: { top: 60, bottom: 60, left: 800, right: 50 },
+          padding: { top: 60, bottom: 60, left: 600, right: 50 },
           duration: 400,
         });
     }
   };
-
-  // Change Selected Site State
-  useEffect(() => {
-    setSiteIndex(site);
-    setAreaName(`area ${new Number(site) + 1}`);
-  });
-
-  // Handle Fit Bounds When Change Site State (siteIndex, viewMode state)
-  useEffect(() => {
-    fitArea();
-  }, [siteIndex, viewMode]);
 
   // handle Top Navbar
   useEffect(() => {
@@ -99,12 +93,12 @@ const Details = () => {
           >
             Night Time Economy
           </h3>
-          <p
+          <button
             className="cursor-pointer capitalize ml-4 px-3 hover:text-white transition-colors duration-150"
             onClick={fitArea}
           >
             {areaName}
-          </p>
+          </button>
           <button
             className={`text-white text-center ${
               viewMode === viewModeArr[0] && "current-mode"
@@ -115,32 +109,34 @@ const Details = () => {
           </button>
           <button
             className={`text-white text-center ${
-              viewMode === viewModeArr[1] && "current-mode"
-            }`}
-            onClick={() => setViewMode(viewModeArr[1])}
-          >
-            Project
-          </button>
-          <button
-            className={`text-white text-center ${
               viewMode === viewModeArr[2] && "current-mode"
             }`}
             onClick={() => setViewMode(viewModeArr[2])}
           >
             Interact
           </button>
+          <button
+            className={`text-white text-center ${
+              viewMode === viewModeArr[1] && "current-mode"
+            }`}
+            onClick={() => setViewMode(viewModeArr[1])}
+          >
+            Project
+          </button>
         </div>
       </div>
 
-      {viewMode === viewModeArr[2] && <Interact siteIndex={siteIndex} />}
-      {viewMode === viewModeArr[1] && (
+      {viewMode === viewModeArr[2] && siteIndex && (
+        <Interact siteIndex={siteIndex} />
+      )}
+      {viewMode === viewModeArr[1] && siteIndex && (
         <Project
           groupIndex={siteIndex}
           projectName={"group 1 - name project"}
           setShowProjectMode={() => setViewMode(viewModeArr[2])}
         />
       )}
-      {viewMode === viewModeArr[0] && (
+      {viewMode === viewModeArr[0] && siteIndex && (
         <Overview areaName={areaName} siteIndex={siteIndex} />
       )}
     </>

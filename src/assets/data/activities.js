@@ -7,7 +7,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -23,7 +23,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -39,7 +39,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -55,7 +55,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -71,7 +71,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -87,7 +87,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -103,7 +103,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -119,7 +119,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -135,7 +135,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -183,7 +183,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -199,7 +199,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -215,7 +215,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -231,7 +231,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -247,7 +247,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -263,7 +263,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -279,7 +279,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -295,7 +295,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -311,7 +311,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -327,7 +327,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -343,7 +343,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -359,7 +359,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -375,7 +375,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -407,7 +407,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -423,7 +423,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -439,7 +439,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -455,7 +455,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -471,7 +471,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -487,7 +487,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 3,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -503,7 +503,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -519,7 +519,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -535,7 +535,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -551,7 +551,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -567,7 +567,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -583,7 +583,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
@@ -599,7 +599,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -615,7 +615,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -631,7 +631,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -647,7 +647,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 23,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -679,7 +679,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -695,7 +695,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -711,7 +711,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -727,7 +727,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -743,7 +743,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -759,7 +759,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -775,7 +775,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -791,7 +791,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -807,7 +807,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -839,7 +839,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -855,7 +855,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
@@ -871,7 +871,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -887,7 +887,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -903,7 +903,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -919,7 +919,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -999,7 +999,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1015,7 +1015,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1031,7 +1031,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1047,7 +1047,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1063,7 +1063,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1079,7 +1079,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1095,7 +1095,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1111,7 +1111,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1127,7 +1127,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1143,7 +1143,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1159,7 +1159,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1175,7 +1175,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1191,7 +1191,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1223,7 +1223,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1255,7 +1255,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1271,7 +1271,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1287,7 +1287,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1319,7 +1319,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1335,7 +1335,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1367,7 +1367,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1383,7 +1383,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1399,7 +1399,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1415,7 +1415,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1447,7 +1447,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1463,7 +1463,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1479,7 +1479,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1495,7 +1495,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1511,7 +1511,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1527,7 +1527,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1559,7 +1559,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -1575,7 +1575,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -1623,7 +1623,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -1639,7 +1639,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1655,7 +1655,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1671,7 +1671,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1687,7 +1687,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1719,7 +1719,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1735,7 +1735,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1751,7 +1751,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1767,7 +1767,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -1815,7 +1815,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -1847,7 +1847,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1863,7 +1863,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1879,7 +1879,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1895,7 +1895,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1943,7 +1943,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1959,7 +1959,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1975,7 +1975,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -1991,7 +1991,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2007,7 +2007,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2023,7 +2023,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2055,7 +2055,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2071,7 +2071,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2087,7 +2087,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2103,7 +2103,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2119,7 +2119,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2151,7 +2151,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2167,7 +2167,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2183,7 +2183,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2215,7 +2215,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2247,7 +2247,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: null,
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -2263,7 +2263,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2279,7 +2279,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2295,7 +2295,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2311,7 +2311,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2327,7 +2327,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2343,7 +2343,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2359,7 +2359,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2391,7 +2391,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2423,7 +2423,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2439,7 +2439,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2471,7 +2471,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2503,7 +2503,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2519,7 +2519,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2535,7 +2535,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2551,7 +2551,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2567,7 +2567,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2615,7 +2615,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2631,7 +2631,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2647,7 +2647,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2679,7 +2679,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2695,7 +2695,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2711,7 +2711,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2727,7 +2727,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2743,7 +2743,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2775,7 +2775,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2791,7 +2791,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2807,7 +2807,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2823,7 +2823,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2839,7 +2839,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2855,7 +2855,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2871,7 +2871,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2887,7 +2887,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2919,7 +2919,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2935,7 +2935,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2951,7 +2951,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2967,7 +2967,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2983,7 +2983,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -2999,7 +2999,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3015,7 +3015,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3031,7 +3031,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3047,7 +3047,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3063,7 +3063,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3079,7 +3079,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3095,7 +3095,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3111,7 +3111,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3127,7 +3127,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3143,7 +3143,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3175,7 +3175,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3191,7 +3191,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3207,7 +3207,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3223,7 +3223,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3239,7 +3239,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3255,7 +3255,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3271,7 +3271,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3287,7 +3287,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3319,7 +3319,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3335,7 +3335,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3367,7 +3367,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3383,7 +3383,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3399,7 +3399,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3415,7 +3415,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3431,7 +3431,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3447,7 +3447,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3463,7 +3463,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3495,7 +3495,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3511,7 +3511,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3527,7 +3527,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3543,7 +3543,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3575,7 +3575,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3591,7 +3591,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3623,7 +3623,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3639,7 +3639,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3655,7 +3655,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3671,7 +3671,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3687,7 +3687,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3703,7 +3703,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3719,7 +3719,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3735,7 +3735,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3767,7 +3767,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3783,7 +3783,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3799,7 +3799,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3815,7 +3815,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3831,7 +3831,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3863,7 +3863,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3879,7 +3879,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3895,7 +3895,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3911,7 +3911,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3927,7 +3927,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3943,7 +3943,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3959,7 +3959,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3975,7 +3975,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -3991,7 +3991,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4007,7 +4007,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4023,7 +4023,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4039,7 +4039,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4055,7 +4055,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4071,7 +4071,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4103,7 +4103,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4119,7 +4119,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -4199,7 +4199,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4231,7 +4231,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4279,7 +4279,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4327,7 +4327,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4375,7 +4375,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4391,7 +4391,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4407,7 +4407,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4423,7 +4423,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4439,7 +4439,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4455,7 +4455,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4471,7 +4471,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4487,7 +4487,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4535,7 +4535,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4551,7 +4551,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4583,7 +4583,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4599,7 +4599,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4631,7 +4631,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4663,7 +4663,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4695,7 +4695,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4727,7 +4727,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4743,7 +4743,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4759,7 +4759,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4775,7 +4775,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4791,7 +4791,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4823,7 +4823,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4839,7 +4839,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4855,7 +4855,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4871,7 +4871,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4887,7 +4887,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -4903,7 +4903,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -4919,7 +4919,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -4935,7 +4935,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -4951,7 +4951,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -4983,7 +4983,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -4999,7 +4999,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -5015,7 +5015,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -5031,7 +5031,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -5063,7 +5063,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "A&C",
           item_1: "Art & Craft",
@@ -5095,7 +5095,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -5127,7 +5127,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -5223,7 +5223,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -5245,7 +5245,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5261,7 +5261,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5277,7 +5277,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5293,7 +5293,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 123,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5309,7 +5309,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5325,7 +5325,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5341,7 +5341,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 123,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5357,7 +5357,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 23,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5373,7 +5373,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5389,7 +5389,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 123,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5405,7 +5405,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5421,7 +5421,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5437,7 +5437,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5453,7 +5453,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5469,7 +5469,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5485,7 +5485,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5517,7 +5517,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5533,7 +5533,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5565,7 +5565,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5581,7 +5581,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5597,7 +5597,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5613,7 +5613,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 13,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5629,7 +5629,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5645,7 +5645,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5661,7 +5661,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 23,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5677,7 +5677,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5709,7 +5709,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5725,7 +5725,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5741,7 +5741,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5757,7 +5757,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5773,7 +5773,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5789,7 +5789,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5805,7 +5805,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 123,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -5821,7 +5821,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5837,7 +5837,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5853,7 +5853,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5869,7 +5869,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -5901,7 +5901,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -5933,7 +5933,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -5949,7 +5949,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -5965,7 +5965,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -5981,7 +5981,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -5997,7 +5997,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6013,7 +6013,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6029,7 +6029,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6045,7 +6045,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6061,7 +6061,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6077,7 +6077,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -6093,7 +6093,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6109,7 +6109,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6125,7 +6125,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6141,7 +6141,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6189,7 +6189,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6205,7 +6205,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6221,7 +6221,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6237,7 +6237,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6253,7 +6253,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6269,7 +6269,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Entertainm",
           item_1: "Entertainment",
@@ -6285,7 +6285,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6301,7 +6301,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -6317,7 +6317,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6333,7 +6333,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 123,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -6349,7 +6349,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -6365,7 +6365,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6381,7 +6381,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -6397,7 +6397,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6413,7 +6413,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6429,7 +6429,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6477,7 +6477,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6493,7 +6493,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6509,7 +6509,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6525,7 +6525,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6541,7 +6541,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6557,7 +6557,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 23,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -6573,7 +6573,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6589,7 +6589,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6621,7 +6621,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6637,7 +6637,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6653,7 +6653,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6685,7 +6685,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6717,7 +6717,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6765,7 +6765,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6781,7 +6781,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6797,7 +6797,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6813,7 +6813,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -6829,7 +6829,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 13,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -6845,7 +6845,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6861,7 +6861,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6877,7 +6877,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6893,7 +6893,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6909,7 +6909,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6941,7 +6941,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6957,7 +6957,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6973,7 +6973,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -6989,7 +6989,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7005,7 +7005,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7021,7 +7021,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7037,7 +7037,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7053,7 +7053,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7085,7 +7085,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7101,7 +7101,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7117,7 +7117,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7149,7 +7149,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 123,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7165,7 +7165,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 123,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7181,7 +7181,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7197,7 +7197,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7213,7 +7213,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7229,7 +7229,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7245,7 +7245,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7277,7 +7277,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7293,7 +7293,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7309,7 +7309,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7325,7 +7325,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7357,7 +7357,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7373,7 +7373,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7389,7 +7389,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7405,7 +7405,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7437,7 +7437,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7453,7 +7453,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7469,7 +7469,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7517,7 +7517,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7533,7 +7533,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 3,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7549,7 +7549,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7565,7 +7565,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7581,7 +7581,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7597,7 +7597,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7613,7 +7613,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 23,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7629,7 +7629,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 3,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7645,7 +7645,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 13,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7661,7 +7661,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7677,7 +7677,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 13,
           Informal: null,
           Item: "Market",
           item_1: "Market",
@@ -7693,7 +7693,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7725,7 +7725,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7757,7 +7757,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7789,7 +7789,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7805,7 +7805,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7853,7 +7853,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7885,7 +7885,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7917,7 +7917,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7933,7 +7933,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7949,7 +7949,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7965,7 +7965,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -7981,7 +7981,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -8013,7 +8013,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -8029,7 +8029,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "1",
           Item: "Market",
           item_1: "Market",
@@ -8045,7 +8045,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 3,
           Informal: "1",
           Item: "Market",
           item_1: "Market",
@@ -8061,7 +8061,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -8077,7 +8077,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 3,
           Informal: "1",
           Item: "Market",
           item_1: "Market",
@@ -8093,7 +8093,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -8109,7 +8109,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -8141,7 +8141,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8157,7 +8157,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 13,
           Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8173,7 +8173,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8205,7 +8205,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8221,7 +8221,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8253,7 +8253,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8269,7 +8269,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8285,7 +8285,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8301,7 +8301,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8317,7 +8317,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8349,7 +8349,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8365,7 +8365,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8381,7 +8381,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8397,7 +8397,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8413,7 +8413,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8429,7 +8429,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8445,7 +8445,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8461,7 +8461,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8477,7 +8477,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8493,7 +8493,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: null,
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8509,7 +8509,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8525,7 +8525,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8541,7 +8541,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 3,
           Informal: "1",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8557,7 +8557,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8573,7 +8573,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8605,7 +8605,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8621,7 +8621,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8637,7 +8637,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8653,7 +8653,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8669,7 +8669,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8685,7 +8685,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8701,7 +8701,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8717,7 +8717,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8733,7 +8733,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8749,7 +8749,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8765,7 +8765,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8781,7 +8781,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8797,7 +8797,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8813,7 +8813,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8829,7 +8829,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8845,7 +8845,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8861,7 +8861,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8877,7 +8877,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8893,7 +8893,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8925,7 +8925,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8941,7 +8941,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8957,7 +8957,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8973,7 +8973,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -8989,7 +8989,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9005,7 +9005,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9021,7 +9021,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9037,7 +9037,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9053,7 +9053,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9069,7 +9069,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9085,7 +9085,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9101,7 +9101,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9117,7 +9117,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9133,7 +9133,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9149,7 +9149,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9181,7 +9181,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9197,7 +9197,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9213,7 +9213,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9245,7 +9245,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9261,7 +9261,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9277,7 +9277,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9293,7 +9293,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9309,7 +9309,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9357,7 +9357,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9373,7 +9373,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9389,7 +9389,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9405,7 +9405,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9421,7 +9421,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9437,7 +9437,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9453,7 +9453,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9469,7 +9469,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9501,7 +9501,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9517,7 +9517,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9533,7 +9533,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9549,7 +9549,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9565,7 +9565,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9581,7 +9581,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9597,7 +9597,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9613,7 +9613,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9629,7 +9629,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9645,7 +9645,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9661,7 +9661,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9677,7 +9677,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9693,7 +9693,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9709,7 +9709,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9725,7 +9725,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9741,7 +9741,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9757,7 +9757,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9773,7 +9773,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9789,7 +9789,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9805,7 +9805,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9821,7 +9821,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9837,7 +9837,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9853,7 +9853,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9869,7 +9869,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9885,7 +9885,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9901,7 +9901,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9917,7 +9917,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9933,7 +9933,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9949,7 +9949,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9965,7 +9965,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -9981,7 +9981,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10013,7 +10013,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10029,7 +10029,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10045,7 +10045,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10061,7 +10061,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10077,7 +10077,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10093,7 +10093,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10109,7 +10109,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10125,7 +10125,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10141,7 +10141,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10157,7 +10157,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10189,7 +10189,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10205,7 +10205,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10221,7 +10221,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10237,7 +10237,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10253,7 +10253,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10285,7 +10285,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10301,7 +10301,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10317,7 +10317,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10333,7 +10333,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10349,7 +10349,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10365,7 +10365,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10381,7 +10381,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10397,7 +10397,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10413,7 +10413,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10429,7 +10429,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10445,7 +10445,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10461,7 +10461,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10477,7 +10477,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10493,7 +10493,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10509,7 +10509,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10541,7 +10541,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10557,7 +10557,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10573,7 +10573,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10589,7 +10589,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10605,7 +10605,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10621,7 +10621,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10637,7 +10637,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10653,7 +10653,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10669,7 +10669,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10717,7 +10717,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10733,7 +10733,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10749,7 +10749,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10765,7 +10765,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10781,7 +10781,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10797,7 +10797,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10813,7 +10813,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10829,7 +10829,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 3,
           Informal: null,
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10845,7 +10845,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10861,7 +10861,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10877,7 +10877,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10893,7 +10893,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10909,7 +10909,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10925,7 +10925,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10941,7 +10941,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10957,7 +10957,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -10989,7 +10989,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11005,7 +11005,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11021,7 +11021,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11037,7 +11037,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11069,7 +11069,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11085,7 +11085,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11101,7 +11101,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11117,7 +11117,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11133,7 +11133,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11149,7 +11149,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11165,7 +11165,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11181,7 +11181,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11197,7 +11197,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11213,7 +11213,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -11229,7 +11229,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: null,
           Item: "Wellness",
           item_1: "Wellness",
@@ -11245,7 +11245,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
@@ -11261,7 +11261,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11277,7 +11277,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11293,7 +11293,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11309,7 +11309,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11325,7 +11325,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11341,7 +11341,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11357,7 +11357,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11373,7 +11373,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11389,7 +11389,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11421,7 +11421,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11437,7 +11437,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11453,7 +11453,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -11485,7 +11485,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 123,
           Informal: null,
           Item: "Wellness",
           item_1: "Wellness",
@@ -11517,7 +11517,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11533,7 +11533,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 3,
           Informal: null,
           Item: "misc",
           item_1: "misc.",
@@ -11581,7 +11581,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11597,7 +11597,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11629,7 +11629,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11661,7 +11661,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11677,7 +11677,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11693,7 +11693,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11709,7 +11709,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11725,7 +11725,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11741,7 +11741,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11773,7 +11773,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11789,7 +11789,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11805,7 +11805,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11821,7 +11821,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11837,7 +11837,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11853,7 +11853,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 3,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -11885,7 +11885,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -11901,7 +11901,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 123,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -11917,7 +11917,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -11933,7 +11933,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -11949,7 +11949,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -11965,7 +11965,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -11997,7 +11997,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -12013,7 +12013,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12029,7 +12029,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12061,7 +12061,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12077,7 +12077,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12093,7 +12093,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12109,7 +12109,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12125,7 +12125,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12141,7 +12141,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12157,7 +12157,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12205,7 +12205,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12237,7 +12237,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12253,7 +12253,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12269,7 +12269,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12285,7 +12285,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12317,7 +12317,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12333,7 +12333,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12349,7 +12349,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12397,7 +12397,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12413,7 +12413,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12445,7 +12445,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12477,7 +12477,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12493,7 +12493,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12509,7 +12509,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12525,7 +12525,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12541,7 +12541,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12557,7 +12557,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12573,7 +12573,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12589,7 +12589,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12637,7 +12637,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12653,7 +12653,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12669,7 +12669,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12701,7 +12701,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12765,7 +12765,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12781,7 +12781,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12813,7 +12813,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12829,7 +12829,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12845,7 +12845,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12861,7 +12861,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12877,7 +12877,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12893,7 +12893,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12909,7 +12909,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12925,7 +12925,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12941,7 +12941,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12957,7 +12957,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12973,7 +12973,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -12989,7 +12989,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13005,7 +13005,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13021,7 +13021,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13037,7 +13037,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13069,7 +13069,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13085,7 +13085,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13101,7 +13101,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13117,7 +13117,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Hotel",
           item_1: "Hotel",
@@ -13139,7 +13139,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -13171,7 +13171,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13187,7 +13187,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13219,7 +13219,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13251,7 +13251,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13267,7 +13267,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -13283,7 +13283,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -13299,7 +13299,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -13315,7 +13315,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -13331,7 +13331,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -13347,7 +13347,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13363,7 +13363,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13411,7 +13411,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13427,7 +13427,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 13,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -13443,7 +13443,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13459,7 +13459,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 1,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -13475,7 +13475,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13523,7 +13523,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 123,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -13539,7 +13539,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Market",
           item_1: "Market",
@@ -13571,7 +13571,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -13603,7 +13603,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13619,7 +13619,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -13635,7 +13635,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -13651,7 +13651,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -13667,7 +13667,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13683,7 +13683,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13699,7 +13699,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 123,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -13715,7 +13715,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13731,7 +13731,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13747,7 +13747,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13763,7 +13763,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13779,7 +13779,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13795,7 +13795,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13811,7 +13811,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13827,7 +13827,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13859,7 +13859,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13875,7 +13875,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13891,7 +13891,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13907,7 +13907,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13923,7 +13923,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 23,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -13939,7 +13939,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 13,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -13955,7 +13955,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13971,7 +13971,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -13987,7 +13987,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14019,7 +14019,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14035,7 +14035,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14051,7 +14051,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14067,7 +14067,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14099,7 +14099,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 13,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -14115,7 +14115,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -14131,7 +14131,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 3,
           Informal: "1",
           Item: "misc",
           item_1: "misc.",
@@ -14147,7 +14147,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14179,7 +14179,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -14195,7 +14195,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 3,
           Informal: "1",
           Item: "Wellness",
           item_1: "Wellness",
@@ -14211,7 +14211,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 23,
           Informal: "1",
           Item: "Wellness",
           item_1: "Wellness",
@@ -14227,7 +14227,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "1",
           Item: "C&F",
           item_1: "Clothes & Fashion",
@@ -14243,7 +14243,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 23,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14259,7 +14259,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 13,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14275,7 +14275,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 3,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -14291,7 +14291,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 23,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14307,7 +14307,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -14323,7 +14323,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 3,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14339,7 +14339,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 123,
+          Time: 3,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14355,7 +14355,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 2,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14371,7 +14371,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -14387,7 +14387,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -14403,7 +14403,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 13,
+          Time: 23,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -14537,7 +14537,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -14617,7 +14617,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: null,
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -15103,7 +15103,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "8",
-          Time: 23,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15119,7 +15119,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "9",
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -15167,7 +15167,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "12",
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -15183,7 +15183,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "13",
-          Time: 2,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -15199,7 +15199,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "14",
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15215,7 +15215,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "15",
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15247,7 +15247,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "17",
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "mix-used",
           item_1: "Mixed-use",
@@ -15263,7 +15263,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "18",
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15295,7 +15295,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "20",
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15407,7 +15407,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "26",
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15423,7 +15423,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "27",
-          Time: 12,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -15439,7 +15439,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "27",
-          Time: 1,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15455,7 +15455,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "28",
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15471,7 +15471,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "29",
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15503,7 +15503,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "31",
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15519,7 +15519,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "32",
-          Time: 123,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -15535,7 +15535,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "32",
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15551,7 +15551,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "33",
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15567,7 +15567,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "34",
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15583,7 +15583,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "35",
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15615,7 +15615,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "37",
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15631,7 +15631,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "38",
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15663,7 +15663,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "40",
-          Time: 23,
+          Time: 12,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15695,7 +15695,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "41",
-          Time: 123,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15711,7 +15711,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "42",
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15727,7 +15727,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "43",
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15743,7 +15743,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "44",
-          Time: 123,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15759,7 +15759,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "45",
-          Time: 13,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15791,7 +15791,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "48",
-          Time: 3,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15807,7 +15807,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "49",
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15839,7 +15839,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "51",
-          Time: 12,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15951,7 +15951,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "58",
-          Time: 3,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -15967,7 +15967,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "59",
-          Time: 13,
+          Time: 2,
           Informal: null,
           Item: "F&B",
           item_1: "F&B",
@@ -15983,7 +15983,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "60",
-          Time: 2,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -15999,7 +15999,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "61",
-          Time: 123,
+          Time: 1,
           Informal: "0",
           Item: "F&B",
           item_1: "F&B",
@@ -16063,7 +16063,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "63",
-          Time: 1,
+          Time: 2,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -16159,7 +16159,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "67",
-          Time: 123,
+          Time: 1,
           Informal: "1",
           Item: "F&B",
           item_1: "F&B",
@@ -16175,7 +16175,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "68",
-          Time: 13,
+          Time: 12,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -16191,7 +16191,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "69",
-          Time: 13,
+          Time: 1,
           Informal: "0",
           Item: "Wellness",
           item_1: "Wellness",
@@ -16319,7 +16319,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "74",
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",
@@ -16335,7 +16335,7 @@ export const activitiesData = [
         type: "Feature",
         properties: {
           id: "76",
-          Time: 23,
+          Time: 2,
           Informal: "0",
           Item: "misc",
           item_1: "misc.",

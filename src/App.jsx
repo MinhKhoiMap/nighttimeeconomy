@@ -1,12 +1,14 @@
 import mapboxgl from "mapbox-gl";
 import { Map } from "react-map-gl";
-import { useRef, useContext, useCallback, useState, useEffect } from "react";
+import { useRef, useContext, useState, useEffect } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { initialViewState } from "./contexts/initialViewContext";
+import "./utils/folderDriveList";
 
 // Import utils
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./App.css";
+import generateActivities from "./utils/generateTiming";
 
 // Import components
 import HomePage from "./pages/HomePage/HomePage";
@@ -14,8 +16,6 @@ import SiteSelection from "./pages/SiteSelection/SiteSelection";
 import Details from "./pages/Details/Details";
 import Test from "./pages/Test/Test";
 import AboutProject from "./pages/AboutProject/AboutProject";
-
-import generateActivities from "./utils/generateTiming";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaGVsbG9pYW1raG9pIiwiYSI6ImNscWtoODB0MzIyeTEybm1rc2l1YWg0bm8ifQ.wOn1q83oPkWNJBap0KFrWQ";
