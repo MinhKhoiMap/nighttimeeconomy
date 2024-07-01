@@ -43,10 +43,6 @@ const Landuse = ({ site }) => {
       console.log(e.features[0]);
 
       let hoveredPolygonId = e.features[0].id;
-      map.setFeatureState(
-        { source: "landuse", id: hoveredPolygonId },
-        { hover: true }
-      );
 
       let polygon =
         e.features[0].geometry.type === "Polygon"

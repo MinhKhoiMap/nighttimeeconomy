@@ -7,7 +7,7 @@ import { project } from "../../../assets/data/project";
 const Project = ({ projectName, setShowProjectMode, groupIndex }) => {
   useEffect(() => {
     let currentSlide = 0;
-    const slides = document.querySelectorAll(".project_mode section img");
+    const slides = $(".project_mode section img");
 
     function handleScroll() {
       for (let i = 0; i < slides.length; i++) {
@@ -51,7 +51,7 @@ const Project = ({ projectName, setShowProjectMode, groupIndex }) => {
         </span>
       </header>
       <section>
-        {project[0].map((page, index) => (
+        {project[groupIndex].map((page, index) => (
           <img src={page} key={index} className="object-contain" />
         ))}
       </section>

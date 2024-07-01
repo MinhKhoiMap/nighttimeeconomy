@@ -10,12 +10,10 @@ import "./Overview.css";
 import zoom_icon from "../../../assets/images/zoom_icon.json";
 import roads from "../../../assets/data/roads";
 import { siteSelectionData } from "../../../assets/data/site";
+import { overview } from "../../../assets/data/overview";
 
 // Utils
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
-
-const imgUrl = [];
-const videoUrl = [];
 
 const Overview = ({ areaName, siteIndex }) => {
   const imageGalleryRef = useRef();
@@ -105,7 +103,7 @@ const Overview = ({ areaName, siteIndex }) => {
             <div className="mt-2 flex-1">
               <video
                 className="w-full"
-                src={videoUrl[siteIndex % 2]}
+                src={overview[siteIndex].intro}
                 loop
                 muted
                 autoPlay={"autoplay"}
@@ -115,7 +113,7 @@ const Overview = ({ areaName, siteIndex }) => {
             </div>
           </div>
           <figure ref={imageGalleryRef} className="w-full flex flex-col gap-5">
-            {imgUrl.map((img, index) => (
+            {overview[siteIndex].poster.map((img, index) => (
               <div key={index} className="relative">
                 <img src={img} className="w-full h-full object-contain" />
                 <button
@@ -141,7 +139,10 @@ const Overview = ({ areaName, siteIndex }) => {
       </div>
       {isShowSlider && (
         <div className="fixed top-0 bottom-0 left-0 right-0 bg-black/95 p-6">
-          <ImageSlider imgArr={imgUrl} setIsShow={setIsShowSlider} />
+          <ImageSlider
+            imgArr={overview[siteIndex].poster}
+            setIsShow={setIsShowSlider}
+          />
         </div>
       )}
 

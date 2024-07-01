@@ -132,7 +132,7 @@ const Details = () => {
       {viewMode === viewModeArr[1] && siteIndex && (
         <Project
           groupIndex={siteIndex}
-          projectName={"group 1 - name project"}
+          projectName={`group ${Number(siteIndex) + 1}`}
           setShowProjectMode={() => setViewMode(viewModeArr[2])}
         />
       )}
