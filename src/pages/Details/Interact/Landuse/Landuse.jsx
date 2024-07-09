@@ -40,8 +40,6 @@ const Landuse = ({ site }) => {
     function controlInfoTable(e) {
       setShowTable(true);
 
-      console.log(e.features[0]);
-
       let hoveredPolygonId = e.features[0].id;
 
       let polygon =
@@ -112,7 +110,7 @@ const Landuse = ({ site }) => {
             id="landuse_selection"
             type="fill"
             paint={{
-              "fill-outline-color": "pink",
+              "fill-outline-color": "white",
               // color the polygon based on Landuse value
               "fill-color": [
                 "match",

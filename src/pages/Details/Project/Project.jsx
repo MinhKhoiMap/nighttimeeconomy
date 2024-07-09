@@ -1,10 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import $ from "jquery";
 
 import "./Project.css";
 import { project } from "../../../assets/data/project";
 
-const Project = ({ projectName, setShowProjectMode, groupIndex }) => {
+// Services, Utils
+import {
+  getDownloadUrl,
+  getRef,
+  listChilds,
+} from "../../../services/firebaseStorage";
+
+const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
+  const [slides, setSlides] = useState([]);
+
   useEffect(() => {
     let currentSlide = 0;
     const slides = $(".project_mode section img");
@@ -42,6 +51,28 @@ const Project = ({ projectName, setShowProjectMode, groupIndex }) => {
     };
   }, []);
 
+  async function loadingSlide() {
+    try {
+      const projectRef = getRef(
+        `nha_trang/media/site${Number(siteIndex) + 1}/project`
+      );
+      console.log(projectRef);
+      const slidesRef = await listChilds(projectRef);
+      let slides = [];
+      for (let slide of slidesRef) {
+        let url = await getDownloadUrl(slide);
+        slides.push(url);
+        setSlides(slides);
+      }
+    } catch (err) {
+      console.log(err, "Project error");
+    }
+  }
+
+  useEffect(() => {
+    loadingSlide();
+  }, [siteIndex]);
+
   return (
     <div className="project_mode fixed top-0 left-0 bottom-0 right-0 z-[9999999] bg-white overflow-auto">
       <header className="text-3xl text-[#242526] font-medium capitalize p-5 flex justify-between items-center">
@@ -51,9 +82,15 @@ const Project = ({ projectName, setShowProjectMode, groupIndex }) => {
         </span>
       </header>
       <section>
-        {project[groupIndex].map((page, index) => (
-          <img src={page} key={index} className="object-contain" />
-        ))}
+        {slides &&
+          slides.map((page, index) => (
+            <img
+              src={page}
+              key={index}
+              loading="lazy"
+              className="object-contain"
+            />
+          ))}
       </section>
     </div>
   );

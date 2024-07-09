@@ -56,7 +56,7 @@ ChartJS.register(
 );
 
 ChartJS.defaults.color = "#fff";
-ChartJS.defaults.font.family = "Barlow";
+ChartJS.defaults.font.family = "Open Sauce One";
 ChartJS.defaults.font.weight = "700";
 ChartJS.defaults.scale.grid.display = false;
 
@@ -246,7 +246,7 @@ const Interact = ({ siteIndex }) => {
         </div>
       </div>
       {filterMode === filterModeArr[0] && chartData && (
-        <div className="w-[500px] h-[350px] mt-6 fixed bottom-[55px] left-[30px]">
+        <div className="w-[500px] h-[350px] mt-6 fixed top-[300px] left-[30px]">
           <Chart
             ref={chartRef}
             type={chartData.typeChart}

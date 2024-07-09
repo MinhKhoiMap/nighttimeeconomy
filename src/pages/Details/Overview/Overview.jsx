@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
 
+// Components
 import ImageSlider from "../../../components/ImageSlider/ImageSlider";
 import LottieIcon from "../../../components/LottieIcon/LottieIcon";
 
@@ -10,10 +11,15 @@ import "./Overview.css";
 import zoom_icon from "../../../assets/images/zoom_icon.json";
 import roads from "../../../assets/data/roads";
 import { siteSelectionData } from "../../../assets/data/site";
-import { overview } from "../../../assets/data/overview";
 
-// Utils
+// Utils, Services
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
+import {
+  listChilds,
+  getRef,
+  getDownloadUrl,
+  getMeta,
+} from "../../../services/firebaseStorage";
 
 const Overview = ({ areaName, siteIndex }) => {
   const imageGalleryRef = useRef();
@@ -23,7 +29,10 @@ const Overview = ({ areaName, siteIndex }) => {
   const [isShowSlider, setIsShowSlider] = useState(false);
   const [roadState, setRoadState] = useState(null);
   const [arc, setArc] = useState(null);
+  const [roadIndex, setRoadIndex] = useState(0);
   const [point, setPoint] = useState(null);
+  const [imgUrls, setImgUrls] = useState([]);
+  const [intro, setIntro] = useState(null);
 
   let requestID,
     counter = 0;
@@ -33,9 +42,18 @@ const Overview = ({ areaName, siteIndex }) => {
   function animateRoad() {
     if (!(counter < steps)) {
       counter = 0;
+      if (roadIndex + 1 < roads[siteIndex].features.length) {
+        setRoadIndex((prev) => prev + 1);
+        changeRoad(roadIndex + 1);
+      } else {
+        setRoadIndex(0);
+        changeRoad(0);
+      }
+      cancelAnimationFrame(requestID);
+    } else {
+      setPoint(turf.point(arc[counter]));
     }
 
-    setPoint(turf.point(arc[counter]));
     requestID = requestAnimationFrame(animateRoad);
     counter++;
   }
@@ -71,9 +89,33 @@ const Overview = ({ areaName, siteIndex }) => {
     });
   };
 
+  async function loadMedia() {
+    try {
+      const overviewRef = getRef(
+        `nha_trang/media/site${Number(siteIndex) + 1}/overview`
+      );
+      const filesRef = await listChilds(overviewRef);
+      let imgs = [];
+      for (let ref of filesRef) {
+        let url = await getDownloadUrl(ref);
+        let meta = await getMeta(ref);
+        if (meta.contentType.includes("video")) {
+          setIntro(url);
+        } else {
+          imgs.push(url);
+          setImgUrls(imgs);
+        }
+      }
+    } catch (err) {
+      console.log(err, "Overview error");
+    }
+  }
+
   useEffect(() => {
     changeRoad(0);
     fitArea();
+
+    loadMedia();
   }, [siteIndex]);
 
   useEffect(() => {
@@ -85,7 +127,7 @@ const Overview = ({ areaName, siteIndex }) => {
   return (
     <>
       <div
-        className="overview__container fixed top-0 left-0 bottom-0 text-white w-[720px] px-6 pt-3 bg-[#242526] 
+        className="overview__container fixed top-0 left-0 bottom-0 text-white w-[47%] px-6 pt-3 bg-[#242526] 
                   pb-11 overflow-auto shadow-xl shadow-white/20"
       >
         <div className="w-full">
@@ -101,65 +143,69 @@ const Overview = ({ areaName, siteIndex }) => {
               </p>
             </div>
             <div className="mt-2 flex-1">
-              <video
-                className="w-full"
-                src={overview[siteIndex].intro}
-                loop
-                muted
-                autoPlay={"autoplay"}
-                preload="auto"
-                controls
-              />
+              {intro && (
+                <video
+                  className="w-full"
+                  src={intro}
+                  loop
+                  muted
+                  autoPlay={"autoplay"}
+                  preload="auto"
+                  controls
+                />
+              )}
             </div>
           </div>
           <figure ref={imageGalleryRef} className="w-full flex flex-col gap-5">
-            {overview[siteIndex].poster.map((img, index) => (
-              <div key={index} className="relative">
-                <img src={img} className="w-full h-full object-contain" />
-                <button
-                  className="text-[#1b3c73] absolute right-4 bottom-4 z-50 rounded-lg transition-colors
-                flex items-center text-[15px]"
-                  onClick={() => setIsShowSlider(true)}
-                >
-                  <span className="icon-label bg-white">See detail</span>
-                  <LottieIcon
-                    iconType={zoom_icon}
-                    size={20}
-                    color="#1b3c73"
-                    isAnimateOnHover={true}
-                    style={{
-                      padding: "4px 8px",
-                    }}
+            {imgUrls &&
+              imgUrls.map((img, index) => (
+                <div key={index} className="relative">
+                  <img
+                    src={img}
+                    loading="lazy"
+                    className="w-full h-full object-contain"
                   />
-                </button>
-              </div>
-            ))}
+                  <button
+                    className="text-[#1b3c73] absolute right-4 bottom-4 z-50 rounded-lg transition-colors
+                flex items-center text-[15px]"
+                    onClick={() => setIsShowSlider(true)}
+                  >
+                    <span className="icon-label bg-white">See detail</span>
+                    <LottieIcon
+                      iconType={zoom_icon}
+                      size={20}
+                      color="#1b3c73"
+                      isAnimateOnHover={true}
+                      style={{
+                        padding: "4px 8px",
+                      }}
+                    />
+                  </button>
+                </div>
+              ))}
           </figure>
         </div>
       </div>
       {isShowSlider && (
         <div className="fixed top-0 bottom-0 left-0 right-0 bg-black/95 p-6">
-          <ImageSlider
-            imgArr={overview[siteIndex].poster}
-            setIsShow={setIsShowSlider}
-          />
+          <ImageSlider imgArr={imgUrls} setIsShow={setIsShowSlider} />
         </div>
       )}
 
       {roadState && (
         <>
           {/* Drawing background road path */}
-          <Source data={roadState} type="geojson">
+          {/* <Source data={roadState} type="geojson">
             <Layer
               type="line"
               paint={{
                 "line-color": "white",
-                "line-width": 6,
+                "line-width": 4,
                 "line-opacity": 0.4,
               }}
               layout={{ "line-join": "bevel" }}
             />
-          </Source>
+          </Source> */}
 
           {/* Drawing the point */}
           {point && (
@@ -169,7 +215,6 @@ const Overview = ({ areaName, siteIndex }) => {
                 paint={{
                   "circle-opacity": 1,
                   "circle-color": "white",
-                  "circle-pitch-scale": "map",
                 }}
               />
             </Source>

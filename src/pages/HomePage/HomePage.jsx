@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <>
       <div className="absolute top-9 left-10 xl:w-[40%] w-1/4">
-        <h1 className="project-name text-white uppercase font-[Belleza]">
+        <h1 className="project-name text-white uppercase">
           Night Time Economy
         </h1>
         <p className=" text-white text-justify mr-6 break-words mt-6">

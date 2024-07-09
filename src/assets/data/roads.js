@@ -1,7 +1,7 @@
 export default [
   {
     type: "FeatureCollection",
-    name: "site 1",
+    name: "group 1",
     features: [
       {
         type: "Feature",
@@ -18,11 +18,50 @@ export default [
           ],
         },
       },
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "LineString",
+          coordinates: [
+            [109.190873, 12.244034],
+            [109.19097, 12.244142],
+            [109.191783, 12.243482],
+            [109.190482, 12.242027],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "LineString",
+          coordinates: [
+            [109.189384, 12.240799],
+            [109.188588, 12.241498],
+            [109.189528, 12.242541],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "LineString",
+          coordinates: [
+            [109.190871, 12.239386],
+            [109.191646, 12.240266],
+            [109.192064, 12.239903],
+            [109.192248, 12.239853],
+            [109.192251, 12.24017],
+          ],
+        },
+      },
     ],
   },
   {
     type: "FeatureCollection",
-    name: "site 2",
+    name: "group 5",
     features: [
       {
         type: "Feature",
@@ -38,11 +77,38 @@ export default [
           ],
         },
       },
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "LineString",
+          coordinates: [
+            [109.194584, 12.237297],
+            [109.194555, 12.237467],
+            [109.195279, 12.237544],
+            [109.19486, 12.241062],
+            [109.194992, 12.241075],
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        properties: {},
+        geometry: {
+          type: "LineString",
+          coordinates: [
+            [109.19589, 12.234221],
+            [109.195556, 12.235667],
+            [109.195322, 12.237205],
+            [109.194894, 12.237135],
+          ],
+        },
+      },
     ],
   },
   {
     type: "FeatureCollection",
-    name: "site 3",
+    name: "group 4",
     features: [
       {
         type: "Feature",
@@ -61,7 +127,7 @@ export default [
   },
   {
     type: "FeatureCollection",
-    name: "site 4",
+    name: "group 3",
     features: [
       {
         type: "Feature",
@@ -84,7 +150,7 @@ export default [
 
   {
     type: "FeatureCollection",
-    name: "site 5",
+    name: "group 2",
     features: [
       {
         type: "Feature",

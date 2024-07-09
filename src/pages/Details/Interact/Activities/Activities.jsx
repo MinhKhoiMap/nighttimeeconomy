@@ -43,12 +43,6 @@ const Activities = ({ site }) => {
   const [infoTable, setInfoTable] = useState(null);
 
   useEffect(() => {
-    map.on("click", "activities_point", (e) => {
-      console.log(e.features[0]);
-    });
-  }, []);
-
-  useEffect(() => {
     function controlInfoTable(e) {
       setShowTable(true);
 
@@ -122,7 +116,53 @@ const Activities = ({ site }) => {
 
   return (
     <>
-      <Source type="geojson" data={activitiesData[site]}>
+      <Source
+        type="geojson"
+        data={activitiesData[site]}
+        cluster={true}
+        clusterMaxZoom={15}
+        clusterRadius={50}
+      >
+        <Layer
+          id="cluster-point"
+          type="circle"
+          paint={{
+            "circle-color": [
+              "step",
+              ["get", "point_count"],
+              "#51bbd6",
+              80,
+              "#f1f075",
+              110,
+              "#f28cb1",
+            ],
+            "circle-radius": [
+              "step",
+              ["get", "point_count"],
+              20,
+              80,
+              28,
+              110,
+              35,
+            ],
+          }}
+          filter={["has", "point_count"]}
+        />
+        {/* Label cluster count */}
+        <Layer
+          type="symbol"
+          layout={{
+            "text-field": ["get", "point_count_abbreviated"],
+            "text-size": 16,
+            "text-anchor": "center",
+            "text-allow-overlap": false,
+          }}
+          paint={{
+            "text-color": "#000",
+          }}
+          filter={["has", "point_count"]}
+        />
+        {/* Activities Point */}
         <Layer
           id="activities_point"
           type="circle"
@@ -149,6 +189,7 @@ const Activities = ({ site }) => {
           }}
           filter={[
             "all",
+            ["!", ["has", "point_count"]],
             filterActivities
               ? ["==", ["get", "item_1"], filterActivities]
               : ["!=", ["get", "item_1"], null],
@@ -164,7 +205,9 @@ const Activities = ({ site }) => {
               : ["!=", ["get", "Informal"], null],
           ]}
         />
-        <Layer
+
+        {/* Labels Time for Uncluster Point */}
+        {/* <Layer
           type="symbol"
           layout={{
             "text-field": [
@@ -183,6 +226,7 @@ const Activities = ({ site }) => {
           }}
           filter={[
             "all",
+            ["!", ["has", "point_count"]],
             filterActivities
               ? ["==", ["get", "item_1"], filterActivities]
               : ["!=", ["get", "item_1"], null],
@@ -197,7 +241,7 @@ const Activities = ({ site }) => {
               ? ["==", ["get", "Informal"], filterTime.informal]
               : ["!=", ["get", "Informal"], null],
           ]}
-        />
+        /> */}
       </Source>
 
       <div className="fixed" ref={mouseDivRef}>
