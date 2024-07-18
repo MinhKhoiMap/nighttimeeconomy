@@ -40,6 +40,7 @@ const Buildinguse = ({ site }) => {
   const [buildingIntersection, setBuildingIntersection] = useState(null);
 
   const [filterBuilding, setFilterBuilding] = useState(null);
+  const [chosedBuilding, setChosedBuilding] = useState(null);
 
   useEffect(() => {
     // Like the function in landuse component
@@ -122,21 +123,70 @@ const Buildinguse = ({ site }) => {
     }
   }, [site]);
 
+  useEffect(() => {
+    function handleChooseBuilding(e) {
+      if (chosedBuilding === e.features[0].id) {
+        map.setFeatureState(
+          { source: "buildinguse", id: chosedBuilding },
+          { chosedID: null }
+        );
+
+        setChosedBuilding(null);
+      } else {
+        setChosedBuilding(e.features[0].id);
+        map.setFeatureState(
+          { source: "buildinguse", id: e.features[0].id },
+          { chosedID: e.features[0].id }
+        );
+      }
+    }
+
+    map.on("click", "buildinguse_selection", handleChooseBuilding);
+
+    return () =>
+      map.off("click", "buildinguse_selection", handleChooseBuilding);
+  }, [chosedBuilding]);
+
   return (
     <>
       {buildingIntersection && (
-        <Source type="geojson" data={buildingIntersection}>
+        <Source
+          type="geojson"
+          data={buildingIntersection}
+          generateId={true}
+          id="buildinguse"
+        >
           <Layer
-            id="buildinguse_selection"
             type="fill"
             paint={{
-              "fill-color": [
+              "fill-outline-color": "#ce2027",
+            }}
+            filter={
+              filterBuilding
+                ? ["==", ["get", "Buildsused"], filterBuilding]
+                : ["!=", ["get", "Buildsused"], null]
+            }
+          />
+          <Layer
+            id="buildinguse_selection"
+            type="fill-extrusion"
+            paint={{
+              "fill-extrusion-color": [
                 "match",
                 ["get", "Buildsused"],
                 ...CaseBuildinguseValues,
                 // Other Values
                 "rgba(255, 196, 54, 0.3)",
               ],
+              "fill-extrusion-opacity": 1,
+              "fill-extrusion-height": [
+                "case",
+                ["==", ["id"], chosedBuilding],
+                50,
+                0,
+              ],
+              "fill-extrusion-base": 0,
+              "fill-extrusion-flood-light-color": "#ce2027",
             }}
             filter={
               filterBuilding
