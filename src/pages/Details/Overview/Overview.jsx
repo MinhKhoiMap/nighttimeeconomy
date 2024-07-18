@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
+import { v4 as uuidv4 } from "uuid";
 
 // Components
 import ImageSlider from "../../../components/ImageSlider/ImageSlider";
@@ -35,12 +36,14 @@ const Overview = ({ areaName, siteIndex }) => {
   const [intro, setIntro] = useState(null);
 
   let requestID,
-    counter = 0;
-  const steps = 300;
+    counter = 0,
+    arrayOfCounter = [];
+  // meters unit
+  const distance = 10;
 
   // Handling the point animation, when the point move to the end of the road, change to next road
   function animateRoad() {
-    if (!(counter < steps)) {
+    if (!(counter < arc.length)) {
       counter = 0;
       if (roadIndex + 1 < roads[siteIndex].features.length) {
         setRoadIndex((prev) => prev + 1);
@@ -51,7 +54,39 @@ const Overview = ({ areaName, siteIndex }) => {
       }
       cancelAnimationFrame(requestID);
     } else {
-      setPoint(turf.point(arc[counter]));
+      try {
+        let id = uuidv4();
+        map.getMap().addSource(`effect-${id}`, {
+          type: "geojson",
+          data: turf.point(arc[counter == 0 ? 0 : counter - 1]),
+        });
+        map.getMap().addLayer(
+          {
+            id: `effect-${id}`,
+            source: `effect-${id}`,
+            type: "circle",
+            paint: {
+              "circle-radius": 3,
+              "circle-opacity": 1,
+              "circle-color": "pink",
+            },
+          },
+          "point-effect"
+        );
+        arrayOfCounter.push(id);
+        setTimeout(() => {
+          let shift = arrayOfCounter.shift();
+          map.getMap().removeLayer(`effect-${shift}`);
+          map.getMap().removeSource(`effect-${shift}`);
+        }, 500);
+        setPoint(turf.point(arc[counter]));
+      } catch (error) {
+        console.log(error, "Error at Overview animate Road");
+        setRoadIndex(0);
+        changeRoad(0);
+        counter = 0;
+        cancelAnimationFrame(requestID);
+      }
     }
 
     requestID = requestAnimationFrame(animateRoad);
@@ -65,21 +100,21 @@ const Overview = ({ areaName, siteIndex }) => {
       "kilometers"
     );
     let part = [];
-    for (let i = 0; i < lineDistance; i += lineDistance / steps) {
+    for (let i = 0; i < lineDistance * 1000; i += distance) {
       const segment = turf.along(
         roads[siteIndex].features[index],
-        i,
+        i / 1000,
         "kilometers"
       );
       part.push(segment.geometry.coordinates);
     }
-
     setArc(part);
+    setPoint(turf.point(part[0]));
   }
 
   function changeRoad(id) {
-    setRoadState(roads[siteIndex].features[id]);
     calcPointPart(id);
+    setRoadState(roads[siteIndex].features[id]);
   }
 
   const fitArea = () => {
@@ -192,34 +227,18 @@ const Overview = ({ areaName, siteIndex }) => {
         </div>
       )}
 
-      {roadState && (
-        <>
-          {/* Drawing background road path */}
-          {/* <Source data={roadState} type="geojson">
-            <Layer
-              type="line"
-              paint={{
-                "line-color": "white",
-                "line-width": 4,
-                "line-opacity": 0.4,
-              }}
-              layout={{ "line-join": "bevel" }}
-            />
-          </Source> */}
-
-          {/* Drawing the point */}
-          {point && (
-            <Source data={point} type="geojson">
-              <Layer
-                type="circle"
-                paint={{
-                  "circle-opacity": 1,
-                  "circle-color": "white",
-                }}
-              />
-            </Source>
-          )}
-        </>
+      {/* Drawing the point */}
+      {point && (
+        <Source data={point} type="geojson">
+          <Layer
+            id="point-effect"
+            type="circle"
+            paint={{
+              "circle-opacity": 1,
+              "circle-color": "white",
+            }}
+          />
+        </Source>
       )}
     </>
   );
