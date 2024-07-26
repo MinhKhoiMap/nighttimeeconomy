@@ -14,7 +14,7 @@ const HomePage = () => {
   const { map } = useMap();
 
   useEffect(() => {
-    // random a start point when redirecting or directing to home page 
+    // random a start point when redirecting or directing to home page
     if (map) {
       let center = turf.randomPoint(1, { bbox: [-180, -90, 180, 90] });
 
@@ -22,6 +22,7 @@ const HomePage = () => {
       map.flyTo({
         center: center.features[0].geometry.coordinates,
         zoom: initialView.zoom,
+        pitch: initialView.pitch,
       });
     }
   }, []);

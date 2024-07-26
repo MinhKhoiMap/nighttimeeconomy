@@ -5,4 +5,5 @@ export const initialViewState = createContext({
   latitude: 40,
   // zoom level được tính toán sao cho globe fit với màn hình
   zoom: window.innerHeight * (2 / 742),
+  pitch: 0,
 });

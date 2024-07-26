@@ -44,12 +44,15 @@ function App() {
         distancePerSecond *= zoomDif;
       }
       const center = map.current.getMap().getCenter();
-      center.lng += distancePerSecond;
+      let newCenter = {
+        lng: center.lng + distancePerSecond,
+        lat: center.lat + distancePerSecond,
+      };
 
       // Smoothly animate the map over one second.
       // When this animation is complete, it calls a 'moveend' event.
       map.current.easeTo({
-        center,
+        center: [newCenter.lng, newCenter.lat],
         duration: 1000,
         easing: (n) => n,
       });
@@ -88,7 +91,7 @@ function App() {
           }, 500);
         }}
         logoPosition="bottom-left"
-        mapStyle="mapbox://styles/mapbox/dark-v11"
+        mapStyle="mapbox://styles/helloiamkhoi/cly8gmp0m00hh01qv5i4wgvmv"
         attributionControl={false}
       >
         <Routes>

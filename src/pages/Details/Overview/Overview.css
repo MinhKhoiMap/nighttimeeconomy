@@ -10,7 +10,7 @@
 }
 
 .overview__container {
-  animation: slide .6s ease forwards;
+  animation: slide 0.6s ease forwards;
 }
 
 .overview__container::-webkit-scrollbar,
@@ -18,36 +18,10 @@
   display: none;
 }
 
-.overview__container .icon-label {
-  padding: 4px 4px 4px 12px;
-  transform: translateX(100%);
-  transform-origin: right center;
-  transition: all 0.2s linear;
-  opacity: 0;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.overview__container .photo-view > div {
+  visibility: hidden;
 }
 
-.overview__container button {
-  overflow: hidden;
-}
-
-.overview__container button:hover .icon-label {
-  transform: translateX(0);
-  opacity: 1;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.overview__container button .lottie-icon {
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.overview__container button:hover .lottie-icon {
-  border-radius: 0;
-  background: rgba(255, 255, 255, 1);
-}
-
-.overview__container button:hover > span {
-  background-color: rgba(255, 255, 255, 1);
+.overview__container .photo-view:hover > div {
+  visibility: visible !important;
 }

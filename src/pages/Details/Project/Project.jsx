@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import $ from "jquery";
 
 import "./Project.css";
@@ -13,6 +13,7 @@ import {
 
 const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
   const [slides, setSlides] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     let currentSlide = 0;
@@ -24,7 +25,6 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
         if (rect.bottom >= 0) {
           if (i === 0) currentSlide = 0;
           else currentSlide = i;
-          console.log(currentSlide);
           return;
         }
       }
@@ -49,6 +49,10 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
           break;
       }
     };
+
+    return () => {
+      window.onkeydown = null;
+    };
   }, []);
 
   async function loadingSlide() {
@@ -70,29 +74,56 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
   }
 
   useEffect(() => {
+    window.onkeydown = (e) => {
+      if (e.keyCode === 27) {
+        setShowProjectMode(false);
+      }
+    };
+
+    return () => (window.onkeydown = null);
+  });
+
+  useEffect(() => {
     loadingSlide();
   }, [siteIndex]);
 
   return (
-    <div className="project_mode fixed top-0 left-0 bottom-0 right-0 z-[9999999] bg-white overflow-auto">
-      <header className="text-3xl text-[#242526] font-medium capitalize p-5 flex justify-between items-center">
-        <h3 className="text-3xl font-[500] text-[#242526]">{projectName}</h3>
-        <span onClick={setShowProjectMode} title="Close">
-          <i className="fa-solid fa-xmark text-2xl cursor-pointer hover:text-[#ce2027] transition-colors duration-[0.15s]"></i>
-        </span>
-      </header>
-      <section>
-        {slides &&
-          slides.map((page, index) => (
-            <img
-              src={page}
-              key={index}
-              loading="lazy"
-              className="object-contain"
-            />
-          ))}
-      </section>
-    </div>
+    <>
+      <div className="project_mode fixed top-0 left-0 bottom-0 right-0 z-[9999] bg-white overflow-auto scroll-smooth">
+        <header className="text-3xl text-[#242526] font-medium capitalize p-5 flex justify-between items-center">
+          <h3 className="text-3xl font-[500] text-[#242526]">{projectName}</h3>
+          <span onClick={() => setShowProjectMode(false)} title="Close">
+            <i className="fa-solid fa-xmark text-2xl cursor-pointer hover:text-[#ce2027] transition-colors duration-[0.15s]"></i>
+          </span>
+        </header>
+        <section className="relative">
+          {slides &&
+            slides.map((page, index) => (
+              <img
+                src={page}
+                key={index}
+                loading="lazy"
+                className="object-contain"
+              />
+            ))}
+
+          {/* {loading && (
+          <div className="flex h-full justify-center pt-[200px] z-[999] absolute right-0 left-0 top-0 bg-white">
+            <span className="gyro"></span>
+          </div>
+        )} */}
+        </section>
+      </div>
+      <button
+        className="fixed bottom-8 right-9 z-[99999] text-black hover:scale-125 transition-transform duration-200"
+        style={{
+          filter: "drop-shadow(4px 6px 10px #ce2027)",
+        }}
+        onClick={() => $(".project_mode")[0].scrollTo(0, 0)}
+      >
+        <i className="text-4xl text-white fa-regular fa-circle-up"></i>
+      </button>
+    </>
   );
 };
 

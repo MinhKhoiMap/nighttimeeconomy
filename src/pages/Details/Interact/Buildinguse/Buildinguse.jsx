@@ -38,6 +38,7 @@ const Buildinguse = ({ site }) => {
   const [showTable, setShowTable] = useState(false);
   const [infoTable, setInfoTable] = useState([]);
   const [buildingIntersection, setBuildingIntersection] = useState(null);
+  const [showGrid, setShowGrid] = useState(false);
 
   const [filterBuilding, setFilterBuilding] = useState(null);
   const [chosedBuilding, setChosedBuilding] = useState(null);
@@ -91,17 +92,20 @@ const Buildinguse = ({ site }) => {
       map.getCanvas().style.cursor = "grab";
     }
 
-    map.on("mouseenter", "buildinguse_selection", () => {
+    function changePointer() {
       map.getCanvas().style.cursor = "pointer";
-    });
+    }
 
+    map.on("mouseenter", "buildinguse_selection", changePointer);
     map.on("mousemove", "buildinguse_selection", controlInfoTable);
     map.on("mouseleave", "buildinguse_selection", reset);
-    // return () => {
-    //   map.off("mousemove", "buildinguse_selection", controlInfoTable);
-    //   map.off("mouseleave", "buildinguse_selection", reset);
-    // };
-  });
+
+    return () => {
+      map.off("mousemove", "buildinguse_selection", controlInfoTable);
+      map.off("mouseleave", "buildinguse_selection", reset);
+      map.off("mouseenter", "buildinguse_selection", changePointer);
+    };
+  }, [map]);
 
   // Before drawing building, filtering all building outside the selected area boundary
   useEffect(() => {
@@ -132,12 +136,14 @@ const Buildinguse = ({ site }) => {
         );
 
         setChosedBuilding(null);
+        setShowGrid(false);
       } else {
         setChosedBuilding(e.features[0].id);
         map.setFeatureState(
           { source: "buildinguse", id: e.features[0].id },
           { chosedID: e.features[0].id }
         );
+        setShowGrid(true);
       }
     }
 
@@ -156,18 +162,24 @@ const Buildinguse = ({ site }) => {
           generateId={true}
           id="buildinguse"
         >
+          {
+            <Layer
+              id="grid"
+              type="fill"
+              paint={{
+                "fill-outline-color": "black",
+                "fill-outline-color-transition": { duration: 300 },
+                "fill-color": "transparent",
+              }}
+              filter={
+                filterBuilding
+                  ? ["==", ["get", "Buildsused"], filterBuilding]
+                  : ["!=", ["get", "Buildsused"], null]
+              }
+            />
+          }
           <Layer
-            type="fill"
-            paint={{
-              "fill-outline-color": "#ce2027",
-            }}
-            filter={
-              filterBuilding
-                ? ["==", ["get", "Buildsused"], filterBuilding]
-                : ["!=", ["get", "Buildsused"], null]
-            }
-          />
-          <Layer
+            beforeId={"grid"}
             id="buildinguse_selection"
             type="fill-extrusion"
             paint={{
@@ -178,15 +190,12 @@ const Buildinguse = ({ site }) => {
                 // Other Values
                 "rgba(255, 196, 54, 0.3)",
               ],
-              "fill-extrusion-opacity": 1,
               "fill-extrusion-height": [
                 "case",
                 ["==", ["id"], chosedBuilding],
-                50,
+                10,
                 0,
               ],
-              "fill-extrusion-base": 0,
-              "fill-extrusion-flood-light-color": "#ce2027",
             }}
             filter={
               filterBuilding

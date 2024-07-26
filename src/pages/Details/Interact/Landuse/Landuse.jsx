@@ -96,10 +96,10 @@ const Landuse = ({ site }) => {
     map.on("mousemove", "landuse_selection", controlInfoTable);
     map.on("mouseleave", "landuse_selection", reset);
 
-    // return () => {
-    //   map.off("mousemove", "landuse_selection", controlInfoTable);
-    //   map.off("mouseleave", "landuse_selection", reset);
-    // };
+    return () => {
+      map.off("mousemove", "landuse_selection", controlInfoTable);
+      map.off("mouseleave", "landuse_selection", reset);
+    };
   }, []);
 
   return (
@@ -110,7 +110,7 @@ const Landuse = ({ site }) => {
             id="landuse_selection"
             type="fill"
             paint={{
-              "fill-outline-color": "white",
+              "fill-outline-color": "black",
               // color the polygon based on Landuse value
               "fill-color": [
                 "match",

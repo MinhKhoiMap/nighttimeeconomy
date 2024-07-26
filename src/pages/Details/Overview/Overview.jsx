@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
 import { v4 as uuidv4 } from "uuid";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 // Components
-import ImageSlider from "../../../components/ImageSlider/ImageSlider";
 import LottieIcon from "../../../components/LottieIcon/LottieIcon";
 
 // Assets
@@ -21,13 +22,14 @@ import {
   getDownloadUrl,
   getMeta,
 } from "../../../services/firebaseStorage";
+import VideoSkeleton from "../../../components/VideoSkeleton/VideoSkeleton";
+import ImageSkeleton from "../../../components/ImageSkeleton/ImageSkeleton";
 
 const Overview = ({ areaName, siteIndex }) => {
   const imageGalleryRef = useRef();
 
   const { map } = useMap();
 
-  const [isShowSlider, setIsShowSlider] = useState(false);
   const [roadState, setRoadState] = useState(null);
   const [arc, setArc] = useState(null);
   const [roadIndex, setRoadIndex] = useState(0);
@@ -147,6 +149,8 @@ const Overview = ({ areaName, siteIndex }) => {
   }
 
   useEffect(() => {
+    setImgUrls(null);
+    setIntro(null);
     changeRoad(0);
     fitArea();
 
@@ -178,7 +182,7 @@ const Overview = ({ areaName, siteIndex }) => {
               </p>
             </div>
             <div className="mt-2 flex-1">
-              {intro && (
+              {intro ? (
                 <video
                   className="w-full"
                   src={intro}
@@ -188,44 +192,73 @@ const Overview = ({ areaName, siteIndex }) => {
                   preload="auto"
                   controls
                 />
+              ) : (
+                <VideoSkeleton />
               )}
             </div>
           </div>
           <figure ref={imageGalleryRef} className="w-full flex flex-col gap-5">
-            {imgUrls &&
-              imgUrls.map((img, index) => (
-                <div key={index} className="relative">
-                  <img
-                    src={img}
-                    loading="lazy"
-                    className="w-full h-full object-contain"
-                  />
-                  <button
-                    className="text-[#1b3c73] absolute right-4 bottom-4 z-50 rounded-lg transition-colors
-                flex items-center text-[15px]"
-                    onClick={() => setIsShowSlider(true)}
-                  >
-                    <span className="icon-label bg-white">See detail</span>
-                    <LottieIcon
-                      iconType={zoom_icon}
-                      size={20}
-                      color="#1b3c73"
-                      isAnimateOnHover={true}
-                      style={{
-                        padding: "4px 8px",
-                      }}
+            <PhotoProvider
+              maskOpacity={0.8}
+              toolbarRender={({ onScale, scale, onRotate, rotate }) => {
+                return (
+                  <span className="flex gap-4 pr-6 items-center">
+                    <i
+                      className="ti-zoom-in text-lg hover:cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                      onClick={() => onScale(scale + 1)}
                     />
-                  </button>
-                </div>
-              ))}
+                    <i
+                      className="ti-zoom-out text-lg hover:cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                      onClick={() => onScale(scale - 1)}
+                    />
+                    <i
+                      className="fa-solid fa-rotate-right text-lg font-[500] hover:cursor-pointer hover:opacity-70 transition-opacity duration-150"
+                      onClick={() => onRotate(rotate + 90)}
+                    ></i>
+                  </span>
+                );
+              }}
+            >
+              {imgUrls ? (
+                imgUrls.map((img) => {
+                  return (
+                    <PhotoView src={img} key={img}>
+                      <div className="relative photo-view">
+                        <img
+                          src={img}
+                          loading="lazy"
+                          className="hover:cursor-pointer object-contain"
+                        />
+                        <div
+                          className="absolute right-0 bottom-0 top-0 left-0 z-50 bg-black/50 transition-colors
+                                  flex justify-center items-center text-[15px] hover:cursor-pointer"
+                        >
+                          <LottieIcon
+                            iconType={zoom_icon}
+                            size={60}
+                            color="#ccc"
+                            isAnimateOnHover={true}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              padding: "4px 8px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          />
+                        </div>
+                      </div>
+                    </PhotoView>
+                  );
+                })
+              ) : (
+                <ImageSkeleton />
+              )}
+            </PhotoProvider>
           </figure>
         </div>
       </div>
-      {isShowSlider && (
-        <div className="fixed top-0 bottom-0 left-0 right-0 bg-black/95 p-6">
-          <ImageSlider imgArr={imgUrls} setIsShow={setIsShowSlider} />
-        </div>
-      )}
 
       {/* Drawing the point */}
       {point && (
