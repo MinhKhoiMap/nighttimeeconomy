@@ -99,7 +99,7 @@ function DocumentViewer({ file }) {
     () => (
       <div className="flex justify-center relative w-full">
         <Toolbar>
-          {(_) => {
+          {() => {
             return (
               <div
                 style={{
@@ -184,33 +184,6 @@ function DocumentViewer({ file }) {
           height: "100%",
         }}
       >
-        {/* <div
-          style={{
-            alignItems: "center",
-            backgroundColor: "#eeeeee",
-            borderBottom: "1px solid rgba(0, 0, 0, 0.3)",
-            display: "flex",
-            justifyContent: "center",
-            padding: "4px",
-            position: "relative",
-          }}
-        >
-          <div style={{ padding: "0px 2px" }}>
-            <GoToFirstPageButton />
-          </div>
-          <div style={{ padding: "0px 2px" }}>
-            <GoToPreviousPage />
-          </div>
-          <div style={{ padding: "0px 2px", width: "4rem" }}>
-            <CurrentPageInput />
-          </div>
-          <div style={{ padding: "0px 2px" }}>
-            <GoToNextPageButton />
-          </div>
-          <div style={{ padding: "0px 2px" }}>
-            <GoToLastPageButton />
-          </div>
-        </div> */}
         <div
           style={{
             flex: 1,

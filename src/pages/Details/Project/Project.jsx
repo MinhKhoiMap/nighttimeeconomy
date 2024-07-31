@@ -46,14 +46,14 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
 
   return (
     <>
-      <div className="project_mode fixed top-0 left-0 bottom-0 right-0 z-[999999] h-screen overflow-hidden bg-black scroll-smooth">
+      <div className="project_mode fixed top-0 left-0 bottom-0 right-0 z-[999999] h-screen overflow-hidden bg-black">
         <header className="text-3xl text-[#242526] bg-white font-medium capitalize p-5 flex justify-between items-center">
           <h3 className="text-3xl font-[500] text-[#242526]">{projectName}</h3>
           <span onClick={() => setShowProjectMode(false)} title="Close">
             <i className="fa-solid fa-xmark text-2xl cursor-pointer hover:text-[#ce2027] transition-colors duration-[0.15s]"></i>
           </span>
         </header>
-        
+
         {/* If u want navigation page to work, you have to put the viewer into 
         an element which has fixed height */}
         <section

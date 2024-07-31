@@ -38,6 +38,7 @@ const Activities = ({ site }) => {
   const mouseDivRef = useRef();
   const { map } = useMap();
 
+  const [pointData, setPointData] = useState(null);
   const [filterActivities, setFilterActivities] = useState(null);
   const [filterTime, setFilterTime] = useState(null);
   const [infoTablePosition, setInfoTablePosition] = useState(null);
@@ -116,11 +117,39 @@ const Activities = ({ site }) => {
     setFilterTime(time);
   };
 
+  function handleOnFilterData() {
+    console.log(filterActivities, filterTime);
+
+    let f = activitiesData[site].features.filter(({ properties }) => {
+      return (
+        (filterActivities
+          ? properties.item_1 == filterActivities
+          : properties.item_1 != null) &&
+        (filterTime
+          ? String(properties.Time).indexOf(filterTime.time) >= 0
+          : properties.Time != null) &&
+        (filterTime
+          ? properties.Informal == filterTime.informal
+          : properties.Informal != null)
+      );
+    });
+    setPointData({ ...activitiesData[site], features: f });
+  }
+
+  useEffect(() => {
+    handleOnFilterData();
+  }, [filterTime, filterActivities]);
+
+  useEffect(() => {
+    handleOnFilterData();
+    console.log("first");
+  }, [site]);
+
   return (
     <>
       <Source
         type="geojson"
-        data={activitiesData[site]}
+        data={pointData}
         cluster={true}
         clusterMaxZoom={15}
         clusterRadius={50}
@@ -192,19 +221,19 @@ const Activities = ({ site }) => {
           filter={[
             "all",
             ["!", ["has", "point_count"]],
-            filterActivities
-              ? ["==", ["get", "item_1"], filterActivities]
-              : ["!=", ["get", "item_1"], null],
-            filterTime
-              ? [
-                  ">=",
-                  ["index-of", filterTime.time, ["to-string", ["get", "Time"]]],
-                  0,
-                ]
-              : ["!=", ["get", "Time"], null],
-            filterTime
-              ? ["==", ["get", "Informal"], filterTime.informal]
-              : ["!=", ["get", "Informal"], null],
+            // filterActivities
+            //   ? ["==", ["get", "item_1"], filterActivities]
+            //   : ["!=", ["get", "item_1"], null],
+            // filterTime
+            //   ? [
+            //       ">=",
+            //       ["index-of", filterTime.time, ["to-string", ["get", "Time"]]],
+            //       0,
+            //     ]
+            //   : ["!=", ["get", "Time"], null],
+            // filterTime
+            //   ? ["==", ["get", "Informal"], filterTime.informal]
+            //   : ["!=", ["get", "Informal"], null],
           ]}
         />
 
