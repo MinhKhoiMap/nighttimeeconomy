@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
 import { useMap } from "react-map-gl";
 import {
   Chart as ChartJS,
@@ -26,8 +26,9 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 // Utils
 import "./Interact.css";
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
-import { siteSelectionData } from "../../../assets/data/site";
+// import { siteSelectionData } from "../../../assets/data/site";
 
+import { SiteDataContext } from "../../SiteSelection/SiteSelection";
 import Landuse from "./Landuse/Landuse";
 import Buildinguse from "./Buildinguse/Buildinguse";
 import Activities from "./Activities/Activities";
@@ -178,6 +179,8 @@ const data = [
 ];
 
 const Interact = ({ siteIndex }) => {
+  const { siteSelectionData } = useContext(SiteDataContext);
+
   const { map } = useMap();
   const chartRef = useRef(null);
 
@@ -200,8 +203,8 @@ const Interact = ({ siteIndex }) => {
 
   // Handle Fit Bounds When Change Site State (siteIndex, viewMode state)
   useEffect(() => {
-    fitArea();
-  }, [siteIndex, filterMode]);
+    if (siteIndex && siteSelectionData) fitArea();
+  }, [siteIndex, filterMode, siteSelectionData]);
 
   useEffect(() => {
     setChartData(data[siteIndex]);

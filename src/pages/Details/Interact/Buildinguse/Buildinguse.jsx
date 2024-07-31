@@ -1,10 +1,12 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useContext } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
 
+import { SiteDataContext } from "../../../SiteSelection/SiteSelection";
+
 // Data
-import { buildinguseData } from "../../../../assets/data/buildinguse";
-import { siteSelectionData } from "../../../../assets/data/site";
+// import { buildinguseData } from "../../../../assets/data/buildinguse";
+// import { siteSelectionData } from "../../../../assets/data/site";
 
 // Components
 import InfoTable from "../../../../components/InfoTable/InfoTable";
@@ -28,6 +30,8 @@ const CaseBuildinguseValues = [
 ];
 
 const Buildinguse = ({ site }) => {
+  const { buildinguseData, siteSelectionData } = useContext(SiteDataContext);
+
   const tableMaxWidth = 200,
     tableMaxHeight = 250;
 

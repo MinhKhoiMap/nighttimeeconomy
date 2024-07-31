@@ -1,9 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
 
+import { SiteDataContext } from "../../../SiteSelection/SiteSelection";
+
 // Data
-import { landuseData } from "../../../../assets/data/landuse";
+// import { landuseData } from "../../../../assets/data/landuse";
+
+// Components
 import InfoTable from "../../../../components/InfoTable/InfoTable";
 import AnnotationTable from "../../../../components/AnnotationTable/AnnotationTable";
 
@@ -23,6 +27,8 @@ const CaseLanduseValues = [
 ];
 
 const Landuse = ({ site }) => {
+  const { landuseData } = useContext(SiteDataContext);
+
   const tableMaxWidth = 300,
     tableMaxHeight = 350;
 

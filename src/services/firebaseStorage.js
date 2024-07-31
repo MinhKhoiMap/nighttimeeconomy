@@ -48,4 +48,4 @@ async function getMeta(fileRef) {
   }
 }
 
-export { app, getRef, getDownloadUrl, getMeta, listChilds };
+export { app, storage, getRef, getDownloadUrl, getMeta, listChilds };

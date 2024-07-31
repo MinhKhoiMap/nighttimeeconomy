@@ -1,31 +1,12 @@
 import mapboxgl from "mapbox-gl";
 import { useCallback, useEffect, useState } from "react";
 import * as turf from "@turf/turf";
+import DocumentViewer from "../../components/DocumentViewer/DocumentViewer";
 const Test = () => {
-  function handleClientLoad() {
-    gapi.load("client", initClient);
-  }
-
-  function initClient() {
-    gapi.client
-      .init({
-        apiKey: "AIzaSyCfPQga7wI-DP8UQe-OQOh2PIzClVuw_fk",
-        clientId:
-          "114248140081-nfm2bfuodr3tae7pbt10hbjchtvgkok1.apps.googleusercontent.com",
-        discoveryDocs: ["https://people.googleapis.com/$discovery/rest"],
-        scope: "https://www.googleapis.com/auth/drive",
-      })
-      .then(() => console.log("first"));
-  }
   return (
-    <>
-      <div
-        onClick={handleClientLoad}
-        className="fixed z-[99999] text-white text-[20px]"
-      >
-        Click here
-      </div>
-    </>
+    <div className="z-[99999] h-fit overflow-auto fixed top-0 bottom-0 left-0 right-0">
+      <DocumentViewer file={"/src/assets/pdf/team 1 ppt.pdf"} />
+    </div>
   );
 };
 

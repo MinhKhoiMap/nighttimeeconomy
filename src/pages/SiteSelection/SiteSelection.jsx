@@ -1,22 +1,23 @@
-import { useCallback, useEffect, useState } from "react";
-import { Layer, Marker, Source, useMap } from "react-map-gl";
+import { createContext, useEffect, useState } from "react";
+import { Layer, Source, useMap } from "react-map-gl";
 import { Outlet, useNavigate } from "react-router-dom";
 import mapboxgl from "mapbox-gl";
 
 import "./SiteSelection.css";
+import getGeoJSONData from "../../services/fetchGeoJSONData";
 
-import { siteSelectionData } from "../../assets/data/site";
+// import { siteSelectionData } from "../../assets/data/site";
 
-const SitePolygon = ({ feature, index, map, setSiteChosenIndex }) => {
+const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
   const navigate = useNavigate();
 
-  let name = `site_${feature.name}`;
+  let name = `${feature.name}`;
 
   // Set event listeners to each layer
   useEffect(() => {
     function handleChooseSite() {
-      setSiteChosenIndex(index);
-      navigate(`./${index}`);
+      setSiteChosen(feature);
+      navigate(`./${feature.properties.id}`);
     }
 
     function handleHoverChangeCursor() {
@@ -49,7 +50,7 @@ const SitePolygon = ({ feature, index, map, setSiteChosenIndex }) => {
   }, []);
 
   return (
-    <Source key={name} id={name} type="geojson" data={feature.geometry}>
+    <Source key={name} id={name} type="geojson" data={feature}>
       <Layer
         type="line"
         paint={{
@@ -66,22 +67,61 @@ const SitePolygon = ({ feature, index, map, setSiteChosenIndex }) => {
   );
 };
 
+export const SiteChosenContext = createContext({});
+export const SiteDataContext = createContext({});
+
 const SiteSelection = () => {
   // this is represents the selected area index
-  const [siteChosenIndex, setSiteChosenIndex] = useState(null);
+  const [siteChosen, setSiteChosen] = useState(null);
+  const [projectData, setProjectData] = useState(
+    sessionStorage.getItem("geojson_source") &&
+      JSON.parse(sessionStorage.getItem("geojson_source"))
+  );
+  const [loading, setLoading] = useState(
+    !sessionStorage.getItem("geojson_source")
+  );
 
   const { map } = useMap();
 
   useEffect(() => {
-    handleLoadSite();
-  }, [map]);
+    if (!loading && projectData) handleLoadSite();
+  }, [loading]);
+
+  useEffect(() => {
+    if (loading) {
+      let source = {};
+
+      getGeoJSONData("site")
+        .then((data) => {
+          source.site = data;
+          setProjectData((prev) => ({ ...prev, site: data }));
+        })
+        .then(() => getGeoJSONData("landuse"))
+        .then((data) => {
+          source.landuse = data;
+          setProjectData((prev) => ({ ...prev, landuse: data }));
+        })
+        .then(() => getGeoJSONData("buildinguse"))
+        .then((data) => {
+          source.buildinguse = data;
+          setProjectData((prev) => ({ ...prev, buildinguse: data }));
+        })
+        .then(() => getGeoJSONData("activities"))
+        .then((data) => {
+          source.activities = data;
+          setProjectData((prev) => ({ ...prev, activities: data }));
+          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+        })
+        .finally(() => setLoading(false));
+    }
+  }, []);
 
   // Handling to display all areas in a viewport
-  const handleLoadSite = useCallback(() => {
+  const handleLoadSite = () => {
     var bounds = new mapboxgl.LngLatBounds();
 
     // Loop through all areas and extend bounds box
-    siteSelectionData.features.forEach((feature) => {
+    projectData.site.features.forEach((feature) => {
       feature.geometry.coordinates[0].forEach((coordinate) =>
         bounds.extend(coordinate)
       );
@@ -91,22 +131,44 @@ const SiteSelection = () => {
       padding: { top: 20, bottom: 20, left: 20, right: 20 },
       duration: 3000,
     });
-  }, [map]);
+  };
 
   return (
     <>
-      {siteSelectionData.features.map((feature, index) => (
-        <SitePolygon
-          key={`site_${feature.name}`}
-          feature={feature}
-          index={index}
-          map={map}
-          setSiteChosenIndex={setSiteChosenIndex}
-        />
-      ))}
+      {!loading && (
+        <>
+          {projectData.site.features.map((feature, index) => (
+            <SitePolygon
+              key={feature.name}
+              feature={feature}
+              index={index}
+              map={map}
+              setSiteChosen={setSiteChosen}
+            />
+          ))}
 
-      {/* Children Component will be mounted here, and childrent component has siteChosenIndex as a prop */}
-      <Outlet context={[siteChosenIndex || 0]} />
+          <SiteDataContext.Provider
+            value={{
+              siteSelectionData: projectData.site,
+              landuseData: projectData.landuse,
+              buildinguseData: projectData.buildinguse,
+              activitiesData: projectData.activities,
+              setProjectData,
+            }}
+          >
+            <SiteChosenContext.Provider value={{ siteChosen, setSiteChosen }}>
+              {/* Children Component will be mounted here, and childrent component has siteChosenIndex as a prop */}
+              <Outlet />
+            </SiteChosenContext.Provider>
+          </SiteDataContext.Provider>
+        </>
+      )}
+
+      {loading && (
+        <p className="fixed top-0 bottom-0 right-0 left-0 bg-white z-[99999]">
+          Loading....
+        </p>
+      )}
     </>
   );
 };

@@ -1,12 +1,12 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import { Layer, Marker, Source, useMap } from "react-map-gl";
+import { useContext, useEffect, useRef, useState } from "react";
+import { Layer, Source, useMap } from "react-map-gl";
 import $ from "jquery";
 
 // Assets
 import "./Activities.css";
 
-// Data
-import { activitiesData } from "../../../../assets/data/activities";
+import { SiteDataContext } from "../../../SiteSelection/SiteSelection";
+
 import AnnotationTable from "../../../../components/AnnotationTable/AnnotationTable";
 import InfoTable from "../../../../components/InfoTable/InfoTable";
 
@@ -30,6 +30,8 @@ const CaseActivitiesValues = [
 ];
 
 const Activities = ({ site }) => {
+  const { activitiesData } = useContext(SiteDataContext);
+
   const tableMaxWidth = 200,
     tableMaxHeight = 250;
 

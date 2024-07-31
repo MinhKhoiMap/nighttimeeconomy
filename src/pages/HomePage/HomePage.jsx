@@ -23,6 +23,7 @@ const HomePage = () => {
         center: center.features[0].geometry.coordinates,
         zoom: initialView.zoom,
         pitch: initialView.pitch,
+        padding: 0,
       });
     }
   }, []);

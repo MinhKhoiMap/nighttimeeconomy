@@ -1,14 +1,18 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useContext, useEffect, useRef, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { useMap } from "react-map-gl";
 import $ from "jquery";
 
 // Utils
 import { fitAreaUtls } from "../../utils/fitAreaUtls";
+import {
+  SiteChosenContext,
+  SiteDataContext,
+} from "../SiteSelection/SiteSelection";
 
 // Assets
 import "./Details.css";
-import { siteSelectionData } from "../../assets/data/site";
+// import { siteSelectionData } from "../../assets/data/site";
 import Interact from "./Interact/Interact";
 import Project from "./Project/Project";
 import Overview from "./Overview/Overview";
@@ -16,6 +20,9 @@ import Overview from "./Overview/Overview";
 const viewModeArr = ["Overview", "Project", "Interact"];
 
 const Details = () => {
+  const { siteChosen, setSiteChosen } = useContext(SiteChosenContext);
+  const { siteSelectionData } = useContext(SiteDataContext);
+
   // get site selected index from params in url
   let { site } = useParams();
   const navbarRef = useRef();
@@ -28,21 +35,36 @@ const Details = () => {
   const [viewMode, setViewMode] = useState(viewModeArr[2]);
   const [areaName, setAreaName] = useState("");
 
+  function findSiteIndex(siteId) {
+    for (var i = 0; i < siteSelectionData.features.length; i++) {
+      if (siteSelectionData.features[i].properties.id === siteId) {
+        return i.toString();
+      }
+    }
+  }
+
   // Change Selected Site State
   useEffect(() => {
-    setSiteIndex(site);
-    setAreaName(`area ${new Number(site) + 1}`);
-  });
+    let idChosen = findSiteIndex(site);
+    setSiteIndex(`${idChosen}`);
+    if (!siteChosen) {
+      setSiteChosen(siteSelectionData.features[idChosen]);
+    }
+  }, [site]);
+
+  useEffect(() => {
+    if (siteChosen) setAreaName(siteChosen.properties.id);
+  }, [siteChosen]);
 
   const fitArea = () => {
     if (siteIndex) {
       if (viewMode !== viewModeArr[0])
-        fitAreaUtls(siteSelectionData.features[siteIndex]?.geometry, map, {
+        fitAreaUtls(siteChosen.geometry, map, {
           padding: { top: 60, bottom: 60, left: 60, right: 60 },
           duration: 400,
         });
       else
-        fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
+        fitAreaUtls(siteChosen.geometry, map, {
           padding: { top: 60, bottom: 60, left: 600, right: 50 },
           duration: 400,
         });
@@ -132,7 +154,7 @@ const Details = () => {
       {viewMode === viewModeArr[1] && siteIndex && (
         <Project
           siteIndex={siteIndex}
-          projectName={`group ${Number(siteIndex) + 1}`}
+          projectName={site}
           setShowProjectMode={() => setViewMode(viewModeArr[2])}
         />
       )}

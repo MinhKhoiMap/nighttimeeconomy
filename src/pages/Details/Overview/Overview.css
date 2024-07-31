@@ -19,9 +19,10 @@
 }
 
 .overview__container .photo-view > div {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .overview__container .photo-view:hover > div {
-  visibility: visible !important;
+  opacity: 1 !important;
+  backdrop-filter: blur(5px);
 }

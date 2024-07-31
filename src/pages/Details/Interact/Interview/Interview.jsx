@@ -9,14 +9,14 @@ import "react-photo-view/dist/react-photo-view.css";
 import { interviewPointData } from "../../../../assets/data/interview";
 
 import locate from "../../../../assets/images/locate.png";
-import ImageSlider from "../../../../components/ImageSlider/ImageSlider";
+import PhotoSlide from "../../../../components/PhotoSlide/PhotoSlide";
 
 const Interview = ({ site }) => {
   const { map } = useMap();
 
   const [imageGallery, setImageGallery] = useState(null);
 
-  // Loading image icon for location
+  // Loading image icon for location and set event listeners for click point
   useEffect(() => {
     map.loadImage(locate, (err, image) => {
       if (err) throw err;
@@ -27,7 +27,6 @@ const Interview = ({ site }) => {
     });
 
     map.on("click", "interview_point", (e) => {
-      console.log(e.features);
       setImageGallery(JSON.parse(e.features[0].properties["Gallery"]));
     });
 
@@ -57,17 +56,10 @@ const Interview = ({ site }) => {
       </Source>
 
       {imageGallery && (
-        <div
-          className="fixed z-[9999] top-0 bottom-0 left-0 right-0 bg-black/95"
-          onClick={() => setImageGallery(null)}
-        >
-          <div
-            className="absolute w-[90%] h-[90%] top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <ImageSlider imgArr={imageGallery} setIsShow={setImageGallery} />
-          </div>
-        </div>
+        <PhotoSlide
+          gallery={imageGallery}
+          onCloseHandler={() => setImageGallery(null)}
+        />
       )}
     </>
   );
