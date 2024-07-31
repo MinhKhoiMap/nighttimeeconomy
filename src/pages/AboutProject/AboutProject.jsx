@@ -10,7 +10,7 @@ const AboutProject = () => {
   return (
     <div className="about_prj fixed top-0 bottom-0 left-0 right-0 bg-white z-[99999] overflow-auto">
       <section
-        className="sticky bg-black/75 px-5 py-4 flex justify-between items-center top-0"
+        className="sticky bg-black/75 px-5 py-4 flex justify-between items-center top-0 z-[99999]"
         style={{ backdropFilter: "blur(60px)" }}
       >
         <span className="flex items-center">

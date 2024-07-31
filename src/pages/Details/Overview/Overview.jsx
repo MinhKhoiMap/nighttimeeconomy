@@ -74,7 +74,7 @@ const Overview = ({ areaName, siteIndex }) => {
           let shift = arrayOfCounter.shift();
           map.getMap().removeLayer(`effect-${shift}`);
           map.getMap().removeSource(`effect-${shift}`);
-        }, 500);
+        }, 400);
         setPoint(turf.point(arc[counter]));
       } catch (error) {
         console.log(error, "Error at Overview animate Road");

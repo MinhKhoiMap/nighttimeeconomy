@@ -11,7 +11,7 @@ function PhotoSlide({ gallery = [], onCloseHandler }) {
   return (
     <PhotoSlider
       className="z-[999999] photo_slider"
-      images={gallery.map((img) => ({ src: img, key: img }))}
+      images={[...gallery].map((img) => ({ src: img, key: img }))}
       visible={show}
       onClose={() => {
         setShow(false);

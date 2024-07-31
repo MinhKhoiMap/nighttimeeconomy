@@ -32,7 +32,7 @@ const Details = () => {
 
   const [siteIndex, setSiteIndex] = useState(null);
   // Set default mode is "interact"
-  const [viewMode, setViewMode] = useState(viewModeArr[0]);
+  const [viewMode, setViewMode] = useState(viewModeArr[2]);
   const [areaName, setAreaName] = useState("");
 
   function findSiteIndex(siteId) {

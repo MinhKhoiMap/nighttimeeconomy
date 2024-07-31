@@ -1,17 +1,27 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
-import { PhotoProvider, PhotoView } from "react-photo-view";
 
 // CSS
 import "react-photo-view/dist/react-photo-view.css";
 
 // Data
-import { interviewPointData } from "../../../../assets/data/interview";
+import {
+  SiteChosenContext,
+  SiteDataContext,
+} from "../../../SiteSelection/SiteSelection";
 
 import locate from "../../../../assets/images/locate.png";
 import PhotoSlide from "../../../../components/PhotoSlide/PhotoSlide";
+import {
+  getDownloadUrl,
+  getRef,
+  listChilds,
+} from "../../../../services/firebaseStorage";
 
 const Interview = ({ site }) => {
+  const { interviewPointData } = useContext(SiteDataContext);
+  const { siteChosen } = useContext(SiteChosenContext);
+
   const { map } = useMap();
 
   const [imageGallery, setImageGallery] = useState(null);
@@ -26,8 +36,19 @@ const Interview = ({ site }) => {
       }
     });
 
-    map.on("click", "interview_point", (e) => {
-      setImageGallery(JSON.parse(e.features[0].properties["Gallery"]));
+    map.on("click", "interview_point", async (e) => {
+      // setImageGallery(JSON.parse(e.features[0].properties["Gallery"]));
+      let id = e.features[0].properties.id;
+      let galleryRef = getRef(
+        `/nha_trang/media/${siteChosen.properties.id}/interview/${id}`
+      );
+      let imgsRef = await listChilds(galleryRef);
+      let gallery = [];
+      for (let ref of imgsRef) {
+        let url = await getDownloadUrl(ref);
+        gallery.push(url);
+      }
+      setImageGallery(gallery);
     });
 
     map.on("mouseover", "interview_point", () => {

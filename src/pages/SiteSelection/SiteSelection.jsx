@@ -112,6 +112,12 @@ const SiteSelection = () => {
           setProjectData((prev) => ({ ...prev, activities: data }));
           sessionStorage.setItem("geojson_source", JSON.stringify(source));
         })
+        .then(() => getGeoJSONData("interview"))
+        .then((data) => {
+          source.interview = data;
+          setProjectData((prev) => ({ ...prev, interview: data }));
+          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+        })
         .finally(() => setLoading(false));
     }
   }, []);
@@ -153,6 +159,7 @@ const SiteSelection = () => {
               landuseData: projectData.landuse,
               buildinguseData: projectData.buildinguse,
               activitiesData: projectData.activities,
+              interviewPointData: projectData.interview,
               setProjectData,
             }}
           >
