@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 // Assets
 import "./Overview.css";
-import roads from "../../../assets/data/roads";
+// import roads from "../../../assets/data/roads";
 import { SiteDataContext } from "../../SiteSelection/SiteSelection";
 
 // Utils, Services
@@ -20,7 +20,7 @@ import PhotoViewer from "../../../components/PhotoViewer/PhotoViewer";
 import SkeletonLoading from "../../../components/SkeletonLoading/SkeletonLoading";
 
 const Overview = ({ areaName, siteIndex }) => {
-  const { siteSelectionData } = useContext(SiteDataContext);
+  const { siteSelectionData, roads } = useContext(SiteDataContext);
 
   const { map } = useMap();
 

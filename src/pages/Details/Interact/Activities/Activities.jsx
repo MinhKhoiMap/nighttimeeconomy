@@ -118,8 +118,6 @@ const Activities = ({ site }) => {
   };
 
   function handleOnFilterData() {
-    console.log(filterActivities, filterTime);
-
     let f = activitiesData[site].features.filter(({ properties }) => {
       return (
         (filterActivities
@@ -142,7 +140,6 @@ const Activities = ({ site }) => {
 
   useEffect(() => {
     handleOnFilterData();
-    console.log("first");
   }, [site]);
 
   return (

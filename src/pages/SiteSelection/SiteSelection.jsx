@@ -5,8 +5,7 @@ import mapboxgl from "mapbox-gl";
 
 import "./SiteSelection.css";
 import getGeoJSONData from "../../services/fetchGeoJSONData";
-
-// import { siteSelectionData } from "../../assets/data/site";
+import loadcat from "../../assets/images/loadcat.gif";
 
 const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
   const navigate = useNavigate();
@@ -118,6 +117,12 @@ const SiteSelection = () => {
           setProjectData((prev) => ({ ...prev, interview: data }));
           sessionStorage.setItem("geojson_source", JSON.stringify(source));
         })
+        .then(() => getGeoJSONData("road"))
+        .then((data) => {
+          source.roads = data;
+          setProjectData((prev) => ({ ...prev, roads: data }));
+          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+        })
         .finally(() => setLoading(false));
     }
   }, []);
@@ -160,6 +165,7 @@ const SiteSelection = () => {
               buildinguseData: projectData.buildinguse,
               activitiesData: projectData.activities,
               interviewPointData: projectData.interview,
+              roads: projectData.roads,
               setProjectData,
             }}
           >
@@ -173,6 +179,7 @@ const SiteSelection = () => {
 
       {loading && (
         <p className="fixed top-0 bottom-0 right-0 left-0 bg-white z-[99999]">
+          <img src={loadcat} alt="" />
           Loading....
         </p>
       )}

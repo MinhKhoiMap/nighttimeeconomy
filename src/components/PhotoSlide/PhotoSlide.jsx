@@ -6,12 +6,10 @@ import SkeletonLoading from "../SkeletonLoading/SkeletonLoading";
 function PhotoSlide({ gallery = [], onCloseHandler }) {
   const [show, setShow] = useState(true);
 
-  console.log(gallery);
-
   return (
     <PhotoSlider
       className="z-[999999] photo_slider"
-      images={[...gallery].map((img) => ({ src: img, key: img }))}
+      images={gallery.map((img) => ({ src: img, key: img }))}
       visible={show}
       onClose={() => {
         setShow(false);
