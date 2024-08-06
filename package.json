@@ -26,6 +26,7 @@
     "firebase": "^10.12.2",
     "google-auth-library": "^9.11.0",
     "jquery": "^3.7.1",
+    "ldrs": "^1.0.2",
     "lottie-web": "^5.12.2",
     "mapbox-gl": "^3.0.1",
     "pdfjs-dist": "^3.4.120",

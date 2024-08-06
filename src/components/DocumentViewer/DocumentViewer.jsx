@@ -201,6 +201,7 @@ function DocumentViewer({ file }) {
               readingIndicatorPluginInstance,
             ]}
             defaultScale={SpecialZoomLevel.PageFit}
+            renderLoader={() => <loading />}
           />
         </div>
       </div>

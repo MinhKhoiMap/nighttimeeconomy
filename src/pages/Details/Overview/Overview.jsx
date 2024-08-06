@@ -203,6 +203,8 @@ const Overview = ({ areaName, siteIndex }) => {
         </div>
       </div>
 
+      {!intro && !imgUrls && <loading />}
+
       {/* Drawing the point */}
       {point && (
         <Source data={point} type="geojson">

@@ -94,7 +94,7 @@ const data = [
       },
       {
         label: "Residents",
-        backgroundColor: "#FBBC25",
+        backgroundColor: "#38812F",
         categoryPercentage: 1,
         barPercentage: 0.8,
         data: [3, 3, 3, 4, 3, 3, 2],
@@ -128,7 +128,7 @@ const data = [
         backgroundColor: [
           "#3266CC",
           "#DC3912",
-          "#FF991C",
+          "#8F4700",
           "#12961B",
           "#991499",
           "#0099C6",
@@ -162,7 +162,7 @@ const data = [
       },
       {
         label: "Resident",
-        backgroundColor: "#ffc436",
+        backgroundColor: "#38812F",
         categoryPercentage: 1,
         barPercentage: 0.8,
         data: [1, 5, 2, 2, 0, 0, 0],

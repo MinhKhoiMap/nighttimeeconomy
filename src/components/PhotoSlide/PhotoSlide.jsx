@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PhotoSlider } from "react-photo-view";
 import "./PhotoSlide.css";
 import SkeletonLoading from "../SkeletonLoading/SkeletonLoading";
+import imageNotFound from "../../assets/images/image-not-found-icon.svg";
 
-function PhotoSlide({ gallery = [], onCloseHandler }) {
+function PhotoSlide({ gallery, onCloseHandler, isLoading, setIsLoading }) {
   const [show, setShow] = useState(true);
 
   return (
     <PhotoSlider
       className="z-[999999] photo_slider"
-      images={gallery.map((img) => ({ src: img, key: img }))}
+      images={
+        gallery?.length > 0
+          ? gallery.map((img) => ({ src: img, key: img }))
+          : ["fasf"].map((img) => ({ src: img, key: img }))
+      }
       visible={show}
       onClose={() => {
         setShow(false);
@@ -34,16 +39,34 @@ function PhotoSlide({ gallery = [], onCloseHandler }) {
       }}
       maskOpacity={0.8}
       afterClose={() => onCloseHandler()}
-      loadingElement={
-        <div className="min-w-[200px]">
-          <SkeletonLoading type="image" />
-        </div>
-      }
-      brokenElement={
-        <div className="min-w-[200px]">
-          <SkeletonLoading type="video" />
-        </div>
-      }
+      loadingElement={() => {
+        useEffect(() => {
+          setIsLoading(true);
+
+          return () => setIsLoading(false);
+        }, []);
+
+        return (
+          <div className="min-w-[200px]">
+            <SkeletonLoading type="image" />
+          </div>
+        );
+      }}
+      brokenElement={() => (
+        <>
+          {!gallery && (
+            <div className="min-w-[200px]">
+              <SkeletonLoading type="image" />
+            </div>
+          )}
+
+          {gallery?.length > 0 && (
+            <div className="min-w-[200px]">
+              <img src={imageNotFound} alt="image not found" />
+            </div>
+          )}
+        </>
+      )}
     />
   );
 }

@@ -2,9 +2,12 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import "./PhotoViewer.css";
 
+// Assets
+import zoom_icon from "../../assets/images/zoom_icon.json";
+import imageNotFound from "../../assets/images/image-not-found-icon.svg";
+
 // Components
 import LottieIcon from "../LottieIcon/LottieIcon";
-import zoom_icon from "../../assets/images/zoom_icon.json";
 
 function PhotoViewer({ gallery = [] }) {
   return (
@@ -32,6 +35,11 @@ function PhotoViewer({ gallery = [] }) {
           </span>
         );
       }}
+      brokenElement={
+        <div className="min-w-[200px]">
+          <img src={imageNotFound} alt="image not found" />
+        </div>
+      }
     >
       {gallery.map((img) => (
         <PhotoView src={img} key={img}>

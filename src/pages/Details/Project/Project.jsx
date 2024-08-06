@@ -74,8 +74,12 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
 
         {/* If u want navigation page to work, you have to put the viewer into 
         an element which has fixed height */}
-        <section className="relative flex-1" style={{ height: "calc(100% - 65px)" }}>
+        <section
+          className="relative flex-1"
+          style={{ height: "calc(100% - 65px)" }}
+        >
           {slides && <DocumentViewer file={slides} />}
+          {!slides && <loading />}
         </section>
       </div>
     </>

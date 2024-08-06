@@ -144,6 +144,8 @@ const SiteSelection = () => {
     });
   };
 
+  let counter = 0
+
   return (
     <>
       {!loading && (
@@ -178,10 +180,26 @@ const SiteSelection = () => {
       )}
 
       {loading && (
-        <p className="fixed top-0 bottom-0 right-0 left-0 bg-white z-[99999]">
-          <img src={loadcat} alt="" />
-          Loading....
-        </p>
+        <div className="fixed top-0 bottom-0 right-0 left-0 bg-black/85 z-[99999] flex items-end pl-5 pb-2" onLoad={() => console.log("heheh")}>
+          <span className="max-w-[250px] flex gap-2 flex-col">
+            <span className="flex items-end gap-3">
+              <img src={loadcat} alt="" />
+              <p className="loading-wrap text-white font-[Raleway] tracking-[8px]">
+                <span style={{ "--i": 1 }}>L</span>
+                <span style={{ "--i": 2 }}>o</span>
+                <span style={{ "--i": 3 }}>a</span>
+                <span style={{ "--i": 4 }}>d</span>
+                <span style={{ "--i": 5 }}>i</span>
+                <span style={{ "--i": 6 }}>n</span>
+                <span style={{ "--i": 7 }}>g</span>
+                <span style={{ "--i": 8 }}>.</span>
+                <span style={{ "--i": 9 }}>.</span>
+                <span style={{ "--i": 10 }}>.</span>
+              </p>
+            </span>
+            <div className="barload-container"></div>
+          </span>
+        </div>
       )}
     </>
   );

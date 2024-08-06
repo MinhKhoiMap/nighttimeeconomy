@@ -142,9 +142,30 @@ const Activities = ({ site }) => {
     handleOnFilterData();
   }, [site]);
 
+  useEffect(() => {
+    map.on("click", "cluster-point", (e) => {
+      const features = map.queryRenderedFeatures(e.point, {
+        layers: ["cluster-point"],
+      });
+      const clusterId = features[0].properties.cluster_id;
+
+      map
+        .getSource("activities-point")
+        .getClusterExpansionZoom(clusterId, (err, zoom) => {
+          if (err) throw new Error(err);
+
+          map.easeTo({
+            center: features[0].geometry.coordinates,
+            zoom,
+          });
+        });
+    });
+  });
+
   return (
     <>
       <Source
+        id="activities-point"
         type="geojson"
         data={pointData}
         cluster={true}

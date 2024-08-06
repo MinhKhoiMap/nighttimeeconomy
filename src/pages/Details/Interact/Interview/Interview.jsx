@@ -25,12 +25,14 @@ const Interview = ({ site }) => {
   const { map } = useMap();
 
   const [imageGallery, setImageGallery] = useState(null);
+  const [show, setShow] = useState(false);
 
   const savedHandleInterviewClickFunction = useRef();
 
   // useRef to save the last version so we can easily remove the last function
   const showInterviewGallery = useCallback(
     async (e) => {
+      setShow(true);
       const siteID = siteChosen.properties.id;
       let id = e.features[0].properties.id;
       let galleryRef = getRef(`/nha_trang/media/${siteID}/interview/${id}`);
@@ -93,12 +95,19 @@ const Interview = ({ site }) => {
         />
       </Source>
 
-      {imageGallery && (
+      {show && (
         <PhotoSlide
           gallery={imageGallery}
-          onCloseHandler={() => setImageGallery(null)}
+          onCloseHandler={() => {
+            setImageGallery(null);
+            setShow(false);
+          }}
+          isLoading={show}
+          setIsLoading={setShow}
         />
       )}
+
+      {!imageGallery && show && <loading />}
     </>
   );
 };
