@@ -8,6 +8,11 @@
   color: #fff;
   cursor: pointer;
   box-shadow: 0 0 6px 0 #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+#fly:hover {
+  box-shadow: 0 0 26px 0 #fff;
 }
 
 h1.project-name {

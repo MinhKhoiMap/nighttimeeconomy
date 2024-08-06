@@ -185,6 +185,7 @@ const Activities = ({ site }) => {
               110,
               "#f28cb1",
             ],
+            "circle-opacity": 0.7,
             "circle-radius": [
               "step",
               ["get", "point_count"],
@@ -194,6 +195,16 @@ const Activities = ({ site }) => {
               110,
               35,
             ],
+            "circle-stroke-color": [
+              "step",
+              ["get", "point_count"],
+              "#51bbd6",
+              80,
+              "#f1f075",
+              110,
+              "#f28cb1",
+            ],
+            "circle-stroke-width": 1,
           }}
           filter={["has", "point_count"]}
         />
@@ -236,23 +247,7 @@ const Activities = ({ site }) => {
             "circle-pitch-scale": "map",
             "circle-radius-transition": { duration: 0.2 },
           }}
-          filter={[
-            "all",
-            ["!", ["has", "point_count"]],
-            // filterActivities
-            //   ? ["==", ["get", "item_1"], filterActivities]
-            //   : ["!=", ["get", "item_1"], null],
-            // filterTime
-            //   ? [
-            //       ">=",
-            //       ["index-of", filterTime.time, ["to-string", ["get", "Time"]]],
-            //       0,
-            //     ]
-            //   : ["!=", ["get", "Time"], null],
-            // filterTime
-            //   ? ["==", ["get", "Informal"], filterTime.informal]
-            //   : ["!=", ["get", "Informal"], null],
-          ]}
+          filter={["all", ["!", ["has", "point_count"]]]}
         />
 
         {/* Labels Time for Uncluster Point */}
