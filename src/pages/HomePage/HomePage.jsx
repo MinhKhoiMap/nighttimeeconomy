@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 import { initialViewState } from "../../contexts/initialViewContext";
 import { useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
+import firebaseAuth from "../../services/firebaseAuth";
+import mapboxgl from "mapbox-gl";
+import $ from "jquery";
 
 import "./HomePage.css";
 import logo from "../../assets/images/logo.svg";
+import updateScenario from "../../services/updateScenarios";
 
 const HomePage = () => {
   const initialView = useContext(initialViewState);
+
+  const [siteName, setSiteName] = useState("nha_trang");
 
   // get map instance
   const { map } = useMap();
@@ -25,7 +31,41 @@ const HomePage = () => {
         pitch: initialView.pitch,
         padding: 0,
       });
+
+      if ($(".orient-marker").length < 1) {
+        console.log("first");
+        const el = document.createElement("div");
+        el.className = "orient-marker";
+        const size = 4205 / 100;
+        el.style.width = `${size}px`;
+        el.style.height = `${size}px`;
+        el.style.backgroundImage =
+          "url('https://docs.mapbox.com/mapbox-gl-js/assets/pin.svg')";
+        el.style.backgroundSize = "cover";
+        el.style.backgroundRepeat = "no-repeat";
+        el.style.cursor = "pointer";
+
+        new mapboxgl.Marker({
+          element: el,
+          rotationAlignment: "horizon",
+          offset: [0, -size / 2],
+        })
+          .setLngLat([109.1912744, 12.2442343])
+          .addTo(map.getMap());
+      } else {
+        $(".orient-marker").fadeIn();
+      }
     }
+  }, []);
+
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      return true;
+    };
+
+    return () => {
+      window.onbeforeunload = null;
+    };
   }, []);
 
   return (
@@ -42,7 +82,7 @@ const HomePage = () => {
         </p>
       </div>
       <Link
-        to="/nha_trang"
+        to={`/${siteName}`}
         id="fly"
         className="absolute bottom-[50px] left-1/2 -translate-x-1/2 border border-white"
       >

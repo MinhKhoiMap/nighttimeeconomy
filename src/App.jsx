@@ -9,6 +9,7 @@ import "./utils/folderDriveList";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./App.css";
 import generateActivities from "./utils/generateTiming";
+import firebaseAuth from "./services/firebaseAuth";
 
 // Import components
 import HomePage from "./pages/HomePage/HomePage";
@@ -16,6 +17,7 @@ import SiteSelection from "./pages/SiteSelection/SiteSelection";
 import Details from "./pages/Details/Details";
 import Test from "./pages/Test/Test";
 import AboutProject from "./pages/AboutProject/AboutProject";
+import Auth from "./pages/Auth/Auth";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaGVsbG9pYW1raG9pIiwiYSI6ImNscWtoODB0MzIyeTEybm1rc2l1YWg0bm8ifQ.wOn1q83oPkWNJBap0KFrWQ";
@@ -63,6 +65,7 @@ function App() {
   useEffect(() => {
     if (map.current) spinGlobe();
   }, [userInteract]);
+  useEffect(() => {});
 
   return (
     <div className="w-screen h-screen relative">
@@ -83,6 +86,7 @@ function App() {
             setUserInteract(false);
           }, 500);
         }}
+        doubleClickZoom={false}
         // end
         // on mouse up event, client don't interact with the globe so userInteract is changed to false
         onMouseUp={() => {
@@ -96,6 +100,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/nha_trang" element={<SiteSelection />}>
             {/* This childer route decide children component which will be mounted
             in SiteSelection parent component */}

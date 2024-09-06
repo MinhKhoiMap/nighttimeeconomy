@@ -11,6 +11,7 @@ import { SiteDataContext } from "../../../SiteSelection/SiteSelection";
 // Components
 import InfoTable from "../../../../components/InfoTable/InfoTable";
 import AnnotationTable from "../../../../components/AnnotationTable/AnnotationTable";
+import { SourceID } from "../../../../constants";
 
 const CaseBuildinguseValues = [
   "Housing",
@@ -164,7 +165,7 @@ const Buildinguse = ({ site }) => {
           type="geojson"
           data={buildingIntersection}
           generateId={true}
-          id="buildinguse"
+          id={SourceID.buildinguse}
         >
           {
             <Layer

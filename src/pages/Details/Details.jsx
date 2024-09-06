@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useMap } from "react-map-gl";
 import $ from "jquery";
@@ -9,15 +9,22 @@ import {
   SiteChosenContext,
   SiteDataContext,
 } from "../SiteSelection/SiteSelection";
+import {
+  viewModeArr,
+  viewModeCons,
+  viewModeIndexDefault,
+} from "../../constants";
 
 // Assets
 import "./Details.css";
-// import { siteSelectionData } from "../../assets/data/site";
+
+// Components
 import Interact from "./Interact/Interact";
 import Project from "./Project/Project";
 import Overview from "./Overview/Overview";
+import { Menu, MenuItem } from "@mui/material";
 
-const viewModeArr = ["Overview", "Project", "Interact"];
+export const ViewModeContext = createContext({});
 
 const Details = () => {
   const { siteChosen, setSiteChosen } = useContext(SiteChosenContext);
@@ -31,8 +38,11 @@ const Details = () => {
   const navigator = useNavigate();
 
   const [siteIndex, setSiteIndex] = useState(null);
+  const [lastViewMode, setLastViewMode] = useState(
+    viewModeArr[viewModeIndexDefault]
+  );
   // Set default mode is "interact"
-  const [viewMode, setViewMode] = useState(viewModeArr[2]);
+  const [viewMode, setViewMode] = useState(viewModeArr[viewModeIndexDefault]);
   const [areaName, setAreaName] = useState("");
 
   function findSiteIndex(siteId) {
@@ -58,7 +68,8 @@ const Details = () => {
 
   const fitArea = () => {
     if (siteIndex) {
-      if (viewMode !== viewModeArr[0])
+      console.log(viewMode);
+      if (viewMode !== viewModeArr[viewModeCons.overview])
         fitAreaUtls(siteChosen.geometry, map, {
           padding: { top: 60, bottom: 60, left: 60, right: 60 },
           duration: 400,
@@ -102,65 +113,109 @@ const Details = () => {
 
   return (
     <>
-      <div
-        className="details__navbar details__navbar--show opacity-100"
-        ref={navbarRef}
-      >
-        <div className="flex items-center justify-center gap-1">
-          <h3
-            className="capitalize cursor-pointer relative pr-5
+      {viewMode !== viewModeCons.edit && (
+        <div
+          className="details__navbar details__navbar--show opacity-100"
+          ref={navbarRef}
+        >
+          <div className="flex items-center justify-center gap-1">
+            <h3
+              className="capitalize cursor-pointer relative pr-5
             after:w-[1.25px] after:h-[200%] after:bg-[#ddd] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-full after:rounded-xl"
-            onClick={() => navigator("/")}
-            title="Home"
-          >
-            Night Time Economy
-          </h3>
-          <button
-            className="cursor-pointer capitalize ml-4 px-3 hover:text-white transition-colors duration-150"
-            onClick={fitArea}
-          >
-            {areaName}
-          </button>
-          <button
-            className={`text-white text-center ${
-              viewMode === viewModeArr[0] && "current-mode"
-            }`}
-            onClick={() => setViewMode(viewModeArr[0])}
-          >
-            Overview
-          </button>
-          <button
-            className={`text-white text-center ${
-              viewMode === viewModeArr[2] && "current-mode"
-            }`}
-            onClick={() => setViewMode(viewModeArr[2])}
-          >
-            Interact
-          </button>
-          <button
-            className={`text-white text-center ${
-              viewMode === viewModeArr[1] && "current-mode"
-            }`}
-            onClick={() => setViewMode(viewModeArr[1])}
-          >
-            Project
-          </button>
+              onClick={() => navigator("/")}
+              title="Home"
+            >
+              Night Time Economy
+            </h3>
+            <button
+              className="cursor-pointer capitalize ml-4 px-3 hover:text-white transition-colors duration-150"
+              onClick={fitArea}
+            >
+              {areaName}
+            </button>
+            <button
+              className={`text-white text-center ${
+                viewMode === viewModeArr[viewModeCons.overview] &&
+                "current-mode"
+              }`}
+              onClick={() => {
+                setLastViewMode(viewMode);
+                setViewMode(viewModeArr[viewModeCons.overview]);
+              }}
+            >
+              Overview
+            </button>
+            <button
+              className={`text-white text-center ${
+                viewMode === viewModeArr[viewModeCons.interact] &&
+                "current-mode"
+              }`}
+              onClick={() => {
+                setLastViewMode(viewMode);
+                setViewMode(viewModeArr[viewModeCons.interact]);
+              }}
+            >
+              Interact
+            </button>
+            <button
+              className={`text-white text-center ${
+                viewMode === viewModeArr[viewModeCons.project] && "current-mode"
+              }`}
+              onClick={() => {
+                setLastViewMode(viewMode);
+                setViewMode(viewModeArr[viewModeCons.project]);
+              }}
+            >
+              Project
+            </button>
+          </div>
         </div>
-      </div>
-
-      {viewMode === viewModeArr[2] && siteIndex && (
-        <Interact siteIndex={siteIndex} />
       )}
-      {viewMode === viewModeArr[1] && siteIndex && (
+
+      {(viewMode === viewModeArr[viewModeCons.interact] ||
+        viewMode === "edit") &&
+        siteIndex && (
+          <ViewModeContext.Provider value={{ viewMode, setViewMode }}>
+            <Interact siteIndex={siteIndex} />
+          </ViewModeContext.Provider>
+        )}
+      {viewMode === viewModeArr[viewModeCons.project] && siteIndex && (
         <Project
           siteIndex={siteIndex}
           projectName={site}
-          setShowProjectMode={() => setViewMode(viewModeArr[2])}
+          setShowProjectMode={() => setViewMode(lastViewMode)}
         />
       )}
-      {viewMode === viewModeArr[0] && siteIndex && (
+      {viewMode === viewModeArr[viewModeCons.overview] && siteIndex && (
         <Overview areaName={areaName} siteIndex={siteIndex} />
       )}
+
+      {/* <div className="fixed top-[300px] left-[30px]">
+        <Menu
+          id="lock-menu"
+          open={true}
+          MenuListProps={{
+            "aria-labelledby": "lock-button",
+            role: "listbox",
+          }}
+          anchorEl={<p>alkfjskldfjakl;sdjf</p>}
+        >
+          {[
+            "Show some love to MUI",
+            "Show all notification content",
+            "Hide sensitive notification content",
+            "Hide all notification content",
+          ].map((option, index) => (
+            <MenuItem
+              key={option}
+              disabled={index === 0}
+              onClick={(event) => handleMenuItemClick(event, index)}
+            >
+              {option}
+            </MenuItem>
+          ))}
+        </Menu>
+      </div> */}
     </>
   );
 };

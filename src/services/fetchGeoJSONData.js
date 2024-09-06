@@ -1,9 +1,10 @@
 import { ref } from "firebase/storage";
 import { getDownloadUrl, getRef, listChilds, storage } from "./firebaseStorage";
 
-const folderStorageRef = getRef("/nha_trang/geojson");
-
 async function getGeoJSONData(fileName) {
+  let path = window.location.pathname.split("/");
+  const folderStorageRef = getRef(`${path[1]}/geojson`);
+
   try {
     const geojson = ref(folderStorageRef, `${fileName}.json`);
     const url = await getDownloadUrl(geojson);

@@ -17,6 +17,7 @@ import {
   getRef,
   listChilds,
 } from "../../../../services/firebaseStorage";
+import { SourceID } from "../../../../constants";
 
 const Interview = ({ site }) => {
   const { interviewPointData } = useContext(SiteDataContext);
@@ -81,7 +82,11 @@ const Interview = ({ site }) => {
 
   return (
     <>
-      <Source type="geojson" data={interviewPointData[site]}>
+      <Source
+        type="geojson"
+        data={interviewPointData[site]}
+        id={SourceID.interview}
+      >
         <Layer
           id="interview_point"
           type="symbol"

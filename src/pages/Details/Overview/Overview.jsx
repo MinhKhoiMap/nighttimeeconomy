@@ -130,6 +130,7 @@ const Overview = ({ areaName, siteIndex }) => {
       for (let ref of filesRef) {
         let url = await getDownloadUrl(ref);
         let meta = await getMeta(ref);
+        console.log(meta);
         if (meta.contentType.includes("video")) {
           setIntro(url);
         } else {

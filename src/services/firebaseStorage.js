@@ -1,11 +1,13 @@
-import { initializeApp } from "firebase/app";
 import {
   getStorage,
   ref,
   listAll,
   getDownloadURL,
   getMetadata,
+  uploadString,
+  list,
 } from "firebase/storage";
+import firebaseApp from "./firebaseApp";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCXtIfrOkcg0Te-mY8t8KkrwxlZ0aqKPF0",
@@ -16,7 +18,7 @@ const firebaseConfig = {
   appId: "1:940436623314:web:24c3c975580ad499fb020b",
 };
 
-const app = initializeApp(firebaseConfig);
+const app = firebaseApp.registerApp;
 const storage = getStorage(app);
 
 function getRef(path) {
@@ -48,4 +50,28 @@ async function getMeta(fileRef) {
   }
 }
 
-export { app, storage, getRef, getDownloadUrl, getMeta, listChilds };
+async function updloadScenario(fileName, scenario) {
+  const fileRef = ref(storage, fileName);
+  let data = JSON.stringify(scenario);
+  return uploadString(fileRef, data).catch((err) => console.log(err));
+}
+
+async function listChild(folderPath) {
+  try {
+    const folderRef = ref(storage, folderPath);
+    return await listAll(folderRef);
+  } catch (err) {
+    console.log("Err at listChild", err);
+  }
+}
+
+export {
+  app,
+  storage,
+  getRef,
+  getDownloadUrl,
+  getMeta,
+  listChilds,
+  listChild,
+  updloadScenario,
+};

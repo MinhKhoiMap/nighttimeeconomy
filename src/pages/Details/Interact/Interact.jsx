@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState, useContext } from "react";
+import { useEffect, useRef, useState, useContext, createContext } from "react";
 import { useMap } from "react-map-gl";
+import $ from "jquery";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -25,16 +26,25 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 
 // Utils
 import "./Interact.css";
+import firebaseAuth from "../../../services/firebaseAuth";
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
-// import { siteSelectionData } from "../../../assets/data/site";
 
+// Assets
+import categories from "../../../assets/images/categories.json";
+
+// Components"
+import SpeedDialCustom from "../../../components/SpeedDialCustom/SpeedDialCustom";
+import LottieIcon from "../../../components/LottieIcon/LottieIcon";
 import { SiteDataContext } from "../../SiteSelection/SiteSelection";
 import Landuse from "./Landuse/Landuse";
 import Buildinguse from "./Buildinguse/Buildinguse";
 import Activities from "./Activities/Activities";
 import Interview from "./Interview/Interview";
+import { useNavigate } from "react-router-dom";
+import { interactMode, viewModeCons } from "../../../constants";
+import { ViewModeContext } from "../Details";
+import { onAuthStateChanged } from "firebase/auth";
 
-const filterModeArr = ["interview", "landuse", "buildinguse", "activities"];
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -178,18 +188,35 @@ const data = [
   },
 ];
 
+export const InteractModeContext = createContext(null);
+
 const Interact = ({ siteIndex }) => {
   const { siteSelectionData } = useContext(SiteDataContext);
+  const { viewMode, setViewMode } = useContext(ViewModeContext);
+
+  const navigator = useNavigate();
 
   const { map } = useMap();
   const chartRef = useRef(null);
 
-  const [filterMode, setFilterMode] = useState(filterModeArr[1]);
+  const [user, setUser] = useState(null);
+
+  const [filterMode, setFilterMode] = useState(interactMode.activities);
   const [chartData, setChartData] = useState(data[siteIndex]);
 
   // Handle Fitbounds to the selected area
   const fitArea = () => {
-    if (filterMode !== filterModeArr[0])
+    if (viewMode === viewModeCons.edit) {
+      fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
+        padding: {
+          top: 0,
+          bottom: 0,
+          left: 300,
+          right: parseInt(window.screenX / 4) + 100,
+        },
+        duration: 400,
+      });
+    } else if (filterMode !== interactMode.interview)
       fitAreaUtls(siteSelectionData.features[siteIndex]?.geometry, map, {
         padding: { top: 60, bottom: 60, left: 60, right: 60 },
         duration: 400,
@@ -201,10 +228,18 @@ const Interact = ({ siteIndex }) => {
       });
   };
 
+  useEffect(() => {
+    onAuthStateChanged(firebaseAuth.auth, (user) => {
+      if (user) {
+        setUser(firebaseAuth.auth.currentUser);
+      }
+    });
+  }, []);
+
   // Handle Fit Bounds When Change Site State (siteIndex, viewMode state)
   useEffect(() => {
     if (siteIndex && siteSelectionData) fitArea();
-  }, [siteIndex, filterMode, siteSelectionData]);
+  }, [siteIndex, filterMode, siteSelectionData, viewMode]);
 
   useEffect(() => {
     setChartData(data[siteIndex]);
@@ -216,39 +251,43 @@ const Interact = ({ siteIndex }) => {
         <div className="details__filter">
           <div
             className={`details__filter-tool ${
-              filterMode === filterModeArr[1] && "details__filter-tool--active"
+              filterMode === interactMode.landuse &&
+              "details__filter-tool--active"
             }`}
-            onClick={() => setFilterMode(filterModeArr[1])}
+            onClick={() => setFilterMode(interactMode.landuse)}
           >
             <p>Land Use</p>
           </div>
           <div
             className={`details__filter-tool ${
-              filterMode === filterModeArr[2] && "details__filter-tool--active"
+              filterMode === interactMode.buildinguse &&
+              "details__filter-tool--active"
             }`}
-            onClick={() => setFilterMode(filterModeArr[2])}
+            onClick={() => setFilterMode(interactMode.buildinguse)}
           >
             <p>Building Use</p>
           </div>
           <div
             className={`details__filter-tool ${
-              filterMode === filterModeArr[3] && "details__filter-tool--active"
+              filterMode === interactMode.activities &&
+              "details__filter-tool--active"
             }`}
-            onClick={() => setFilterMode(filterModeArr[3])}
+            onClick={() => setFilterMode(interactMode.activities)}
           >
             <p>Activities Point</p>
           </div>
           <div
             className={`details__filter-tool ${
-              filterMode === filterModeArr[0] && "details__filter-tool--active"
+              filterMode === interactMode.interview &&
+              "details__filter-tool--active"
             }`}
-            onClick={() => setFilterMode(filterModeArr[0])}
+            onClick={() => setFilterMode(interactMode.interview)}
           >
             <p>Interview Point</p>
           </div>
         </div>
       </div>
-      {filterMode === filterModeArr[0] && chartData && (
+      {filterMode === interactMode.interview && chartData && (
         <div className="w-[500px] h-[350px] mt-6 fixed top-[300px] left-[30px]">
           <Chart
             ref={chartRef}
@@ -308,20 +347,77 @@ const Interact = ({ siteIndex }) => {
           />
         </div>
       )}
-      {filterMode === filterModeArr[1] && siteIndex && (
-        <Landuse site={siteIndex} />
-      )}
 
-      {filterMode === filterModeArr[2] && siteIndex && (
-        <Buildinguse site={siteIndex} />
-      )}
+      <InteractModeContext.Provider value={{ interactMode: filterMode }}>
+        {filterMode === interactMode.landuse && siteIndex && (
+          <Landuse site={siteIndex} />
+        )}
 
-      {filterMode === filterModeArr[3] && siteIndex && (
-        <Activities site={siteIndex} />
-      )}
+        {filterMode === interactMode.buildinguse && siteIndex && (
+          <Buildinguse site={siteIndex} />
+        )}
 
-      {filterMode === filterModeArr[0] && siteIndex && (
-        <Interview site={siteIndex} />
+        {filterMode === interactMode.activities && siteIndex && (
+          <Activities site={siteIndex} />
+        )}
+
+        {filterMode === interactMode.interview && siteIndex && (
+          <Interview site={siteIndex} />
+        )}
+      </InteractModeContext.Provider>
+
+      {viewMode !== viewModeCons.edit && (
+        <div className="fixed top-6 right-6">
+          <SpeedDialCustom
+            direction="down"
+            icon={
+              <LottieIcon
+                iconType={categories}
+                size={30}
+                color="black"
+                isAnimateOnHover={true}
+              />
+            }
+            actions={
+              user
+                ? [
+                    {
+                      name: user.email,
+                      icon: <i className="fa-solid fa-user"></i>,
+                      action: () => {},
+                    },
+                    {
+                      name: "Edit Mode",
+                      icon: <i className="fa-solid fa-pen-ruler"></i>,
+                      action: () => {
+                        setViewMode(viewModeCons.edit);
+                      },
+                    },
+                    {
+                      name: "Log out",
+                      icon: (
+                        <i className="text-white fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+                      ),
+                      action: () => {
+                        firebaseAuth.signOut().then(() => {
+                          window.location.reload();
+                        });
+                      },
+                      bg: "#ce2027",
+                    },
+                  ]
+                : [
+                    {
+                      name: "Log in",
+                      icon: <i className="fa-solid fa-user"></i>,
+                      action: () => {
+                        navigator("/auth");
+                      },
+                    },
+                  ]
+            }
+          />
+        </div>
       )}
     </>
   );

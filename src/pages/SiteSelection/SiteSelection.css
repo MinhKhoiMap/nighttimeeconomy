@@ -119,7 +119,7 @@
 }
 
 .barload-container {
-  --uib-size: 150px;
+  --uib-size: 200px;
   --uib-color: linear-gradient(to right, #ee0979, #ff6a00);
   --uib-bg-color: #fff;
   --uib-speed: 1.4s;

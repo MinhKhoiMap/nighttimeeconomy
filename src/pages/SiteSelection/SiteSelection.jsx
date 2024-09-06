@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import { Outlet, useNavigate } from "react-router-dom";
+import $ from "jquery";
 import mapboxgl from "mapbox-gl";
 
 import "./SiteSelection.css";
@@ -10,7 +11,7 @@ import loadcat from "../../assets/images/loadcat.gif";
 const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
   const navigate = useNavigate();
 
-  let name = `${feature.name}`;
+  let name = `${feature.properties.id}`;
 
   // Set event listeners to each layer
   useEffect(() => {
@@ -62,6 +63,16 @@ const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
         type="fill"
         paint={{ "fill-color": "rgba(13, 16, 92, 0.3)" }}
       />
+      {/* <Layer
+        type="symbol"
+        layout={{
+          "text-field": (index + 1).toString(),
+          "text-size": 16,
+          "text-anchor": "center",
+          "text-allow-overlap": true,
+        }}
+        paint={{ "text-color": "white" }}
+      /> */}
     </Source>
   );
 };
@@ -87,6 +98,8 @@ const SiteSelection = () => {
   }, [loading]);
 
   useEffect(() => {
+    $(".orient-marker").fadeOut();
+
     if (loading) {
       let source = {};
 
@@ -144,7 +157,7 @@ const SiteSelection = () => {
     });
   };
 
-  let counter = 0
+  // let counter = 0;
 
   return (
     <>
@@ -180,7 +193,7 @@ const SiteSelection = () => {
       )}
 
       {loading && (
-        <div className="fixed top-0 bottom-0 right-0 left-0 bg-black/85 z-[99999] flex items-end pl-5 pb-2" onLoad={() => console.log("heheh")}>
+        <div className="fixed top-0 bottom-0 right-0 left-0 bg-black/85 z-[99999] flex items-end pl-5 pb-2">
           <span className="max-w-[250px] flex gap-2 flex-col">
             <span className="flex items-end gap-3">
               <img src={loadcat} alt="" />
@@ -197,7 +210,7 @@ const SiteSelection = () => {
                 <span style={{ "--i": 10 }}>.</span>
               </p>
             </span>
-            <div className="barload-container"></div>
+            <div className="barload-container w-[250px]"></div>
           </span>
         </div>
       )}
