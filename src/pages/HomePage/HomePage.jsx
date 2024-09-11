@@ -36,7 +36,7 @@ const HomePage = () => {
         console.log("first");
         const el = document.createElement("div");
         el.className = "orient-marker";
-        const size = 4205 / 100;
+        const size = 50;
         el.style.width = `${size}px`;
         el.style.height = `${size}px`;
         el.style.backgroundImage =

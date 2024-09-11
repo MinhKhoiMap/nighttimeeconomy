@@ -5,24 +5,26 @@ import {
 } from "../../pages/SiteSelection/SiteSelection";
 import firebaseAuth from "../../services/firebaseAuth";
 import LottieIcon from "../LottieIcon/LottieIcon";
-
-import account_icon from "../../assets/images/account.json";
-import {
-  getDownloadUrl,
-  getMeta,
-  listChild,
-  listChilds,
-} from "../../services/firebaseStorage";
 import { Menu, MenuItem } from "@mui/material";
 import { useMap } from "react-map-gl";
-import { SourceID } from "../../constants";
+
+// Assets
+import account_icon from "../../assets/images/account.json";
+
+// Utils
+import { getDownloadUrl, listChilds } from "../../services/firebaseStorage";
+import {
+  EditModeData,
+  InteractModeContext,
+} from "../../pages/Details/Interact/Interact";
+
+// Components
 import TextFieldCustom from "../TextFieldCustom/TextFieldCustom";
-import { InteractModeContext } from "../../pages/Details/Interact/Interact";
 
 const EditSideBar = ({ site, submitForm, children }) => {
   const { siteChosen } = useContext(SiteChosenContext);
-  const { setProjectData } = useContext(SiteDataContext);
-  const { interactMode } = useContext(InteractModeContext);
+  const { listScenarios, scenarioChosen, setScenarioChosen } =
+    useContext(EditModeData);
 
   const { map } = useMap();
 
@@ -30,12 +32,11 @@ const EditSideBar = ({ site, submitForm, children }) => {
   const resizerBtn = useRef(null);
 
   const [anchorEl, setAnchorEl] = useState(null);
-  const openMenu = Boolean(anchorEl);
 
-  const [scenarioChosen, setScenarioChosen] = useState(null);
-  const [listScenarios, setListScenarios] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showEditName, setShowEditName] = useState(true);
+
+  const openMenu = Boolean(anchorEl);
 
   function initResizeableHanlder(resizer, siderbar) {
     var x, w;
@@ -65,75 +66,86 @@ const EditSideBar = ({ site, submitForm, children }) => {
   }
 
   useEffect(() => {
+    if (typeof scenarioChosen !== "string") {
+      setShowEditName(false);
+      // if (scenarioChosen === "Base") loadScenario();
+      // else loadScenario(scenarioChosen);
+    } else {
+      setShowEditName(true);
+    }
+  }, [scenarioChosen]);
+
+  useEffect(() => {
     initResizeableHanlder(resizerBtn.current, editSideBar.current);
 
-    setIsLoading(true);
+    // setIsLoading(true);
 
-    listChild(`/nha_trang/scenarios/${siteChosen.properties.id}`).then(
-      (res) => {
-        let listScenarios = [],
-          updated = [];
+    // listChild(`/nha_trang/scenarios/${siteChosen.properties.id}`).then(
+    //   (res) => {
+    //     let listScenarios = [],
+    //       updated = [];
 
-        res.prefixes.forEach((folderRef) => {
-          if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
-            listScenarios.push(folderRef);
-          }
-        });
+    //     res.prefixes.forEach((folderRef) => {
+    //       if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
+    //         listScenarios.push(folderRef);
+    //       }
+    //     });
 
-        if (listScenarios.length > 0) {
-          for (let scenario of listScenarios) {
-            listChild(scenario.fullPath).then((res) => {
-              getMeta(res.items[0])
-                .then((meta) => {
-                  updated.push({ date: meta.updated, parent: meta.ref.parent });
-                })
-                .then(() => {
-                  updated.sort((a, b) =>
-                    new Date(a.date) > new Date(b.date) ? -1 : 1
-                  );
-                  setListScenarios(updated);
-                  console.log(updated);
-                  setScenarioChosen(updated[0].parent.name.split("-")[1]);
-                  loadScenario(updated[0].parent);
-                  setShowEditName(false);
-                });
-            });
-          }
-        } else {
-          setIsLoading(false);
-          setScenarioChosen(null);
-          setShowEditName(true);
-        }
-      }
-    );
+    //     if (listScenarios.length > 0) {
+    //       for (let scenario of listScenarios) {
+    //         listChild(scenario.fullPath).then((res) => {
+    //           getMeta(res.items[0])
+    //             .then((meta) => {
+    //               updated.push({ date: meta.updated, parent: meta.ref.parent });
+    //             })
+    //             .then(() => {
+    //               updated.sort((a, b) =>
+    //                 new Date(a.date) > new Date(b.date) ? -1 : 1
+    //               );
+    //               setListScenarios(updated);
+    //               console.log(updated);
+    //               setScenarioChosen(updated[0].parent.name.split("-")[1]);
+    //               loadScenario(updated[0].parent);
+    //               setShowEditName(false);
+    //             });
+    //         });
+    //       }
+    //     } else {
+    //       setIsLoading(false);
+    //       setListScenarios(null);
+    //       setScenarioChosen(null);
+    //       setShowEditName(true);
+    //     }
+    //   }
+    // );
   }, [site]);
 
-  async function loadScenario(scenario) {
-    setIsLoading(true);
-    if (scenario) {
-      let scenarioData = {};
-      const items = await listChilds(scenario);
-      for (let item of items) {
-        const name = item.name.split(".json")[0];
-        const downloadURL = await getDownloadUrl(item);
-        const res = await fetch(downloadURL);
-        const data = await res.json();
-        scenarioData[name] = data;
-      }
+  // async function loadScenario(scenario) {
+  //   setIsLoading(true);
+  //   if (scenario) {
+  //     let scenarioData = {};
+  //     const items = await listChilds(scenario);
+  //     for (let item of items) {
+  //       const name = item.name.split(".json")[0];
+  //       const downloadURL = await getDownloadUrl(item);
+  //       const res = await fetch(downloadURL);
+  //       const data = await res.json();
+  //       scenarioData[name] = data;
+  //     }
 
-      setProjectData((prev) => ({ ...prev, ...scenarioData }));
-      map
-        .getSource(SourceID[interactMode])
-        .setData(scenarioData[interactMode][site]);
-    } else {
-      let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
-      setProjectData(baseData);
-      map
-        .getSource(SourceID[interactMode])
-        .setData(baseData[interactMode][site]);
-    }
-    setIsLoading(false);
-  }
+  //     setProjectData((prev) => ({ ...prev, ...scenarioData }));
+  //     map
+  //       .getSource(SourceID[interactMode])
+  //       .setData(scenarioData[interactMode][site]);
+  //   } else {
+  //     let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
+  //     setProjectData(baseData);
+  //     map
+  //       .getSource(SourceID[interactMode])
+  //       .setData(baseData[interactMode][site]);
+  //   }
+  //   setIsLoading(false);
+  // }
 
   function handleCloseMenu(e) {
     setAnchorEl(null);
@@ -141,7 +153,7 @@ const EditSideBar = ({ site, submitForm, children }) => {
 
   return (
     <div
-      className="fixed w-[40%] min-w-[35%] max-w-[52%] right-0 top-0 bottom-0 z-[9999] bg-[#121212] flex flex-row-reverse"
+      className="fixed w-[40%] min-w-[500px] max-w-[52%] right-0 top-0 bottom-0 z-[9999] bg-[#121212] flex flex-row-reverse"
       ref={editSideBar}
     >
       <div className="sidebar__edit overflow-x-hidden overflow-y-auto h-full w-full border-l border-[#5e5e5f]">
@@ -154,7 +166,11 @@ const EditSideBar = ({ site, submitForm, children }) => {
               className="w-full text-sm hover:bg-white/20 rounded-md px-2 flex items-center gap-3"
               onClick={(e) => setAnchorEl(e.currentTarget)}
             >
-              <span className="w-[80%] truncate">{scenarioChosen}</span>
+              <span className="w-[80%] truncate">
+                {scenarioChosen && typeof scenarioChosen !== "string"
+                  ? scenarioChosen.name.split("-")[1]
+                  : scenarioChosen}
+              </span>
               <span>
                 <i className="fa-regular fa-square-caret-down"></i>
               </span>
@@ -173,7 +189,6 @@ const EditSideBar = ({ site, submitForm, children }) => {
                 title="Base"
                 onClick={() => {
                   setScenarioChosen("Base");
-                  loadScenario();
                   handleCloseMenu();
                 }}
               >
@@ -190,9 +205,8 @@ const EditSideBar = ({ site, submitForm, children }) => {
                       new Date(scenario.date).toUTCString()
                     }
                     onClick={() => {
-                      console.log(scenario.parent);
-                      loadScenario(scenario.parent);
-                      setScenarioChosen(scenario.parent.name.split("-")[1]);
+                      // loadScenario(scenario.parent);
+                      setScenarioChosen(scenario.parent);
                       handleCloseMenu();
                     }}
                   >
@@ -204,7 +218,13 @@ const EditSideBar = ({ site, submitForm, children }) => {
                     </span>
                   </MenuItem>
                 ))}
-              <MenuItem style={{ borderTop: "1px solid #5e5e5f" }}>
+              <MenuItem
+                style={{ borderTop: "1px solid #5e5e5f" }}
+                onClick={() => {
+                  setScenarioChosen("Untitled");
+                  handleCloseMenu();
+                }}
+              >
                 <i className="fa-solid fa-plus mr-2"></i>
                 New
               </MenuItem>

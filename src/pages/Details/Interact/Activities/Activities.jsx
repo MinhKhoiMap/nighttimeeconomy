@@ -39,6 +39,7 @@ const Editor = ({ site, updatePointFunc }) => {
 
   const [imagesUpload, setImagesUpload] = useState([]);
   const [pointTick, setPointTick] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const { map } = useMap();
 
@@ -131,8 +132,10 @@ const Editor = ({ site, updatePointFunc }) => {
   }
 
   // Handle Upload Scenario (Update/Add New)
-  function submitScenario(e) {
+  async function submitScenario(e) {
     e.preventDefault();
+    setIsLoading(true);
+
     const formData = new FormData(e.target);
     let params = {};
 
@@ -179,11 +182,12 @@ const Editor = ({ site, updatePointFunc }) => {
 
     for (let fileName in geojson) {
       let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
-      updloadScenario(ref, geojson[fileName]).then(() => {
+      await updloadScenario(ref, geojson[fileName]).then(() => {
         console.log(`Upload ${fileName} successfully`);
         localStorage.setItem("lastEditedScenario", scenario);
       });
     }
+    setIsLoading(false);
   }
 
   return (
@@ -431,6 +435,7 @@ const Editor = ({ site, updatePointFunc }) => {
       >
         Save
       </button>
+      {isLoading && <loading />}
     </EditSideBar>
   );
 };
@@ -560,11 +565,7 @@ const Activities = ({ site }) => {
 
   useEffect(() => {
     handleOnFilterData();
-  }, [filterTime, filterActivities]);
-
-  useEffect(() => {
-    handleOnFilterData();
-  }, [site]);
+  }, [site, filterTime, filterActivities]);
 
   useEffect(() => {
     map.on("click", "cluster-point", (e) => {

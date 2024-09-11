@@ -27,7 +27,8 @@ const CaseLanduseValues = [
 ];
 
 const Landuse = ({ site }) => {
-  const { landuseData } = useContext(SiteDataContext);
+  const { landuseData, activitiesData, setProjectData } =
+    useContext(SiteDataContext);
 
   const tableMaxWidth = 300,
     tableMaxHeight = 350;
@@ -135,7 +136,6 @@ const Landuse = ({ site }) => {
           />
         </Source>
       )}
-
       <div className="fixed" ref={mouseDivRef}>
         {showTable && (
           <InfoTable
