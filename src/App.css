@@ -1,3 +1,7 @@
+*::-webkit-scrollbar-track {
+  
+}
+
 .about-project__container a {
   font-size: 18px;
   width: fit-content;

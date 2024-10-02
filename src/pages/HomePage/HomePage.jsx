@@ -9,7 +9,6 @@ import $ from "jquery";
 
 import "./HomePage.css";
 import logo from "../../assets/images/logo.svg";
-import updateScenario from "../../services/updateScenarios";
 
 const HomePage = () => {
   const initialView = useContext(initialViewState);
@@ -33,7 +32,6 @@ const HomePage = () => {
       });
 
       if ($(".orient-marker").length < 1) {
-        console.log("first");
         const el = document.createElement("div");
         el.className = "orient-marker";
         const size = 50;

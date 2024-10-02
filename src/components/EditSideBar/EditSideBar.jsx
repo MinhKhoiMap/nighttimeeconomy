@@ -1,42 +1,41 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import {
-  SiteChosenContext,
-  SiteDataContext,
-} from "../../pages/SiteSelection/SiteSelection";
 import firebaseAuth from "../../services/firebaseAuth";
 import LottieIcon from "../LottieIcon/LottieIcon";
 import { Menu, MenuItem } from "@mui/material";
 import { useMap } from "react-map-gl";
+import {
+  SiteChosenContext,
+  SiteDataContext,
+} from "../../pages/SiteSelection/SiteSelection";
+import { ViewModeContext } from "../../pages/Details/Details";
 
 // Assets
 import account_icon from "../../assets/images/account.json";
 
 // Utils
-import { getDownloadUrl, listChilds } from "../../services/firebaseStorage";
-import {
-  EditModeData,
-  InteractModeContext,
-} from "../../pages/Details/Interact/Interact";
+import { EditModeData } from "../../pages/Details/Interact/Interact";
 
 // Components
 import TextFieldCustom from "../TextFieldCustom/TextFieldCustom";
+import { viewModeCons } from "../../constants";
 
 const EditSideBar = ({ site, submitForm, children }) => {
   const { siteChosen } = useContext(SiteChosenContext);
   const { listScenarios, scenarioChosen, setScenarioChosen } =
     useContext(EditModeData);
-
-  const { map } = useMap();
+  const { setViewMode } = useContext(ViewModeContext);
 
   const editSideBar = useRef(null);
   const resizerBtn = useRef(null);
 
   const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorAccountEl, setAnchorAccountEl] = useState(null);
 
   const [isLoading, setIsLoading] = useState(false);
-  const [showEditName, setShowEditName] = useState(true);
+  const [showEditName, setShowEditName] = useState(false);
 
-  const openMenu = Boolean(anchorEl);
+  const openMenu = Boolean(anchorEl),
+    openAccountMenu = Boolean(anchorAccountEl);
 
   function initResizeableHanlder(resizer, siderbar) {
     var x, w;
@@ -77,87 +76,23 @@ const EditSideBar = ({ site, submitForm, children }) => {
 
   useEffect(() => {
     initResizeableHanlder(resizerBtn.current, editSideBar.current);
-
-    // setIsLoading(true);
-
-    // listChild(`/nha_trang/scenarios/${siteChosen.properties.id}`).then(
-    //   (res) => {
-    //     let listScenarios = [],
-    //       updated = [];
-
-    //     res.prefixes.forEach((folderRef) => {
-    //       if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
-    //         listScenarios.push(folderRef);
-    //       }
-    //     });
-
-    //     if (listScenarios.length > 0) {
-    //       for (let scenario of listScenarios) {
-    //         listChild(scenario.fullPath).then((res) => {
-    //           getMeta(res.items[0])
-    //             .then((meta) => {
-    //               updated.push({ date: meta.updated, parent: meta.ref.parent });
-    //             })
-    //             .then(() => {
-    //               updated.sort((a, b) =>
-    //                 new Date(a.date) > new Date(b.date) ? -1 : 1
-    //               );
-    //               setListScenarios(updated);
-    //               console.log(updated);
-    //               setScenarioChosen(updated[0].parent.name.split("-")[1]);
-    //               loadScenario(updated[0].parent);
-    //               setShowEditName(false);
-    //             });
-    //         });
-    //       }
-    //     } else {
-    //       setIsLoading(false);
-    //       setListScenarios(null);
-    //       setScenarioChosen(null);
-    //       setShowEditName(true);
-    //     }
-    //   }
-    // );
   }, [site]);
 
-  // async function loadScenario(scenario) {
-  //   setIsLoading(true);
-  //   if (scenario) {
-  //     let scenarioData = {};
-  //     const items = await listChilds(scenario);
-  //     for (let item of items) {
-  //       const name = item.name.split(".json")[0];
-  //       const downloadURL = await getDownloadUrl(item);
-  //       const res = await fetch(downloadURL);
-  //       const data = await res.json();
-  //       scenarioData[name] = data;
-  //     }
-
-  //     setProjectData((prev) => ({ ...prev, ...scenarioData }));
-  //     map
-  //       .getSource(SourceID[interactMode])
-  //       .setData(scenarioData[interactMode][site]);
-  //   } else {
-  //     let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
-  //     setProjectData(baseData);
-  //     map
-  //       .getSource(SourceID[interactMode])
-  //       .setData(baseData[interactMode][site]);
-  //   }
-  //   setIsLoading(false);
-  // }
-
-  function handleCloseMenu(e) {
+  function handleCloseMenu() {
     setAnchorEl(null);
+  }
+
+  function handleCloseAccountMenu() {
+    setAnchorAccountEl(null);
   }
 
   return (
     <div
-      className="fixed w-[40%] min-w-[500px] max-w-[52%] right-0 top-0 bottom-0 z-[9999] bg-[#121212] flex flex-row-reverse"
+      className="edit-bar__container fixed w-[40%] min-w-[500px] max-w-[52%] right-0 top-0 bottom-0 z-[9999] bg-[#121212] flex flex-row-reverse"
       ref={editSideBar}
     >
       <div className="sidebar__edit overflow-x-hidden overflow-y-auto h-full w-full border-l border-[#5e5e5f]">
-        <header className="flex justify-between p-4 border border-l-0 bg-black/70 border-[#2f2f2f] text-white">
+        <header className="flex justify-between p-4 border border-l-0 bg-black border-[#2f2f2f] text-white sticky top-0 z-[99999] shadow-md shadow-white/20">
           <div className="flex gap-3 w-[50%] ">
             <p className="capitalize font-bold 2xl:text-2xl text-xl">
               {siteChosen.properties.id}
@@ -181,7 +116,7 @@ const EditSideBar = ({ site, submitForm, children }) => {
               open={openMenu}
               onClose={handleCloseMenu}
               anchorEl={anchorEl}
-              className="w-[20%]"
+              className="w-[300px]"
             >
               <MenuItem
                 className="truncate w-full flex gap-3"
@@ -242,39 +177,63 @@ const EditSideBar = ({ site, submitForm, children }) => {
               </span>
               !
             </p>
-            <LottieIcon
-              iconType={account_icon}
-              size={30}
-              isAnimateOnHover={true}
-              style={{ cursor: "pointer" }}
-            />
+            <button onClick={(e) => setAnchorAccountEl(e.currentTarget)}>
+              <LottieIcon
+                iconType={account_icon}
+                size={30}
+                isAnimateOnHover={true}
+                style={{ cursor: "pointer" }}
+              />
+            </button>
+            <Menu
+              style={{ zIndex: 999999 }}
+              id="account-menu"
+              open={openAccountMenu}
+              onClose={handleCloseAccountMenu}
+              anchorEl={anchorAccountEl}
+            >
+              <MenuItem
+                onClick={() => {
+                  setViewMode(viewModeCons.interact);
+                  handleCloseAccountMenu();
+                }}
+              >
+                <p className="text-sm text-red-500">Exit Edit Mode</p>
+              </MenuItem>
+            </Menu>
           </div>
         </header>
-        <section className="px-3 py-4 w-full">
-          <form onSubmit={submitForm}>
-            {showEditName && (
-              <div className="flex items-center gap-4 pr-3">
-                <span className="text-xl text-white">Scenario:</span>
-                <TextFieldCustom
-                  fieldName="scenario-name"
-                  label="Name"
-                  variant="outlined"
-                  type="text"
-                  isRequired={true}
-                  showHelper={true}
-                  value={scenarioChosen}
-                  triggers={(e) => {
-                    setScenarioChosen(e.target.value);
-                  }}
-                  helperText={
-                    "You can't rename the scenario after it has been uploaded!"
-                  }
-                />
-              </div>
-            )}
-            {children}
-          </form>
-        </section>
+        {scenarioChosen !== "Base" ? (
+          <section className="px-3 py-4 w-full">
+            <form onSubmit={submitForm}>
+              {showEditName && (
+                <div className="flex items-center gap-4 pr-3">
+                  <span className="text-xl text-white">Scenario:</span>
+                  <TextFieldCustom
+                    fieldName="scenario-name"
+                    label="Name"
+                    variant="outlined"
+                    type="text"
+                    isRequired={true}
+                    showHelper={true}
+                    value={scenarioChosen}
+                    triggers={(e) => {
+                      setScenarioChosen(e.target.value);
+                    }}
+                    helperText={
+                      "You can't rename the scenario after it has been uploaded!"
+                    }
+                  />
+                </div>
+              )}
+              {children}
+            </form>
+          </section>
+        ) : (
+          <p className="text-center text-lg italic mt-4 text-[#ccc]">
+            You can't edit Base.
+          </p>
+        )}
       </div>
       <button
         className="resize__button bg-black/20 cursor-w-resize px-[6px]"

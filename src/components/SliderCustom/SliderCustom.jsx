@@ -53,6 +53,7 @@ const SliderCustom = ({
   max,
   name,
   formatLabel = (value) => value,
+  updateState,
 }) => {
   return (
     <PrettoSlider
@@ -60,6 +61,7 @@ const SliderCustom = ({
       defaultValue={defaultValue}
       min={min}
       max={max}
+      onChange={(e) => updateState(e.target.value)}
       name={name}
       valueLabelFormat={formatLabel}
       id={name}

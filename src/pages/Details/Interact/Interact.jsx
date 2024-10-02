@@ -240,48 +240,41 @@ const Interact = ({ siteIndex }) => {
       });
   };
 
-  function loadingScenarios() {
+  async function loadingScenarios() {
     setIsLoading(true);
 
-    listChild(`/nha_trang/scenarios/${siteChosen.properties.id}`).then(
-      (res) => {
-        let listScenarios = [],
-          updated = [];
+    try {
+      let res = await listChild(
+        `/nha_trang/scenarios/${siteChosen.properties.id}`
+      );
 
-        res.prefixes.forEach((folderRef) => {
-          if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
-            listScenarios.push(folderRef);
-          }
-        });
+      let listScenarios = [],
+        updated = [];
 
-        if (listScenarios.length > 0) {
-          for (let scenario of listScenarios) {
-            listChild(scenario.fullPath).then((res) => {
-              getMeta(res.items[0])
-                .then((meta) => {
-                  updated.push({ date: meta.updated, parent: meta.ref.parent });
-                })
-                .then(() => {
-                  updated.sort((a, b) =>
-                    new Date(a.date) > new Date(b.date) ? -1 : 1
-                  );
-                  setListScenarios(updated);
-                  // console.log(updated);
-                  setScenarioChosen(updated[0].parent);
-                })
-                .catch((err) => {
-                  console.log(err);
-                })
-                .finally(() => setIsLoading(false));
-            });
-          }
-        } else {
-          setIsLoading(false);
-          setListScenarios(null);
-          setScenarioChosen(null);
+      res.prefixes.forEach((folderRef) => {
+        if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
+          listScenarios.push(folderRef);
         }
+      });
+
+      if (listScenarios.length > 0) {
+        for (let scenario of listScenarios) {
+          let res = await listChild(scenario.fullPath);
+          let meta = await getMeta(res.items[0]);
+          updated.push({ date: meta.updated, parent: meta.ref.parent });
+        }
+        updated.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
+        setListScenarios(updated);
+        setScenarioChosen(updated[0].parent);
+      } else {
+        setListScenarios(null);
+        setScenarioChosen("Base");
       }
-    );
+    } catch (error) {
+      console.log(error, "Error at Loading Scenarios");
+    }
+
+    setIsLoading(false);
   }
 
   async function getScenarioGeoJSON(scenario) {

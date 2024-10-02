@@ -19,6 +19,11 @@ import "./Activities.css";
 import reload from "../../../../assets/images/reload.json";
 import settings from "../../../../assets/images/settings.json";
 
+// Utils
+import firebaseAuth from "../../../../services/firebaseAuth";
+import { updloadScenario } from "../../../../services/firebaseStorage";
+import { EditModeData } from "../Interact";
+
 // Components
 import { ImageList, ImageListItem } from "@mui/material";
 import AnnotationTable from "../../../../components/AnnotationTable/AnnotationTable";
@@ -31,11 +36,12 @@ import SliderCustom from "../../../../components/SliderCustom/SliderCustom";
 import SpeedDialCustom from "../../../../components/SpeedDialCustom/SpeedDialCustom";
 import LottieIcon from "../../../../components/LottieIcon/LottieIcon";
 import { ViewModeContext } from "../../Details";
-import firebaseAuth from "../../../../services/firebaseAuth";
-import { updloadScenario } from "../../../../services/firebaseStorage";
 
 const Editor = ({ site, updatePointFunc }) => {
   const { siteChosen } = useContext(SiteChosenContext);
+  const { activitiesData, landuseData, buildinguseData, interviewPointData } =
+    useContext(SiteDataContext);
+  const { scenarioChosen } = useContext(EditModeData);
 
   const [imagesUpload, setImagesUpload] = useState([]);
   const [pointTick, setPointTick] = useState({});
@@ -53,11 +59,17 @@ const Editor = ({ site, updatePointFunc }) => {
           return;
       }
 
-      setPointTick((prev) => ({ ...prev, coordinates: e.lngLat }));
+      setPointTick((prev) => ({
+        ...prev,
+        id: "test",
+        coordinates: {
+          lng: e.lngLat.lng.toFixed(7),
+          lat: e.lngLat.lat.toFixed(7),
+        },
+      }));
     }
 
     function handleClickOnExistedPoint(e) {
-      console.log(pointTick.coordinates);
       if (pointTick.coordinates) {
         if (
           !confirm("Are you sure that you want to switch to a different point?")
@@ -67,7 +79,10 @@ const Editor = ({ site, updatePointFunc }) => {
 
       setPointTick({
         id: e.features[0].properties.id,
-        coordinates: e.lngLat,
+        coordinates: {
+          lng: e.lngLat.lng.toFixed(7),
+          lat: e.lngLat.lat.toFixed(7),
+        },
         item_1: e.features[0].properties.item_1,
         timeChosen: {
           time: e.features[0].properties["Time"],
@@ -84,7 +99,7 @@ const Editor = ({ site, updatePointFunc }) => {
       updatePointFunc({
         type: "Feature",
         properties: {
-          id: "test",
+          id: pointTick.id,
           Time: pointTick.timeChosen && pointTick.timeChosen.time,
           Informal: pointTick.timeChosen && pointTick.timeChosen.informal,
           Item: pointTick?.item_1,
@@ -120,7 +135,7 @@ const Editor = ({ site, updatePointFunc }) => {
   }
 
   // Handle Upload Images
-  function hanldeUploadImages({ target: { files } }) {
+  function handleUploadImages({ target: { files } }) {
     console.log(files);
     if (files) {
       let imgs = [];
@@ -145,11 +160,16 @@ const Editor = ({ site, updatePointFunc }) => {
     delete params.lng;
     delete params.lat;
 
-    let geojson = JSON.parse(sessionStorage.getItem("geojson_source"));
-    delete geojson.roads;
-    delete geojson.site;
+    let geojson = {
+      activities: activitiesData,
+      buildinguse: buildinguseData,
+      interview: interviewPointData,
+      landuse: landuseData,
+    };
 
-    if (pointTick.id) {
+    // Check if id'point has already been created, overwrite it; otherwise create a new one
+    if (pointTick.id !== "test") {
+      // overwrite the existing point
       let activities = geojson.activities[site].features.map((activity) => {
         if (activity.properties.id === pointTick.id) {
           activity.properties.Time = pointTick.timeChosen.time;
@@ -160,6 +180,7 @@ const Editor = ({ site, updatePointFunc }) => {
       });
       geojson.activities[site].features = activities;
     } else {
+      // Create new point
       let point = {
         type: "Feature",
         properties: {
@@ -178,13 +199,18 @@ const Editor = ({ site, updatePointFunc }) => {
     }
 
     let scenario =
-      firebaseAuth.auth.currentUser.email + "-" + params["scenario-name"];
+      typeof scenarioChosen !== "string"
+        ? scenarioChosen.name
+        : firebaseAuth.auth.currentUser.email +
+          "-" +
+          params["scenario-name"].trim();
+
+    console.log(scenario, params["scenario-name"], "scenario");
 
     for (let fileName in geojson) {
       let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
         console.log(`Upload ${fileName} successfully`);
-        localStorage.setItem("lastEditedScenario", scenario);
       });
     }
     setIsLoading(false);
@@ -342,19 +368,6 @@ const Editor = ({ site, updatePointFunc }) => {
             </tr>
           </tbody>
         </table>
-
-        {/* Height Slider */}
-        {/* <div className="flex pl-2 pr-8 gap-8 items-center">
-          <label htmlFor="height" className="text-white text-xl">
-            Height
-          </label>
-          <SliderCustom
-            min={0}
-            max={550}
-            formatLabel={(value) => `${value} m`}
-            name="height"
-          />
-        </div> */}
 
         {/* Image Components */}
         {/* <div>
@@ -546,20 +559,23 @@ const Activities = ({ site }) => {
     setPointData({ ...activitiesData[site], features: f });
   }
 
-  function updateNewPoint(newPoint) {
-    let data = JSON.parse(JSON.stringify(pointData));
+  function updatePoint(newPoint) {
+    // Deep copy from pointData object
+    let data = JSON.parse(JSON.stringify(activitiesData[site]));
 
     data.features.forEach((point, index) => {
-      if (point.properties.id === "test") {
-        console.log("first");
-        delete data.features[index];
+      if (point.properties.id === newPoint.properties.id) {
+        let data1 = data.features.slice(0, index);
+        let data2 = data.features.slice(index + 1);
+        data.features = data1.concat(data2);
       }
     });
 
     data.features.push(newPoint);
 
-    map.getSource("activities-point").setData(data);
+    map.getSource(SourceID.activities).setData(data);
     activitiesData[site] = data;
+    setPointData(activitiesData[site]);
     setProjectData((prev) => ({ ...prev, activities: activitiesData }));
   }
 
@@ -568,7 +584,7 @@ const Activities = ({ site }) => {
   }, [site, filterTime, filterActivities]);
 
   useEffect(() => {
-    map.on("click", "cluster-point", (e) => {
+    function handleZoomInCluster(e) {
       const features = map.queryRenderedFeatures(e.point, {
         layers: ["cluster-point"],
       });
@@ -584,8 +600,14 @@ const Activities = ({ site }) => {
             zoom,
           });
         });
-    });
-  });
+    }
+
+    map.on("click", "cluster-point", handleZoomInCluster);
+
+    return () => {
+      map.off("click", "cluster-point", handleZoomInCluster);
+    };
+  }, [site]);
 
   return (
     <>
@@ -689,88 +711,92 @@ const Activities = ({ site }) => {
       </div>
 
       {viewMode === viewModeCons.edit && (
-        <Editor site={site} updatePointFunc={updateNewPoint} />
+        <Editor site={site} updatePointFunc={updatePoint} />
       )}
 
-      {viewMode !== viewModeCons.edit && (
-        <div className="fixed bottom-24 right-6">
-          <div className="rounded-lg mb-4">
-            <table className="time-table rounded-lg w-full bg-white/15 border-separate border-spacing-0">
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th>Formal</th>
-                  <th>Informal</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>6 A.M - 6 P.M</td>
-                  <td
-                    className="time_filter"
-                    onClick={(e) =>
-                      handleFilterTime(e, { time: "1", informal: "0" })
-                    }
-                  >
-                    1
-                  </td>
-                  <td
-                    className="time_filter"
-                    onClick={(e) =>
-                      handleFilterTime(e, { time: "1", informal: "1" })
-                    }
-                  >
-                    i1
-                  </td>
-                </tr>
-                <tr>
-                  <td>6 P.M - 10 P.M</td>
-                  <td
-                    className="time_filter"
-                    onClick={(e) =>
-                      handleFilterTime(e, { time: "2", informal: "0" })
-                    }
-                  >
-                    2
-                  </td>
-                  <td
-                    className="time_filter"
-                    onClick={(e) =>
-                      handleFilterTime(e, { time: "2", informal: "1" })
-                    }
-                  >
-                    i2
-                  </td>
-                </tr>
-                <tr>
-                  <td>10 P.M - 6 A.M</td>
-                  <td
-                    className="time_filter"
-                    onClick={(e) =>
-                      handleFilterTime(e, { time: "3", informal: "0" })
-                    }
-                  >
-                    3
-                  </td>
-                  <td
-                    className="time_filter"
-                    onClick={(e) =>
-                      handleFilterTime(e, { time: "3", informal: "1" })
-                    }
-                  >
-                    i3
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <AnnotationTable
-            items={CaseActivitiesValues}
-            filter={filterActivities}
-            setFilter={setFilterActivities}
-          />
+      <div
+        className="fixed bottom-14"
+        style={{
+          left: viewMode !== viewModeCons.edit ? "unset" : "24px",
+          right: viewMode !== viewModeCons.edit ? "24px" : "unset",
+        }}
+      >
+        <div className="rounded-lg mb-4" style={{backdropFilter: "blur(5px)"}}>
+          <table className="time-table rounded-lg w-full bg-white/15 border-separate border-spacing-0">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Formal</th>
+                <th>Informal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6 A.M - 6 P.M</td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "1", informal: "0" })
+                  }
+                >
+                  1
+                </td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "1", informal: "1" })
+                  }
+                >
+                  i1
+                </td>
+              </tr>
+              <tr>
+                <td>6 P.M - 10 P.M</td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "2", informal: "0" })
+                  }
+                >
+                  2
+                </td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "2", informal: "1" })
+                  }
+                >
+                  i2
+                </td>
+              </tr>
+              <tr>
+                <td>10 P.M - 6 A.M</td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "3", informal: "0" })
+                  }
+                >
+                  3
+                </td>
+                <td
+                  className="time_filter"
+                  onClick={(e) =>
+                    handleFilterTime(e, { time: "3", informal: "1" })
+                  }
+                >
+                  i3
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      )}
+        <AnnotationTable
+          items={CaseActivitiesValues}
+          filter={filterActivities}
+          setFilter={setFilterActivities}
+        />
+      </div>
     </>
   );
 };

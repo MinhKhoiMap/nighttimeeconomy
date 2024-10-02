@@ -196,7 +196,7 @@ const SiteSelection = () => {
         <div className="fixed top-0 bottom-0 right-0 left-0 bg-black/85 z-[99999] flex items-end pl-5 pb-2">
           <span className="max-w-[250px] flex gap-2 flex-col">
             <span className="flex items-end gap-3">
-              <img src={loadcat} alt="" />
+              <img src={loadcat} alt="" width="60" />
               <p className="loading-wrap text-white font-[Raleway] tracking-[8px]">
                 <span style={{ "--i": 1 }}>L</span>
                 <span style={{ "--i": 2 }}>o</span>

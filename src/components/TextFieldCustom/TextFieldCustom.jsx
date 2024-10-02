@@ -68,9 +68,9 @@ const TextFieldCustom = ({
       name={fieldName}
       onBlur={() => !isError && setIsShowHelper(false)}
       helperText={
-        <p className="text-[#FFCC29] text-[10px] leading-4 mt-1 italic">
+        <span className="text-[#FFCC29] text-[10px] leading-4 mt-1 italic">
           * {helperText}
-        </p>
+        </span>
       }
     />
   );

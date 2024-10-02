@@ -26,7 +26,7 @@ const AnnotationTable = ({ items, filter, setFilter }) => {
   }, [filterState, filterItem]);
 
   return (
-    <div className="gap-4 flex justify-around bg-white/15 px-2 py-3 rounded-lg">
+    <div className="gap-4 flex justify-around bg-white/15 px-2 py-3 rounded-lg" style={{backdropFilter: "blur(3px)"}}>
       <div className="max-w-[50%] flex flex-col">
         {items.slice(0, items.length / 2 + 1).reduce((elArr, color, index) => {
           if (/^#[0-9A-F]{6}$/i.test(color)) {

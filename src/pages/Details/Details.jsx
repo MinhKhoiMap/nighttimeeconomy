@@ -1,4 +1,11 @@
-import { createContext, useContext, useEffect, useRef, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useMap } from "react-map-gl";
 import $ from "jquery";
@@ -22,7 +29,6 @@ import "./Details.css";
 import Interact from "./Interact/Interact";
 import Project from "./Project/Project";
 import Overview from "./Overview/Overview";
-import { Menu, MenuItem } from "@mui/material";
 
 export const ViewModeContext = createContext({});
 
@@ -31,7 +37,8 @@ const Details = () => {
   const { siteSelectionData } = useContext(SiteDataContext);
 
   // get site selected index from params in url
-  let { site } = useParams();
+  let { site } = useParams(),
+    timer;
   const navbarRef = useRef();
   const { map } = useMap();
 
@@ -52,20 +59,6 @@ const Details = () => {
       }
     }
   }
-
-  // Change Selected Site State
-  useEffect(() => {
-    let idChosen = findSiteIndex(site);
-    setSiteIndex(`${idChosen}`);
-    if (!siteChosen) {
-      setSiteChosen(siteSelectionData.features[idChosen]);
-    }
-  }, [site]);
-
-  useEffect(() => {
-    if (siteChosen) setAreaName(siteChosen.properties.id);
-  }, [siteChosen]);
-
   const fitArea = () => {
     if (siteIndex) {
       console.log(viewMode);
@@ -82,24 +75,37 @@ const Details = () => {
     }
   };
 
+  // navbar hanlder
+  const handleShowNavbar = useCallback((e) => {
+    // When client'mouse axis y value is less than 40 or hover on navbar, show navbar
+    if (
+      (navbarRef.current && e.clientY <= 40) ||
+      $(e.target).parents(".details__navbar").length ||
+      $(e.target).hasClass("details__navbar")
+    ) {
+      navbarRef.current.classList.add("details__navbar--show");
+    } else {
+      navbarRef.current.classList.remove("details__navbar--show");
+    }
+  }, []);
+
+  // Change Selected Site State
+  useEffect(() => {
+    let idChosen = findSiteIndex(site);
+    setSiteIndex(`${idChosen}`);
+    if (!siteChosen) {
+      setSiteChosen(siteSelectionData.features[idChosen]);
+    }
+  }, [site]);
+
+  useEffect(() => {
+    if (siteChosen) setAreaName(siteChosen.properties.id);
+  }, [siteChosen]);
+
   // handle Top Navbar
   useEffect(() => {
-    // navbar hanlder
-    function handleShowNavbar(e) {
-      // When client'mouse axis y value is less than 40 or hover on navbar, show navbar
-      if (
-        (navbarRef.current && e.clientY <= 40) ||
-        $(e.target).parents(".details__navbar").length ||
-        $(e.target).hasClass("details__navbar")
-      ) {
-        navbarRef.current.classList.add("details__navbar--show");
-      } else {
-        navbarRef.current.classList.remove("details__navbar--show");
-      }
-    }
-
     // Wait 2s to hide the navabar and set navbar event handler function
-    let timer = setTimeout(() => {
+    timer = setTimeout(() => {
       navbarRef.current.classList.remove("details__navbar--show");
       document.addEventListener("mousemove", handleShowNavbar);
     }, 2000);
@@ -107,9 +113,20 @@ const Details = () => {
     return () => {
       // release memory
       clearTimeout(timer);
+      console.log("clean up func");
       document.removeEventListener("mousemove", handleShowNavbar);
     };
   }, []);
+
+  useEffect(() => {
+    if (viewMode === viewModeCons.edit) {
+      console.log(viewMode);
+      clearTimeout(timer);
+      document.removeEventListener("mousemove", handleShowNavbar);
+    } else {
+      document.addEventListener("mousemove", handleShowNavbar);
+    }
+  }, [viewMode]);
 
   return (
     <>
@@ -173,7 +190,7 @@ const Details = () => {
       )}
 
       {(viewMode === viewModeArr[viewModeCons.interact] ||
-        viewMode === "edit") &&
+        viewMode === viewModeCons.edit) &&
         siteIndex && (
           <ViewModeContext.Provider value={{ viewMode, setViewMode }}>
             <Interact siteIndex={siteIndex} />

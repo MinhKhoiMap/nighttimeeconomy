@@ -14,7 +14,7 @@ export const CaseActivitiesValues = [
   "#FB7A78",
   "F&B",
   "#FFDE03",
-  "Market",
+  "Saler",
   "#8200D2",
   "misc.",
   "#560764",
@@ -26,6 +26,38 @@ export const CaseActivitiesValues = [
   "#95EFFF",
   "Wellness",
   "#3081D0",
+];
+
+export const CaseLanduseValues = [
+  "Housing Land",
+  "#F6D776",
+  "Office",
+  "#87A7FC",
+  "Public Infrastructure Land",
+  "#FFD4D4",
+  "Commercial buildings",
+  "#30D05D",
+  "Water",
+  "#51E5FF",
+  "Administrative BL",
+  "#A8A196",
+];
+
+export const CaseBuildinguseValues = [
+  "Housing",
+  "#FF9844",
+  "Office",
+  "#87A7FC",
+  "Hotel",
+  "#37B5B6",
+  "Mixed-use",
+  "#E6B9DE",
+  "Administrative Buildings",
+  "#92197F",
+  "School/Institute",
+  "#F6ECA9",
+  "Tourist/Attraction Point",
+  "#D71313",
 ];
 
 export const OtherValueColor = "#ccc";

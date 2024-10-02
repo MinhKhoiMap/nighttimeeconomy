@@ -2,36 +2,169 @@ import { useState, useEffect, useRef, useCallback, useContext } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
 
-import { SiteDataContext } from "../../../SiteSelection/SiteSelection";
-
-// Data
-// import { buildinguseData } from "../../../../assets/data/buildinguse";
-// import { siteSelectionData } from "../../../../assets/data/site";
+// Utils
+import {
+  SiteChosenContext,
+  SiteDataContext,
+} from "../../../SiteSelection/SiteSelection";
+import { EditModeData } from "../Interact";
+import {
+  CaseBuildinguseValues,
+  SourceID,
+  viewModeCons,
+} from "../../../../constants";
+import { ViewModeContext } from "../../Details";
+import firebaseAuth from "../../../../services/firebaseAuth";
+import { updloadScenario } from "../../../../services/firebaseStorage";
 
 // Components
 import InfoTable from "../../../../components/InfoTable/InfoTable";
 import AnnotationTable from "../../../../components/AnnotationTable/AnnotationTable";
-import { SourceID } from "../../../../constants";
+import EditSideBar from "../../../../components/EditSideBar/EditSideBar";
+import AccordionCustom from "../../../../components/AccordionCustom/AccordionCustom";
+import RadioGroups from "../../../../components/RadioGroups/RadioGroups";
+import SliderCustom from "../../../../components/SliderCustom/SliderCustom";
 
-const CaseBuildinguseValues = [
-  "Housing",
-  "#FF9844",
-  "Office",
-  "#87A7FC",
-  "Hotel",
-  "#37B5B6",
-  "Mixed-use",
-  "#E6B9DE",
-  "Administrative Buildings",
-  "#92197F",
-  "School/Institute",
-  "#F6ECA9",
-  "Tourist/Attraction Point",
-  "#D71313",
-];
+const Editor = ({ site }) => {
+  const { siteChosen } = useContext(SiteChosenContext);
+  const {
+    activitiesData,
+    landuseData,
+    buildinguseData,
+    interviewPointData,
+    setProjectData,
+  } = useContext(SiteDataContext);
+  const { scenarioChosen } = useContext(EditModeData);
+
+  const [polygonTick, setPolygonTick] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { map } = useMap();
+
+  async function submitScenario(e) {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const formData = new FormData(e.target);
+    let params = {};
+
+    for (let [fieldName, val] of formData.entries()) params[fieldName] = val;
+
+    let geojson = {
+      activities: activitiesData,
+      buildinguse: buildinguseData,
+      interview: interviewPointData,
+      landuse: landuseData,
+    };
+
+    let scenario =
+      typeof scenarioChosen !== "string"
+        ? scenarioChosen.name
+        : firebaseAuth.auth.currentUser.email +
+          "-" +
+          params["scenario-name"].trim();
+
+    for (let fileName in geojson) {
+      let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
+      await updloadScenario(ref, geojson[fileName]).then(() => {
+        console.log(`Upload ${fileName} successfully`);
+      });
+    }
+
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    function handleClickOnPolygon(e) {
+      if (e.features[0].properties.id === polygonTick?.id) {
+        setPolygonTick({});
+      } else {
+        if (polygonTick.id) {
+          if (
+            !confirm(
+              "Are you sure that you want to switch to a different polygon?"
+            )
+          )
+            return;
+        }
+
+        setPolygonTick({
+          id: e.features[0].properties.id,
+          buildinguse: e.features[0].properties["Buildsused"],
+          height: e.features[0].properties?.height,
+        });
+      }
+    }
+
+    map.on("dblclick", "buildinguse_selection", handleClickOnPolygon);
+
+    if (polygonTick?.buildinguse && polygonTick?.id) {
+      let data = JSON.parse(JSON.stringify(buildinguseData[site])),
+        temp;
+
+      data.features = data.features.filter((polygon) => {
+        if (polygon.properties.id === polygonTick.id) temp = polygon;
+        return polygon.properties.id !== polygonTick.id;
+      });
+
+      temp.properties.Buildsused = polygonTick.buildinguse;
+      if (polygonTick.height) temp.properties.height = polygonTick.height;
+
+      data.features.push(temp);
+
+      map.getSource(SourceID.buildinguse).setData(data);
+      buildinguseData[site] = data;
+      setProjectData((prev) => ({ ...prev, buildinguse: buildinguseData }));
+    }
+
+    return () => {
+      map.off("dblclick", "landuse_selection", handleClickOnPolygon);
+    };
+  }, [polygonTick]);
+
+  return (
+    <EditSideBar site={site} submitForm={submitScenario}>
+      <AccordionCustom summary="Functions">
+        <RadioGroups
+          items={CaseBuildinguseValues}
+          nameGroup="buildinguse"
+          defaultValue={polygonTick && polygonTick?.buildinguse}
+          setValue={(e) => {
+            setPolygonTick((prev) => ({
+              ...prev,
+              buildinguse: e.target.value,
+            }));
+          }}
+        />
+        <div className="flex pl-2 pr-8 gap-8 items-center">
+          <label htmlFor="height" className="text-white text-xl">
+            Height
+          </label>
+          <SliderCustom
+            min={0}
+            max={550}
+            formatLabel={(value) => `${value} m`}
+            name="height"
+            updateState={(val) =>
+              setPolygonTick((prev) => ({ ...prev, height: Number(val) }))
+            }
+          />
+        </div>
+      </AccordionCustom>
+      <button
+        type="submit"
+        className="text-white text-lg mt-4 w-full p-[6px] bg-black rounded-md border border-[#ccc] font-bold"
+      >
+        Save
+      </button>
+      {isLoading && <loading />}
+    </EditSideBar>
+  );
+};
 
 const Buildinguse = ({ site }) => {
   const { buildinguseData, siteSelectionData } = useContext(SiteDataContext);
+  const { viewMode, setViewMode } = useContext(ViewModeContext);
 
   const tableMaxWidth = 200,
     tableMaxHeight = 250;
@@ -132,32 +265,6 @@ const Buildinguse = ({ site }) => {
     }
   }, [site]);
 
-  useEffect(() => {
-    function handleChooseBuilding(e) {
-      if (chosedBuilding === e.features[0].id) {
-        map.setFeatureState(
-          { source: "buildinguse", id: chosedBuilding },
-          { chosedID: null }
-        );
-
-        setChosedBuilding(null);
-        setShowGrid(false);
-      } else {
-        setChosedBuilding(e.features[0].id);
-        map.setFeatureState(
-          { source: "buildinguse", id: e.features[0].id },
-          { chosedID: e.features[0].id }
-        );
-        setShowGrid(true);
-      }
-    }
-
-    map.on("click", "buildinguse_selection", handleChooseBuilding);
-
-    return () =>
-      map.off("click", "buildinguse_selection", handleChooseBuilding);
-  }, [chosedBuilding]);
-
   return (
     <>
       {buildingIntersection && (
@@ -167,22 +274,20 @@ const Buildinguse = ({ site }) => {
           generateId={true}
           id={SourceID.buildinguse}
         >
-          {
-            <Layer
-              id="grid"
-              type="fill"
-              paint={{
-                "fill-outline-color": "black",
-                "fill-outline-color-transition": { duration: 300 },
-                "fill-color": "transparent",
-              }}
-              filter={
-                filterBuilding
-                  ? ["==", ["get", "Buildsused"], filterBuilding]
-                  : ["!=", ["get", "Buildsused"], null]
-              }
-            />
-          }
+          <Layer
+            id="grid"
+            type="fill"
+            paint={{
+              "fill-outline-color": "black",
+              "fill-outline-color-transition": { duration: 300 },
+              "fill-color": "transparent",
+            }}
+            filter={
+              filterBuilding
+                ? ["==", ["get", "Buildsused"], filterBuilding]
+                : ["!=", ["get", "Buildsused"], null]
+            }
+          />
           <Layer
             beforeId={"grid"}
             id="buildinguse_selection"
@@ -197,9 +302,9 @@ const Buildinguse = ({ site }) => {
               ],
               "fill-extrusion-height": [
                 "case",
-                ["==", ["id"], chosedBuilding],
-                10,
-                0,
+                [">=", ["to-number", ["get", "height"]], 1],
+                ["to-number", ["get", "height"]],
+                -1,
               ],
             }}
             filter={
@@ -222,13 +327,20 @@ const Buildinguse = ({ site }) => {
           />
         )}
       </div>
-      <div className="fixed bottom-24 right-6">
+      <div
+        className="fixed bottom-14"
+        style={{
+          left: viewMode !== viewModeCons.edit ? "unset" : "24px",
+          right: viewMode !== viewModeCons.edit ? "24px" : "unset",
+        }}
+      >
         <AnnotationTable
           items={CaseBuildinguseValues}
           filter={filterBuilding}
           setFilter={setFilterBuilding}
         />
       </div>
+      {viewMode === viewModeCons.edit && <Editor site={site} />}
     </>
   );
 };
