@@ -125,9 +125,10 @@ const Overview = ({ areaName, siteIndex }) => {
   };
 
   async function loadMedia() {
-    console.log(siteIndex);
     try {
-      const overviewRef = getRef(`nha_trang/media/${siteChosen.name}/overview`);
+      const overviewRef = getRef(
+        `nha_trang/media/${siteChosen.properties.id}/overview`
+      );
       const filesRef = await listChilds(overviewRef);
       let imgs = [];
       for (let ref of filesRef) {
