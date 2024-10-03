@@ -211,7 +211,7 @@ const Interact = ({ siteIndex }) => {
 
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [filterMode, setFilterMode] = useState(interactMode.activities);
+  const [filterMode, setFilterMode] = useState(interactMode.landuse);
   const [chartData, setChartData] = useState(data[siteIndex]);
   const [listScenarios, setListScenarios] = useState(null);
   const [scenarioChosen, setScenarioChosen] = useState("Base");

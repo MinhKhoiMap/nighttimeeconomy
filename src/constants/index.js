@@ -7,7 +7,7 @@ export const viewModeCons = {
   edit: "edit",
 };
 
-export const viewModeIndexDefault = viewModeCons.interact;
+export const viewModeIndexDefault = viewModeCons.overview;
 
 export const CaseActivitiesValues = [
   "Entertainment",

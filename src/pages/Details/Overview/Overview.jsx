@@ -6,7 +6,10 @@ import { v4 as uuidv4 } from "uuid";
 // Assets
 import "./Overview.css";
 // import roads from "../../../assets/data/roads";
-import { SiteDataContext } from "../../SiteSelection/SiteSelection";
+import {
+  SiteChosenContext,
+  SiteDataContext,
+} from "../../SiteSelection/SiteSelection";
 
 // Utils, Services
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
@@ -20,6 +23,7 @@ import PhotoViewer from "../../../components/PhotoViewer/PhotoViewer";
 import SkeletonLoading from "../../../components/SkeletonLoading/SkeletonLoading";
 
 const Overview = ({ areaName, siteIndex }) => {
+  const { siteChosen } = useContext(SiteChosenContext);
   const { siteSelectionData, roads } = useContext(SiteDataContext);
 
   const { map } = useMap();
@@ -121,16 +125,14 @@ const Overview = ({ areaName, siteIndex }) => {
   };
 
   async function loadMedia() {
+    console.log(siteIndex);
     try {
-      const overviewRef = getRef(
-        `nha_trang/media/site${Number(siteIndex) + 1}/overview`
-      );
+      const overviewRef = getRef(`nha_trang/media/${siteChosen.name}/overview`);
       const filesRef = await listChilds(overviewRef);
       let imgs = [];
       for (let ref of filesRef) {
         let url = await getDownloadUrl(ref);
         let meta = await getMeta(ref);
-        console.log(meta);
         if (meta.contentType.includes("video")) {
           setIntro(url);
         } else {

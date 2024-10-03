@@ -689,7 +689,7 @@ const Activities = ({ site }) => {
               ["get", "item_1"],
               ...CaseActivitiesValues,
               // Other Values
-              "#ccc",
+              "rgba(204, 204, 204, .7)",
             ],
             "circle-pitch-scale": "map",
             "circle-radius-transition": { duration: 0.2 },
