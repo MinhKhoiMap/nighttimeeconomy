@@ -37,13 +37,7 @@ class FirebaseAuth extends FirebaseApp {
 
   signInWithAccount = async (username, password) => {
     console.log(username, password);
-    return signInWithEmailAndPassword(this.auth, username, password).catch(
-      (err) => {
-        const errorCode = err.code;
-        const errMes = err.message;
-        console.log(errorCode, errMes);
-      }
-    );
+    return signInWithEmailAndPassword(this.auth, username, password);
   };
 
   signOut = async () => {

@@ -58,7 +58,7 @@ const SliderCustom = ({
   return (
     <PrettoSlider
       valueLabelDisplay="auto"
-      defaultValue={defaultValue}
+      value={defaultValue ? defaultValue : 0}
       min={min}
       max={max}
       onChange={(e) => updateState(e.target.value)}

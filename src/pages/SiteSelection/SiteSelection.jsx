@@ -38,14 +38,14 @@ const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
     map.on("mouseenter", `fill_${name}`, handleHoverChangeCursor);
     map.on("mouseleave", `fill_${name}`, reset);
     map.on("dragstart", `fill_${name}`, handleDragChangeCursor);
-    map.on("dragend", `fill_${name}`, reset);
+    map.on("dragend", `fill_${name}`, handleHoverChangeCursor);
 
     return () => {
       map.off("click", `fill_${name}`, handleChooseSite);
       map.off("mouseenter", `fill_${name}`, handleHoverChangeCursor);
       map.off("mouseleave", `fill_${name}`, reset);
       map.off("dragstart", `fill_${name}`, handleDragChangeCursor);
-      map.off("dragend", `fill_${name}`, reset);
+      map.off("dragend", `fill_${name}`, handleHoverChangeCursor);
     };
   }, []);
 
@@ -63,16 +63,6 @@ const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
         type="fill"
         paint={{ "fill-color": "rgba(13, 16, 92, 0.3)" }}
       />
-      {/* <Layer
-        type="symbol"
-        layout={{
-          "text-field": (index + 1).toString(),
-          "text-size": 16,
-          "text-anchor": "center",
-          "text-allow-overlap": true,
-        }}
-        paint={{ "text-color": "white" }}
-      /> */}
     </Source>
   );
 };

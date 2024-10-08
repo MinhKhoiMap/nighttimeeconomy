@@ -3,27 +3,33 @@ import firebaseAuth from "../../services/firebaseAuth";
 import LottieIcon from "../LottieIcon/LottieIcon";
 import { Menu, MenuItem } from "@mui/material";
 import { useMap } from "react-map-gl";
-import {
-  SiteChosenContext,
-  SiteDataContext,
-} from "../../pages/SiteSelection/SiteSelection";
-import { ViewModeContext } from "../../pages/Details/Details";
 
 // Assets
 import account_icon from "../../assets/images/account.json";
 
 // Utils
-import { EditModeData } from "../../pages/Details/Interact/Interact";
+import { ViewModeContext } from "../../pages/Details/Details";
+import {
+  SiteChosenContext,
+  SiteDataContext,
+} from "../../pages/SiteSelection/SiteSelection";
+import {
+  EditModeData,
+  InteractModeContext,
+} from "../../pages/Details/Interact/Interact";
+import { SourceID, viewModeArr, viewModeCons } from "../../constants";
+import { fitAreaUtls } from "../../utils/fitAreaUtls";
 
 // Components
 import TextFieldCustom from "../TextFieldCustom/TextFieldCustom";
-import { viewModeCons } from "../../constants";
 
-const EditSideBar = ({ site, submitForm, children }) => {
+const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
+  const { siteSelectionData, setProjectData } = useContext(SiteDataContext);
   const { siteChosen } = useContext(SiteChosenContext);
   const { listScenarios, scenarioChosen, setScenarioChosen } =
     useContext(EditModeData);
   const { setViewMode } = useContext(ViewModeContext);
+  const { interactMode } = useContext(InteractModeContext);
 
   const editSideBar = useRef(null);
   const resizerBtn = useRef(null);
@@ -34,8 +40,22 @@ const EditSideBar = ({ site, submitForm, children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [showEditName, setShowEditName] = useState(false);
 
+  const { map } = useMap();
+
   const openMenu = Boolean(anchorEl),
     openAccountMenu = Boolean(anchorAccountEl);
+
+  function fitArea() {
+    fitAreaUtls(siteSelectionData.features[site].geometry, map, {
+      padding: {
+        top: 20,
+        bottom: 20,
+        left: 300,
+        right: parseInt(window.screenX / 4) + 100,
+      },
+      duration: 400,
+    });
+  }
 
   function initResizeableHanlder(resizer, siderbar) {
     var x, w;
@@ -64,6 +84,21 @@ const EditSideBar = ({ site, submitForm, children }) => {
     resizer.addEventListener("mousedown", mouseDownHandler);
   }
 
+  function handleCloseMenu() {
+    setAnchorEl(null);
+  }
+
+  function handleCloseAccountMenu() {
+    setAnchorAccountEl(null);
+  }
+
+  function handleExitEditMode() {
+    let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
+    setProjectData(baseData);
+    map.getSource(SourceID[interactMode]).setData(baseData[interactMode][site]);
+    setViewMode(viewModeArr[viewModeCons.interact]);
+  }
+
   useEffect(() => {
     if (typeof scenarioChosen !== "string") {
       setShowEditName(false);
@@ -77,14 +112,6 @@ const EditSideBar = ({ site, submitForm, children }) => {
   useEffect(() => {
     initResizeableHanlder(resizerBtn.current, editSideBar.current);
   }, [site]);
-
-  function handleCloseMenu() {
-    setAnchorEl(null);
-  }
-
-  function handleCloseAccountMenu() {
-    setAnchorAccountEl(null);
-  }
 
   return (
     <div
@@ -194,11 +221,20 @@ const EditSideBar = ({ site, submitForm, children }) => {
             >
               <MenuItem
                 onClick={() => {
-                  setViewMode(viewModeCons.interact);
+                  handleExitEditMode();
                   handleCloseAccountMenu();
                 }}
               >
-                <p className="text-sm text-red-500">Exit Edit Mode</p>
+                <p className="text-sm font-bold">Close Edit Mode</p>
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  firebaseAuth.signOut().then(() => {
+                    window.location.reload();
+                  });
+                }}
+              >
+                <p className="text-sm text-red-500 font-bold">Log out</p>
               </MenuItem>
             </Menu>
           </div>
@@ -231,7 +267,8 @@ const EditSideBar = ({ site, submitForm, children }) => {
           </section>
         ) : (
           <p className="text-center text-lg italic mt-4 text-[#ccc]">
-            You can't edit Base.
+            You can't edit "Base" version. <br /> If you want to edit your own
+            scenario, please create a new one.
           </p>
         )}
       </div>
@@ -242,6 +279,12 @@ const EditSideBar = ({ site, submitForm, children }) => {
         <i className="ti-split-h text-white text-base"></i>
       </button>
       {isLoading && <loading />}
+      <button onClick={fitArea}>
+        <i
+          className="ti-target text-2xl text-white absolute -left-9 bottom-5 hover:scale-[1.28] cursor-pointer transition-transform"
+          title="Back to the current site"
+        ></i>
+      </button>
     </div>
   );
 };

@@ -3,13 +3,15 @@ import { Map } from "react-map-gl";
 import { useRef, useContext, useState, useEffect } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { initialViewState } from "./contexts/initialViewContext";
-import "./utils/folderDriveList";
+import { ToastContainer } from "react-toastify";
 
 // Import utils
 import "mapbox-gl/dist/mapbox-gl.css";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import generateActivities from "./utils/generateTiming";
 import firebaseAuth from "./services/firebaseAuth";
+import "./utils/folderDriveList";
 
 // Import components
 import HomePage from "./pages/HomePage/HomePage";
@@ -115,6 +117,7 @@ function App() {
           <span className="inline-block">About Project</span>
         </Link>
       </div>
+      <ToastContainer containerId="toastify" autoClose={2000} theme="colored" />
     </div>
   );
 }

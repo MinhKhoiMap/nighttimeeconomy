@@ -9,15 +9,6 @@ import {
 } from "firebase/storage";
 import firebaseApp from "./firebaseApp";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCXtIfrOkcg0Te-mY8t8KkrwxlZ0aqKPF0",
-  authDomain: "night-time-economy-c0a4e.firebaseapp.com",
-  projectId: "night-time-economy-c0a4e",
-  storageBucket: "gs://night-time-economy-c0a4e.appspot.com",
-  messagingSenderId: "940436623314",
-  appId: "1:940436623314:web:24c3c975580ad499fb020b",
-};
-
 const app = firebaseApp.registerApp;
 const storage = getStorage(app);
 
@@ -51,9 +42,13 @@ async function getMeta(fileRef) {
 }
 
 async function updloadScenario(fileName, scenario) {
-  const fileRef = ref(storage, fileName);
-  let data = JSON.stringify(scenario);
-  return uploadString(fileRef, data).catch((err) => console.log(err));
+  try {
+    const fileRef = ref(storage, fileName);
+    let data = JSON.stringify(scenario);
+    return await uploadString(fileRef, data);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 async function listChild(folderPath) {

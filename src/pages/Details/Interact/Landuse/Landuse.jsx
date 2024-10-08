@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
+import { toast } from "react-toastify";
 
 import {
   SiteChosenContext,
@@ -71,7 +72,7 @@ const Editor = ({ site, updateLanduseFunc }) => {
         console.log(`Upload ${fileName} successfully`);
       });
     }
-
+    toast.success("Upload Successfully!", { containerId: "toastify" });
     setIsLoading(false);
   }
 
@@ -151,9 +152,8 @@ const Editor = ({ site, updateLanduseFunc }) => {
 };
 
 const Landuse = ({ site }) => {
-  const { landuseData, activitiesData, setProjectData } =
-    useContext(SiteDataContext);
-  const { viewMode, setViewMode } = useContext(ViewModeContext);
+  const { landuseData } = useContext(SiteDataContext);
+  const { viewMode } = useContext(ViewModeContext);
 
   const tableMaxWidth = 300,
     tableMaxHeight = 350;

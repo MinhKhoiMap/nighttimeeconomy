@@ -120,7 +120,6 @@ const Details = () => {
 
   useEffect(() => {
     if (viewMode === viewModeCons.edit) {
-      console.log(viewMode);
       clearTimeout(timer);
       document.removeEventListener("mousemove", handleShowNavbar);
     } else {

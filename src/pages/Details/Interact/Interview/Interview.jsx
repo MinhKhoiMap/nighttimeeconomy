@@ -5,10 +5,12 @@ import { Layer, Source, useMap } from "react-map-gl";
 import "react-photo-view/dist/react-photo-view.css";
 
 // Data
+import { SourceID, viewModeCons } from "../../../../constants";
 import {
   SiteChosenContext,
   SiteDataContext,
 } from "../../../SiteSelection/SiteSelection";
+import { ViewModeContext } from "../../Details";
 
 import locate from "../../../../assets/images/locate.png";
 import PhotoSlide from "../../../../components/PhotoSlide/PhotoSlide";
@@ -17,11 +19,23 @@ import {
   getRef,
   listChilds,
 } from "../../../../services/firebaseStorage";
-import { SourceID } from "../../../../constants";
+
+import EditSideBar from "../../../../components/EditSideBar/EditSideBar";
+
+const Editor = ({ site }) => {
+  return (
+    <EditSideBar site={site}>
+      <p className="text-center text-lg italic mt-4 text-[#ccc]">
+        Interview Point is read-only.
+      </p>
+    </EditSideBar>
+  );
+};
 
 const Interview = ({ site }) => {
   const { interviewPointData } = useContext(SiteDataContext);
   const { siteChosen } = useContext(SiteChosenContext);
+  const { viewMode } = useContext(ViewModeContext);
 
   const { map } = useMap();
 
@@ -113,6 +127,7 @@ const Interview = ({ site }) => {
       )}
 
       {!imageGallery && show && <loading />}
+      {viewMode === viewModeCons.edit && <Editor site={site} />}
     </>
   );
 };

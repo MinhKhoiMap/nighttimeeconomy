@@ -2,6 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import { v4 as uuid } from "uuid";
 import $ from "jquery";
+import { toast } from "react-toastify";
 
 // Utils
 import {
@@ -32,8 +33,6 @@ import EditSideBar from "../../../../components/EditSideBar/EditSideBar";
 import AccordionCustom from "../../../../components/AccordionCustom/AccordionCustom";
 import RadioGroups from "../../../../components/RadioGroups/RadioGroups";
 import TextFieldCustom from "../../../../components/TextFieldCustom/TextFieldCustom";
-import SliderCustom from "../../../../components/SliderCustom/SliderCustom";
-import SpeedDialCustom from "../../../../components/SpeedDialCustom/SpeedDialCustom";
 import LottieIcon from "../../../../components/LottieIcon/LottieIcon";
 import { ViewModeContext } from "../../Details";
 
@@ -77,11 +76,15 @@ const Editor = ({ site, updatePointFunc }) => {
           return;
       }
 
+      let point = activitiesData[site].features.filter(
+        (point) => point.properties.id === e.features[0].properties.id
+      )[0];
+
       setPointTick({
         id: e.features[0].properties.id,
         coordinates: {
-          lng: e.lngLat.lng.toFixed(7),
-          lat: e.lngLat.lat.toFixed(7),
+          lng: point.geometry.coordinates[0],
+          lat: point.geometry.coordinates[1],
         },
         item_1: e.features[0].properties.item_1,
         timeChosen: {
@@ -124,14 +127,31 @@ const Editor = ({ site, updatePointFunc }) => {
 
   // Handle Tick Time Table
   function handleChooseTime(e, time) {
-    $("td.active").removeClass("active");
-    $(e.target).addClass("active");
-    let t = "";
-    for (var i = 1; i <= time.time; i++) t += i;
-    setPointTick((prev) => ({
-      ...prev,
-      timeChosen: { time: t, informal: time.informal },
-    }));
+    if (!$(e.target).hasClass("active")) {
+      if (pointTick?.timeChosen?.informal !== time.informal) {
+        $(".edit-bar__container td.active").removeClass("active");
+        $(e.target).addClass("active");
+        setPointTick((prev) => ({
+          ...prev,
+          timeChosen: { time: time.time, informal: time.informal },
+        }));
+      } else {
+        $(e.target).addClass("active");
+        let t = (pointTick.timeChosen.time + time.time).split("");
+        t = t.sort().join("");
+        setPointTick((prev) => ({
+          ...prev,
+          timeChosen: { time: t, informal: time.informal },
+        }));
+      }
+    } else {
+      $(e.target).removeClass("active");
+      let t = pointTick.timeChosen?.time.replace(time.time, "");
+      setPointTick((prev) => ({
+        ...prev,
+        timeChosen: { time: t, informal: time.informal },
+      }));
+    }
   }
 
   // Handle Upload Images
@@ -149,6 +169,8 @@ const Editor = ({ site, updatePointFunc }) => {
   // Handle Upload Scenario (Update/Add New)
   async function submitScenario(e) {
     e.preventDefault();
+    // console.log(pointTick);
+
     setIsLoading(true);
 
     const formData = new FormData(e.target);
@@ -205,14 +227,13 @@ const Editor = ({ site, updatePointFunc }) => {
           "-" +
           params["scenario-name"].trim();
 
-    console.log(scenario, params["scenario-name"], "scenario");
-
     for (let fileName in geojson) {
       let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
         console.log(`Upload ${fileName} successfully`);
       });
     }
+    toast.success("Upload Successfully!", { containerId: "toastify" });
     setIsLoading(false);
   }
 
@@ -284,7 +305,7 @@ const Editor = ({ site, updatePointFunc }) => {
               <td
                 className={`time_filter ${
                   pointTick &&
-                  String(pointTick?.timeChosen?.time).at(-1) === "1" &&
+                  String(pointTick?.timeChosen?.time).includes("1") &&
                   pointTick?.timeChosen?.informal === "0" &&
                   "active"
                 }`}
@@ -297,7 +318,7 @@ const Editor = ({ site, updatePointFunc }) => {
               <td
                 className={`time_filter ${
                   pointTick &&
-                  String(pointTick?.timeChosen?.time).at(-1) === "1" &&
+                  String(pointTick?.timeChosen?.time).includes("1") &&
                   pointTick?.timeChosen?.informal === "1" &&
                   "active"
                 }`}
@@ -313,7 +334,7 @@ const Editor = ({ site, updatePointFunc }) => {
               <td
                 className={`time_filter ${
                   pointTick &&
-                  String(pointTick?.timeChosen?.time).at(-1) === "2" &&
+                  String(pointTick?.timeChosen?.time).includes("2") &&
                   pointTick?.timeChosen?.informal === "0" &&
                   "active"
                 }`}
@@ -326,7 +347,7 @@ const Editor = ({ site, updatePointFunc }) => {
               <td
                 className={`time_filter ${
                   pointTick &&
-                  String(pointTick?.timeChosen?.time).at(-1) === "2" &&
+                  String(pointTick?.timeChosen?.time).includes("2") &&
                   pointTick?.timeChosen?.informal === "1" &&
                   "active"
                 }`}
@@ -342,7 +363,7 @@ const Editor = ({ site, updatePointFunc }) => {
               <td
                 className={`time_filter ${
                   pointTick &&
-                  String(pointTick?.timeChosen?.time).at(-1) === "3" &&
+                  String(pointTick?.timeChosen?.time).includes("3") &&
                   pointTick?.timeChosen?.informal === "0" &&
                   "active"
                 }`}
@@ -355,7 +376,7 @@ const Editor = ({ site, updatePointFunc }) => {
               <td
                 className={`time_filter ${
                   pointTick &&
-                  String(pointTick?.timeChosen?.time).at(-1) === "3" &&
+                  String(pointTick?.timeChosen?.time).includes("3") &&
                   pointTick?.timeChosen?.informal === "1" &&
                   "active"
                 }`}
@@ -368,79 +389,6 @@ const Editor = ({ site, updatePointFunc }) => {
             </tr>
           </tbody>
         </table>
-
-        {/* Image Components */}
-        {/* <div>
-          <div className="flex gap-8 items-center mb-3">
-            <label className="text-white text-xl">Images</label>
-            {imagesUpload.length > 0 && (
-              <span className="flex items-center gap-3">
-                <SpeedDialCustom
-                  direction="right"
-                  icon={
-                    <LottieIcon
-                      iconType={settings}
-                      size={24}
-                      color="white"
-                      isAnimateOnHover={true}
-                    />
-                  }
-                  actions={[
-                    {
-                      name: "upload new",
-                      icon: (
-                        <i className="fa-solid fa-arrow-up-from-bracket"></i>
-                      ),
-                      action: () => $(".input-field").click(),
-                    },
-                    {
-                      name: "clear all",
-                      icon: (
-                        <LottieIcon
-                          iconType={reload}
-                          size={20}
-                          isAnimateOnHover={true}
-                          color="black"
-                        />
-                      ),
-                      action: () => setImagesUpload([]),
-                    },
-                  ]}
-                />
-              </span>
-            )}
-          </div>
-          <div className="max-h-[400px] overflow-auto">
-            {imagesUpload.length > 0 && (
-              <ImageList cols={Math.min(imagesUpload.length, 3)} gap={8}>
-                {imagesUpload.map((image) => (
-                  <ImageListItem>
-                    <img src={`${image}`} loading="lazy" />
-                  </ImageListItem>
-                ))}
-              </ImageList>
-            )}
-          </div>
-          {!(imagesUpload.length > 0) && (
-            <form
-              onClick={() => $(".input-field").click()}
-              className="w-full h-[200px] flex items-center justify-center rounded-lg border-[2px] border-dashed border-[#1475cf] hover:brightness-150 transition-all cursor-pointer"
-            >
-              <h3 className="flex items-center gap-3 font-bold">
-                Browse Files to upload
-                <i className="fa-solid fa-cloud-arrow-up text-[#1475cf] text-2xl"></i>
-              </h3>
-            </form>
-          )}
-          <input
-            type="file"
-            accept="image/*"
-            className="input-field"
-            hidden
-            multiple
-            onChange={hanldeUploadImages}
-          />
-        </div> */}
       </AccordionCustom>
       <button
         type="submit"
@@ -455,7 +403,7 @@ const Editor = ({ site, updatePointFunc }) => {
 
 const Activities = ({ site }) => {
   const { activitiesData, setProjectData } = useContext(SiteDataContext);
-  const { viewMode, setViewMode } = useContext(ViewModeContext);
+  const { viewMode } = useContext(ViewModeContext);
 
   const tableMaxWidth = 200,
     tableMaxHeight = 250;
@@ -537,7 +485,7 @@ const Activities = ({ site }) => {
       setFilterTime(null);
       return;
     }
-    $("td.active").removeClass("active");
+    $(".filter-table td.active").removeClass("active");
     $(e.target).addClass("active");
     setFilterTime(time);
   };
@@ -562,15 +510,10 @@ const Activities = ({ site }) => {
   function updatePoint(newPoint) {
     // Deep copy from pointData object
     let data = JSON.parse(JSON.stringify(activitiesData[site]));
-
-    data.features.forEach((point, index) => {
-      if (point.properties.id === newPoint.properties.id) {
-        let data1 = data.features.slice(0, index);
-        let data2 = data.features.slice(index + 1);
-        data.features = data1.concat(data2);
-      }
-    });
-
+    let temp = data.features.filter(
+      (point) => point.properties.id !== newPoint.properties.id
+    );
+    data.features = JSON.parse(JSON.stringify(temp));
     data.features.push(newPoint);
 
     map.getSource(SourceID.activities).setData(data);
@@ -721,8 +664,11 @@ const Activities = ({ site }) => {
           right: viewMode !== viewModeCons.edit ? "24px" : "unset",
         }}
       >
-        <div className="rounded-lg mb-4" style={{backdropFilter: "blur(5px)"}}>
-          <table className="time-table rounded-lg w-full bg-white/15 border-separate border-spacing-0">
+        <div
+          className="rounded-lg mb-4"
+          style={{ backdropFilter: "blur(5px)" }}
+        >
+          <table className="filter-table time-table rounded-lg w-full bg-white/15 border-separate border-spacing-0">
             <thead>
               <tr>
                 <th>Time</th>

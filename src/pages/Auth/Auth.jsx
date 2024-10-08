@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 import "./Auth.css";
 import firebaseAuth from "../../services/firebaseAuth";
@@ -8,6 +9,7 @@ const LogIn = () => {
   const navigator = useNavigate();
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -19,8 +21,17 @@ const LogIn = () => {
 
     await firebaseAuth
       .signInWithAccount(email, password)
-      .then(() => setIsLoading(false))
-      .then(() => navigator(-1));
+      .then(() => {
+        toast.success("Login Success!", { containerId: "toastify" });
+        navigator(-1);
+      })
+      .catch((err) => {
+        const errorCode = err.code;
+        const errMes = err.message;
+        setIsError(true);
+        console.log(errorCode, errMes);
+      })
+      .finally(() => setIsLoading(false));
   }
 
   return (
@@ -36,7 +47,11 @@ const LogIn = () => {
           >
             Username
           </label>
-          <div className="border-b-2 border-black flex">
+          <div
+            className={`border-b-2 ${
+              isError ? "border-red-500" : "border-black"
+            } flex items-center`}
+          >
             <input
               className="text-base outline-none mr-1 flex-1 p-1 inline-block"
               type="email"
@@ -55,7 +70,11 @@ const LogIn = () => {
           >
             Password
           </label>
-          <div className="border-b-2 border-black flex">
+          <div
+            className={`border-b-2 ${
+              isError ? "border-red-500" : "border-black"
+            } flex items-center`}
+          >
             <input
               className="text-base outline-none mr-1 flex-1 p-1 inline-block"
               type="password"
@@ -66,6 +85,12 @@ const LogIn = () => {
             <i className="fa-solid fa-unlock-keyhole"></i>
           </div>
         </div>
+        {isError && (
+          <p className="text-sm italic text-red-600">
+            <i class="fa-solid fa-circle-exclamation mr-1"></i> Incorrect
+            username or password.
+          </p>
+        )}
         <button className="w-full bg-black text-white text-base py-2 rounded-lg">
           Login
         </button>

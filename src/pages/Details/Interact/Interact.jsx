@@ -1,28 +1,6 @@
 import { useEffect, useRef, useState, useContext, createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMap } from "react-map-gl";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  RadialLinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  ArcElement,
-  BarController,
-  LineController,
-  PolarAreaController,
-  PieController,
-  RadarController,
-  BubbleController,
-  ScatterController,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Chart } from "react-chartjs-2";
-import ChartDataLabels from "chartjs-plugin-datalabels";
 
 // Utils
 import "./Interact.css";
@@ -39,162 +17,21 @@ import {
 // Assets
 import categories from "../../../assets/images/categories.json";
 import { interactMode, viewModeCons, SourceID } from "../../../constants";
-
-// Components"
-import SpeedDialCustom from "../../../components/SpeedDialCustom/SpeedDialCustom";
-import LottieIcon from "../../../components/LottieIcon/LottieIcon";
 import {
   SiteChosenContext,
   SiteDataContext,
 } from "../../SiteSelection/SiteSelection";
+import { ViewModeContext } from "../Details";
+import data from "../../../assets/data/chartdata";
+
+// Components"
+import SpeedDialCustom from "../../../components/SpeedDialCustom/SpeedDialCustom";
+import LottieIcon from "../../../components/LottieIcon/LottieIcon";
 import Landuse from "./Landuse/Landuse";
 import Buildinguse from "./Buildinguse/Buildinguse";
 import Activities from "./Activities/Activities";
 import Interview from "./Interview/Interview";
-import { ViewModeContext } from "../Details";
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  RadialLinearScale,
-  BarElement,
-  PointElement,
-  LineElement,
-  ArcElement,
-  BarController,
-  LineController,
-  PolarAreaController,
-  PieController,
-  RadarController,
-  BubbleController,
-  ScatterController,
-  Title,
-  Tooltip,
-  Legend,
-  ChartDataLabels
-);
-
-ChartJS.defaults.color = "#fff";
-ChartJS.defaults.font.family = "Open Sauce One";
-ChartJS.defaults.font.weight = "700";
-ChartJS.defaults.scale.grid.display = false;
-
-const data = [
-  {
-    typeChart: "bar",
-    opts: {
-      indexAxis: "y",
-    },
-    title: "WHAT DO YOU THINK ARE THE BENEFITS OF THE NIGHT ECONOMY?",
-    labels: [
-      "Place to gather after work",
-      "Reduce unemployment rate",
-      "Shopping",
-      "Relax",
-      "Culture entertainment",
-      "Diversity",
-      "Crowd",
-    ],
-    dataset: [
-      {
-        label: "Business owners",
-        backgroundColor: "#4285F4",
-        categoryPercentage: 1,
-        barPercentage: 0.8,
-        data: [0, 3, 2, 0, 2, 3, 3],
-      },
-      {
-        label: "Researchers",
-        backgroundColor: "#EA4335",
-        categoryPercentage: 1,
-        barPercentage: 0.8,
-        data: [0, 5, 1, 0, 1, 5, 1],
-      },
-      {
-        label: "Residents",
-        backgroundColor: "#38812F",
-        categoryPercentage: 1,
-        barPercentage: 0.8,
-        data: [3, 3, 3, 4, 3, 3, 2],
-      },
-    ],
-  },
-  {
-    typeChart: "pie",
-    legend: {
-      labels: {
-        pointStyle: "circle",
-        usePointStyle: true,
-        boxWidth: 8,
-        boxHeight: 8,
-      },
-      opts: {
-        position: "right",
-      },
-    },
-    title: "How was real spend in the trip?",
-    labels: [
-      "0 ~ 300 (USD)",
-      "300 ~ 600 (USD)",
-      "600 ~ 900 (USD)",
-      "900 ~ 1200 (USD)",
-      "1200 ~ 1500 (USD)",
-      "more than 1500 (USD)",
-    ],
-    dataset: [
-      {
-        backgroundColor: [
-          "#3266CC",
-          "#DC3912",
-          "#8F4700",
-          "#12961B",
-          "#991499",
-          "#0099C6",
-        ],
-        data: [2, 0, 0, 1, 1, 2],
-      },
-    ],
-  },
-  {
-    typeChart: "bar",
-    opts: {
-      indexAxis: "y",
-    },
-    title: "Demand of Resident And Tourist",
-    labels: [
-      "Bar Club",
-      "Festival",
-      "FnB",
-      "Market",
-      "Pavement",
-      "Shop",
-      "Transportation",
-    ],
-    dataset: [
-      {
-        label: "Foreign",
-        backgroundColor: "#ce2027",
-        categoryPercentage: 1,
-        barPercentage: 0.8,
-        data: [1, 0, 2, 0, 1, 0, 1],
-      },
-      {
-        label: "Resident",
-        backgroundColor: "#38812F",
-        categoryPercentage: 1,
-        barPercentage: 0.8,
-        data: [1, 5, 2, 2, 0, 0, 0],
-      },
-      {
-        label: "Local",
-        backgroundColor: "#c5fff8",
-        categoryPercentage: 1,
-        barPercentage: 0.8,
-        data: [0, 0, 0, 0, 0, 2, 0],
-      },
-    ],
-  },
-];
+import ChartCustom from "../../../components/ChartCustom/ChartCustom";
 
 export const InteractModeContext = createContext(null);
 export const EditModeData = createContext(null);
@@ -207,7 +44,6 @@ const Interact = ({ siteIndex }) => {
   const navigator = useNavigate();
 
   const { map } = useMap();
-  const chartRef = useRef(null);
 
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -221,8 +57,8 @@ const Interact = ({ siteIndex }) => {
     if (viewMode === viewModeCons.edit) {
       fitAreaUtls(siteSelectionData.features[siteIndex].geometry, map, {
         padding: {
-          top: 0,
-          bottom: 0,
+          top: 20,
+          bottom: 20,
           left: 300,
           right: parseInt(window.screenX / 4) + 100,
         },
@@ -296,6 +132,7 @@ const Interact = ({ siteIndex }) => {
         .setData(scenarioData[filterMode][siteIndex]);
     } else {
       let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
+      console.log(SourceID[filterMode]);
       setProjectData(baseData);
       map
         .getSource(SourceID[filterMode])
@@ -378,66 +215,13 @@ const Interact = ({ siteIndex }) => {
           </div>
         </div>
       </div>
-      {filterMode === interactMode.interview && chartData && (
-        <div className="w-[500px] h-[350px] mt-6 fixed top-[300px] left-[30px]">
-          <Chart
-            ref={chartRef}
-            type={chartData.typeChart}
-            options={{
-              indexAxis: "x",
-              color: "#FFFFFF",
-              responsive: true,
-              skipNull: true,
-              plugins: {
-                legend: {
-                  labels: {
-                    font: {
-                      size: 12,
-                      family: "Barlow",
-                    },
-                    padding: 20,
-                    boxPadding: 15,
-                    ...chartData?.legend?.labels,
-                  },
-                  position: "top",
-                  ...chartData?.legend?.opts,
-                },
-                title: {
-                  display: true,
-                  color: "#FFFFFF",
-                  text: chartData.title,
-                  font: {
-                    size: 16,
-                  },
-                },
-                datalabels: {
-                  formatter: (value, context) => {
-                    const dataPoints = context.chart.data.datasets[0].data;
-                    const totalValue = dataPoints.reduce(
-                      (total, dataPoint) => total + dataPoint,
-                      0
-                    );
-                    const percentageVal = ((value / totalValue) * 100).toFixed(
-                      1
-                    );
-                    const display =
-                      percentageVal > 0 ? `${percentageVal}%` : null;
-
-                    return display;
-                  },
-                  display: chartData.typeChart.toLowerCase() == "pie",
-                },
-              },
-              ...chartData?.opts,
-            }}
-            plugins={[ChartDataLabels]}
-            data={{
-              labels: chartData.labels,
-              datasets: chartData.dataset,
-            }}
-          />
-        </div>
-      )}
+      {filterMode === interactMode.interview &&
+        viewMode !== viewModeCons.edit &&
+        chartData && (
+          <div className="w-[500px] h-[350px] mt-6 fixed top-[300px] left-[30px]">
+            <ChartCustom chartData={chartData} />
+          </div>
+        )}
 
       <InteractModeContext.Provider value={{ interactMode: filterMode }}>
         <EditModeData.Provider

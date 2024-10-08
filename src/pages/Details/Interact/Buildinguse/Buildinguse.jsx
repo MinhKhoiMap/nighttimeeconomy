@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useContext } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
+import { toast } from "react-toastify";
 
 // Utils
 import {
@@ -70,7 +71,7 @@ const Editor = ({ site }) => {
         console.log(`Upload ${fileName} successfully`);
       });
     }
-
+    toast.success("Upload Successfully!", { containerId: "toastify" });
     setIsLoading(false);
   }
 
@@ -108,7 +109,7 @@ const Editor = ({ site }) => {
       });
 
       temp.properties.Buildsused = polygonTick.buildinguse;
-      if (polygonTick.height) temp.properties.height = polygonTick.height;
+      if (polygonTick.height >= 0) temp.properties.height = polygonTick.height;
 
       data.features.push(temp);
 
@@ -143,6 +144,7 @@ const Editor = ({ site }) => {
           <SliderCustom
             min={0}
             max={550}
+            defaultValue={polygonTick?.height}
             formatLabel={(value) => `${value} m`}
             name="height"
             updateState={(val) =>
@@ -164,7 +166,7 @@ const Editor = ({ site }) => {
 
 const Buildinguse = ({ site }) => {
   const { buildinguseData, siteSelectionData } = useContext(SiteDataContext);
-  const { viewMode, setViewMode } = useContext(ViewModeContext);
+  const { viewMode } = useContext(ViewModeContext);
 
   const tableMaxWidth = 200,
     tableMaxHeight = 250;
@@ -176,10 +178,8 @@ const Buildinguse = ({ site }) => {
   const [showTable, setShowTable] = useState(false);
   const [infoTable, setInfoTable] = useState([]);
   const [buildingIntersection, setBuildingIntersection] = useState(null);
-  const [showGrid, setShowGrid] = useState(false);
 
   const [filterBuilding, setFilterBuilding] = useState(null);
-  const [chosedBuilding, setChosedBuilding] = useState(null);
 
   useEffect(() => {
     // Like the function in landuse component
@@ -227,10 +227,12 @@ const Buildinguse = ({ site }) => {
     function reset() {
       setShowTable(false);
       setInfoTablePosition(null);
+      map.getMap().doubleClickZoom.enable();
       map.getCanvas().style.cursor = "grab";
     }
 
     function changePointer() {
+      map.getMap().doubleClickZoom.disable();
       map.getCanvas().style.cursor = "pointer";
     }
 
