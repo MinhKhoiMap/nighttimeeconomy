@@ -3,14 +3,12 @@ import { Map } from "react-map-gl";
 import { useRef, useContext, useState, useEffect } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { initialViewState } from "./contexts/initialViewContext";
-import { ToastContainer } from "react-toastify";
 
 // Import utils
 import "mapbox-gl/dist/mapbox-gl.css";
-import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-import generateActivities from "./utils/generateTiming";
-import firebaseAuth from "./services/firebaseAuth";
+// import generateActivities from "./utils/generateTiming";
+// import firebaseAuth from "./services/firebaseAuth";
 import "./utils/folderDriveList";
 
 // Import components
@@ -20,6 +18,7 @@ import Details from "./pages/Details/Details";
 import Test from "./pages/Test/Test";
 import AboutProject from "./pages/AboutProject/AboutProject";
 import Auth from "./pages/Auth/Auth";
+import { Toaster } from "./components/ui/toaster";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaGVsbG9pYW1raG9pIiwiYSI6ImNscWtoODB0MzIyeTEybm1rc2l1YWg0bm8ifQ.wOn1q83oPkWNJBap0KFrWQ";
@@ -67,7 +66,6 @@ function App() {
   useEffect(() => {
     if (map.current) spinGlobe();
   }, [userInteract]);
-  useEffect(() => {});
 
   return (
     <div className="w-screen h-screen relative">
@@ -117,7 +115,7 @@ function App() {
           <span className="inline-block">About Project</span>
         </Link>
       </div>
-      <ToastContainer containerId="toastify" autoClose={2000} theme="colored" />
+      <Toaster duration={2000} />
     </div>
   );
 }

@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState, useContext, createContext } from "react";
+import { useEffect, useState, useContext, createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMap } from "react-map-gl";
 
 // Utils
+import "@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css";
 import "./Interact.css";
 import firebaseAuth from "../../../services/firebaseAuth";
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
@@ -22,7 +23,6 @@ import {
   SiteDataContext,
 } from "../../SiteSelection/SiteSelection";
 import { ViewModeContext } from "../Details";
-import data from "../../../assets/data/chartdata";
 
 // Components"
 import SpeedDialCustom from "../../../components/SpeedDialCustom/SpeedDialCustom";
@@ -31,7 +31,14 @@ import Landuse from "./Landuse/Landuse";
 import Buildinguse from "./Buildinguse/Buildinguse";
 import Activities from "./Activities/Activities";
 import Interview from "./Interview/Interview";
-import ChartCustom from "../../../components/ChartCustom/ChartCustom";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export const InteractModeContext = createContext(null);
 export const EditModeData = createContext(null);
@@ -48,7 +55,6 @@ const Interact = ({ siteIndex }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [filterMode, setFilterMode] = useState(interactMode.landuse);
-  const [chartData, setChartData] = useState(data[siteIndex]);
   const [listScenarios, setListScenarios] = useState(null);
   const [scenarioChosen, setScenarioChosen] = useState("Base");
 
@@ -87,11 +93,17 @@ const Interact = ({ siteIndex }) => {
       let listScenarios = [],
         updated = [];
 
-      res.prefixes.forEach((folderRef) => {
-        if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
+      if (viewMode === viewModeCons.edit) {
+        res.prefixes.forEach((folderRef) => {
+          if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
+            listScenarios.push(folderRef);
+          }
+        });
+      } else {
+        res.prefixes.forEach((folderRef) => {
           listScenarios.push(folderRef);
-        }
-      });
+        });
+      }
 
       if (listScenarios.length > 0) {
         for (let scenario of listScenarios) {
@@ -101,10 +113,11 @@ const Interact = ({ siteIndex }) => {
         }
         updated.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
         setListScenarios(updated);
-        setScenarioChosen(updated[0].parent);
+        if (viewMode === viewModeCons.edit)
+          setScenarioChosen(updated[0].parent);
       } else {
         setListScenarios(null);
-        setScenarioChosen("Base");
+        if (viewMode === viewModeCons.edit) setScenarioChosen("Base");
       }
     } catch (error) {
       console.log(error, "Error at Loading Scenarios");
@@ -132,29 +145,32 @@ const Interact = ({ siteIndex }) => {
         .setData(scenarioData[filterMode][siteIndex]);
     } else {
       let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
-      console.log(SourceID[filterMode]);
       setProjectData(baseData);
       map
         .getSource(SourceID[filterMode])
-        .setData(baseData[filterMode][siteIndex]);
+        ?.setData(baseData[filterMode][siteIndex]);
     }
 
     setIsLoading(false);
   }
 
   useEffect(() => {
-    if (viewMode === viewModeCons.edit) {
-      if (typeof scenarioChosen === "string") getScenarioGeoJSON();
-      else getScenarioGeoJSON(scenarioChosen);
-    }
+    if (typeof scenarioChosen === "string") getScenarioGeoJSON();
+    else getScenarioGeoJSON(scenarioChosen);
   }, [scenarioChosen]);
 
   useEffect(() => {
-    if (viewMode === viewModeCons.edit) {
-      // Loading scenarios and initial it
-      loadingScenarios();
-    }
+    // Loading scenarios and initial it
+    loadingScenarios();
   }, [viewMode, siteIndex]);
+
+  // useEffect(() => {
+  //   if (!map.hasControl(draw)) {
+  //     console.log("draw control");
+  //     // Add the Draw control to your map
+  //     map.addControl(draw);
+  //   }
+  // }, [viewMode]);
 
   useEffect(() => {
     onAuthStateChanged(firebaseAuth.auth, (user) => {
@@ -169,10 +185,6 @@ const Interact = ({ siteIndex }) => {
     if (siteIndex && siteSelectionData) fitArea();
   }, [siteIndex, filterMode, siteSelectionData, viewMode]);
 
-  useEffect(() => {
-    setChartData(data[siteIndex]);
-  }, [siteIndex]);
-
   return (
     <>
       <div className="sidebar">
@@ -184,7 +196,7 @@ const Interact = ({ siteIndex }) => {
             }`}
             onClick={() => setFilterMode(interactMode.landuse)}
           >
-            <p>Land Use</p>
+            <p className="text-xl">Land Use</p>
           </div>
           <div
             className={`details__filter-tool ${
@@ -193,7 +205,7 @@ const Interact = ({ siteIndex }) => {
             }`}
             onClick={() => setFilterMode(interactMode.buildinguse)}
           >
-            <p>Building Use</p>
+            <p className="text-xl">Building Use</p>
           </div>
           <div
             className={`details__filter-tool ${
@@ -202,7 +214,7 @@ const Interact = ({ siteIndex }) => {
             }`}
             onClick={() => setFilterMode(interactMode.activities)}
           >
-            <p>Activities Point</p>
+            <p className="text-xl">Activities Point</p>
           </div>
           <div
             className={`details__filter-tool ${
@@ -211,17 +223,46 @@ const Interact = ({ siteIndex }) => {
             }`}
             onClick={() => setFilterMode(interactMode.interview)}
           >
-            <p>Interview Point</p>
+            <p className="text-xl">Interview Point</p>
           </div>
         </div>
-      </div>
-      {filterMode === interactMode.interview &&
-        viewMode !== viewModeCons.edit &&
-        chartData && (
-          <div className="w-[500px] h-[350px] mt-6 fixed top-[300px] left-[30px]">
-            <ChartCustom chartData={chartData} />
+
+        {!(viewMode === viewModeCons.edit) && (
+          <div className="mt-4 ml-2">
+            <Select
+              onValueChange={(val) => {
+                val === "base"
+                  ? setScenarioChosen("Base")
+                  : setScenarioChosen(val);
+              }}
+            >
+              <SelectTrigger className="w-[180px]">
+                <SelectValue
+                  placeholder="Select a scenario"
+                  className="bg-black"
+                />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem className="cursor-pointer" value="base">
+                    Base
+                  </SelectItem>
+                  {listScenarios &&
+                    listScenarios.map((scenario) => (
+                      <SelectItem
+                        key={scenario.parent}
+                        className="cursor-pointer"
+                        value={scenario.parent}
+                      >
+                        {scenario.parent.name}
+                      </SelectItem>
+                    ))}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
           </div>
         )}
+      </div>
 
       <InteractModeContext.Provider value={{ interactMode: filterMode }}>
         <EditModeData.Provider
@@ -246,7 +287,7 @@ const Interact = ({ siteIndex }) => {
       </InteractModeContext.Provider>
 
       {viewMode !== viewModeCons.edit && (
-        <div className="fixed top-6 right-6">
+        <div className="fixed top-6 right-6 flex flex-row-reverse">
           <SpeedDialCustom
             direction="down"
             icon={
@@ -298,6 +339,7 @@ const Interact = ({ siteIndex }) => {
           />
         </div>
       )}
+
       {isLoading && <loading />}
     </>
   );

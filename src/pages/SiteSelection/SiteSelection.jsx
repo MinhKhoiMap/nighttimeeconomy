@@ -5,7 +5,7 @@ import $ from "jquery";
 import mapboxgl from "mapbox-gl";
 
 import "./SiteSelection.css";
-import getGeoJSONData from "../../services/fetchGeoJSONData";
+import getBaseGeoJSONData from "../../services/fetchGeoJSONData";
 import loadcat from "../../assets/images/loadcat.gif";
 
 const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
@@ -93,37 +93,47 @@ const SiteSelection = () => {
     if (loading) {
       let source = {};
 
-      getGeoJSONData("site")
+      getBaseGeoJSONData("site")
         .then((data) => {
           source.site = data;
           setProjectData((prev) => ({ ...prev, site: data }));
         })
-        .then(() => getGeoJSONData("landuse"))
+        .then(() => getBaseGeoJSONData("landuse"))
         .then((data) => {
           source.landuse = data;
           setProjectData((prev) => ({ ...prev, landuse: data }));
         })
-        .then(() => getGeoJSONData("buildinguse"))
+        .then(() => getBaseGeoJSONData("buildinguse"))
         .then((data) => {
           source.buildinguse = data;
           setProjectData((prev) => ({ ...prev, buildinguse: data }));
         })
-        .then(() => getGeoJSONData("activities"))
+        .then(() => getBaseGeoJSONData("activities"))
         .then((data) => {
           source.activities = data;
           setProjectData((prev) => ({ ...prev, activities: data }));
           sessionStorage.setItem("geojson_source", JSON.stringify(source));
         })
-        .then(() => getGeoJSONData("interview"))
+        .then(() => getBaseGeoJSONData("interview"))
         .then((data) => {
           source.interview = data;
           setProjectData((prev) => ({ ...prev, interview: data }));
           sessionStorage.setItem("geojson_source", JSON.stringify(source));
         })
-        .then(() => getGeoJSONData("road"))
+        .then(() => getBaseGeoJSONData("road"))
         .then((data) => {
           source.roads = data;
           setProjectData((prev) => ({ ...prev, roads: data }));
+          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+        })
+        .then(() => {
+          source.viewpoints = source.site.features.map((site) => ({
+            type: "FeatureCollection",
+            name: site.name, // site[...]
+            features: [],
+          }));
+          setProjectData((prev) => ({ ...prev, viewpoints: null }));
+          console.log(source.viewpoints);
           sessionStorage.setItem("geojson_source", JSON.stringify(source));
         })
         .finally(() => setLoading(false));
@@ -171,6 +181,7 @@ const SiteSelection = () => {
               activitiesData: projectData.activities,
               interviewPointData: projectData.interview,
               roads: projectData.roads,
+              viewpointsData: projectData.viewpoints,
               setProjectData,
             }}
           >

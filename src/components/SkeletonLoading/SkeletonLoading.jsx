@@ -13,10 +13,10 @@ function SkeletonLoading({ type = "image" }) {
           let t = type.toLowerCase().trim();
           switch (t) {
             case "image":
-              element = <ImageSkeleton />;
+              element = <ImageSkeleton key={t} />;
               break;
             case "video":
-              element = <VideoSkeleton />;
+              element = <VideoSkeleton key={t} />;
               break;
             default:
               throw new Error("Invalid type");

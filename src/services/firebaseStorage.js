@@ -5,7 +5,7 @@ import {
   getDownloadURL,
   getMetadata,
   uploadString,
-  list,
+  uploadBytes,
 } from "firebase/storage";
 import firebaseApp from "./firebaseApp";
 
@@ -60,6 +60,15 @@ async function listChild(folderPath) {
   }
 }
 
+async function updloadFile(path, file) {
+  try {
+    const fileRef = getRef(path);
+    return await uploadBytes(fileRef, file);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 export {
   app,
   storage,
@@ -69,4 +78,5 @@ export {
   listChilds,
   listChild,
   updloadScenario,
+  updloadFile,
 };

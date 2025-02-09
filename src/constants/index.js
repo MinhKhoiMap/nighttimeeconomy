@@ -67,6 +67,7 @@ export const SourceID = {
   buildinguse: "buildinguse",
   landuse: "landuse",
   interview: "interview",
+  viewpoints: "viewpoints",
 };
 
 export const interactMode = {

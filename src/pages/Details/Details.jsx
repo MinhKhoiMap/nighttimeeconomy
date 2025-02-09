@@ -37,9 +37,10 @@ const Details = () => {
   const { siteSelectionData } = useContext(SiteDataContext);
 
   // get site selected index from params in url
-  let { site } = useParams(),
-    timer;
+  const { site } = useParams();
   const navbarRef = useRef();
+  const timer = useRef();
+
   const { map } = useMap();
 
   const navigator = useNavigate();
@@ -105,15 +106,14 @@ const Details = () => {
   // handle Top Navbar
   useEffect(() => {
     // Wait 2s to hide the navabar and set navbar event handler function
-    timer = setTimeout(() => {
+    timer.current = setTimeout(() => {
       navbarRef.current.classList.remove("details__navbar--show");
       document.addEventListener("mousemove", handleShowNavbar);
     }, 2000);
 
     return () => {
       // release memory
-      clearTimeout(timer);
-      console.log("clean up func");
+      clearTimeout(timer.current);
       document.removeEventListener("mousemove", handleShowNavbar);
     };
   }, []);
@@ -205,33 +205,6 @@ const Details = () => {
       {viewMode === viewModeArr[viewModeCons.overview] && siteIndex && (
         <Overview areaName={areaName} siteIndex={siteIndex} />
       )}
-
-      {/* <div className="fixed top-[300px] left-[30px]">
-        <Menu
-          id="lock-menu"
-          open={true}
-          MenuListProps={{
-            "aria-labelledby": "lock-button",
-            role: "listbox",
-          }}
-          anchorEl={<p>alkfjskldfjakl;sdjf</p>}
-        >
-          {[
-            "Show some love to MUI",
-            "Show all notification content",
-            "Hide sensitive notification content",
-            "Hide all notification content",
-          ].map((option, index) => (
-            <MenuItem
-              key={option}
-              disabled={index === 0}
-              onClick={(event) => handleMenuItemClick(event, index)}
-            >
-              {option}
-            </MenuItem>
-          ))}
-        </Menu>
-      </div> */}
     </>
   );
 };

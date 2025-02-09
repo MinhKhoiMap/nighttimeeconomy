@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import firebaseAuth from "../../services/firebaseAuth";
 import LottieIcon from "../LottieIcon/LottieIcon";
 import { Menu, MenuItem } from "@mui/material";
 import { useMap } from "react-map-gl";
+import $ from "jquery";
 
 // Assets
 import account_icon from "../../assets/images/account.json";
@@ -23,7 +24,13 @@ import { fitAreaUtls } from "../../utils/fitAreaUtls";
 // Components
 import TextFieldCustom from "../TextFieldCustom/TextFieldCustom";
 
-const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
+const EditSideBar = ({
+  site,
+  submitForm,
+  children,
+  submitScenarioSuccess,
+  drawTool = null,
+}) => {
   const { siteSelectionData, setProjectData } = useContext(SiteDataContext);
   const { siteChosen } = useContext(SiteChosenContext);
   const { listScenarios, scenarioChosen, setScenarioChosen } =
@@ -59,6 +66,12 @@ const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
 
   function initResizeableHanlder(resizer, siderbar) {
     var x, w;
+    const controlBox = $(
+        ".mapboxgl-control-container .mapboxgl-ctrl-top-right"
+      )[0],
+      clientX = document.body.clientWidth,
+      maxWidthSiderbar = (clientX * 52) / 100,
+      minWidthSiderbar = 500;
 
     function mouseDownHandler(e) {
       x = e.clientX;
@@ -78,7 +91,11 @@ const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
       let dx = x - e.clientX;
       let cw = w + dx;
 
-      siderbar.style.width = `${cw}px`;
+      if (cw <= maxWidthSiderbar && cw >= minWidthSiderbar) {
+        siderbar.style.width = `${cw}px`;
+
+        controlBox.style.right = `${cw}px`;
+      }
     }
 
     resizer.addEventListener("mousedown", mouseDownHandler);
@@ -111,6 +128,17 @@ const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
 
   useEffect(() => {
     initResizeableHanlder(resizerBtn.current, editSideBar.current);
+    if (drawTool && !map.getMap().hasControl(drawTool)) {
+      map.getMap().addControl(drawTool, "top-right");
+
+      $(
+        ".mapboxgl-control-container .mapboxgl-ctrl-top-right"
+      )[0].style.right = `${$(editSideBar.current).width()}px`;
+    }
+
+    return () => {
+      if (drawTool) map.getMap().removeControl(drawTool);
+    };
   }, [site]);
 
   return (
@@ -267,8 +295,8 @@ const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
           </section>
         ) : (
           <p className="text-center text-lg italic mt-4 text-[#ccc]">
-            You can't edit "Base" version. <br /> If you want to edit your own
-            scenario, please create a new one.
+            You can&apos;t edit &quot;Base&quot; version. <br /> If you want to
+            edit your own scenario, please create a new one.
           </p>
         )}
       </div>
@@ -279,9 +307,12 @@ const EditSideBar = ({ site, submitForm, children, submitScenarioSuccess }) => {
         <i className="ti-split-h text-white text-base"></i>
       </button>
       {isLoading && <loading />}
-      <button onClick={fitArea}>
+      <button
+        className="absolute -left-9 bottom-5 hover:scale-[1.28] cursor-pointer transition-transform"
+        onClick={fitArea}
+      >
         <i
-          className="ti-target text-2xl text-white absolute -left-9 bottom-5 hover:scale-[1.28] cursor-pointer transition-transform"
+          className="ti-target text-2xl text-white"
           title="Back to the current site"
         ></i>
       </button>

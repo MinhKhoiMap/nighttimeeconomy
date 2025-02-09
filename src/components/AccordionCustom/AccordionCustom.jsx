@@ -40,6 +40,7 @@ const AccordionCustom = ({
   summary,
   detailStyles,
   defaultExpanded = true,
+  className = "",
 }) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded);
 
@@ -47,6 +48,7 @@ const AccordionCustom = ({
     <AccordionStyled
       expanded={isExpanded}
       onChange={() => setIsExpanded(!isExpanded)}
+      className={className}
     >
       <AccordionSummary
         expandIcon={

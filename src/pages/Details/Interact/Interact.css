@@ -14,7 +14,7 @@
 }
 
 .details__filter .details__filter-tool {
-  padding: 16px;
+  padding: 12px 8px;
   cursor: pointer;
   border-radius: 8px;
   user-select: none;
@@ -42,7 +42,6 @@
   width: 100%;
   padding: 0 20px;
   color: #fff;
-  font-size: 20px;
   font-weight: 600;
 }
 

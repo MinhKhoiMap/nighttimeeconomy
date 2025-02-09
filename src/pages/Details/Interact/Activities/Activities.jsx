@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import { v4 as uuid } from "uuid";
 import $ from "jquery";
-import { toast } from "react-toastify";
+import { useToast } from "@/hooks/use-toast";
 
 // Utils
 import {
@@ -35,6 +35,7 @@ import RadioGroups from "../../../../components/RadioGroups/RadioGroups";
 import TextFieldCustom from "../../../../components/TextFieldCustom/TextFieldCustom";
 import LottieIcon from "../../../../components/LottieIcon/LottieIcon";
 import { ViewModeContext } from "../../Details";
+import SpeedDialCustom from "../../../../components/SpeedDialCustom/SpeedDialCustom";
 
 const Editor = ({ site, updatePointFunc }) => {
   const { siteChosen } = useContext(SiteChosenContext);
@@ -47,17 +48,11 @@ const Editor = ({ site, updatePointFunc }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const { map } = useMap();
+  const { toast } = useToast();
 
   // Add new point
   useEffect(() => {
     function handleClickOnEmpty(e) {
-      if (pointTick.coordinates) {
-        if (
-          !confirm("Are you sure that you want to switch to a different point?")
-        )
-          return;
-      }
-
       setPointTick((prev) => ({
         ...prev,
         id: "test",
@@ -69,13 +64,6 @@ const Editor = ({ site, updatePointFunc }) => {
     }
 
     function handleClickOnExistedPoint(e) {
-      if (pointTick.coordinates) {
-        if (
-          !confirm("Are you sure that you want to switch to a different point?")
-        )
-          return;
-      }
-
       let point = activitiesData[site].features.filter(
         (point) => point.properties.id === e.features[0].properties.id
       )[0];
@@ -93,7 +81,6 @@ const Editor = ({ site, updatePointFunc }) => {
         },
       });
     }
-
     map.on("dblclick", `fill_${siteChosen.properties.id}`, handleClickOnEmpty);
 
     map.on("dblclick", "activities_point", handleClickOnExistedPoint);
@@ -155,16 +142,16 @@ const Editor = ({ site, updatePointFunc }) => {
   }
 
   // Handle Upload Images
-  function handleUploadImages({ target: { files } }) {
-    console.log(files);
-    if (files) {
-      let imgs = [];
-      for (var i = 0; i < files.length; i++) {
-        imgs.push(URL.createObjectURL(files[i]));
-      }
-      setImagesUpload(imgs);
-    }
-  }
+  // function handleUploadImages({ target: { files } }) {
+  //   console.log(files);
+  //   if (files) {
+  //     let imgs = [];
+  //     for (var i = 0; i < files.length; i++) {
+  //       imgs.push(URL.createObjectURL(files[i]));
+  //     }
+  //     setImagesUpload(imgs);
+  //   }
+  // }
 
   // Handle Upload Scenario (Update/Add New)
   async function submitScenario(e) {
@@ -233,8 +220,18 @@ const Editor = ({ site, updatePointFunc }) => {
         console.log(`Upload ${fileName} successfully`);
       });
     }
-    toast.success("Upload Successfully!", { containerId: "toastify" });
+    toast({ title: "Upload Successfully!" });
     setIsLoading(false);
+  }
+
+  function hanldeUploadImages({ target: { files } }) {
+    if (files) {
+      let imgs = [];
+      for (var i = 0; i < files.length; i++) {
+        imgs.push(URL.createObjectURL(files[i]));
+      }
+      setImagesUpload(imgs);
+    }
   }
 
   return (
@@ -256,7 +253,7 @@ const Editor = ({ site, updatePointFunc }) => {
               helperText={"Longtitude must be between -180 and 180"}
               triggers={(e) => {
                 if (Math.abs(e.target.value) > 180) throw new Error();
-                setCoordinates((prev) => ({ ...prev, lng: e.target.value }));
+                // setCoordinates((prev) => ({ ...prev, lng: e.target.value }));
               }}
             />
             <TextFieldCustom
@@ -272,11 +269,85 @@ const Editor = ({ site, updatePointFunc }) => {
               helperText={"Lattitude must be between -90 and 90"}
               triggers={(e) => {
                 if (Math.abs(e.target.value) > 90) throw new Error();
-                setCoordinates((prev) => ({ ...prev, lng: e.target.value }));
+                // setCoordinates((prev) => ({ ...prev, lng: e.target.value }));
               }}
             />
           </span>
         </div>
+        <AccordionCustom summary="Image Upload">
+          {/* Image Components */}
+          <div>
+            <div className="flex gap-8 items-center mb-3">
+              <label className="text-white text-xl">Images</label>
+              {imagesUpload.length > 0 && (
+                <span className="flex items-center gap-3">
+                  <SpeedDialCustom
+                    direction="right"
+                    icon={
+                      <LottieIcon
+                        iconType={settings}
+                        size={24}
+                        color="white"
+                        isAnimateOnHover={true}
+                      />
+                    }
+                    actions={[
+                      {
+                        name: "upload new",
+                        icon: (
+                          <i className="fa-solid fa-arrow-up-from-bracket"></i>
+                        ),
+                        action: () => $(".input-field").click(),
+                      },
+                      {
+                        name: "clear all",
+                        icon: (
+                          <LottieIcon
+                            iconType={reload}
+                            size={20}
+                            isAnimateOnHover={true}
+                            color="black"
+                          />
+                        ),
+                        action: () => setImagesUpload([]),
+                      },
+                    ]}
+                  />
+                </span>
+              )}
+            </div>
+            <div className="max-h-[400px] overflow-auto">
+              {imagesUpload.length > 0 && (
+                <ImageList cols={Math.min(imagesUpload.length, 3)} gap={8}>
+                  {imagesUpload.map((image) => (
+                    <ImageListItem key={image}>
+                      <img src={`${image}`} loading="lazy" />
+                    </ImageListItem>
+                  ))}
+                </ImageList>
+              )}
+            </div>
+            {!(imagesUpload.length > 0) && (
+              <form
+                onClick={() => $(".input-field").click()}
+                className="w-full h-[200px] flex items-center justify-center rounded-lg border-[2px] border-dashed border-[#1475cf] hover:brightness-150 transition-all cursor-pointer"
+              >
+                <h3 className="flex items-center gap-3 font-bold">
+                  Browse Files to upload
+                  <i className="fa-solid fa-cloud-arrow-up text-[#1475cf] text-2xl"></i>
+                </h3>
+              </form>
+            )}
+            <input
+              type="file"
+              accept="image/*"
+              className="input-field"
+              hidden
+              multiple
+              onChange={hanldeUploadImages}
+            />
+          </div>
+        </AccordionCustom>
         <AccordionCustom summary="Function">
           <RadioGroups
             items={CaseActivitiesValues}

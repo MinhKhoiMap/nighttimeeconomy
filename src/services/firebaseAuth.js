@@ -1,9 +1,11 @@
 import {
+  createUserWithEmailAndPassword,
   getAuth,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import FirebaseApp from "./firebaseApp";
 
@@ -34,6 +36,15 @@ class FirebaseAuth extends FirebaseApp {
   //       console.log(credential, errorCode, errMes);
   //     });
   // };
+
+  signUpWithAccount = async (username, password, displayName) => {
+    console.log(username, password, displayName);
+    return createUserWithEmailAndPassword(this.auth, username, password).then(
+      () => {
+        updateProfile(this.auth, { displayName: displayName });
+      }
+    );
+  };
 
   signInWithAccount = async (username, password) => {
     console.log(username, password);
