@@ -24,14 +24,13 @@ const LogIn = () => {
     await firebaseAuth
       .signInWithAccount(email, password)
       .then((userCredential) => {
-        console.log(userCredential);
         toast({
           title: `Hello, ${
             userCredential.user.displayName || userCredential.user.email
           }`,
           description: "Login success!",
         });
-        navigator(-1);
+        navigator("/nha_trang");
       })
       .catch((err) => {
         const errorCode = err.code;
@@ -113,12 +112,21 @@ const SignUp = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  async function handleLogin(e) {
+  const { toast } = useToast();
+
+  async function handleSignup(e) {
     e.preventDefault();
-    const loginForm = new FormData(e.target);
-    let email = loginForm.get("email"),
-      password = loginForm.get("password"),
-      displayName = loginForm.get("displayName");
+
+    const signupForm = new FormData(e.target);
+    let email = signupForm.get("email"),
+      password = signupForm.get("password"),
+      confirmPassword = signupForm.get("confirm_password"),
+      displayName = signupForm.get("displayName");
+
+    if (confirmPassword != password) {
+      toast({ title: "Confirm Password is incorrect", variant: "destructive" });
+      return;
+    }
 
     setIsLoading(true);
 
@@ -128,12 +136,14 @@ const SignUp = () => {
         toast({
           title: "Registration Success!",
         });
+        navigator("/nha_trang");
       })
       .catch((err) => {
         const errorCode = err.code;
         const errMes = err.message;
         setIsError(true);
         console.log(errorCode, errMes);
+        toast({ title: errMes, variant: "destructive" });
       })
       .finally(() => setIsLoading(false));
   }
@@ -143,7 +153,7 @@ const SignUp = () => {
       <h1 className="text-4xl italic">Sign Up</h1>
       <form
         className="flex flex-col gap-5 w-[80%] absolute top-1/2 -translate-y-1/2"
-        onSubmit={handleLogin}
+        onSubmit={handleSignup}
       >
         <div className="control-group">
           <label
@@ -170,6 +180,27 @@ const SignUp = () => {
         </div>
         <div className="control-group">
           <label
+            htmlFor="displayName"
+            className="block text-base mb-1 transition-colors"
+          >
+            Display Name
+          </label>
+          <div
+            className={`border-b-2 ${
+              isError ? "border-red-500" : "border-black"
+            } flex items-center`}
+          >
+            <input
+              className="text-base outline-none mr-1 flex-1 p-1 inline-block"
+              type="text"
+              required
+              name="displayName"
+              id="displayName"
+            />
+          </div>
+        </div>
+        <div className="control-group">
+          <label
             htmlFor="password"
             className="block text-base mb-1 transition-colors"
           >
@@ -192,10 +223,10 @@ const SignUp = () => {
         </div>
         <div className="control-group">
           <label
-            htmlFor="displayName"
+            htmlFor="password"
             className="block text-base mb-1 transition-colors"
           >
-            Display Name
+            Confirm Password
           </label>
           <div
             className={`border-b-2 ${
@@ -204,12 +235,11 @@ const SignUp = () => {
           >
             <input
               className="text-base outline-none mr-1 flex-1 p-1 inline-block"
-              type="text"
+              type="password"
               required
-              name="displayName"
-              id="displayName"
+              name="confirm_password"
+              id="confirm_password"
             />
-            <i className="fa-solid fa-unlock-keyhole"></i>
           </div>
         </div>
 

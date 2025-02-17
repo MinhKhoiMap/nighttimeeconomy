@@ -48,11 +48,13 @@ ChartJS.defaults.font.family = "Open Sauce One";
 ChartJS.defaults.font.weight = "700";
 ChartJS.defaults.scale.grid.display = false;
 
-const ChartCustom = ({ chartData }) => {
+const ChartCustom = ({ chartData, width = 300, height = 300 }) => {
   const chartRef = useRef(null);
 
   return (
     <Chart
+      width={width}
+      height={height}
       ref={chartRef}
       type={chartData.typeChart}
       options={{

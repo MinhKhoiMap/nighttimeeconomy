@@ -48,7 +48,7 @@ const AccordionCustom = ({
     <AccordionStyled
       expanded={isExpanded}
       onChange={() => setIsExpanded(!isExpanded)}
-      className={className}
+      className={className + " my-2"}
     >
       <AccordionSummary
         expandIcon={

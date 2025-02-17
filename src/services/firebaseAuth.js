@@ -3,7 +3,6 @@ import {
   getAuth,
   GoogleAuthProvider,
   signInWithEmailAndPassword,
-  signInWithPopup,
   signOut,
   updateProfile,
 } from "firebase/auth";
@@ -38,7 +37,6 @@ class FirebaseAuth extends FirebaseApp {
   // };
 
   signUpWithAccount = async (username, password, displayName) => {
-    console.log(username, password, displayName);
     return createUserWithEmailAndPassword(this.auth, username, password).then(
       () => {
         updateProfile(this.auth, { displayName: displayName });
@@ -47,7 +45,6 @@ class FirebaseAuth extends FirebaseApp {
   };
 
   signInWithAccount = async (username, password) => {
-    console.log(username, password);
     return signInWithEmailAndPassword(this.auth, username, password);
   };
 

@@ -50,14 +50,14 @@ const draw = new MapboxDraw({
   controls: {
     polygon: true,
     trash: true,
-    combine_features: false,
-    uncombine_features: false,
+    combine_features: true,
+    uncombine_features: true,
     line_string: false,
     point: true,
   },
 });
 
-const Editor = ({ site, handleChangeChosenBuilding }) => {
+const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
   const { siteChosen } = useContext(SiteChosenContext);
   const {
     activitiesData,
@@ -189,21 +189,40 @@ const Editor = ({ site, handleChangeChosenBuilding }) => {
     }
 
     function handleUpdatePolygon(e) {
-      let data = JSON.parse(JSON.stringify(buildinguseData[site])),
-        temp;
+      const currentMode = draw.getMode();
+      if (currentMode === draw.modes.DRAW_POLYGON) {
+        let data = JSON.parse(JSON.stringify(buildinguseData[site])),
+          temp;
 
-      data.features = data.features.filter((polygon) => {
-        if (polygon.properties.id == polygonTick.id) temp = polygon;
-        return polygon.properties.id != polygonTick.id;
-      });
+        data.features = data.features.filter((polygon) => {
+          if (polygon.properties.id == polygonTick.id) temp = polygon;
+          return polygon.properties.id != polygonTick.id;
+        });
 
-      temp.geometry = e.features[0].geometry;
+        temp.geometry = e.features[0].geometry;
 
-      data.features.push(temp);
+        data.features.push(temp);
 
-      map.getSource(SourceID.buildinguse).setData(data);
-      buildinguseData[site] = data;
-      setProjectData((prev) => ({ ...prev, buildinguse: buildinguseData }));
+        map.getSource(SourceID.buildinguse).setData(data);
+        buildinguseData[site] = data;
+        setProjectData((prev) => ({ ...prev, buildinguse: buildinguseData }));
+      } else if (currentMode === draw.modes.DRAW_POINT) {
+        let data = JSON.parse(JSON.stringify(viewpointsData[site])),
+          temp;
+
+        data.features = data.features.filter((point) => {
+          if (point.properties.id == viewpoint.id) temp = point;
+          return point.properties.id != viewpoint.id;
+        });
+
+        temp.geometry = e.features[0].geometry;
+
+        data.features.push(temp);
+
+        map.getSource(SourceID.viewpoints).setData(data);
+        viewpointsData[site] = data;
+        setProjectData((prev) => ({ ...prev, viewpoints: viewpointsData }));
+      }
     }
 
     function handleTrashPolygon() {
@@ -278,6 +297,7 @@ const Editor = ({ site, handleChangeChosenBuilding }) => {
           properties,
           geometry,
         });
+        draw.add(e.features[0]);
       }
     }
 
@@ -286,7 +306,7 @@ const Editor = ({ site, handleChangeChosenBuilding }) => {
     map.on("draw.update", handleUpdatePolygon);
     map.on("draw.delete", handleTrashPolygon);
     map.on("draw.modechange", handleControlAddViewPoints);
-    map.on("click", "viewpoints", handleEditViewpoint);
+    map.on("contextmenu", "viewpoints", handleEditViewpoint);
 
     if (polygonTick?.buildinguse && polygonTick?.id) {
       let data = JSON.parse(JSON.stringify(buildinguseData[site])),
@@ -317,7 +337,7 @@ const Editor = ({ site, handleChangeChosenBuilding }) => {
       map.off("draw.delete", handleTrashPolygon);
       map.off("draw.modechange", handleControlAddViewPoints);
       map.off("draw.create", handleCreateNew);
-      map.off("click", "viewpoints", handleEditViewpoint);
+      map.off("contextmenu", "viewpoints", handleEditViewpoint);
     };
   }, [polygonTick, viewpoint]);
 
@@ -465,6 +485,8 @@ const Editor = ({ site, handleChangeChosenBuilding }) => {
           </AccordionCustom>
         </AccordionCustom>
       )}
+
+      {chartData && <ChartCustom chartData={chartData} />}
       <button
         type="submit"
         className="text-white text-lg mt-4 w-full p-[6px] bg-black rounded-md border border-[#ccc] font-bold"
@@ -626,13 +648,13 @@ const Buildinguse = ({ site }) => {
     }
 
     if (viewMode !== viewModeCons.edit) {
-      map.on("click", "viewpoints", handleShowViewpoint);
+      map.on("contextmenu", "viewpoints", handleShowViewpoint);
     } else {
-      map.off("click", "viewpoints", handleShowViewpoint);
+      map.off("contextmenu", "viewpoints", handleShowViewpoint);
     }
 
     return () => {
-      map.off("click", "viewpoints", handleShowViewpoint);
+      map.off("contextmenu", "viewpoints", handleShowViewpoint);
     };
   }, [site, viewMode]);
 
@@ -796,7 +818,7 @@ const Buildinguse = ({ site }) => {
         </Source>
       )}
 
-      {buildinguseStatistic && (
+      {buildinguseStatistic && viewMode !== viewModeCons.edit && (
         <div className="fixed bottom-0 left-8">
           <ChartCustom chartData={buildinguseStatistic} />
         </div>
@@ -813,6 +835,7 @@ const Buildinguse = ({ site }) => {
           />
         )}
       </div>
+
       <div
         className="fixed bottom-14"
         style={{
@@ -826,8 +849,13 @@ const Buildinguse = ({ site }) => {
           setFilter={setFilterBuilding}
         />
       </div>
+
       {viewMode === viewModeCons.edit && (
-        <Editor site={site} handleChangeChosenBuilding={setPolygonChosen} />
+        <Editor
+          site={site}
+          handleChangeChosenBuilding={setPolygonChosen}
+          chartData={buildinguseStatistic}
+        />
       )}
 
       {showGallery && (

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
 import { toast, useToast } from "../../../../hooks/use-toast";
@@ -6,10 +6,12 @@ import "mapbox-gl";
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
 import $ from "jquery";
 import firebaseAuth from "../../../../services/firebaseAuth";
+import path from "path";
 
 // Assets
 import settings from "../../../../assets/images/settings.json";
 import reload from "../../../../assets/images/reload.json";
+import "./style.css";
 
 // Data
 import {
@@ -45,7 +47,28 @@ import ChartCustom from "../../../../components/ChartCustom/ChartCustom";
 import { ImageList, ImageListItem } from "@mui/material";
 import LottieIcon from "../../../../components/LottieIcon/LottieIcon";
 import SpeedDialCustom from "../../../../components/SpeedDialCustom/SpeedDialCustom";
-import PhotoSlide from "../../../../components/PhotoSlide/PhotoSlide";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogOverlay,
+  DialogTitle,
+} from "../../../../components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../../../../components/ui/carousel";
+import { Image } from "antd";
+import { Textarea } from "../../../../components/ui/textarea";
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "../../../../components/ui/alert";
+import { MessageCircleWarningIcon } from "lucide-react";
 
 const draw = new MapboxDraw({
   controls: {
@@ -58,7 +81,62 @@ const draw = new MapboxDraw({
   },
 });
 
-const Editor = ({ site, handleChangeChosenLanduse }) => {
+class EditHistories {
+  done = []; // The version in the past
+  undone = []; // When undo, this will store the previous verison
+
+  // V1 V2 V3 V4 V5
+  // [done]||[undone]
+
+  constructor() {}
+
+  getStorageSize(object) {
+    const objectList = [];
+    const stack = [object];
+    let bytes = 0;
+
+    while (stack.length) {
+      const value = stack.pop();
+
+      switch (typeof value) {
+        case "boolean":
+          bytes += 4;
+          break;
+        case "string":
+          bytes += value.length * 2;
+          break;
+        case "number":
+          bytes += 8;
+          break;
+        case "object":
+          if (!objectList.includes(value)) {
+            objectList.push(value);
+            for (const prop in value) {
+              if (value.hasOwnProperty(prop)) {
+                stack.push(value[prop]);
+              }
+            }
+          }
+          break;
+      }
+    }
+
+    return bytes / 1048576;
+  }
+
+  pushHistory(geojsonData) {
+    // if (!(this.getStorageSize(this.done) <= 2)) this.done.shift();
+    this.done.push(geojsonData);
+    return this.done;
+  }
+
+  undoVer() {
+    return this.done.pop();
+  }
+}
+
+const editHistories = new EditHistories();
+const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
   const { siteChosen } = useContext(SiteChosenContext);
   const {
     activitiesData,
@@ -107,15 +185,18 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
       });
     }
 
-    for (let media of imagesUpload) {
-      let ref = `/nha_trang/media/${siteChosen.properties.id}/design_images/${scenario}/landuse/${media.id}`;
-      for (let img of media.images) {
-        await updloadFile(`${ref}/${img.file.name}`, img.file);
-        await uploadString(
-          getRef(`${ref}/${img.file.name}.json`),
-          "faljsdflfkafjsdf"
-        );
+    if (imagesUpload.length > 0) {
+      for (let media of imagesUpload) {
+        let ref = `/nha_trang/media/${siteChosen.properties.id}/design_images/${scenario}/landuse/${media.id}`;
+        for (let img of media.images) {
+          if (img.file) await updloadFile(`${ref}/${img.file.name}`, img.file);
+          await uploadString(
+            getRef(`${ref}/${img?.file?.name || img.name}.json`),
+            img.text
+          );
+        }
       }
+      console.log(`Upload images successfully`);
     }
 
     toast({ title: "Upload Successfully!" });
@@ -156,23 +237,78 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
     });
   }
 
-  useEffect(() => {
-    function handleEditPolygon(e) {
+  const handleEditPolygon = useCallback(
+    async (e) => {
       map.getMap().doubleClickZoom.disable();
       if (e.features[0].properties.id == polygonTick?.id) {
         setPolygonTick({});
         handleChangeChosenLanduse(null);
         draw.delete(e.features[0].id);
+        setImagesUpload([]);
       } else {
         setPolygonTick({
           id: e.features[0].properties.id,
           landuse: e.features[0].properties["Landuse"],
         });
         draw.add(e.features[0]);
-      }
-    }
 
-    function handleUpdatePolygon(e) {
+        const feature_id = e.features[0].properties.id;
+
+        let ref = getRef(
+          `nha_trang/media/${siteChosen.properties.id}/design_images/${scenarioChosen.name}/landuse/${feature_id}`
+        );
+
+        console.log(ref);
+
+        const items = await listChilds(ref);
+        const gallery = [];
+        for (let item of items) {
+          const url = await getDownloadUrl(item);
+          const meta = await getMeta(item);
+          console.log(meta);
+          if (meta.contentType.includes("image"))
+            gallery.push({ name: item.name, url });
+          else {
+            const res = await fetch(url);
+            const data = await res.text();
+            const basename = path.basename(item.name, ".json");
+
+            for (const img of gallery)
+              if (img.name == basename) {
+                img.text = data;
+                break;
+              }
+          }
+        }
+
+        setImagesUpload((prev) => {
+          let data = JSON.parse(JSON.stringify(prev));
+          const arr = data.filter((img) => img.id != feature_id);
+
+          return [...arr, { id: feature_id, images: gallery }];
+        });
+      }
+    },
+    [polygonTick, scenarioChosen]
+  );
+
+  const handleTrashPolygon = useCallback(() => {
+    let data = JSON.parse(JSON.stringify(landuseData[site]));
+    editHistories.pushHistory(JSON.parse(JSON.stringify(landuseData[site])));
+
+    data.features = data.features.filter(
+      (polygon) => polygon.properties.id != polygonTick.id
+    );
+
+    handleChangeChosenLanduse(null);
+
+    map.getSource(SourceID.landuse).setData(data);
+    landuseData[site] = data;
+    setProjectData((prev) => ({ ...prev, landuse: landuseData }));
+  }, [polygonTick, landuseData]);
+
+  const handleUpdatePolygon = useCallback(
+    (e) => {
       let data = JSON.parse(JSON.stringify(landuseData[site])),
         temp;
 
@@ -187,22 +323,13 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
 
       map.getSource(SourceID.landuse).setData(data);
       landuseData[site] = data;
+      // editHistories.pushHistory(data);
       setProjectData((prev) => ({ ...prev, landuse: landuseData }));
-    }
+    },
+    [polygonTick, landuseData]
+  );
 
-    function handleTrashPolygon() {
-      let data = JSON.parse(JSON.stringify(landuseData[site]));
-      data.features = data.features.filter(
-        (polygon) => polygon.properties.id != polygonTick.id
-      );
-
-      handleChangeChosenLanduse(null);
-
-      map.getSource(SourceID.landuse).setData(data);
-      landuseData[site] = data;
-      setProjectData((prev) => ({ ...prev, landuse: landuseData }));
-    }
-
+  useEffect(() => {
     map.on("dblclick", "landuse_selection", handleEditPolygon);
     map.on("draw.update", handleUpdatePolygon);
     map.on("draw.delete", handleTrashPolygon);
@@ -234,7 +361,7 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
       map.off("draw.delete", handleTrashPolygon);
       map.getMap().doubleClickZoom.enable();
     };
-  }, [polygonTick]);
+  }, [polygonTick, scenarioChosen]);
 
   useEffect(() => {
     function handleCreateNewPolyon(e) {
@@ -252,6 +379,7 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
 
       map.getSource(SourceID.landuse).setData(data);
       landuseData[site] = data;
+      editHistories.pushHistory(data);
       setProjectData((prev) => ({ ...prev, landuse: landuseData }));
       setPolygonTick({
         id,
@@ -265,6 +393,14 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
     };
   }, [site]);
 
+  function handleUndoDraw() {
+    const version = editHistories.undoVer();
+    console.log(version, "version");
+    map.getSource(SourceID.landuse).setData(version);
+    landuseData[site] = version;
+    setProjectData((prev) => ({ ...prev, landuse: landuseData }));
+  }
+
   useEffect(() => {
     function handleChangeModeChangeCursor() {
       if (draw.getMode() !== draw.modes.SIMPLE_SELECT)
@@ -273,6 +409,18 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
     }
 
     map.on("mousemove", handleChangeModeChangeCursor);
+
+    const icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-rotate-left", "text-black", "text-sm");
+    const button = document.createElement("button");
+    button.classList.add("mapbox-gl-draw_ctrl-draw-btn", "mapbox-gl-undo");
+    button.appendChild(icon);
+    button.onclick = handleUndoDraw;
+    button.title = "Undo";
+
+    $(
+      ".mapboxgl-control-container .mapboxgl-ctrl-top-right .mapboxgl-ctrl-group.mapboxgl-ctrl"
+    ).append([button]);
 
     return () => {
       map.off("mousemove", handleChangeModeChangeCursor);
@@ -295,7 +443,7 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
         />
       </AccordionCustom>
 
-      {polygonTick && (
+      {polygonTick?.id && (
         <AccordionCustom summary="Project Images" detailStyles={{ gap: 20 }}>
           <AccordionCustom summary="Image Upload">
             {/* Image Components */}
@@ -391,8 +539,68 @@ const Editor = ({ site, handleChangeChosenLanduse }) => {
               />
             </div>
           </AccordionCustom>
+          {imagesUpload.length > 0 && (
+            <AccordionCustom summary="Text">
+              {imagesUpload
+                .filter((img) => img.id == polygonTick.id)[0]
+                .images.map((img, index) => (
+                  <div key={img.name}>
+                    <label className="text-white" htmlFor={img.name}>
+                      {`Image ${index + 1}: `}
+                    </label>
+                    <Textarea
+                      className="mt-2 text-black"
+                      placeholder={`Type your text for image ${
+                        index + 1
+                      } here.`}
+                      id={img.name}
+                      defaultValue={img.text}
+                      onBlur={(e) => {
+                        const val = e.target.value;
+                        if (val) {
+                          let temp = null;
+                          const imgUpload = imagesUpload.filter((item) => {
+                            if (item.id == polygonTick.id) temp = item;
+
+                            return item.id != polygonTick.id;
+                          });
+
+                          for (const i of temp.images) {
+                            if (i.name == img.name) {
+                              i.text = val;
+                              break;
+                            }
+                          }
+
+                          console.log([...imgUpload, temp]);
+
+                          setImagesUpload(() => [...imgUpload, temp]);
+                        }
+                      }}
+                    />
+                  </div>
+                ))}
+            </AccordionCustom>
+          )}
+          <Alert className="border border-[#D14537] bg-transparent">
+            <MessageCircleWarningIcon
+              className="h-5 w-5 mt-[2px]"
+              color="#F88B56"
+            />
+            <AlertTitle className="text-base text-[#F88B56] ">
+              Warning!
+            </AlertTitle>
+            <AlertDescription className="text-sm italic text-white">
+              If you switch to another polygon without save the images and
+              texts, the data will be lost!
+            </AlertDescription>
+          </Alert>
         </AccordionCustom>
       )}
+
+      <div className="px-10 h-[500px] flex justify-center">
+        {chartData && <ChartCustom chartData={chartData} />}
+      </div>
 
       <button
         type="submit"
@@ -515,11 +723,13 @@ const Landuse = ({ site }) => {
       },
     };
 
-    const temp = [];
+    const temp = [],
+      labels_index = [];
     CaseLanduseValues.forEach((item, id) => {
       if (id % 2 === 0) {
-        dataChart.labels = { ...dataChart.labels, [item]: id };
-        temp[id] = 0;
+        dataChart.labels = { ...dataChart.labels, [item]: labels_index.length };
+        temp[labels_index.length] = 0;
+        labels_index.push(item);
       } else {
         dataChart.dataset[0].backgroundColor.push(item);
       }
@@ -534,12 +744,12 @@ const Landuse = ({ site }) => {
           temp[dataChart.labels[feature.properties.Landuse]]++;
       });
 
-      dataChart.dataset[0].data = [...new Set(temp.filter((t) => t >= 0))];
+      dataChart.dataset[0].data = temp;
       dataChart.labels = Object.keys(dataChart.labels);
 
       setLanduseStatistic(dataChart);
     }
-  }, [site]);
+  }, [site, landuseData[site]]);
 
   async function getDesignImagesGallery(landuse_id) {
     setShowGallery(true);
@@ -552,10 +762,23 @@ const Landuse = ({ site }) => {
     for (let item of items) {
       const url = await getDownloadUrl(item);
       const meta = await getMeta(item);
-      if (meta.contentType.includes("image")) gallery.push(url);
+      if (meta.contentType.includes("image"))
+        gallery.push({ name: item.name, url });
+      else {
+        const res = await fetch(url);
+        const data = await res.text();
+        const basename = path.basename(item.name, ".json");
+
+        for (const img of gallery)
+          if (img.name == basename) {
+            img.text = data;
+            break;
+          }
+      }
     }
-    if (gallery.length > 0) setGallery(gallery);
-    else {
+    if (gallery.length > 0) {
+      setGallery(gallery);
+    } else {
       setShowGallery(false);
       toast({ title: "This area hasn't had any images yet" });
     }
@@ -669,10 +892,14 @@ const Landuse = ({ site }) => {
       </div>
 
       {viewMode === viewModeCons.edit && (
-        <Editor site={site} handleChangeChosenLanduse={setPolygonChosen} />
+        <Editor
+          site={site}
+          handleChangeChosenLanduse={setPolygonChosen}
+          chartData={landuseStatistic}
+        />
       )}
 
-      {showGallery && (
+      {/* {showGallery && (
         <PhotoSlide
           gallery={gallery}
           onCloseHandler={() => {
@@ -682,7 +909,46 @@ const Landuse = ({ site }) => {
           isLoading={showGallery}
           setIsLoading={setShowGallery}
         />
-      )}
+      )} */}
+
+      <Dialog open={showGallery} onOpenChange={setShowGallery}>
+        <DialogOverlay className="z-[999]" />
+        <DialogContent className="w-[90vw] h-[80vh] !max-w-none z-[9999]">
+          <DialogTitle className="h-fit"></DialogTitle>
+          <DialogDescription></DialogDescription>
+          <Carousel className="w-[87vw] h-[70vh]">
+            <CarouselContent className="h-full">
+              {gallery &&
+                gallery.map((item) => (
+                  <CarouselItem key={item.name}>
+                    <div className="p-1 w-[87vw] h-[70vh]">
+                      <div
+                        className="h-[70vh] w-[87vw] flex gap-8"
+                        key={item.name}
+                      >
+                        <figure className="flex-1 h-full">
+                          <Image
+                            width="100%"
+                            height="100%"
+                            preview={false}
+                            src={item.url}
+                            maskClassName="z-[999999]"
+                            rootClassName="z-[999999]"
+                          />
+                        </figure>
+                        {item.text && (
+                          <span className="text-black flex-1">{item.text}</span>
+                        )}
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </DialogContent>
+      </Dialog>
     </>
   );
 };
