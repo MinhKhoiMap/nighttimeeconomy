@@ -286,9 +286,10 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
       }
     }
 
-    function handleEditViewpoint(e) {
+    async function handleEditViewpoint(e) {
       if (e.features[0].properties.id == viewpoint?.properties.id) {
         setViewpoint(null);
+        draw.delete(e.features[0].properties.id);
       } else {
         const { type, properties, geometry } = e.features[0];
 
@@ -297,7 +298,53 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
           properties,
           geometry,
         });
+
+        draw.deleteAll();
         draw.add(e.features[0]);
+
+        const feature_id = e.features[0].properties.id;
+
+        if (typeof scenarioChosen === "string") {
+          toast({ title: "This area hasn't had any images yet" });
+          return;
+        }
+
+        let ref = getRef(
+          `/nha_trang/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${feature_id}`
+        );
+
+        const items = await listChilds(ref);
+
+        if (items.length > 0) {
+          // setActive(true);
+          const gallery = [];
+          for (let item of items) {
+            const url = await getDownloadUrl(item);
+            const meta = await getMeta(item);
+            if (meta.contentType.includes("image"))
+              gallery.push({ name: item.name, url });
+            else {
+              const res = await fetch(url);
+              const data = await res.text();
+              const basename = path.basename(item.name, ".json");
+
+              for (const img of gallery)
+                if (img.name == basename) {
+                  img.text = data;
+                  break;
+                }
+            }
+          }
+
+          setImagesUpload((prev) => {
+            let data = JSON.parse(JSON.stringify(prev));
+            const arr = data.filter((img) => img.id != feature_id);
+
+            return [...arr, { id: feature_id, images: gallery }];
+          });
+
+          // setActive(false);
+        }
       }
     }
 
@@ -339,7 +386,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
       map.off("draw.create", handleCreateNew);
       map.off("contextmenu", "viewpoints", handleEditViewpoint);
     };
-  }, [polygonTick, viewpoint]);
+  }, [polygonTick, viewpoint, scenarioChosen]);
 
   useEffect(() => {
     function handleChangeModeChangeCursor() {

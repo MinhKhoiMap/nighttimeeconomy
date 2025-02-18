@@ -68,6 +68,7 @@ import {
   AlertDescription,
   AlertTitle,
 } from "../../../../components/ui/alert";
+import { Skeleton } from "antd";
 import { MessageCircleWarningIcon } from "lucide-react";
 
 const draw = new MapboxDraw({
@@ -150,6 +151,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
   const [polygonTick, setPolygonTick] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [imagesUpload, setImagesUpload] = useState([]);
+  const [active, setActive] = useState(false);
 
   const { map } = useMap();
   const { toast } = useToast();
@@ -250,43 +252,52 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
           id: e.features[0].properties.id,
           landuse: e.features[0].properties["Landuse"],
         });
+
+        draw.deleteAll();
         draw.add(e.features[0]);
 
         const feature_id = e.features[0].properties.id;
+
+        if (typeof scenarioChosen === "string") {
+          toast({ title: "This area hasn't had any images yet" });
+          return;
+        }
 
         let ref = getRef(
           `nha_trang/media/${siteChosen.properties.id}/design_images/${scenarioChosen.name}/landuse/${feature_id}`
         );
 
-        console.log(ref);
-
         const items = await listChilds(ref);
-        const gallery = [];
-        for (let item of items) {
-          const url = await getDownloadUrl(item);
-          const meta = await getMeta(item);
-          console.log(meta);
-          if (meta.contentType.includes("image"))
-            gallery.push({ name: item.name, url });
-          else {
-            const res = await fetch(url);
-            const data = await res.text();
-            const basename = path.basename(item.name, ".json");
+        if (items.length > 0) {
+          setActive(true);
+          const gallery = [];
+          for (let item of items) {
+            const url = await getDownloadUrl(item);
+            const meta = await getMeta(item);
+            if (meta.contentType.includes("image"))
+              gallery.push({ name: item.name, url });
+            else {
+              const res = await fetch(url);
+              const data = await res.text();
+              const basename = path.basename(item.name, ".json");
 
-            for (const img of gallery)
-              if (img.name == basename) {
-                img.text = data;
-                break;
-              }
+              for (const img of gallery)
+                if (img.name == basename) {
+                  img.text = data;
+                  break;
+                }
+            }
           }
+
+          setImagesUpload((prev) => {
+            let data = JSON.parse(JSON.stringify(prev));
+            const arr = data.filter((img) => img.id != feature_id);
+
+            return [...arr, { id: feature_id, images: gallery }];
+          });
+
+          setActive(false);
         }
-
-        setImagesUpload((prev) => {
-          let data = JSON.parse(JSON.stringify(prev));
-          const arr = data.filter((img) => img.id != feature_id);
-
-          return [...arr, { id: feature_id, images: gallery }];
-        });
       }
     },
     [polygonTick, scenarioChosen]
@@ -523,10 +534,13 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
                   onClick={() => $(".input-field").click()}
                   className="w-full h-[200px] flex items-center justify-center rounded-lg border-[2px] border-dashed border-[#1475cf] hover:brightness-150 transition-all cursor-pointer"
                 >
-                  <h3 className="flex items-center gap-3 font-bold">
-                    Browse Files to upload
-                    <i className="fa-solid fa-cloud-arrow-up text-[#1475cf] text-2xl"></i>
-                  </h3>
+                  {!active && (
+                    <h3 className="flex items-center gap-3 font-bold">
+                      Browse Files to upload
+                      <i className="fa-solid fa-cloud-arrow-up text-[#1475cf] text-2xl"></i>
+                    </h3>
+                  )}
+                  <Skeleton.Image active={active} />
                 </form>
               )}
               <input
@@ -539,49 +553,52 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
               />
             </div>
           </AccordionCustom>
-          {imagesUpload.length > 0 && (
-            <AccordionCustom summary="Text">
-              {imagesUpload
-                .filter((img) => img.id == polygonTick.id)[0]
-                .images.map((img, index) => (
-                  <div key={img.name}>
-                    <label className="text-white" htmlFor={img.name}>
-                      {`Image ${index + 1}: `}
-                    </label>
-                    <Textarea
-                      className="mt-2 text-black"
-                      placeholder={`Type your text for image ${
-                        index + 1
-                      } here.`}
-                      id={img.name}
-                      defaultValue={img.text}
-                      onBlur={(e) => {
-                        const val = e.target.value;
-                        if (val) {
-                          let temp = null;
-                          const imgUpload = imagesUpload.filter((item) => {
-                            if (item.id == polygonTick.id) temp = item;
+          {imagesUpload.length > 0 &&
+            imagesUpload.filter(
+              (img) => img.id == polygonTick.id && img.images.length > 0
+            ).length > 0 && (
+              <AccordionCustom summary="Text">
+                {imagesUpload
+                  .filter((img) => img.id == polygonTick.id)[0]
+                  ?.images.map((img, index) => (
+                    <div key={img.name}>
+                      <label className="text-white" htmlFor={img.name}>
+                        {`Image ${index + 1}: `}
+                      </label>
+                      <Textarea
+                        className="mt-2 text-black"
+                        placeholder={`Type your text for image ${
+                          index + 1
+                        } here.`}
+                        id={img.name}
+                        defaultValue={img.text}
+                        onBlur={(e) => {
+                          const val = e.target.value;
+                          if (val) {
+                            let temp = null;
+                            const imgUpload = imagesUpload.filter((item) => {
+                              if (item.id == polygonTick.id) temp = item;
 
-                            return item.id != polygonTick.id;
-                          });
+                              return item.id != polygonTick.id;
+                            });
 
-                          for (const i of temp.images) {
-                            if (i.name == img.name) {
-                              i.text = val;
-                              break;
+                            for (const i of temp.images) {
+                              if (i.name == img.name) {
+                                i.text = val;
+                                break;
+                              }
                             }
+
+                            console.log([...imgUpload, temp]);
+
+                            setImagesUpload(() => [...imgUpload, temp]);
                           }
-
-                          console.log([...imgUpload, temp]);
-
-                          setImagesUpload(() => [...imgUpload, temp]);
-                        }
-                      }}
-                    />
-                  </div>
-                ))}
-            </AccordionCustom>
-          )}
+                        }}
+                      />
+                    </div>
+                  ))}
+              </AccordionCustom>
+            )}
           <Alert className="border border-[#D14537] bg-transparent">
             <MessageCircleWarningIcon
               className="h-5 w-5 mt-[2px]"
