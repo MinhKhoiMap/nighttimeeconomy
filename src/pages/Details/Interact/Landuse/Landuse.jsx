@@ -322,6 +322,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
     (e) => {
       let data = JSON.parse(JSON.stringify(landuseData[site])),
         temp;
+      editHistories.pushHistory(JSON.parse(JSON.stringify(landuseData[site])));
 
       data.features = data.features.filter((polygon) => {
         if (polygon.properties.id == polygonTick.id) temp = polygon;
@@ -334,7 +335,6 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
 
       map.getSource(SourceID.landuse).setData(data);
       landuseData[site] = data;
-      // editHistories.pushHistory(data);
       setProjectData((prev) => ({ ...prev, landuse: landuseData }));
     },
     [polygonTick, landuseData]

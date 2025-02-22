@@ -5,6 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import "mapbox-gl";
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
 import $ from "jquery";
+import path from "path";
 
 // Assets
 import settings from "../../../../assets/images/settings.json";
@@ -56,6 +57,62 @@ const draw = new MapboxDraw({
     point: true,
   },
 });
+
+class EditHistories {
+  done = []; // The version in the past
+  undone = []; // When undo, this will store the previous verison
+
+  // V1 V2 V3 V4 V5
+  // [done]||[undone]
+
+  constructor() {}
+
+  getStorageSize(object) {
+    const objectList = [];
+    const stack = [object];
+    let bytes = 0;
+
+    while (stack.length) {
+      const value = stack.pop();
+
+      switch (typeof value) {
+        case "boolean":
+          bytes += 4;
+          break;
+        case "string":
+          bytes += value.length * 2;
+          break;
+        case "number":
+          bytes += 8;
+          break;
+        case "object":
+          if (!objectList.includes(value)) {
+            objectList.push(value);
+            for (const prop in value) {
+              if (value.hasOwnProperty(prop)) {
+                stack.push(value[prop]);
+              }
+            }
+          }
+          break;
+      }
+    }
+
+    return bytes / 1048576;
+  }
+
+  pushHistory(geojsonData) {
+    // if (!(this.getStorageSize(this.done) <= 2)) this.done.shift();
+    this.done.push(geojsonData);
+    return this.done;
+  }
+
+  undoVer() {
+    return this.done.pop();
+  }
+}
+
+const editHistories = new EditHistories();
 
 const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
   const { siteChosen } = useContext(SiteChosenContext);
@@ -168,15 +225,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
           handleChangeChosenBuilding(null);
           draw.delete(e.features[0].id);
         } else {
-          // if (polygonTick.id) {
-          //   if (
-          //     !confirm(
-          //       "Are you sure that you want to switch to a different polygon?"
-          //     )
-          //   )
-          //     return;
-          // }
-
+          setViewpoint(null);
           setPolygonTick({
             id: e.features[0].properties.id,
             buildinguse: e.features[0].properties["Buildsused"],
@@ -188,11 +237,13 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
       }
     }
 
-    function handleUpdatePolygon(e) {
-      const currentMode = draw.getMode();
-      if (currentMode === draw.modes.DRAW_POLYGON) {
+    function handleUpdate(e) {
+      if (polygonTick?.id) {
         let data = JSON.parse(JSON.stringify(buildinguseData[site])),
           temp;
+        editHistories.pushHistory(
+          JSON.parse(JSON.stringify(buildinguseData[site]))
+        );
 
         data.features = data.features.filter((polygon) => {
           if (polygon.properties.id == polygonTick.id) temp = polygon;
@@ -206,9 +257,12 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
         map.getSource(SourceID.buildinguse).setData(data);
         buildinguseData[site] = data;
         setProjectData((prev) => ({ ...prev, buildinguse: buildinguseData }));
-      } else if (currentMode === draw.modes.DRAW_POINT) {
+      } else if (viewpoint?.id) {
         let data = JSON.parse(JSON.stringify(viewpointsData[site])),
           temp;
+        editHistories.pushHistory(
+          JSON.parse(JSON.stringify(viewpointsData[site]))
+        );
 
         data.features = data.features.filter((point) => {
           if (point.properties.id == viewpoint.id) temp = point;
@@ -227,6 +281,10 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
 
     function handleTrashPolygon() {
       let data = JSON.parse(JSON.stringify(buildinguseData[site]));
+      editHistories.pushHistory(
+        JSON.parse(JSON.stringify(buildinguseData[site]))
+      );
+
       data.features = data.features.filter(
         (polygon) => polygon.properties.id != polygonTick.id
       );
@@ -239,6 +297,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     }
 
     function handleControlAddViewPoints() {
+      // If users don't choose poylgon, they can't add view points
       if (!polygonTick.id && draw.getMode() === draw.modes.DRAW_POINT) {
         console.log("first");
         draw.changeMode(draw.modes.SIMPLE_SELECT);
@@ -279,7 +338,6 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
           },
         });
 
-        console.log(data, "viewpoint data");
         map.getSource(SourceID.viewpoints).setData(data);
         viewpointsData[site] = data;
         setProjectData((prev) => ({ ...prev, viewpoints: viewpointsData }));
@@ -350,7 +408,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
 
     map.on("draw.create", handleCreateNew);
     map.on("dblclick", "buildinguse_selection", handleEditPolygon);
-    map.on("draw.update", handleUpdatePolygon);
+    map.on("draw.update", handleUpdate);
     map.on("draw.delete", handleTrashPolygon);
     map.on("draw.modechange", handleControlAddViewPoints);
     map.on("contextmenu", "viewpoints", handleEditViewpoint);
@@ -380,7 +438,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
 
     return () => {
       map.off("dblclick", "buildinguse_selection", handleEditPolygon);
-      map.off("draw.update", handleUpdatePolygon);
+      map.off("draw.update", handleUpdate);
       map.off("draw.delete", handleTrashPolygon);
       map.off("draw.modechange", handleControlAddViewPoints);
       map.off("draw.create", handleCreateNew);
@@ -396,6 +454,40 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     }
 
     map.on("mousemove", handleChangeModeChangeCursor);
+
+    return () => {
+      map.off("mousemove", handleChangeModeChangeCursor);
+    };
+  }, []);
+
+  function handleUndoDraw() {
+    const version = editHistories.undoVer();
+    console.log(version, "version");
+    map.getSource(SourceID.landuse).setData(version);
+    landuseData[site] = version;
+    setProjectData((prev) => ({ ...prev, landuse: landuseData }));
+  }
+
+  useEffect(() => {
+    function handleChangeModeChangeCursor() {
+      if (draw.getMode() !== draw.modes.SIMPLE_SELECT)
+        map.getCanvas().style.cursor = "crosshair";
+      else map.getCanvas().style.cursor = "grab";
+    }
+
+    map.on("mousemove", handleChangeModeChangeCursor);
+
+    const icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-rotate-left", "text-black", "text-sm");
+    const button = document.createElement("button");
+    button.classList.add("mapbox-gl-draw_ctrl-draw-btn", "mapbox-gl-undo");
+    button.appendChild(icon);
+    button.onclick = handleUndoDraw;
+    button.title = "Undo";
+
+    $(
+      ".mapboxgl-control-container .mapboxgl-ctrl-top-right .mapboxgl-ctrl-group.mapboxgl-ctrl"
+    ).append([button]);
 
     return () => {
       map.off("mousemove", handleChangeModeChangeCursor);
@@ -818,7 +910,6 @@ const Buildinguse = ({ site }) => {
                 {/* Show Viewpoints */}
                 <Layer
                   id="viewpoints"
-                  // beforeId="chosen_building"
                   type="circle"
                   paint={{
                     "circle-color": "#FBB03B",
