@@ -80,6 +80,7 @@ const draw = new MapboxDraw({
     line_string: false,
     point: false,
   },
+  touchEnabled: false,
 });
 
 class EditHistories {
@@ -245,7 +246,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
       if (e.features[0].properties.id == polygonTick?.id) {
         setPolygonTick({});
         handleChangeChosenLanduse(null);
-        draw.delete(e.features[0].id);
+        draw.deleteAll();
         setImagesUpload([]);
       } else {
         setPolygonTick({
@@ -254,8 +255,8 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
         });
 
         draw.deleteAll();
-        draw.add(e.features[0]);
-
+        const t = draw.add(e.features[0]);
+        console.log(t, e.features[0]);
         const feature_id = e.features[0].properties.id;
 
         if (typeof scenarioChosen === "string") {
@@ -335,7 +336,9 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
 
       map.getSource(SourceID.landuse).setData(data);
       landuseData[site] = data;
+      // map.getMap().
       setProjectData((prev) => ({ ...prev, landuse: landuseData }));
+      draw.deleteAll();
     },
     [polygonTick, landuseData]
   );
@@ -540,7 +543,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
                       <i className="fa-solid fa-cloud-arrow-up text-[#1475cf] text-2xl"></i>
                     </h3>
                   )}
-                  <Skeleton.Image active={active} />
+                  {active && <Skeleton.Image active={active} />}
                 </form>
               )}
               <input
