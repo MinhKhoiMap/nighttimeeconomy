@@ -6,6 +6,7 @@ import "mapbox-gl";
 import MapboxDraw from "@mapbox/mapbox-gl-draw";
 import $ from "jquery";
 import path from "path";
+import * as MapboxDrawWaypoint from "mapbox-gl-draw-waypoint";
 
 // Assets
 import settings from "../../../../assets/images/settings.json";
@@ -56,6 +57,10 @@ const draw = new MapboxDraw({
     line_string: false,
     point: true,
   },
+  modes: MapboxDrawWaypoint.enable(
+    MapboxDraw.modes,
+    (feature) => feature.properties.risk
+  ),
 });
 
 class EditHistories {
@@ -162,7 +167,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     for (let fileName in geojson) {
       let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
-        console.log(`Upload ${fileName} successfully`);
+        // console.log(`Upload ${fileName} successfully`);
       });
     }
 
@@ -258,6 +263,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
         buildinguseData[site] = data;
         setProjectData((prev) => ({ ...prev, buildinguse: buildinguseData }));
       } else if (viewpoint?.id) {
+        console.log(viewpoint, draw.getMode());
         let data = JSON.parse(JSON.stringify(viewpointsData[site])),
           temp;
         editHistories.pushHistory(
@@ -299,7 +305,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     function handleControlAddViewPoints() {
       // If users don't choose poylgon, they can't add view points
       if (!polygonTick.id && draw.getMode() === draw.modes.DRAW_POINT) {
-        console.log("first");
+        // console.log("first");
         draw.changeMode(draw.modes.SIMPLE_SELECT);
       }
     }
@@ -345,22 +351,22 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     }
 
     async function handleEditViewpoint(e) {
+      draw.deleteAll();
       if (e.features[0].properties.id == viewpoint?.properties.id) {
         setViewpoint(null);
-        draw.delete(e.features[0].properties.id);
       } else {
-        const { type, properties, geometry } = e.features[0];
+        const { type, properties, geometry, id } = e.features[0];
 
         setViewpoint({
+          id,
           type,
           properties,
           geometry,
         });
 
-        draw.deleteAll();
-        draw.add(e.features[0]);
+        const feature_id = draw.add(e.features[0]);
 
-        const feature_id = e.features[0].properties.id;
+        console.log(draw.getMode(), draw.getAll());
 
         if (typeof scenarioChosen === "string") {
           toast({ title: "This area hasn't had any images yet" });
@@ -462,7 +468,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
 
   function handleUndoDraw() {
     const version = editHistories.undoVer();
-    console.log(version, "version");
+    // console.log(version, "version");
     map.getSource(SourceID.landuse).setData(version);
     landuseData[site] = version;
     setProjectData((prev) => ({ ...prev, landuse: landuseData }));

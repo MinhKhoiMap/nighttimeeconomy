@@ -114,3 +114,33 @@ export default [
     ],
   },
 ];
+
+/*
+dataset: [
+  {
+    label: "1",
+    backgroundColor: "#C32314",
+    data: [0],
+  },
+  {
+    label: "2",
+    backgroundColor: "#E6AAA0",
+    data: [0],
+  },
+  {
+    label: "3",
+    backgroundColor: "#E1E1E1",
+    data: [0],
+  },
+  {
+    label: "4",
+    backgroundColor: "#78AFE6",
+    data: [0],
+  },
+  {
+    label: "5",
+    backgroundColor: "#236EC3",
+    data: [0],
+  },
+],
+*/

@@ -62,7 +62,7 @@ const Details = () => {
   }
   const fitArea = () => {
     if (siteIndex) {
-      console.log(viewMode);
+      // console.log(viewMode);
       if (viewMode !== viewModeArr[viewModeCons.overview])
         fitAreaUtls(siteChosen.geometry, map, {
           padding: { top: 60, bottom: 60, left: 60, right: 60 },

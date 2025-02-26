@@ -8,7 +8,6 @@ import "./style.css";
 import locate from "../../../../assets/images/locate.png";
 import chartdata from "../../../../assets/data/chartdata";
 import {
-  ChartBarStackedIcon,
   ChartColumnBigIcon,
   ChartPieIcon,
   ChevronsUpDownIcon,
@@ -66,17 +65,17 @@ import {
 import AccordionCustom from "../../../../components/AccordionCustom/AccordionCustom";
 import { EditModeData } from "../Interact";
 
-const Editor = ({ site }) => {
-  const chartConfig = {
-    pie: "pie",
-    bar: "bar",
-    likert: "likert",
-    axis: {
-      x: "x",
-      y: "y",
-    },
-  };
+const chartConfig = {
+  pie: "pie",
+  bar: "bar",
+  likert: "likert",
+  axis: {
+    x: "x",
+    y: "y",
+  },
+};
 
+const Editor = ({ site }) => {
   const { siteChosen } = useContext(SiteChosenContext);
   const { scenarioChosen } = useContext(EditModeData);
 
@@ -96,57 +95,81 @@ const Editor = ({ site }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   function handleChangeChartType(val, id) {
-    if (val !== chartConfig.pie) {
-      if (val === chartConfig.bar) {
-        setChartData((prev) => {
-          const temp = {
-            id,
-            typeChart: chartConfig.bar,
-            opts: {
-              indexAxis: chartConfig.axis.x,
-            },
-            title: "",
-            labels: [""],
-            dataset: [{ backgroundColor: "#F6D776", data: [0], label: "" }],
-          };
+    if (val === chartConfig.bar) {
+      setChartData((prev) => {
+        const temp = {
+          id,
+          typeChart: chartConfig.bar,
+          opts: {
+            indexAxis: chartConfig.axis.x,
+          },
+          title: "",
+          labels: [""],
+          dataset: [{ backgroundColor: "#F6D776", data: [0], label: "" }],
+        };
 
-          const list = JSON.parse(JSON.stringify(prev));
-          const filter = list.filter((chart) => chart.id != id);
+        const list = JSON.parse(JSON.stringify(prev));
+        const filter = list.filter((chart) => chart.id != id);
 
-          filter.splice(id, 0, temp);
+        filter.splice(id, 0, temp);
 
-          return filter;
-        });
-      } else {
-        setChartData((prev) => {
-          const temp = {
-            id,
-            typeChart: chartConfig.likert,
-            opts: {
-              indexAxis: chartConfig.axis.x,
-              scales: {
-                x: {
-                  stacked: true,
-                },
-                y: {
-                  stacked: true,
-                },
+        return filter;
+      });
+    } else if (val === chartConfig.likert) {
+      setChartData((prev) => {
+        const temp = {
+          id,
+          typeChart: chartConfig.likert,
+          opts: {
+            indexAxis: chartConfig.axis.y,
+            scales: {
+              x: {
+                stacked: true,
+              },
+              y: {
+                stacked: true,
               },
             },
-            title: "",
-            labels: [""],
-            dataset: [{ backgroundColor: "#F6D776", data: [0], label: "" }],
-          };
+          },
+          title: "",
+          labels: [""],
+          dataset: [
+            {
+              label: "1",
+              backgroundColor: "#C32314",
+              data: [0],
+            },
+            {
+              label: "2",
+              backgroundColor: "#E6AAA0",
+              data: [0],
+            },
+            {
+              label: "3",
+              backgroundColor: "#E1E1E1",
+              data: [0],
+            },
+            {
+              label: "4",
+              backgroundColor: "#78AFE6",
+              data: [0],
+            },
+            {
+              label: "5",
+              backgroundColor: "#236EC3",
+              data: [0],
+            },
+          ],
+        };
 
-          const list = JSON.parse(JSON.stringify(prev));
-          const filter = list.filter((chart) => chart.id != id);
+        const list = JSON.parse(JSON.stringify(prev));
+        const filter = list.filter((chart) => chart.id != id);
 
-          filter.splice(id, 0, temp);
+        filter.splice(id, 0, temp);
 
-          return filter;
-        });
-      }
-    } else {
+        return filter;
+      });
+    } else if (val === chartConfig.pie) {
       setChartData((prev) => {
         const temp = {
           id,
@@ -214,7 +237,7 @@ const Editor = ({ site }) => {
         });
 
         temp.labels.push("");
-        console.log(temp.dataset[0].backgroundColor);
+        // console.log(temp.dataset[0].backgroundColor);
         temp.dataset[0].backgroundColor.push(
           "#000000".replace(/0/g, function () {
             return (~~(Math.random() * 16)).toString(16);
@@ -226,7 +249,29 @@ const Editor = ({ site }) => {
 
         return filter;
       });
-    } else {
+    } else if (chartData[id].typeChart == chartConfig.bar) {
+      setChartData((prev) => {
+        let temp = null;
+
+        const list = JSON.parse(JSON.stringify(prev));
+
+        const filter = list.filter((chart) => {
+          if (chart.id == id) temp = chart;
+
+          return chart.id != id;
+        });
+
+        temp.labels.push("");
+
+        temp.dataset.forEach((sub) => {
+          sub.data.push(0);
+        });
+
+        filter.splice(id, 0, temp);
+
+        return filter;
+      });
+    } else if (chartData[id].typeChart == chartConfig.likert) {
       setChartData((prev) => {
         let temp = null;
 
@@ -311,6 +356,12 @@ const Editor = ({ site }) => {
       `/nha_trang/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
     );
 
+    chartData.forEach(
+      (chart) =>
+        chart.typeChart === chartConfig.likert &&
+        (chart.typeChart = chartConfig.bar)
+    );
+
     await uploadString(ref, JSON.stringify(chartData));
 
     toast({ title: "Save Chart Success!" });
@@ -337,7 +388,7 @@ const Editor = ({ site }) => {
       <AccordionCustom summary="Charts" className="edit-sidebar__accordion">
         {chartData?.length > 0 &&
           chartData.map((chart, index) => {
-            console.log(chart, chartData);
+            // console.log(chart, chartData);
 
             return (
               <Tabs defaultValue="edit" className="w-full" key={chart.id}>
@@ -414,7 +465,50 @@ const Editor = ({ site }) => {
                           <DropdownMenuRadioItem value={chartConfig.likert}>
                             <div className="flex w-full justify-between items-center">
                               <span className="text-sm">Likert</span>
-                              <ChartBarStackedIcon width={16} />
+                              <svg
+                                width="16px"
+                                height="16px"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.75 8.25C10.75 8.80228 10.3023 9.25 9.75 9.25C9.19772 9.25 8.75 8.80228 8.75 8.25C8.75 7.69772 9.19772 7.25 9.75 7.25C10.3023 7.25 10.75 7.69772 10.75 8.25Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M13.5 8.25C13.5 8.80228 13.0523 9.25 12.5 9.25C11.9477 9.25 11.5 8.80228 11.5 8.25C11.5 7.69772 11.9477 7.25 12.5 7.25C13.0523 7.25 13.5 7.69772 13.5 8.25Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M16.5 8.25C16.5 8.80228 16.0523 9.25 15.5 9.25C14.9477 9.25 14.5 8.80228 14.5 8.25C14.5 7.69772 14.9477 7.25 15.5 7.25C16.0523 7.25 16.5 7.69772 16.5 8.25Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M19.5 8.25C19.5 8.80228 19.0523 9.25 18.5 9.25C17.9477 9.25 17.5 8.80228 17.5 8.25C17.5 7.69772 17.9477 7.25 18.5 7.25C19.0523 7.25 19.5 7.69772 19.5 8.25Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M9.75 16.75C10.3023 16.75 10.75 16.3023 10.75 15.75C10.75 15.1977 10.3023 14.75 9.75 14.75C9.19772 14.75 8.75 15.1977 8.75 15.75C8.75 16.3023 9.19772 16.75 9.75 16.75Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M12.5 16.75C13.0523 16.75 13.5 16.3023 13.5 15.75C13.5 15.1977 13.0523 14.75 12.5 14.75C11.9477 14.75 11.5 15.1977 11.5 15.75C11.5 16.3023 11.9477 16.75 12.5 16.75Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M15.5 16.75C16.0523 16.75 16.5 16.3023 16.5 15.75C16.5 15.1977 16.0523 14.75 15.5 14.75C14.9477 14.75 14.5 15.1977 14.5 15.75C14.5 16.3023 14.9477 16.75 15.5 16.75Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M18.5 16.75C19.0523 16.75 19.5 16.3023 19.5 15.75C19.5 15.1977 19.0523 14.75 18.5 14.75C17.9477 14.75 17.5 15.1977 17.5 15.75C17.5 16.3023 17.9477 16.75 18.5 16.75Z"
+                                  fill="#212121"
+                                />
+                                <path
+                                  d="M5 4C3.34315 4 2 5.34315 2 7V17C2 18.6569 3.34315 20 5 20H19C20.6569 20 22 18.6569 22 17V7C22 5.34315 20.6569 4 19 4H5ZM19 5.5C19.8284 5.5 20.5 6.17157 20.5 7V11.25H7.5V5.5H19ZM20.5 12.75V17C20.5 17.8284 19.8284 18.5 19 18.5H7.5V12.75H20.5ZM6 11.25H3.5V7C3.5 6.17157 4.17157 5.5 5 5.5H6V11.25ZM3.5 12.75H6V18.5H5C4.17157 18.5 3.5 17.8284 3.5 17V12.75Z"
+                                  fill="#212121"
+                                />
+                              </svg>
                             </div>
                           </DropdownMenuRadioItem>
                         </DropdownMenuRadioGroup>
@@ -581,7 +675,7 @@ const Editor = ({ site }) => {
                                 </CollapsibleTrigger>
                               </div>
 
-                              <CollapsibleContent className="ml-6">
+                              <CollapsibleContent className="ml-2 pl-3 border-l border-l-[#ccc]">
                                 {chart.dataset.map((sub, id) => (
                                   <div
                                     className="flex gap-3 my-2"
@@ -693,8 +787,102 @@ const Editor = ({ site }) => {
                                   }
                                   className="flex justify-center mt-4 bg-transparent border border-[#7A7D81] rounded-md w-full py-2 hover:bg-[#A8A8A8] transition-colors"
                                 >
-                                  <CirclePlusIcon />
+                                  <CirclePlusIcon /> Add Sub Field
                                 </button>
+                              </CollapsibleContent>
+                            </Collapsible>
+                          ))}
+                        </>
+                      )}
+                      {chart.typeChart === chartConfig.likert && (
+                        <>
+                          {chart.labels.map((label, label_index) => (
+                            <Collapsible
+                              defaultOpen
+                              className="my-5"
+                              key={label}
+                            >
+                              {/* Label main (question label) */}
+                              <div className="flex">
+                                <Input
+                                  className="text-black"
+                                  placeholder={`Label ${label_index + 1}...`}
+                                  value={chart.labels[label_index]}
+                                  autoFocus={label_index === currentInput[0]}
+                                  onChange={(e) => {
+                                    setCurrentInput([label_index, null]);
+                                    setChartData((prev) => {
+                                      let temp = null;
+
+                                      const list = JSON.parse(
+                                        JSON.stringify(prev)
+                                      );
+
+                                      const filter = list.filter((chart) => {
+                                        if (chart.id == index) temp = chart;
+
+                                        return chart.id != index;
+                                      });
+
+                                      temp.labels[label_index] = e.target.value;
+
+                                      filter.splice(index, 0, temp);
+
+                                      return filter;
+                                    });
+                                  }}
+                                />
+                                <CollapsibleTrigger>
+                                  <ChevronsUpDownIcon />
+                                </CollapsibleTrigger>
+                              </div>
+
+                              {/* Sublabel */}
+                              <CollapsibleContent className="mt-2 ml-2 pl-3 border-l border-l-[#ccc] flex gap-2">
+                                {chart.dataset.map((sub, sub_index) => (
+                                  <div className="my-2 flex-1" key={sub.label}>
+                                    <label
+                                      htmlFor={sub.label}
+                                      className="text-center block w-full mb-[6px]"
+                                    >
+                                      {sub.label}
+                                    </label>
+                                    <Input
+                                      className="text-black"
+                                      placeholder={`Sublabel ${sub.label}...`}
+                                      value={sub.data[label_index]}
+                                      type="number"
+                                      // autoFocus={sub_index === currentInput[0]}
+                                      onChange={(e) => {
+                                        // setCurrentInput([sub_index, null]);
+                                        setChartData((prev) => {
+                                          let temp = null;
+
+                                          const list = JSON.parse(
+                                            JSON.stringify(prev)
+                                          );
+
+                                          const filter = list.filter(
+                                            (chart) => {
+                                              if (chart.id == index)
+                                                temp = chart;
+
+                                              return chart.id != index;
+                                            }
+                                          );
+
+                                          temp.dataset[sub_index].data[
+                                            label_index
+                                          ] = e.target.value;
+
+                                          filter.splice(index, 0, temp);
+
+                                          return filter;
+                                        });
+                                      }}
+                                    />
+                                  </div>
+                                ))}
                               </CollapsibleContent>
                             </Collapsible>
                           ))}
@@ -706,13 +894,19 @@ const Editor = ({ site }) => {
                         title="Add Label"
                         className="flex justify-center mt-4 bg-transparent border border-[#7A7D81] rounded-md w-full py-2 hover:bg-[#A8A8A8] transition-colors"
                       >
-                        <CirclePlusIcon />
+                        <CirclePlusIcon /> Add Field
                       </button>
                     </div>
                   </div>
                 </TabsContent>
                 <TabsContent value="view">
-                  <ChartCustom chartData={chart} />
+                  <ChartCustom
+                    chartData={
+                      chart.typeChart === chartConfig.likert
+                        ? { ...chart, typeChart: "bar" }
+                        : chart
+                    }
+                  />
                 </TabsContent>
               </Tabs>
             );
@@ -891,7 +1085,15 @@ const Interview = ({ site }) => {
                 value={`chart${index + 1}`}
                 key={index}
               >
-                <ChartCustom chartData={chart} width={450} height={300} />
+                <ChartCustom
+                  chartData={
+                    chart.typeChart === chartConfig.likert
+                      ? { ...chart, typeChart: "bar" }
+                      : chart
+                  }
+                  width={450}
+                  height={300}
+                />
               </TabsContent>
             ))}
           </Tabs>

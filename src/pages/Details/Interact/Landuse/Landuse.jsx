@@ -184,7 +184,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
     for (let fileName in geojson) {
       let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
-        console.log(`Upload ${fileName} successfully`);
+        // console.log(`Upload ${fileName} successfully`);
       });
     }
 
@@ -199,7 +199,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
           );
         }
       }
-      console.log(`Upload images successfully`);
+      // console.log(`Upload images successfully`);
     }
 
     toast({ title: "Upload Successfully!" });
@@ -243,27 +243,25 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
   const handleEditPolygon = useCallback(
     async (e) => {
       map.getMap().doubleClickZoom.disable();
+      draw.deleteAll();
+      console.log(draw.getMode());
       if (e.features[0].properties.id == polygonTick?.id) {
         setPolygonTick({});
         handleChangeChosenLanduse(null);
-        draw.deleteAll();
         setImagesUpload([]);
       } else {
+        const feature_id = draw.add(e.features[0])[0];
         setPolygonTick({
-          id: e.features[0].properties.id,
+          id: feature_id,
           landuse: e.features[0].properties["Landuse"],
         });
-
-        draw.deleteAll();
-        const t = draw.add(e.features[0]);
-        console.log(t, e.features[0]);
-        const feature_id = e.features[0].properties.id;
 
         if (typeof scenarioChosen === "string") {
           toast({ title: "This area hasn't had any images yet" });
           return;
         }
 
+        // Loading Uploaded Images
         let ref = getRef(
           `nha_trang/media/${siteChosen.properties.id}/design_images/${scenarioChosen.name}/landuse/${feature_id}`
         );
@@ -338,9 +336,20 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
       landuseData[site] = data;
       // map.getMap().
       setProjectData((prev) => ({ ...prev, landuse: landuseData }));
-      draw.deleteAll();
+      console.log(draw.getMode());
     },
     [polygonTick, landuseData]
+  );
+
+  const handleUndoDraw = useCallback(
+    function () {
+      const version = editHistories.undoVer();
+      // console.log(version, "version");
+      map.getSource(SourceID.landuse).setData(version);
+      landuseData[site] = version;
+      setProjectData((prev) => ({ ...prev, landuse: landuseData }));
+    },
+    [landuseData, site]
   );
 
   useEffect(() => {
@@ -357,6 +366,8 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
         if (polygon.properties.id === polygonTick.id) temp = polygon;
         return polygon.properties.id !== polygonTick.id;
       });
+
+      console.log(temp, polygonTick);
 
       temp.properties.Landuse = polygonTick.landuse;
 
@@ -406,14 +417,6 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
       map.off("draw.create", handleCreateNewPolyon);
     };
   }, [site]);
-
-  function handleUndoDraw() {
-    const version = editHistories.undoVer();
-    console.log(version, "version");
-    map.getSource(SourceID.landuse).setData(version);
-    landuseData[site] = version;
-    setProjectData((prev) => ({ ...prev, landuse: landuseData }));
-  }
 
   useEffect(() => {
     function handleChangeModeChangeCursor() {
@@ -592,7 +595,7 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
                               }
                             }
 
-                            console.log([...imgUpload, temp]);
+                            // console.log([...imgUpload, temp]);
 
                             setImagesUpload(() => [...imgUpload, temp]);
                           }

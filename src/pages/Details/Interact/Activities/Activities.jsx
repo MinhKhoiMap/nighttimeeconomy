@@ -217,7 +217,7 @@ const Editor = ({ site, updatePointFunc }) => {
     for (let fileName in geojson) {
       let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
-        console.log(`Upload ${fileName} successfully`);
+        // console.log(`Upload ${fileName} successfully`);
       });
     }
     toast({ title: "Upload Successfully!" });

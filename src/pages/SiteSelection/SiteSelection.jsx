@@ -133,7 +133,7 @@ const SiteSelection = () => {
             features: [],
           }));
           setProjectData((prev) => ({ ...prev, viewpoints: null }));
-          console.log(source.viewpoints);
+          // console.log(source.viewpoints);
           sessionStorage.setItem("geojson_source", JSON.stringify(source));
         })
         .finally(() => setLoading(false));
