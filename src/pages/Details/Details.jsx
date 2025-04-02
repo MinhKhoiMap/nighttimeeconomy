@@ -21,6 +21,8 @@ import {
   viewModeCons,
   viewModeIndexDefault,
 } from "../../constants";
+import firebaseAuth from "../../services/firebaseAuth";
+import { getMeta, listChild } from "../../services/firebaseStorage";
 
 // Assets
 import "./Details.css";
@@ -31,6 +33,7 @@ import Project from "./Project/Project";
 import Overview from "./Overview/Overview";
 
 export const ViewModeContext = createContext({});
+export const EditModeData = createContext(null);
 
 const Details = () => {
   const { siteChosen, setSiteChosen } = useContext(SiteChosenContext);
@@ -45,6 +48,9 @@ const Details = () => {
 
   const navigator = useNavigate();
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [scenarioChosen, setScenarioChosen] = useState("Base");
+  const [listScenarios, setListScenarios] = useState(null);
   const [siteIndex, setSiteIndex] = useState(null);
   const [lastViewMode, setLastViewMode] = useState(
     viewModeArr[viewModeIndexDefault]
@@ -90,6 +96,55 @@ const Details = () => {
     }
   }, []);
 
+  async function loadingScenarios() {
+    setIsLoading(true);
+
+    try {
+      let res = await listChild(
+        `/nha_trang/scenarios/${siteChosen.properties.id}`
+      );
+
+      let listScenarios = [],
+        updated = [];
+
+      if (viewMode === viewModeCons.edit) {
+        res.prefixes.forEach((folderRef) => {
+          if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
+            listScenarios.push(folderRef);
+          }
+        });
+      } else {
+        res.prefixes.forEach((folderRef) => {
+          listScenarios.push(folderRef);
+        });
+      }
+
+      if (listScenarios.length > 0) {
+        for (let scenario of listScenarios) {
+          let res = await listChild(scenario.fullPath);
+          let meta = await getMeta(res.items[0]);
+          updated.push({ date: meta.updated, parent: meta.ref.parent });
+        }
+        updated.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
+        setListScenarios(updated);
+        if (viewMode === viewModeCons.edit)
+          setScenarioChosen(updated[0].parent);
+      } else {
+        setListScenarios(null);
+        if (viewMode === viewModeCons.edit) setScenarioChosen("Base");
+      }
+    } catch (error) {
+      console.log(error, "Error at Loading Scenarios");
+    }
+
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    // Loading scenarios and initial it
+    loadingScenarios();
+  }, [viewMode, siteIndex]);
+
   // Change Selected Site State
   useEffect(() => {
     let idChosen = findSiteIndex(site);
@@ -128,7 +183,9 @@ const Details = () => {
   }, [viewMode]);
 
   return (
-    <>
+    <EditModeData.Provider
+      value={{ listScenarios, scenarioChosen, setScenarioChosen }}
+    >
       {viewMode !== viewModeCons.edit && (
         <div
           className="details__navbar details__navbar--show opacity-100"
@@ -205,7 +262,8 @@ const Details = () => {
       {viewMode === viewModeArr[viewModeCons.overview] && siteIndex && (
         <Overview areaName={areaName} siteIndex={siteIndex} />
       )}
-    </>
+      {isLoading && <loading />}
+    </EditModeData.Provider>
   );
 };
 

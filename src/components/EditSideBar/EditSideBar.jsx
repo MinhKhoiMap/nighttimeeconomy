@@ -9,15 +9,12 @@ import $ from "jquery";
 import account_icon from "../../assets/images/account.json";
 
 // Utils
-import { ViewModeContext } from "../../pages/Details/Details";
+import { EditModeData, ViewModeContext } from "../../pages/Details/Details";
 import {
   SiteChosenContext,
   SiteDataContext,
 } from "../../pages/SiteSelection/SiteSelection";
-import {
-  EditModeData,
-  InteractModeContext,
-} from "../../pages/Details/Interact/Interact";
+import { InteractModeContext } from "../../pages/Details/Interact/Interact";
 import { SourceID, viewModeArr, viewModeCons } from "../../constants";
 import { fitAreaUtls } from "../../utils/fitAreaUtls";
 

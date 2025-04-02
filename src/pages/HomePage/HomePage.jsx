@@ -72,12 +72,12 @@ const HomePage = () => {
         <h1 className="project-name text-white uppercase">
           Night Time Economy
         </h1>
-        <p className=" text-white text-justify mr-6 break-words mt-6">
+        {/* <p className=" text-white text-justify mr-6 break-words mt-6">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit omnis
           provident reiciendis eius debitis, assumenda officiis iusto
           recusandae. Quo itaque iure sunt magni quam expedita ratione
           exercitationem aspernatur veritatis doloribus.
-        </p>
+        </p> */}
       </div>
       <Link
         to={`/${siteName}`}

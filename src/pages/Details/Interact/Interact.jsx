@@ -8,21 +8,13 @@ import "./Interact.css";
 import firebaseAuth from "../../../services/firebaseAuth";
 import { fitAreaUtls } from "../../../utils/fitAreaUtls";
 import { onAuthStateChanged } from "firebase/auth";
-import {
-  getDownloadUrl,
-  getMeta,
-  listChild,
-  listChilds,
-} from "../../../services/firebaseStorage";
+import { getDownloadUrl, listChilds } from "../../../services/firebaseStorage";
 
 // Assets
 import categories from "../../../assets/images/categories.json";
 import { interactMode, viewModeCons, SourceID } from "../../../constants";
-import {
-  SiteChosenContext,
-  SiteDataContext,
-} from "../../SiteSelection/SiteSelection";
-import { ViewModeContext } from "../Details";
+import { SiteDataContext } from "../../SiteSelection/SiteSelection";
+import { EditModeData, ViewModeContext } from "../Details";
 
 // Components"
 import SpeedDialCustom from "../../../components/SpeedDialCustom/SpeedDialCustom";
@@ -41,11 +33,11 @@ import {
 } from "@/components/ui/select";
 
 export const InteractModeContext = createContext(null);
-export const EditModeData = createContext(null);
 
 const Interact = ({ siteIndex }) => {
+  const { listScenarios, scenarioChosen, setScenarioChosen } =
+    useContext(EditModeData);
   const { siteSelectionData, setProjectData } = useContext(SiteDataContext);
-  const { siteChosen } = useContext(SiteChosenContext);
   const { viewMode, setViewMode } = useContext(ViewModeContext);
 
   const navigator = useNavigate();
@@ -55,8 +47,6 @@ const Interact = ({ siteIndex }) => {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [filterMode, setFilterMode] = useState(interactMode.landuse);
-  const [listScenarios, setListScenarios] = useState(null);
-  const [scenarioChosen, setScenarioChosen] = useState("Base");
 
   // Handle Fitbounds to the selected area
   const fitArea = () => {
@@ -81,50 +71,6 @@ const Interact = ({ siteIndex }) => {
         duration: 400,
       });
   };
-
-  async function loadingScenarios() {
-    setIsLoading(true);
-
-    try {
-      let res = await listChild(
-        `/nha_trang/scenarios/${siteChosen.properties.id}`
-      );
-
-      let listScenarios = [],
-        updated = [];
-
-      if (viewMode === viewModeCons.edit) {
-        res.prefixes.forEach((folderRef) => {
-          if (folderRef.name.startsWith(firebaseAuth.auth.currentUser.email)) {
-            listScenarios.push(folderRef);
-          }
-        });
-      } else {
-        res.prefixes.forEach((folderRef) => {
-          listScenarios.push(folderRef);
-        });
-      }
-
-      if (listScenarios.length > 0) {
-        for (let scenario of listScenarios) {
-          let res = await listChild(scenario.fullPath);
-          let meta = await getMeta(res.items[0]);
-          updated.push({ date: meta.updated, parent: meta.ref.parent });
-        }
-        updated.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
-        setListScenarios(updated);
-        if (viewMode === viewModeCons.edit)
-          setScenarioChosen(updated[0].parent);
-      } else {
-        setListScenarios(null);
-        if (viewMode === viewModeCons.edit) setScenarioChosen("Base");
-      }
-    } catch (error) {
-      console.log(error, "Error at Loading Scenarios");
-    }
-
-    setIsLoading(false);
-  }
 
   async function getScenarioGeoJSON(scenario) {
     setIsLoading(true);
@@ -158,11 +104,6 @@ const Interact = ({ siteIndex }) => {
     if (typeof scenarioChosen === "string") getScenarioGeoJSON();
     else getScenarioGeoJSON(scenarioChosen);
   }, [scenarioChosen]);
-
-  useEffect(() => {
-    // Loading scenarios and initial it
-    loadingScenarios();
-  }, [viewMode, siteIndex]);
 
   // useEffect(() => {
   //   if (!map.hasControl(draw)) {
@@ -242,7 +183,7 @@ const Interact = ({ siteIndex }) => {
                   className="bg-black"
                 />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="max-h-[250px]">
                 <SelectGroup>
                   <SelectItem className="cursor-pointer" value="base">
                     Base
@@ -265,25 +206,21 @@ const Interact = ({ siteIndex }) => {
       </div>
 
       <InteractModeContext.Provider value={{ interactMode: filterMode }}>
-        <EditModeData.Provider
-          value={{ listScenarios, scenarioChosen, setScenarioChosen }}
-        >
-          {filterMode === interactMode.landuse && siteIndex && (
-            <Landuse site={siteIndex} />
-          )}
+        {filterMode === interactMode.landuse && siteIndex && (
+          <Landuse site={siteIndex} />
+        )}
 
-          {filterMode === interactMode.buildinguse && siteIndex && (
-            <Buildinguse site={siteIndex} />
-          )}
+        {filterMode === interactMode.buildinguse && siteIndex && (
+          <Buildinguse site={siteIndex} />
+        )}
 
-          {filterMode === interactMode.activities && siteIndex && (
-            <Activities site={siteIndex} />
-          )}
+        {filterMode === interactMode.activities && siteIndex && (
+          <Activities site={siteIndex} />
+        )}
 
-          {filterMode === interactMode.interview && siteIndex && (
-            <Interview site={siteIndex} />
-          )}
-        </EditModeData.Provider>
+        {filterMode === interactMode.interview && siteIndex && (
+          <Interview site={siteIndex} />
+        )}
       </InteractModeContext.Provider>
 
       {viewMode !== viewModeCons.edit && (

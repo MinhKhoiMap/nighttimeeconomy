@@ -23,7 +23,6 @@ import settings from "../../../../assets/images/settings.json";
 // Utils
 import firebaseAuth from "../../../../services/firebaseAuth";
 import { updloadScenario } from "../../../../services/firebaseStorage";
-import { EditModeData } from "../Interact";
 
 // Components
 import { ImageList, ImageListItem } from "@mui/material";
@@ -34,7 +33,7 @@ import AccordionCustom from "../../../../components/AccordionCustom/AccordionCus
 import RadioGroups from "../../../../components/RadioGroups/RadioGroups";
 import TextFieldCustom from "../../../../components/TextFieldCustom/TextFieldCustom";
 import LottieIcon from "../../../../components/LottieIcon/LottieIcon";
-import { ViewModeContext } from "../../Details";
+import { EditModeData, ViewModeContext } from "../../Details";
 import SpeedDialCustom from "../../../../components/SpeedDialCustom/SpeedDialCustom";
 
 const Editor = ({ site, updatePointFunc }) => {

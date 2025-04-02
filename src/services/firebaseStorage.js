@@ -26,11 +26,7 @@ async function listChilds(folderRef) {
 }
 
 async function getDownloadUrl(fileRef) {
-  try {
-    return await getDownloadURL(fileRef);
-  } catch (err) {
-    console.log(err, "err at getDownloadUrl");
-  }
+  return await getDownloadURL(fileRef);
 }
 
 async function getMeta(fileRef) {

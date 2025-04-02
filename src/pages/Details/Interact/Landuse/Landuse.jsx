@@ -18,13 +18,12 @@ import {
   SiteChosenContext,
   SiteDataContext,
 } from "../../../SiteSelection/SiteSelection";
-import { EditModeData } from "../Interact";
 import {
   CaseLanduseValues,
   SourceID,
   viewModeCons,
 } from "../../../../constants/index";
-import { ViewModeContext } from "../../Details";
+import { EditModeData, ViewModeContext } from "../../Details";
 
 // Services
 import {
@@ -351,6 +350,12 @@ const Editor = ({ site, handleChangeChosenLanduse, chartData }) => {
     },
     [landuseData, site]
   );
+
+  try {
+    if (draw) console.log(draw.getMode(), "draw mode");
+  } catch (error) {
+    console.log(error);
+  }
 
   useEffect(() => {
     map.on("dblclick", "landuse_selection", handleEditPolygon);

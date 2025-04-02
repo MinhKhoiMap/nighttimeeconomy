@@ -21,7 +21,7 @@ import {
   SiteChosenContext,
   SiteDataContext,
 } from "../../../SiteSelection/SiteSelection";
-import { ViewModeContext } from "../../Details";
+import { EditModeData, ViewModeContext } from "../../Details";
 
 // Services
 import {
@@ -63,7 +63,6 @@ import {
 } from "../../../../components/ui/alert";
 
 import AccordionCustom from "../../../../components/AccordionCustom/AccordionCustom";
-import { EditModeData } from "../Interact";
 
 const chartConfig = {
   pie: "pie",

@@ -17,13 +17,12 @@ import {
   SiteChosenContext,
   SiteDataContext,
 } from "../../../SiteSelection/SiteSelection";
-import { EditModeData } from "../Interact";
 import {
   CaseBuildinguseValues,
   SourceID,
   viewModeCons,
 } from "../../../../constants";
-import { ViewModeContext } from "../../Details";
+import { EditModeData, ViewModeContext } from "../../Details";
 import firebaseAuth from "../../../../services/firebaseAuth";
 import {
   getDownloadUrl,
@@ -469,9 +468,9 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
   function handleUndoDraw() {
     const version = editHistories.undoVer();
     // console.log(version, "version");
-    map.getSource(SourceID.landuse).setData(version);
-    landuseData[site] = version;
-    setProjectData((prev) => ({ ...prev, landuse: landuseData }));
+    map.getSource(SourceID.buildinguse).setData(version);
+    buildinguseData[site] = version;
+    setProjectData((prev) => ({ ...prev, buildinguse: buildinguseData }));
   }
 
   useEffect(() => {

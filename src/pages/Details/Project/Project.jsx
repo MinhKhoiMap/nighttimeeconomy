@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Project.css";
 
 // Components
@@ -11,23 +11,32 @@ import {
   listChilds,
 } from "../../../services/firebaseStorage";
 import logo from "../../../assets/images/logo.svg";
-
+import { EditModeData } from "../Details";
+import notfound from "../../../assets/images/not found.png";
 const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
+  const { scenarioChosen } = useContext(EditModeData);
+
   const [slides, setSlides] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [notfoundMessage, setNotFoundMessage] = useState(false);
 
   async function loadingSlide() {
+    console.log(scenarioChosen);
+
     try {
       const projectRef = getRef(
-        `nha_trang/media/site${Number(siteIndex) + 1}/project`
+        `nha_trang/media/site${Number(siteIndex) + 1}/project/${String(
+          scenarioChosen
+        ).toLowerCase()}`
       );
 
       const slidesRef = await listChilds(projectRef);
-      getDownloadUrl(slidesRef[0]).then((url) => {
-        setSlides(url);
-      });
+      const url = await getDownloadUrl(slidesRef[0]);
+      console.log(url);
+      setSlides(url);
     } catch (err) {
       console.log(err, "Project error");
+      setNotFoundMessage(true);
     }
   }
 
@@ -48,12 +57,6 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
   return (
     <>
       <div className="project_mode fixed top-0 left-0 bottom-0 right-0 z-[999999] h-screen overflow-hidden bg-black">
-        {/* <header className="text-3xl text-[#242526] bg-white font-medium capitalize p-5 flex justify-between items-center">
-          <h3 className="text-3xl font-[500] text-[#242526]">{projectName}</h3>
-          <span onClick={() => setShowProjectMode(false)} title="Close">
-            <i className="fa-solid fa-xmark text-2xl cursor-pointer hover:text-[#ce2027] transition-colors duration-[0.15s]"></i>
-          </span>
-        </header> */}
         <section
           className="sticky bg-black/75 px-5 py-4 flex justify-between items-center top-0 z-[99999]"
           style={{ backdropFilter: "blur(60px)" }}
@@ -79,7 +82,15 @@ const Project = ({ projectName, setShowProjectMode, siteIndex }) => {
           style={{ height: "calc(100% - 65px)" }}
         >
           {slides && <DocumentViewer file={slides} />}
-          {!slides && <loading />}
+          {!slides && !notfoundMessage && <loading />}
+          {notfoundMessage && (
+            <figure className="w-full flex flex-col items-center justify-center">
+              <img className="w-[40%] max-w-[300px]" src={notfound} />
+              <figcaption className="text-white text-lg mt-2 italic">
+                Sorry! This scenario doesn&#39;t have any project files.
+              </figcaption>
+            </figure>
+          )}
         </section>
       </div>
     </>
