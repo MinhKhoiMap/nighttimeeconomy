@@ -99,9 +99,11 @@ const Details = () => {
   async function loadingScenarios() {
     setIsLoading(true);
 
+    console.log(siteChosen);
+
     try {
       let res = await listChild(
-        `/nha_trang/scenarios/${siteChosen.properties.id}`
+        `/district/scenarios/${siteChosen.properties.id}`
       );
 
       let listScenarios = [],

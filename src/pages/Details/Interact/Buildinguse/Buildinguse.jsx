@@ -164,7 +164,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
           params["scenario-name"].trim();
 
     for (let fileName in geojson) {
-      let ref = `/nha_trang/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
+      let ref = `/district_3/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
         // console.log(`Upload ${fileName} successfully`);
       });
@@ -173,7 +173,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     // Handle upload media for viewpoints
 
     for (let media of imagesUpload) {
-      let ref = `/nha_trang/media/${siteChosen.properties.id}/viewpoints/${scenario}/${media.id}`;
+      let ref = `/district_3/media/${siteChosen.properties.id}/viewpoints/${scenario}/${media.id}`;
       for (let img of media.images) {
         await updloadFile(`${ref}/${img.file.name}`, img.file);
         await uploadString(
@@ -373,7 +373,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
         }
 
         let ref = getRef(
-          `/nha_trang/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${feature_id}`
+          `/district_3/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${feature_id}`
         );
 
         const items = await listChilds(ref);
@@ -750,10 +750,14 @@ const Buildinguse = ({ site }) => {
     map.on("dblclick", "buildinguse_selection", handleChosenBuilding);
 
     if (site) {
+      console.log(buildinguseData[site]);
+
       let intersectBuildingGeos = buildinguseData[site].features.filter(
         (buildingGeo) => {
+          if (buildingGeo.geometry.coordinates.length < 4)
+            console.log(buildingGeo);
           return turf.booleanIntersects(
-            turf.polygon(buildingGeo.geometry.coordinates),
+            turf.polygon(buildingGeo.geometry.coordinates[0]),
             turf.polygon(siteSelectionData.features[site].geometry.coordinates)
           );
         }
@@ -774,7 +778,7 @@ const Buildinguse = ({ site }) => {
   async function getViewpointsGallery(viewpoint_id) {
     setShowGallery(true);
     let ref = getRef(
-      `nha_trang/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${viewpoint_id}`
+      `district_3/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${viewpoint_id}`
     );
     const items = await listChilds(ref);
     const gallery = [];

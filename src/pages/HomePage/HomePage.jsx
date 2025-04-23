@@ -13,7 +13,7 @@ import logo from "../../assets/images/logo.svg";
 const HomePage = () => {
   const initialView = useContext(initialViewState);
 
-  const [siteName, setSiteName] = useState("nha_trang");
+  const [siteName, setSiteName] = useState("district_3");
 
   // get map instance
   const { map } = useMap();
