@@ -36,6 +36,7 @@ export const ViewModeContext = createContext({});
 export const EditModeData = createContext(null);
 
 const Details = () => {
+  const params = useParams();
   const { siteChosen, setSiteChosen } = useContext(SiteChosenContext);
   const { siteSelectionData } = useContext(SiteDataContext);
 
@@ -103,7 +104,7 @@ const Details = () => {
 
     try {
       let res = await listChild(
-        `/district/scenarios/${siteChosen.properties.id}`
+        `/${params.area}/scenarios/${siteChosen.properties.id}`
       );
 
       let listScenarios = [],

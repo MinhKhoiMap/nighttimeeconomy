@@ -63,6 +63,7 @@ import {
 } from "../../../../components/ui/alert";
 
 import AccordionCustom from "../../../../components/AccordionCustom/AccordionCustom";
+import { useParams } from "react-router-dom";
 
 const chartConfig = {
   pie: "pie",
@@ -75,6 +76,8 @@ const chartConfig = {
 };
 
 const Editor = ({ site }) => {
+  const params = useParams();
+
   const { siteChosen } = useContext(SiteChosenContext);
   const { scenarioChosen } = useContext(EditModeData);
 
@@ -352,7 +355,7 @@ const Editor = ({ site }) => {
     setIsLoading(true);
 
     let ref = getRef(
-      `/nha_trang/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
+      `/${params.area}/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
     );
 
     chartData.forEach(
@@ -370,7 +373,7 @@ const Editor = ({ site }) => {
   useEffect(() => {
     async function loadChart() {
       let ref = getRef(
-        `nha_trang/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
+        `${params.area}/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
       );
       const url = await getDownloadUrl(ref);
       const res = await fetch(url);
@@ -946,6 +949,8 @@ const Editor = ({ site }) => {
 };
 
 const Interview = ({ site }) => {
+  const params = useParams();
+
   const { interviewPointData } = useContext(SiteDataContext);
   const { siteChosen } = useContext(SiteChosenContext);
   const { viewMode } = useContext(ViewModeContext);
@@ -965,7 +970,9 @@ const Interview = ({ site }) => {
       setShow(true);
       const siteID = siteChosen.properties.id;
       let id = e.features[0].properties.id;
-      let galleryRef = getRef(`/nha_trang/media/${siteID}/interview/${id}`);
+      let galleryRef = getRef(
+        `/${params.area}/media/${siteID}/interview/${id}`
+      );
       let imgsRef = await listChilds(galleryRef);
       let gallery = [];
       for (let ref of imgsRef) {
@@ -992,8 +999,9 @@ const Interview = ({ site }) => {
 
   useEffect(() => {
     async function loadChart() {
+      console.log(siteChosen, params.area);
       let ref = getRef(
-        `nha_trang/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
+        `${params.area}/charts_data/${siteChosen.properties.id}/${scenarioChosen.name}/chart.json`
       );
       const url = await getDownloadUrl(ref);
       const res = await fetch(url);
@@ -1005,7 +1013,7 @@ const Interview = ({ site }) => {
     if (typeof scenarioChosen !== "string") {
       loadChart();
     } else {
-      setChartData([chartdata[site]]);
+      setChartData(chartdata);
     }
   }, [scenarioChosen]);
 

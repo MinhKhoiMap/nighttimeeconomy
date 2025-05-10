@@ -101,10 +101,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/district_3" element={<SiteSelection />}>
+          <Route path="/:area" element={<SiteSelection />}>
             {/* This childer route decide children component which will be mounted
             in SiteSelection parent component */}
-            <Route path="/district_3/:site" element={<Details />} />
+            <Route path="/:area/:site" element={<Details />} />
           </Route>
           <Route path="/about_project" element={<AboutProject />} />
           <Route path="/test" element={<Test />} />

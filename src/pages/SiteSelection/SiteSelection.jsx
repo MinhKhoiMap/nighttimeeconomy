@@ -1,9 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 import { Layer, Source, useMap } from "react-map-gl";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
 import $ from "jquery";
 import mapboxgl from "mapbox-gl";
-
+import LZString from "lz-string";
 import "./SiteSelection.css";
 import getBaseGeoJSONData from "../../services/fetchGeoJSONData";
 import loadcat from "../../assets/images/loadcat.gif";
@@ -16,6 +16,7 @@ const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
   // Set event listeners to each layer
   useEffect(() => {
     function handleChooseSite() {
+      console.log(feature, "feature");
       setSiteChosen(feature);
       navigate(`./${feature.properties.id}`);
     }
@@ -71,21 +72,30 @@ export const SiteChosenContext = createContext({});
 export const SiteDataContext = createContext({});
 
 const SiteSelection = () => {
+  const params = useParams();
+
   // this is represents the selected area index
   const [siteChosen, setSiteChosen] = useState(null);
   const [projectData, setProjectData] = useState(
     sessionStorage.getItem("geojson_source") &&
-      JSON.parse(sessionStorage.getItem("geojson_source"))
+      JSON.parse(LZString.decompress(sessionStorage.getItem("geojson_source")))
   );
   const [loading, setLoading] = useState(
-    !sessionStorage.getItem("geojson_source")
+    !sessionStorage.getItem("geojson_source") ||
+      !Object.keys(
+        JSON.parse(
+          LZString.decompress(sessionStorage.getItem("geojson_source"))
+        )
+      ).length > 0
   );
 
   const { map } = useMap();
 
   useEffect(() => {
-    if (!loading && projectData) handleLoadSite();
-  }, [loading]);
+    console.log(projectData);
+    if (!loading && projectData && Object.keys(projectData).length > 0)
+      handleLoadSite();
+  }, [params.area, projectData]);
 
   useEffect(() => {
     $(".orient-marker").fadeOut();
@@ -107,24 +117,29 @@ const SiteSelection = () => {
         .then((data) => {
           source.buildinguse = data;
           setProjectData((prev) => ({ ...prev, buildinguse: data }));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
         })
         .then(() => getBaseGeoJSONData("activities"))
         .then((data) => {
           source.activities = data;
           setProjectData((prev) => ({ ...prev, activities: data }));
-          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
         })
         .then(() => getBaseGeoJSONData("interview"))
         .then((data) => {
           source.interview = data;
           setProjectData((prev) => ({ ...prev, interview: data }));
-          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
         })
         .then(() => getBaseGeoJSONData("road"))
         .then((data) => {
           source.roads = data;
           setProjectData((prev) => ({ ...prev, roads: data }));
-          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
         })
         .then(() => {
           source.viewpoints = source.site.features.map((site) => ({
@@ -133,10 +148,19 @@ const SiteSelection = () => {
             features: [],
           }));
           setProjectData((prev) => ({ ...prev, viewpoints: null }));
-          // console.log(source.viewpoints);
-          sessionStorage.setItem("geojson_source", JSON.stringify(source));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
         })
-        .finally(() => setLoading(false));
+        .catch((e) => console.log(e))
+        .finally(() => {
+          setLoading(false);
+          console.log(
+            JSON.parse(
+              LZString.decompress(sessionStorage.getItem("geojson_source"))
+            ),
+            "decompressed"
+          );
+        });
     }
   }, []);
 
@@ -161,7 +185,7 @@ const SiteSelection = () => {
 
   return (
     <>
-      {!loading && (
+      {!loading && projectData?.site && (
         <>
           {projectData.site.features.map((feature, index) => (
             <SitePolygon

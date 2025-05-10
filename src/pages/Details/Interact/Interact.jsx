@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext, createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMap } from "react-map-gl";
-
+import LZString from "lz-string";
 // Utils
 import "@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css";
 import "./Interact.css";
@@ -74,6 +74,7 @@ const Interact = ({ siteIndex }) => {
 
   async function getScenarioGeoJSON(scenario) {
     setIsLoading(true);
+    console.log(scenario, "vlz");
     if (scenario) {
       let scenarioData = {};
       const items = await listChilds(scenario);
@@ -90,7 +91,9 @@ const Interact = ({ siteIndex }) => {
         .getSource(SourceID[filterMode])
         .setData(scenarioData[filterMode][siteIndex]);
     } else {
-      let baseData = JSON.parse(sessionStorage.getItem("geojson_source"));
+      let baseData = JSON.parse(
+        LZString.decompress(sessionStorage.getItem("geojson_source"))
+      );
       setProjectData(baseData);
       map
         .getSource(SourceID[filterMode])
@@ -101,6 +104,8 @@ const Interact = ({ siteIndex }) => {
   }
 
   useEffect(() => {
+    console.log(scenarioChosen, "scenario chosen");
+
     if (typeof scenarioChosen === "string") getScenarioGeoJSON();
     else getScenarioGeoJSON(scenarioChosen);
   }, [scenarioChosen]);

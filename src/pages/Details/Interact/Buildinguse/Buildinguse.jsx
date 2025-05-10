@@ -46,6 +46,7 @@ import LottieIcon from "../../../../components/LottieIcon/LottieIcon";
 import { ImageList, ImageListItem } from "@mui/material";
 import { uploadString } from "firebase/storage";
 import PhotoSlide from "../../../../components/PhotoSlide/PhotoSlide";
+import { useParams } from "react-router-dom";
 
 const draw = new MapboxDraw({
   controls: {
@@ -119,6 +120,7 @@ class EditHistories {
 const editHistories = new EditHistories();
 
 const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
+  const params = useParams();
   const { siteChosen } = useContext(SiteChosenContext);
   const {
     activitiesData,
@@ -164,7 +166,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
           params["scenario-name"].trim();
 
     for (let fileName in geojson) {
-      let ref = `/district_3/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
+      let ref = `/${params.area}/scenarios/${siteChosen.properties.id}/${scenario}/${fileName}.json`;
       await updloadScenario(ref, geojson[fileName]).then(() => {
         // console.log(`Upload ${fileName} successfully`);
       });
@@ -173,7 +175,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
     // Handle upload media for viewpoints
 
     for (let media of imagesUpload) {
-      let ref = `/district_3/media/${siteChosen.properties.id}/viewpoints/${scenario}/${media.id}`;
+      let ref = `/${params.area}/media/${siteChosen.properties.id}/viewpoints/${scenario}/${media.id}`;
       for (let img of media.images) {
         await updloadFile(`${ref}/${img.file.name}`, img.file);
         await uploadString(
@@ -373,7 +375,7 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
         }
 
         let ref = getRef(
-          `/district_3/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${feature_id}`
+          `/${params.area}/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${feature_id}`
         );
 
         const items = await listChilds(ref);
@@ -643,6 +645,8 @@ const Editor = ({ site, handleChangeChosenBuilding, chartData }) => {
 };
 
 const Buildinguse = ({ site }) => {
+  const params = useParams();
+
   const { siteChosen } = useContext(SiteChosenContext);
   const { buildinguseData, viewpointsData, siteSelectionData } =
     useContext(SiteDataContext);
@@ -750,24 +754,26 @@ const Buildinguse = ({ site }) => {
     map.on("dblclick", "buildinguse_selection", handleChosenBuilding);
 
     if (site) {
-      console.log(buildinguseData[site]);
-
       let intersectBuildingGeos = buildinguseData[site].features.filter(
         (buildingGeo) => {
-          if (buildingGeo.geometry.coordinates.length < 4)
-            console.log(buildingGeo);
           return turf.booleanIntersects(
-            turf.polygon(buildingGeo.geometry.coordinates[0]),
-            turf.polygon(siteSelectionData.features[site].geometry.coordinates)
+            // turf.polygon(buildingGeo.geometry.coordinates[0]),
+            // turf.polygon(
+            //   siteSelectionData.features[site].geometry.coordinates[0]
+            // )
+            buildingGeo,
+            siteSelectionData.features[site]
           );
         }
       );
-
-      setBuildingIntersection({
-        type: "FeatureCollection",
-        name: "",
-        features: intersectBuildingGeos,
-      });
+      console.log(intersectBuildingGeos);
+      console.log(buildinguseData[site]);
+      setBuildingIntersection(buildinguseData[site]);
+      // setBuildingIntersection({
+      //   type: "FeatureCollection",
+      //   name: "",
+      //   features: buildinguseData[site].features,
+      // });
     }
 
     return () => {
@@ -777,8 +783,12 @@ const Buildinguse = ({ site }) => {
 
   async function getViewpointsGallery(viewpoint_id) {
     setShowGallery(true);
+    console.log(
+      `${params.area}/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${viewpoint_id}`,
+      scenarioChosen
+    );
     let ref = getRef(
-      `district_3/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${viewpoint_id}`
+      `${params.area}/media/${siteChosen.properties.id}/viewpoints/${scenarioChosen.name}/${viewpoint_id}`
     );
     const items = await listChilds(ref);
     const gallery = [];
@@ -787,6 +797,7 @@ const Buildinguse = ({ site }) => {
       const meta = await getMeta(item);
       if (meta.contentType.includes("image")) gallery.push(url);
     }
+    console.log(gallery, "wwwwww");
     setGallery(gallery);
   }
 
@@ -856,9 +867,11 @@ const Buildinguse = ({ site }) => {
     setFilterBuilding(null);
   }, [viewMode]);
 
+  console.log(buildingIntersection, "building intersection");
+
   return (
     <>
-      {buildingIntersection && (
+      {
         <Source
           type="geojson"
           data={buildingIntersection}
@@ -866,12 +879,12 @@ const Buildinguse = ({ site }) => {
           promoteId="id"
           id={SourceID.buildinguse}
         >
-          <Layer
+          {/* <Layer
             id="grid"
             type="fill"
             paint={{
-              "fill-outline-color": "black",
-              "fill-outline-color-transition": { duration: 300 },
+              // "fill-outline-color": "black",
+              // "fill-outline-color-transition": { duration: 300 },
               "fill-color": "transparent",
             }}
             filter={
@@ -879,16 +892,16 @@ const Buildinguse = ({ site }) => {
                 ? ["==", ["get", "Buildsused"], filterBuilding]
                 : ["!=", ["get", "Buildsused"], null]
             }
-          />
+          /> */}
 
           <Layer
-            beforeId={"grid"}
+            // beforeId={"grid"}
             id="buildinguse_selection"
             type="fill-extrusion"
             paint={{
               "fill-extrusion-color": [
                 "match",
-                ["get", "Buildsused"],
+                ["coalesce", ["get", "Buildsused"], "null"],
                 ...CaseBuildinguseValues,
                 // Other Values
                 "rgba(255, 196, 54, 0.3)",
@@ -900,11 +913,11 @@ const Buildinguse = ({ site }) => {
                 -1,
               ],
             }}
-            filter={
-              filterBuilding
-                ? ["==", ["get", "Buildsused"], filterBuilding]
-                : ["!=", ["get", "Buildsused"], null]
-            }
+            // filter={
+            //   filterBuilding
+            //     ? ["==", ["get", "Buildsused"], filterBuilding]
+            //     : ["!=", ["get", "Buildsused"], null]
+            // }
           />
 
           {polygonChosen && (
@@ -963,7 +976,7 @@ const Buildinguse = ({ site }) => {
             </>
           )}
         </Source>
-      )}
+      }
 
       {buildinguseStatistic && viewMode !== viewModeCons.edit && (
         <div className="fixed bottom-0 left-8">
@@ -1005,15 +1018,13 @@ const Buildinguse = ({ site }) => {
         />
       )}
 
-      {showGallery && (
+      {showGallery && gallery && (
         <PhotoSlide
           gallery={gallery}
           onCloseHandler={() => {
             setGallery(null);
             setShowGallery(false);
           }}
-          isLoading={showGallery}
-          setIsLoading={setShowGallery}
         />
       )}
 

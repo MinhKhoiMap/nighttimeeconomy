@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { initialViewState } from "../../contexts/initialViewContext";
 import { useMap } from "react-map-gl";
 import * as turf from "@turf/turf";
-import firebaseAuth from "../../services/firebaseAuth";
+import "../../services/firebaseAuth";
 import mapboxgl from "mapbox-gl";
 import $ from "jquery";
 
