@@ -1,0 +1,10 @@
+.edit-sidebar__accordion
+  .data-\[state\=active\]\:bg-background[data-state="active"] {
+  background: #000 !important;
+  color: white;
+}
+
+.viewchart-btn:disabled {
+  cursor: not-allowed;
+  pointer-events: initial;
+}

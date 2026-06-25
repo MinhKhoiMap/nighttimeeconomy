@@ -1,0 +1,246 @@
+import { createContext, useEffect, useState } from "react";
+import { Layer, Source, useMap } from "react-map-gl";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
+import $ from "jquery";
+import mapboxgl from "mapbox-gl";
+import LZString from "lz-string";
+import "./SiteSelection.css";
+import getBaseGeoJSONData from "../../services/fetchGeoJSONData";
+import loadcat from "../../assets/images/loadcat.gif";
+
+const SitePolygon = ({ feature, index, map, setSiteChosen }) => {
+  const navigate = useNavigate();
+
+  let name = `${feature.properties.id}`;
+
+  // Set event listeners to each layer
+  useEffect(() => {
+    function handleChooseSite() {
+      console.log(feature, "feature");
+      setSiteChosen(feature);
+      navigate(`./${feature.properties.id}`);
+    }
+
+    function handleHoverChangeCursor() {
+      map.getMap().doubleClickZoom.disable();
+      map.getCanvas().style.cursor = "pointer";
+    }
+
+    function handleDragChangeCursor() {
+      map.getCanvas().style.cursor = "grab";
+    }
+
+    function reset() {
+      map.getMap().doubleClickZoom.enable();
+      map.getCanvas().style.cursor = "grab";
+    }
+
+    map.on("click", `fill_${name}`, handleChooseSite);
+    map.on("mouseenter", `fill_${name}`, handleHoverChangeCursor);
+    map.on("mouseleave", `fill_${name}`, reset);
+    map.on("dragstart", `fill_${name}`, handleDragChangeCursor);
+    map.on("dragend", `fill_${name}`, handleHoverChangeCursor);
+
+    return () => {
+      map.off("click", `fill_${name}`, handleChooseSite);
+      map.off("mouseenter", `fill_${name}`, handleHoverChangeCursor);
+      map.off("mouseleave", `fill_${name}`, reset);
+      map.off("dragstart", `fill_${name}`, handleDragChangeCursor);
+      map.off("dragend", `fill_${name}`, handleHoverChangeCursor);
+    };
+  }, []);
+
+  return (
+    <Source key={name} id={name} type="geojson" data={feature}>
+      <Layer
+        type="line"
+        paint={{
+          "line-color": "#fff",
+          "line-width": 0.4,
+        }}
+      />
+      <Layer
+        id={`fill_${name}`}
+        type="fill"
+        paint={{ "fill-color": "rgba(13, 16, 92, 0.3)" }}
+      />
+    </Source>
+  );
+};
+
+export const SiteChosenContext = createContext({});
+export const SiteDataContext = createContext({});
+
+const SiteSelection = () => {
+  const params = useParams();
+
+  // this is represents the selected area index
+  const [siteChosen, setSiteChosen] = useState(null);
+  const [projectData, setProjectData] = useState(
+    sessionStorage.getItem("geojson_source") &&
+      JSON.parse(LZString.decompress(sessionStorage.getItem("geojson_source")))
+  );
+  const [loading, setLoading] = useState(
+    !sessionStorage.getItem("geojson_source") ||
+      !Object.keys(
+        JSON.parse(
+          LZString.decompress(sessionStorage.getItem("geojson_source"))
+        )
+      ).length > 0
+  );
+
+  const { map } = useMap();
+
+  useEffect(() => {
+    console.log(projectData);
+    if (!loading && projectData && Object.keys(projectData).length > 0)
+      handleLoadSite();
+  }, [params.area, projectData]);
+
+  useEffect(() => {
+    $(".orient-marker").fadeOut();
+
+    if (loading) {
+      let source = {};
+
+      getBaseGeoJSONData("site")
+        .then((data) => {
+          source.site = data;
+          setProjectData((prev) => ({ ...prev, site: data }));
+        })
+        .then(() => getBaseGeoJSONData("landuse"))
+        .then((data) => {
+          source.landuse = data;
+          setProjectData((prev) => ({ ...prev, landuse: data }));
+        })
+        .then(() => getBaseGeoJSONData("buildinguse"))
+        .then((data) => {
+          source.buildinguse = data;
+          setProjectData((prev) => ({ ...prev, buildinguse: data }));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
+        })
+        .then(() => getBaseGeoJSONData("activities"))
+        .then((data) => {
+          source.activities = data;
+          setProjectData((prev) => ({ ...prev, activities: data }));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
+        })
+        .then(() => getBaseGeoJSONData("interview"))
+        .then((data) => {
+          source.interview = data;
+          setProjectData((prev) => ({ ...prev, interview: data }));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
+        })
+        .then(() => getBaseGeoJSONData("road"))
+        .then((data) => {
+          source.roads = data;
+          setProjectData((prev) => ({ ...prev, roads: data }));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
+        })
+        .then(() => {
+          source.viewpoints = source.site.features.map((site) => ({
+            type: "FeatureCollection",
+            name: site.name, // site[...]
+            features: [],
+          }));
+          setProjectData((prev) => ({ ...prev, viewpoints: null }));
+          const compress = LZString.compress(JSON.stringify(source));
+          sessionStorage.setItem("geojson_source", compress);
+        })
+        .catch((e) => console.log(e))
+        .finally(() => {
+          setLoading(false);
+          console.log(
+            JSON.parse(
+              LZString.decompress(sessionStorage.getItem("geojson_source"))
+            ),
+            "decompressed"
+          );
+        });
+    }
+  }, []);
+
+  // Handling to display all areas in a viewport
+  const handleLoadSite = () => {
+    var bounds = new mapboxgl.LngLatBounds();
+
+    // Loop through all areas and extend bounds box
+    projectData.site.features.forEach((feature) => {
+      feature.geometry.coordinates[0].forEach((coordinate) =>
+        bounds.extend(coordinate)
+      );
+    });
+
+    map.fitBounds(bounds, {
+      padding: { top: 20, bottom: 20, left: 20, right: 20 },
+      duration: 3000,
+    });
+  };
+
+  // let counter = 0;
+
+  return (
+    <>
+      {!loading && projectData?.site && (
+        <>
+          {projectData.site.features.map((feature, index) => (
+            <SitePolygon
+              key={feature.name}
+              feature={feature}
+              index={index}
+              map={map}
+              setSiteChosen={setSiteChosen}
+            />
+          ))}
+
+          <SiteDataContext.Provider
+            value={{
+              siteSelectionData: projectData.site,
+              landuseData: projectData.landuse,
+              buildinguseData: projectData.buildinguse,
+              activitiesData: projectData.activities,
+              interviewPointData: projectData.interview,
+              roads: projectData.roads,
+              viewpointsData: projectData.viewpoints,
+              setProjectData,
+            }}
+          >
+            <SiteChosenContext.Provider value={{ siteChosen, setSiteChosen }}>
+              {/* Children Component will be mounted here, and childrent component has siteChosenIndex as a prop */}
+              <Outlet />
+            </SiteChosenContext.Provider>
+          </SiteDataContext.Provider>
+        </>
+      )}
+
+      {loading && (
+        <div className="fixed top-0 bottom-0 right-0 left-0 bg-black/85 z-[99999] flex items-end pl-5 pb-2">
+          <span className="max-w-[250px] flex gap-2 flex-col">
+            <span className="flex items-end gap-3">
+              <img src={loadcat} alt="" width="60" />
+              <p className="loading-wrap text-white font-[Raleway] tracking-[8px]">
+                <span style={{ "--i": 1 }}>L</span>
+                <span style={{ "--i": 2 }}>o</span>
+                <span style={{ "--i": 3 }}>a</span>
+                <span style={{ "--i": 4 }}>d</span>
+                <span style={{ "--i": 5 }}>i</span>
+                <span style={{ "--i": 6 }}>n</span>
+                <span style={{ "--i": 7 }}>g</span>
+                <span style={{ "--i": 8 }}>.</span>
+                <span style={{ "--i": 9 }}>.</span>
+                <span style={{ "--i": 10 }}>.</span>
+              </p>
+            </span>
+            <div className="barload-container w-[250px]"></div>
+          </span>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default SiteSelection;
