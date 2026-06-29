@@ -30,7 +30,7 @@ const LogIn = () => {
           }`,
           description: "Login success!",
         });
-        navigator("/district_3");
+        navigator("/nha_trang");
       })
       .catch((err) => {
         const errorCode = err.code;
