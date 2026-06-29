@@ -15,7 +15,6 @@ import "./utils/folderDriveList";
 import HomePage from "./pages/HomePage/HomePage";
 import SiteSelection from "./pages/SiteSelection/SiteSelection";
 import Details from "./pages/Details/Details";
-import Test from "./pages/Test/Test";
 import AboutProject from "./pages/AboutProject/AboutProject";
 import Auth from "./pages/Auth/Auth";
 import { Toaster } from "./components/ui/toaster";
@@ -107,7 +106,6 @@ function App() {
             <Route path="/:area/:site" element={<Details />} />
           </Route>
           <Route path="/about_project" element={<AboutProject />} />
-          <Route path="/test" element={<Test />} />
         </Routes>
       </Map>
       <div className="fixed bottom-2 right-[25px] about-project__container">
